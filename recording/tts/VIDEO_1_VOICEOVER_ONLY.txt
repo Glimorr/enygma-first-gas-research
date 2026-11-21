@@ -1,0 +1,21 @@
+I wanted to test something that happens before a private payment even starts. Can a completely new Rayls wallet get funded, register, and send, without ever receiving public RLS?
+
+First, I built a normal public funding control. I used the faucet to fund a separate research wallet with two hundred and fifty RLS, then registered it as my independent receiver.
+
+For the private route, I used a funded account to shield forty RLS. That initial shield was public: forty RLS entered the vault, and about three point five RLS went to the relayer.
+
+From those shielded funds, I created a thirty RLS invitation. The blockchain recorded an encrypted-note transaction, rather than a public transfer showing the private amount.
+
+I opened the invitation in a fresh passkey wallet and registered it as devil. After the claim fee, the wallet showed seventeen point three zero four shielded RLS. Public-chain checks still showed zero RLS, zero USDr, zero native balance, and zero account nonce.
+
+That didn't mean the account was invisible. Its username registration was public. But the new wallet had not needed a normal public token transfer to claim its notes and register. The source invitation receipt contained a nullifier and three encrypted notes, not a plaintext transfer exposing thirty RLS or naming the private recipient. The wallet owner could see the value, while public observers could only authenticate the encrypted-note operation.
+
+Then I sent three shielded RLS to my separate receiver. The transaction was mined, and the receiving wallet independently showed three shielded RLS.
+
+To test the other route, I created another fresh account. This one received two hundred and fifty public RLS and ten public USDr through the standard faucet. Its registration fee was public, and it visibly shielded twenty RLS before sending another three RLS privately.
+
+The second transfer was mined too. When I reconnected the same receiving wallet, its shielded balance had increased from three to six RLS.
+
+Both private sends produced one nullifier, three commitments, and three encrypted notes in the public vault. But their funding histories were different.
+
+For these two controlled testnet accounts, the invitation route avoided public token funding, while the standard faucet route left a visible trail. The article links to every original receipt and to the independent verification.

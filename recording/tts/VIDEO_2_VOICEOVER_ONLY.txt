@@ -1,0 +1,25 @@
+While following the two private payment lifecycles, I noticed something else on the public chain.
+
+The vault transaction didn't reveal the amount of the private payment, but the relayer still moved public RLS while settling its fees.
+
+I first checked a completely public forty RLS shield. Its fee was three point five zero seven RLS. A separate public treasury transfer appeared three blocks later. The arithmetic matched the relayer's reported policy: fifteen percent added to the base fee, not fifteen percent taken from the final total.
+
+I then checked eighteen selected paid public-forwarder operations, plus two zero-fee controls. The paid operations had matching reported-treasury transfers in their chosen windows, while the zero-fee controls did not.
+
+The private transactions were more interesting.
+
+For the thirty RLS invitation, the nearby treasury share was zero point five seven six RLS. That implied a gross fee of four point four one six RLS, matching the rounded quote in the wallet.
+
+For the invitation claim, the treasury share was one point six five six. The implied gross fee was twelve point six nine six RLS. Subtracting that fee from thirty left seventeen point three zero four RLS, exactly what the receiving wallet showed.
+
+Both private three RLS sends also had separate nearby treasury transfers. Each implied a gross fee of four point four one six RLS.
+
+I also checked the second wallet's public twenty RLS shield. Its exact fee was three point five two five eight RLS, with a matching reported treasury share of about zero point four six RLS. That public deposit exposed its originating address and principal, unlike the later private transfer.
+
+That was four matching selected private cases.
+
+To avoid relying on coincidence alone, I checked thirty fixed time-shifted comparison windows. None contained a matching payout or vault nullifier. Those windows were quiet, so they are a local timing control, not a network-wide accuracy measurement.
+
+And this point matters: a public treasury transfer doesn't name the private sender or recipient, or reveal the payment principal.
+
+What I found was a reproducible fee-metadata correlation around selected controlled operations, not a decryption of Enygma payments. The original receipts and code are linked in the article.

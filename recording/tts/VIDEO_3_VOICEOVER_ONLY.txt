@@ -1,0 +1,23 @@
+After the two private payments worked, I had a different problem to solve. Could someone else examine the evidence without trusting my screenshots?
+
+I released the original public transaction records, verification scripts, figures, and a source integrity manifest. The full two-cohort package contains one hundred and seventy-two curated files.
+
+First, I used independent public RPC queries to check mined transactions, receipt status, blockchain inclusion, and event logs. That includes the transparent twenty RLS shield and both genuine private transfers. The private amounts and recipients are still identified through the controlled wallet observations, not from decrypting public vault data.
+
+Next, I checked historical transaction behavior. The original experiments contained four successful simulations against pre-settlement state and eight reverts at or after settlement. None of those tests broadcast another transaction.
+
+Some older testnet states were later pruned, so I saved the original-time responses and checked them against the original calldata. I didn't claim those old queries could still be repeated live.
+
+I also tested whether the verification process would detect altered evidence. I intentionally changed receipt data, event fields, transaction details, and fee calculations.
+
+The second payment's suite rejected thirty-eight corrupted copies. Combined with the original six suites, the research detected one hundred and eighty-two of one hundred and eighty-two deliberately altered evidence cases. Those are offline integrity tests, not attacks against the live protocol.
+
+I tested one smaller guard too. With three shielded RLS available, entering a fifteen RLS send disabled the button. That's an interface-level check, not an on-chain attack.
+
+I also verified the expected file list, not only the checksums of whichever files happened to be present. That matters because a missing source file could otherwise go unnoticed.
+
+One early registration checker also failed because it compared a later post-shield balance with the earlier post-registration balance. I corrected that assumption and preserved the failure.
+
+The final public release passed thirty-one clean-extraction checks, and the published website passed seventy-two browser checks.
+
+The result is a research package that someone else can reproduce, inspect, or challenge. The full receipts, code, and verified archive are linked in the article.

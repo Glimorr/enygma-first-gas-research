@@ -1,0 +1,53 @@
+{
+  "zip_file": "Rayls_November_Quest3_Seven_Research_Figures_PNG.zip",
+  "total_article_png": 7,
+  "contains_cover_image": false,
+  "zip_bytes": 3135363,
+  "zip_sha256": "edb81a00abefcae8431d335319cb2b54b669d9fe917126ae79825eb26830d390",
+  "figures": [
+    {
+      "filename": "F01-07-actual-chain-milestones.png",
+      "dimensions": "1600 x 900",
+      "bytes": 490734,
+      "sha256": "fdf30faa79cd875e80104cbf1d07b27078f32024fe4d5d32f2988a5c5d0098e8"
+    },
+    {
+      "filename": "F02-public-vs-shielded-footprints.png",
+      "dimensions": "1600 x 900",
+      "bytes": 433259,
+      "sha256": "52c881e317b6124f30e48abfd662461114fe5ef6466c6c8fb1e9a88e585b649d"
+    },
+    {
+      "filename": "F03-recipient-before-and-after.png",
+      "dimensions": "1600 x 900",
+      "bytes": 468569,
+      "sha256": "d76e9b92c0a8c9f2b90106662e0fc9bf07614205a3c741d4d5029216562c5b0e"
+    },
+    {
+      "filename": "F04-private-fee-trail.png",
+      "dimensions": "1600 x 900",
+      "bytes": 432400,
+      "sha256": "e4569d1d30b5e89cae6859420658309e3d60061294583da930bda0cfc8bcdc29"
+    },
+    {
+      "filename": "F05-historical-state-replay-controls.png",
+      "dimensions": "1600 x 900",
+      "bytes": 403572,
+      "sha256": "8125db19034878b635ccc873f799532371cb114f31e0d697c35470a7b1550d88"
+    },
+    {
+      "filename": "F06-evidence-taxonomy.png",
+      "dimensions": "1600 x 900",
+      "bytes": 473182,
+      "sha256": "f1388609534be89b1f1a3af9611a661a9c544312a49f5d2fa7c0c7eff9228c23"
+    },
+    {
+      "filename": "F07-two-routes-one-private-endpoint.png",
+      "dimensions": "1600 x 900",
+      "bytes": 534239,
+      "sha256": "7608e30b8014a6ab835c87f992e380522e9e2a2e3e6e85fca4ba5317f8ed7619"
+    }
+  ],
+  "verified_utc": "2026-11-21T19:18:27.474445+00:00",
+  "scope_note": "F04/F05 original-first-cohort visuals; second-cohort fee and replay addenda are verified in separate public source files, not already plotted in these frozen PNGs"
+}

@@ -1,0 +1,371 @@
+{
+  "evidenceClass": "DESIGN_REBUILD_INTERACTIVE_ANIMATION_ACCESSIBILITY_AND_PROVENANCE_QA",
+  "testedUrl": "http://127.0.0.1:4180/rayls-wq3/",
+  "checkedAtUtc": "2026-11-21T01:55:31.243Z",
+  "passed": true,
+  "passCount": 70,
+  "testCount": 70,
+  "tests": [
+    {
+      "label": "desktop-motion.html200",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "desktop-motion.noEvidenceError",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "desktop-motion.fixedNavAndGuide",
+      "pass": true,
+      "details": "{\"nav\":\"fixed\",\"guide\":\"fixed\",\"mobileOverflow\":false,\"titleWhite\":\"rgb(249, 246, 255)\",\"heroLime\":\"rgb(231, 253, 76)\",\"sourceRecordCount\":26,\"storyActCount\":4}"
+    },
+    {
+      "label": "desktop-motion.whiteAndLimeHero",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "desktop-motion.noHorizontalOverflow",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "desktop-motion.sourceRegisterAnd4ActStory",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "desktop-motion.interactiveScrollChangesAct",
+      "pass": true,
+      "details": "{\"active\":[\"2\"],\"index\":\"03\",\"fraction\":\"68\"}"
+    },
+    {
+      "label": "desktop-motion.guideOpens",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "desktop-motion.guideHonesty",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "desktop-motion.guideCloses",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "desktop-motion.lensReactsToInput",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "desktop-motion.actualPrivateFeeSelectable",
+      "pass": true,
+      "details": "{\"gross\":\"4.41600000\",\"base\":\"3.84000000 RLS\",\"foundation\":\"0.57600000 RLS\",\"href\":\"https://testnet-explorer.rayls.com/tx/0x77ff894ed5be5694a806d0b7c17666be0bbe5dbf64a4340eb10374fa04f11bdb\",\"pressed\":\"true\"}"
+    },
+    {
+      "label": "desktop-motion.actualPublicShieldFeeSelectable",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "desktop-motion.secondPrivateReceiptTabAccurate",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "desktop-motion.routeStudySourceAccurate",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "desktop-motion.motionPauseWorks",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "desktop-motion.motionResumeWorks",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "desktop-motion.noRuntimeErrors",
+      "pass": true,
+      "details": "[]"
+    },
+    {
+      "label": "mobile-motion.html200",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "mobile-motion.noEvidenceError",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "mobile-motion.fixedNavAndGuide",
+      "pass": true,
+      "details": "{\"nav\":\"fixed\",\"guide\":\"fixed\",\"mobileOverflow\":false,\"titleWhite\":\"rgb(249, 246, 255)\",\"heroLime\":\"rgb(231, 253, 76)\",\"sourceRecordCount\":26,\"storyActCount\":4}"
+    },
+    {
+      "label": "mobile-motion.whiteAndLimeHero",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "mobile-motion.noHorizontalOverflow",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "mobile-motion.sourceRegisterAnd4ActStory",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "mobile-motion.allStoriesReadableWithoutScrollPin",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "mobile-motion.guideOpens",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "mobile-motion.guideHonesty",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "mobile-motion.guideCloses",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "mobile-motion.lensReactsToInput",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "mobile-motion.actualPrivateFeeSelectable",
+      "pass": true,
+      "details": "{\"gross\":\"4.41600000\",\"base\":\"3.84000000 RLS\",\"foundation\":\"0.57600000 RLS\",\"href\":\"https://testnet-explorer.rayls.com/tx/0x77ff894ed5be5694a806d0b7c17666be0bbe5dbf64a4340eb10374fa04f11bdb\",\"pressed\":\"true\"}"
+    },
+    {
+      "label": "mobile-motion.actualPublicShieldFeeSelectable",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "mobile-motion.secondPrivateReceiptTabAccurate",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "mobile-motion.routeStudySourceAccurate",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "mobile-motion.motionPauseWorks",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "mobile-motion.motionResumeWorks",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "mobile-motion.noRuntimeErrors",
+      "pass": true,
+      "details": "[]"
+    },
+    {
+      "label": "tablet-reduced.html200",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "tablet-reduced.noEvidenceError",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "tablet-reduced.fixedNavAndGuide",
+      "pass": true,
+      "details": "{\"nav\":\"fixed\",\"guide\":\"fixed\",\"mobileOverflow\":false,\"titleWhite\":\"rgb(249, 246, 255)\",\"heroLime\":\"rgb(231, 253, 76)\",\"sourceRecordCount\":26,\"storyActCount\":4}"
+    },
+    {
+      "label": "tablet-reduced.whiteAndLimeHero",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "tablet-reduced.noHorizontalOverflow",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "tablet-reduced.sourceRegisterAnd4ActStory",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "tablet-reduced.allStoriesReadableWithoutScrollPin",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "tablet-reduced.guideOpens",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "tablet-reduced.guideHonesty",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "tablet-reduced.guideCloses",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "tablet-reduced.lensReactsToInput",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "tablet-reduced.actualPrivateFeeSelectable",
+      "pass": true,
+      "details": "{\"gross\":\"4.41600000\",\"base\":\"3.84000000 RLS\",\"foundation\":\"0.57600000 RLS\",\"href\":\"https://testnet-explorer.rayls.com/tx/0x77ff894ed5be5694a806d0b7c17666be0bbe5dbf64a4340eb10374fa04f11bdb\",\"pressed\":\"true\"}"
+    },
+    {
+      "label": "tablet-reduced.actualPublicShieldFeeSelectable",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "tablet-reduced.secondPrivateReceiptTabAccurate",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "tablet-reduced.routeStudySourceAccurate",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "tablet-reduced.reducedMotionIsHonored",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "tablet-reduced.noRuntimeErrors",
+      "pass": true,
+      "details": "[]"
+    },
+    {
+      "label": "desktop-reduced.html200",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "desktop-reduced.noEvidenceError",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "desktop-reduced.fixedNavAndGuide",
+      "pass": true,
+      "details": "{\"nav\":\"fixed\",\"guide\":\"fixed\",\"mobileOverflow\":false,\"titleWhite\":\"rgb(249, 246, 255)\",\"heroLime\":\"rgb(231, 253, 76)\",\"sourceRecordCount\":26,\"storyActCount\":4}"
+    },
+    {
+      "label": "desktop-reduced.whiteAndLimeHero",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "desktop-reduced.noHorizontalOverflow",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "desktop-reduced.sourceRegisterAnd4ActStory",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "desktop-reduced.allStoriesReadableWithoutScrollPin",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "desktop-reduced.guideOpens",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "desktop-reduced.guideHonesty",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "desktop-reduced.guideCloses",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "desktop-reduced.lensReactsToInput",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "desktop-reduced.actualPrivateFeeSelectable",
+      "pass": true,
+      "details": "{\"gross\":\"4.41600000\",\"base\":\"3.84000000 RLS\",\"foundation\":\"0.57600000 RLS\",\"href\":\"https://testnet-explorer.rayls.com/tx/0x77ff894ed5be5694a806d0b7c17666be0bbe5dbf64a4340eb10374fa04f11bdb\",\"pressed\":\"true\"}"
+    },
+    {
+      "label": "desktop-reduced.actualPublicShieldFeeSelectable",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "desktop-reduced.secondPrivateReceiptTabAccurate",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "desktop-reduced.routeStudySourceAccurate",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "desktop-reduced.reducedMotionIsHonored",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "label": "desktop-reduced.noRuntimeErrors",
+      "pass": true,
+      "details": "[]"
+    }
+  ],
+  "screenshotsCaptured": 24,
+  "publishedPreviewImages": [
+    "design-previews/desktop-hero.png",
+    "design-previews/desktop-story.png",
+    "design-previews/desktop-fee-lab.png",
+    "design-previews/mobile-hero.png",
+    "design-previews/mobile-fee-lab.png"
+  ],
+  "publishedSourcePublicAndImmutableVerified": true,
+  "archiveSHA256": "310daaee8867db412fdbc9ad1bd10553e4d02671b9f9db10f23258cefc2ed0a9",
+  "evidenceBoundary": "Website-only visual/interactivity revision. No new blockchain transaction or new scientific control; frozen 172-file research evidence archive unchanged."
+}

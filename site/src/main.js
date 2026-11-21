@@ -1,5 +1,10 @@
 import "./style.css";
+import "./experience-core.css";
+import "./experience-story.css";
+import "./experience-interactions.css";
+import "./experience-responsive.css";
 import gsap from "gsap";
+import {initResearchExperience} from "./experience.js";
 
 const $ = s => document.querySelector(s);
 const $$ = s => [...document.querySelectorAll(s)];
@@ -26,7 +31,8 @@ function startup(){
   animate=!animate;motionBtn.setAttribute("aria-pressed",String(!animate));
   motionBtn.setAttribute("aria-label",animate?"Pause motion":"Resume motion");
   motionBtn.title=animate?"Pause motion":"Resume motion";
-  stopHero(!animate);
+  document.documentElement.classList.toggle("motion-paused",!animate);
+  window.dispatchEvent(new CustomEvent("researchmotion",{detail:{enabled:animate}}));
  });
  const menu=$("#menu-toggle"),nav=$(".nav-center");
  menu?.addEventListener("click",()=>{
@@ -157,6 +163,7 @@ function renderProof(){
   if(nodes.length===2){nodes[0].textContent=r.from;nodes[1].textContent=r.to}
   link.href=explorer(r.hash);
   graphic.setAttribute("aria-label",r.title+": "+r.from+" to "+r.to+". Illustrative topology only.");
+  document.dispatchEvent(new CustomEvent("proofchange",{detail:{key,block:r.block,tx:r.hash}}));
  };
  tabs.forEach((tab,i)=>{
   tab.addEventListener("click",()=>select(tab.dataset.proof));
@@ -351,7 +358,8 @@ async function main(){
   const response=await fetch(root+"data/evidence.json",{cache:"no-store"});
   if(!response.ok)throw Error("Evidence JSON not found");
   evidence=validData(await response.json());
-  renderRoutes();renderProof();renderFees();renderComparison();renderRegister();renderReplay();copyCommands();animateReveals();heroVisual();
+  renderRoutes();renderProof();renderFees();renderComparison();renderRegister();renderReplay();copyCommands();
+  initResearchExperience({evidence,isMotionEnabled:()=>animate});
   const message=$(".status-line p");
   if(message)message.innerHTML="Two controlled testnet lifecycles verified: <strong>invitation-funded zero-public-funding onboarding</strong> and <strong>public-faucet onboarding followed by a private 3 RLS send</strong>. Both reached the same independently checked recipient.";
   const boundaries=$("#boundary-list");

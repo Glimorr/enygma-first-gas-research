@@ -21,6 +21,16 @@ Additional controls: **30 preselected time-shifted windows** around the original
 
 Historical RPC block state was later pruned on some older testnet heights. Source-dated replay responses are preserved and checked against original transaction calldata rather than falsely described as live-reproducible archive queries. Independent fresh receipt, block and log checks still run.
 
+## Interactive motion-first website (creative revision 03)
+
+The [live cinematic research experience](https://glimorr.github.io/enygma-first-gas-research/) is a completely reworked original visual journal, with a procedural 3D vault sculpture, four-act scroll-reactive private/public route map, oversized editorial type, kinetic lime/purple motion graphics, source-driven six-transaction proof viewer, public-versus-wallet evidence lens, actual-fee interaction, and an original animated Orbit research navigation guide. Orbit is **illustrative navigation**, not official Rayls or a real AI service.
+
+The experience keeps the user's preferred plum/lavender/lime palette and the authentic Rayls symbol. Key details are source-bound, keyboard usable and readable under reduced motion. The original research source/archive is **not changed by this visual redesign**.
+
+- [Interactive art direction & scientific boundaries](research/SITE_CREATIVE_REBUILD_20261121.md)
+- [Motion/accessibility/source-interaction QA](qa/CINEMATIC_REBUILD_INTERACTION_QA_REPORT.json) (70/70) and [source/responsiveness regression QA](qa/CINEMATIC_REBUILD_SOURCE_AND_RESPONSIVE_QA_REPORT.json) (72/72)
+- [Desktop visual preview](design-previews/desktop-hero.png) · [Four-act story](design-previews/desktop-story.png) · [Fee laboratory](design-previews/desktop-fee-lab.png) · [Mobile preview](design-previews/mobile-hero.png)
+
 ## Research artifacts
 
 - [Live interactive research website](https://glimorr.github.io/enygma-first-gas-research/)

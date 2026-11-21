@@ -1,0 +1,375 @@
+{
+  "evidence_class": "WEBSITE_BOTH_CONTROLLED_LIFECYCLES_PUBLIC_OR_LOCAL_BROWSER_QA",
+  "runUtc": "2026-11-21T01:59:15.654Z",
+  "passed": true,
+  "tests": [
+    {
+      "name": "desktop.htmlStatus",
+      "pass": true,
+      "details": "200"
+    },
+    {
+      "name": "desktop.title",
+      "pass": true,
+      "details": "The First-Gas Question \u2014 Independent Enygma Public Research"
+    },
+    {
+      "name": "desktop.statusAccurate",
+      "pass": true,
+      "details": "Two controlled testnet lifecycles verified: invitation-funded zero-public-funding onboarding and public-faucet onboarding followed by a private 3 RLS send. Both"
+    },
+    {
+      "name": "desktop.proofTabs",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "name": "desktop.claimTabContent",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "name": "desktop.registrationTabContent",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "name": "desktop.firstPrivateSendTabContent",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "name": "desktop.secondCohortProofTab",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "name": "desktop.twoCohortCompareSection",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "name": "desktop.inviteTabContent",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "name": "desktop.feeChartBars",
+      "pass": true,
+      "details": "bars=7"
+    },
+    {
+      "name": "desktop.privateFeeRows",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "name": "desktop.replayRows",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "name": "desktop.evidenceRows",
+      "pass": true,
+      "details": "rows=26"
+    },
+    {
+      "name": "desktop.routeControl",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "name": "desktop.noHorizontalOverflow",
+      "pass": true,
+      "details": "{\"max\":1440,\"windowW\":1440,\"hasHorizontalOverflow\":false,\"hasH1\":true}"
+    },
+    {
+      "name": "desktop.asset0",
+      "pass": true,
+      "details": "rayls-symbol-gradient-bdQpaj60.png 200"
+    },
+    {
+      "name": "desktop.asset1",
+      "pass": true,
+      "details": "rayls-symbol-gradient-bdQpaj60.png 200"
+    },
+    {
+      "name": "desktop.asset2",
+      "pass": true,
+      "details": "rayls-symbol-gradient-bdQpaj60.png 200"
+    },
+    {
+      "name": "desktop.asset3",
+      "pass": true,
+      "details": "rayls-wq3-two-cohort-evidence.zip 200"
+    },
+    {
+      "name": "desktop.screenshot",
+      "pass": true,
+      "details": "/mnt/e/Rayls-Nov-Week3/recording/site-previews/cinematic-v2-final-legacy-suite/desktop-checkpoint.png"
+    },
+    {
+      "name": "desktop.noPageError",
+      "pass": true,
+      "details": "[]"
+    },
+    {
+      "name": "desktop.noInternalRequestError",
+      "pass": true,
+      "details": "[]"
+    },
+    {
+      "name": "desktop.noConsoleErrors",
+      "pass": true,
+      "details": "[]"
+    },
+    {
+      "name": "tablet.htmlStatus",
+      "pass": true,
+      "details": "200"
+    },
+    {
+      "name": "tablet.title",
+      "pass": true,
+      "details": "The First-Gas Question \u2014 Independent Enygma Public Research"
+    },
+    {
+      "name": "tablet.statusAccurate",
+      "pass": true,
+      "details": "Two controlled testnet lifecycles verified: invitation-funded zero-public-funding onboarding and public-faucet onboarding followed by a private 3 RLS send. Both"
+    },
+    {
+      "name": "tablet.proofTabs",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "name": "tablet.claimTabContent",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "name": "tablet.registrationTabContent",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "name": "tablet.firstPrivateSendTabContent",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "name": "tablet.secondCohortProofTab",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "name": "tablet.twoCohortCompareSection",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "name": "tablet.inviteTabContent",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "name": "tablet.feeChartBars",
+      "pass": true,
+      "details": "bars=7"
+    },
+    {
+      "name": "tablet.privateFeeRows",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "name": "tablet.replayRows",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "name": "tablet.evidenceRows",
+      "pass": true,
+      "details": "rows=26"
+    },
+    {
+      "name": "tablet.routeControl",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "name": "tablet.noHorizontalOverflow",
+      "pass": true,
+      "details": "{\"max\":900,\"windowW\":900,\"hasHorizontalOverflow\":false,\"hasH1\":true}"
+    },
+    {
+      "name": "tablet.asset0",
+      "pass": true,
+      "details": "rayls-symbol-gradient-bdQpaj60.png 200"
+    },
+    {
+      "name": "tablet.asset1",
+      "pass": true,
+      "details": "rayls-symbol-gradient-bdQpaj60.png 200"
+    },
+    {
+      "name": "tablet.asset2",
+      "pass": true,
+      "details": "rayls-symbol-gradient-bdQpaj60.png 200"
+    },
+    {
+      "name": "tablet.asset3",
+      "pass": true,
+      "details": "rayls-wq3-two-cohort-evidence.zip 200"
+    },
+    {
+      "name": "tablet.screenshot",
+      "pass": true,
+      "details": "/mnt/e/Rayls-Nov-Week3/recording/site-previews/cinematic-v2-final-legacy-suite/tablet-checkpoint.png"
+    },
+    {
+      "name": "tablet.noPageError",
+      "pass": true,
+      "details": "[]"
+    },
+    {
+      "name": "tablet.noInternalRequestError",
+      "pass": true,
+      "details": "[]"
+    },
+    {
+      "name": "tablet.noConsoleErrors",
+      "pass": true,
+      "details": "[]"
+    },
+    {
+      "name": "mobile.htmlStatus",
+      "pass": true,
+      "details": "200"
+    },
+    {
+      "name": "mobile.title",
+      "pass": true,
+      "details": "The First-Gas Question \u2014 Independent Enygma Public Research"
+    },
+    {
+      "name": "mobile.statusAccurate",
+      "pass": true,
+      "details": "Two controlled testnet lifecycles verified: invitation-funded zero-public-funding onboarding and public-faucet onboarding followed by a private 3 RLS send. Both"
+    },
+    {
+      "name": "mobile.proofTabs",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "name": "mobile.claimTabContent",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "name": "mobile.registrationTabContent",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "name": "mobile.firstPrivateSendTabContent",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "name": "mobile.secondCohortProofTab",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "name": "mobile.twoCohortCompareSection",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "name": "mobile.inviteTabContent",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "name": "mobile.feeChartBars",
+      "pass": true,
+      "details": "bars=7"
+    },
+    {
+      "name": "mobile.privateFeeRows",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "name": "mobile.replayRows",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "name": "mobile.evidenceRows",
+      "pass": true,
+      "details": "rows=26"
+    },
+    {
+      "name": "mobile.routeControl",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "name": "mobile.noHorizontalOverflow",
+      "pass": true,
+      "details": "{\"max\":390,\"windowW\":390,\"hasHorizontalOverflow\":false,\"hasH1\":true}"
+    },
+    {
+      "name": "mobile.asset0",
+      "pass": true,
+      "details": "rayls-symbol-gradient-bdQpaj60.png 200"
+    },
+    {
+      "name": "mobile.asset1",
+      "pass": true,
+      "details": "rayls-symbol-gradient-bdQpaj60.png 200"
+    },
+    {
+      "name": "mobile.asset2",
+      "pass": true,
+      "details": "rayls-symbol-gradient-bdQpaj60.png 200"
+    },
+    {
+      "name": "mobile.asset3",
+      "pass": true,
+      "details": "rayls-wq3-two-cohort-evidence.zip 200"
+    },
+    {
+      "name": "mobile.screenshot",
+      "pass": true,
+      "details": "/mnt/e/Rayls-Nov-Week3/recording/site-previews/cinematic-v2-final-legacy-suite/mobile-checkpoint.png"
+    },
+    {
+      "name": "mobile.noPageError",
+      "pass": true,
+      "details": "[]"
+    },
+    {
+      "name": "mobile.noInternalRequestError",
+      "pass": true,
+      "details": "[]"
+    },
+    {
+      "name": "mobile.noConsoleErrors",
+      "pass": true,
+      "details": "[]"
+    }
+  ],
+  "pendingContentIntentional": false,
+  "screenshotsCaptured": 3,
+  "publicScreenshots": [
+    "design-previews/desktop-hero.png",
+    "design-previews/mobile-hero.png"
+  ],
+  "displayTitle": "Cinematic revision 03 \u2014 original content/links/responsive regression suite",
+  "scientificEvidenceArchiveSHA256": "310daaee8867db412fdbc9ad1bd10553e4d02671b9f9db10f23258cefc2ed0a9"
+}

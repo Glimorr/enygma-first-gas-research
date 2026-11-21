@@ -3,26 +3,36 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="theme-color" content="#090711"/>
+  <meta name="theme-color" content="#090711"/><meta name="color-scheme" content="dark"/>
   <meta name="description" content="The First-Gas Question — an independently reproduced on-chain research study of Enygma Public. Public testnet evidence, source boundaries and live verification."/>
   <meta property="og:title" content="The First-Gas Question | Rayls Enygma Public — Independent Research"/>
-  <meta property="og:description" content="Public receipt research: 40 RLS shielding, 30 RLS private invitation envelope and precise fee accounting. The complete controlled first-gas onboarding and private spend are verified."/>
+  <meta property="og:description" content="Public receipt research: 40 RLS shielding, 30 RLS private invitation envelope and precise fee accounting. Two controlled private payments, two funding paths, one independently confirmed recipient and a reproducible research archive."/>
   <meta property="og:type" content="website"/>
   <link rel="icon" href="./assets/rayls-symbol-gradient.png" type="image/png"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
   <title>The First-Gas Question — Independent Enygma Public Research</title>
 </head>
 <body>
-<div id="loading" role="status" aria-live="polite"><img src="./assets/rayls-symbol-gradient.png" alt="" width="48" height="48"/><span>LOADING RESEARCH ARCHIVE…</span></div>
+<div id="loading" role="status" aria-live="polite"><div class="loader-assembly"><div class="loader-orbit loader-orbit-1"></div><div class="loader-orbit loader-orbit-2"></div><img src="./assets/rayls-symbol-gradient.png" alt="" width="48" height="48"/></div><span>AUTHENTICATING THE EVIDENCE</span><div class="loader-progress"><i></i></div><small>INDEPENDENT RESEARCH · TESTNET 7295799</small></div>
 <div id="app">
+  <div class="site-atmosphere" aria-hidden="true"><div class="atm-blob a"></div><div class="atm-blob b"></div><div class="atm-blob c"></div><div class="atm-grid"></div></div>
+  <div id="cursor-aura" aria-hidden="true"></div><div class="reading-progress" aria-hidden="true"><span id="reading-progress-fill"></span></div>
+  <div class="chapter-dots" aria-label="Navigate research chapters">
+    <a href="#hero" data-chapter="hero" aria-label="Introduction"><span>00</span><i></i><b>INTRO</b></a>
+    <a href="#journey" data-chapter="journey" aria-label="Journey"><span>01</span><i></i><b>JOURNEY</b></a>
+    <a href="#proof" data-chapter="proof" aria-label="Transaction proof"><span>02</span><i></i><b>PROOF</b></a>
+    <a href="#comparison" data-chapter="comparison" aria-label="Compare methods"><span>03</span><i></i><b>COMPARE</b></a>
+    <a href="#fees" data-chapter="fees" aria-label="Fee evidence"><span>04</span><i></i><b>FEES</b></a>
+    <a href="#reproduce" data-chapter="reproduce" aria-label="Reproduction"><span>05</span><i></i><b>SOURCES</b></a>
+  </div>
   <header id="top" class="nav-wrap">
     <nav class="nav panel" aria-label="Main navigation">
-      <a class="brand" href="#top" aria-label="The First-Gas Question home"><img src="./assets/rayls-symbol-gradient.png" alt="" width="33" height="33"/><span>THE FIRST-GAS <b>QUESTION</b></span></a>
-      <div class="nav-center"><a href="#experiment">Experiment</a><a href="#comparison">Compare</a><a href="#proof">Proof</a><a href="#fees">Fee study</a><a href="#reproduce">Reproduce</a></div>
+      <a class="brand" href="#top" aria-label="The First-Gas Question home"><span class="brand-mark"><img src="./assets/rayls-symbol-gradient.png" alt="" width="33" height="33"/></span><span class="brand-type"><strong>FIRST—GAS</strong><small>THE RESEARCH EDITION</small></span></a>
+      <div class="nav-center"><a href="#journey">The journey</a><a href="#experiment">Experiments</a><a href="#comparison">Compare</a><a href="#proof">Proof</a><a href="#fees">Fee study</a><a href="#reproduce">Reproduce</a></div>
       <div class="nav-actions">
-        <span class="network"><i></i> RAYLS TESTNET</span>
+        <span class="network"><i></i> 02 REAL LIFECYCLES <em>· TESTNET</em></span>
         <button id="motion-toggle" class="tiny-action" title="Pause or resume motion" aria-label="Pause motion"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></button>
         <button id="menu-toggle" class="tiny-action menu-btn" aria-label="Toggle navigation" aria-expanded="false"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
       </div>
@@ -30,20 +40,100 @@
   </header>
   <main>
     <section id="hero" class="hero">
-      <div class="hero-bg" aria-hidden="true"><div class="hero-halo"></div><canvas id="hero-canvas"></canvas><div class="hero-grain"></div></div>
+      <div class="hero-bg" aria-hidden="true"><div class="hero-halo"></div><div class="hero-aurora aurora-1"></div><div class="hero-aurora aurora-2"></div><canvas id="hero-canvas"></canvas><div class="hero-grain"></div><div class="hero-scanlines"></div></div>
+       <div class="hero-orbit-hud" aria-hidden="true"><div class="hud-head"><span class="hud-led"></span> ENYGMA / FIELD STUDY</div><div class="hud-orbit-line"></div><div class="hud-rows"><span>01&nbsp; PUBLIC</span><span>02&nbsp; SHIELDED</span></div><div class="hud-footer">SAME DESTINATION <span>◆</span> DIFFERENT FOOTPRINTS</div></div>
+       <div class="hero-index-rail" aria-hidden="true">R / 7295799 <i></i> NOV 2026 <i></i> 02 CONTROLLED ROUTES</div>
       <div class="hero-content container">
-        <p class="eyebrow reveal"><span class="line-mark"></span> AN INDEPENDENT ENYGMA PUBLIC INVESTIGATION <span class="eyebrow-num">RESEARCH EDITION · 02</span></p>
-        <h1 class="hero-head reveal">The <span>first-gas</span><br/>question<span class="period">.</span></h1>
+        <p class="eyebrow reveal"><span class="line-mark"></span> AN INDEPENDENT ENYGMA PUBLIC INVESTIGATION <span class="eyebrow-num">CASE FILE / 02 · 2026</span></p>
+        <h1 class="hero-head" aria-label="The first-gas question."><span class="hero-line"><span class="word"><span class="char-mask">The</span></span> <span class="word bright"><span class="char-mask">first-gas</span></span></span><span class="hero-line"><span class="word"><span class="char-mask">question</span></span><span class="period">.</span></span></h1>
         <div class="hero-bottom">
           <p class="hero-summary reveal">Can a newcomer receive, register and spend privately <em>without ever funding a public wallet?</em></p>
-          <div class="hero-ctas reveal"><a href="#experiment" class="pill-button primary">Enter the investigation <span>↗</span></a><a href="#proof" class="pill-button secondary">Explore the evidence <span>↗</span></a></div>
+          <div class="hero-ctas reveal"><a href="#journey" class="pill-button primary magnet">Enter the investigation <span>↗</span></a><a href="#proof" class="pill-button secondary magnet">Explore the receipts <span>↗</span></a></div>
         </div>
       </div>
-      <div class="hero-footer container"><span>CHAIN 7295799 · TESTNET ONLY</span><span class="scroll-cue">SCROLL TO INVESTIGATE <span>↓</span></span><span>NO PRODUCTION EXPLOIT CLAIMED</span></div>
+      <div class="hero-metrics container" aria-label="Key experiment outcomes"><div><span class="metric-number">02</span><small>REAL ONCHAIN<br/>PAYMENT PATHS</small></div><div><span class="metric-number">3 → 6</span><small>SHIELDED RLS<br/>RECEIVER WITNESS</small></div><div><span class="metric-number">182<span class="metric-tick">/182</span></span><small>EVIDENCE MUTATIONS<br/>REJECTED</small></div></div>
+       <div class="hero-footer container"><span>CHAIN 7295799 · TESTNET ONLY</span><span class="scroll-cue">SCROLL TO INVESTIGATE <span>↓</span></span><span>INDEPENDENT / NOT OFFICIAL</span></div>
     </section>
     <section class="status-line container" aria-label="Current research status">
       <div class="status-icon"><span class="pulse"></span> INDEPENDENT RESEARCH / NOV 2026</div><p>Shielding and invitation envelopes have been verified. <strong>The new passkey account claimed, registered and sent 3 RLS privately with zero public RLS funding.</strong></p><a href="#boundaries">Read boundaries ↗</a>
     </section>
+
+<section class="insight-marquee" aria-label="Key research distinctions"><div class="marquee-inner" aria-hidden="true"><span>NO PUBLIC BALANCE <i>✳</i> PUBLIC FUNDING TRAIL <i>✳</i> SAME PRIVATE DESTINATION <i>✳</i> DIFFERENT FIRST STEPS <i>✳</i> NO PUBLIC BALANCE <i>✳</i> PUBLIC FUNDING TRAIL <i>✳</i> SAME PRIVATE DESTINATION <i>✳</i> DIFFERENT FIRST STEPS <i>✳</i></span></div></section>
+
+<section id="journey" class="journey-scroll" aria-label="Interactive four-act explanation of two controlled payment routes">
+  <div class="journey-sticky">
+    <div class="journey-head container">
+      <div class="section-label"><span>00 / THE MOVING EVIDENCE</span><span>SCROLL TO FOLLOW THE TWO PATHS</span></div>
+      <div class="journey-topline"><span>RAYLS PUBLIC CHAIN · TESTNET</span><span>FOUR ACTS / TWO FUNDING ROUTES</span></div>
+    </div>
+    <div class="journey-main container">
+      <div class="journey-copy">
+        <div class="journey-step-id"><span>ACT</span> <strong id="journey-index">01</strong><span>/ 04</span></div>
+        <div class="journey-scenes">
+          <article class="journey-scene active" data-step="0">
+            <span class="scene-kicker"><i></i> THE COMMON START</span>
+            <h2>Every wallet<br/>starts at <em>zero.</em></h2>
+            <p>Two fresh passkeys. Both public balances were independently checked before their first funding event.</p>
+            <div class="scene-evidence"><span>BEFORE FUNDING</span><strong>PUBLIC RLS = 0</strong></div>
+          </article>
+          <article class="journey-scene" data-step="1">
+            <span class="scene-kicker"><i></i> THE PATH SPLITS</span>
+            <h2>One hidden<br/>entrance. <em>One visible.</em></h2>
+            <p><strong>@devil</strong> claimed a privately funded invitation. <strong>@rq3faucet26</strong> received 250 public RLS, then publicly shielded 20 RLS.</p>
+            <div class="scene-evidence"><span>FUNDING CONTRAST</span><strong>0 PUBLIC / 250 PUBLIC RLS</strong></div>
+          </article>
+          <article class="journey-scene" data-step="2">
+            <span class="scene-kicker"><i></i> TWO REAL PRIVATE SENDS</span>
+            <h2>Encrypted<br/>paths <em>converge.</em></h2>
+            <p>Both wallets sent 3 shielded RLS to the same controlled receiver. Each mined receipt contained one nullifier, three commitments and three encrypted notes.</p>
+            <div class="scene-evidence"><span>SHIELDED RECEIPTS</span><strong>2 × 3 RLS WALLET-OBSERVED</strong></div>
+          </article>
+          <article class="journey-scene" data-step="3">
+            <span class="scene-kicker"><i></i> THE INDEPENDENT WITNESS</span>
+            <h2>Don't trust<br/>the story. <em>Check.</em></h2>
+            <p>Reconnecting the recipient showed its shielded RLS rise from 3 to 6. The wallet corroborates the outcome; the public receipts authenticate the encrypted transactions.</p>
+            <div class="scene-evidence"><span>RECEIVER WALLET</span><strong>3 → 6 SHIELDED RLS</strong></div>
+          </article>
+        </div>
+        <div class="journey-actions"><a id="journey-link" class="journey-proof-link" href="#proof">Inspect the actual receipts ↗</a><div class="journey-counter"><span id="journey-pct">00</span><small>% OF STORY</small></div></div>
+      </div>
+      <div class="journey-diagram">
+        <div class="diagram-topcode"><span>CASE / 7295799</span><span>CONTROLLED TESTNET OBSERVATIONS</span></div>
+        <svg id="journey-map" viewBox="0 0 590 660" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustrative two-route diagram: invite-funded and publicly funded wallets converge on same receiver">
+          <defs>
+            <linearGradient id="routeMint" x1="60" y1="65" x2="420" y2="610"><stop stop-color="#e7fd4c"/><stop offset="1" stop-color="#bbec7c"/></linearGradient>
+            <linearGradient id="routeViolet" x1="520" y1="65" x2="320" y2="610"><stop stop-color="#ae91ed"/><stop offset="1" stop-color="#7e5ce5"/></linearGradient>
+            <filter id="jglow"><feGaussianBlur stdDeviation="9"/></filter>
+          </defs>
+          <circle cx="295" cy="328" r="253" stroke="#46355d" stroke-opacity=".52" stroke-dasharray="2 12"/>
+          <circle cx="295" cy="328" r="187" stroke="#8a6bb5" stroke-opacity=".28"/>
+          <circle cx="295" cy="328" r="109" stroke="#8a6bb5" stroke-opacity=".16"/>
+          <path d="M132 82 C82 170 79 250 138 311 S216 398 295 563" stroke="#e7fd4c" stroke-opacity=".22" stroke-width="19" filter="url(#jglow)"/>
+          <path d="M455 82 C503 178 501 251 455 322 S377 402 295 563" stroke="#ae91ed" stroke-opacity=".27" stroke-width="19" filter="url(#jglow)"/>
+          <path id="path-invite" d="M132 82 C82 170 79 250 138 311 S216 398 295 563" stroke="url(#routeMint)" stroke-width="3" stroke-linecap="round"/>
+          <path id="path-faucet" d="M455 82 C503 178 501 251 455 322 S377 402 295 563" stroke="url(#routeViolet)" stroke-width="3" stroke-linecap="round"/>
+          <path d="M132 84 Q292 56 455 84" stroke="#b49cd1" stroke-opacity=".43" stroke-dasharray="3 8"/>
+          <circle cx="132" cy="82" r="38" fill="#202b1d" stroke="#e7fd4c" stroke-width="2"/>
+          <circle cx="455" cy="82" r="38" fill="#2b1c3b" stroke="#ae91ed" stroke-width="2"/>
+          <text x="132" y="89" text-anchor="middle" fill="#e7fd4c" font-size="16" font-family="monospace">A</text>
+          <text x="455" y="89" text-anchor="middle" fill="#d0bcff" font-size="16" font-family="monospace">B</text>
+          <circle cx="138" cy="311" r="11" fill="#e7fd4c"/>
+          <circle cx="455" cy="322" r="11" fill="#ae91ed"/>
+          <circle cx="295" cy="563" r="54" fill="#1a1529" stroke="#a5dfc9" stroke-width="2"/>
+          <circle cx="295" cy="563" r="40" stroke="#a5dfc9" stroke-opacity=".35" stroke-dasharray="3 8"/>
+          <path d="M281 562 L292 574 L310 552" stroke="#a5dfc9" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="132" y="145" text-anchor="middle" fill="#d7f5a4" font-size="13" font-family="monospace">@devil</text>
+          <text x="455" y="145" text-anchor="middle" fill="#c0a7e9" font-size="13" font-family="monospace">@rq3faucet26</text>
+          <text x="295" y="638" text-anchor="middle" fill="#b1eed7" font-size="14" font-family="monospace">@rq3dev26 · RECEIVER</text>
+          <circle id="route-particle-a" cx="132" cy="82" r="11" fill="#e7fd4c"/>
+          <circle id="route-particle-b" cx="455" cy="82" r="11" fill="#ae91ed"/>
+        </svg>
+        <div class="diagram-bottomcode"><span class="diagram-dot green"></span> PRIVATE INVITATION <span class="diagram-dot purple"></span> PUBLIC FAUCET</div>
+      </div>
+    </div>
+    <div class="journey-rail container"><div class="journey-rail-line"><i id="journey-rail-fill"></i></div><div class="journey-stops"><button data-story-step="0" aria-label="Jump to initial balance stage" class="active">01 / BASELINE</button><button data-story-step="1" aria-label="Jump to funding comparison">02 / FUNDING</button><button data-story-step="2" aria-label="Jump to private payment stage">03 / ENCRYPTED</button><button data-story-step="3" aria-label="Jump to recipient evidence">04 / VERIFIED</button></div></div>
+  </div>
+</section>
     <section id="experiment" class="chapter container">
       <div class="section-label"><span>01 / THE EXPERIMENT</span><span>ONE QUESTION · TWO COMPLETED ENTRY PATHS</span></div>
       <div class="section-head"><h2>Before the first<br/><em>public balance.</em></h2><p>Private onboarding is not a single transaction. It is a sequence of funding, registration, note creation, gas sponsorship and claiming. We separate the mechanisms—and refuse to equate an encrypted receipt with a finished payment.</p></div>
@@ -74,11 +164,14 @@
       <div class="section-head"><h2>Public deposits.<br/><em>Private sends.</em></h2><p>Switch between independently reconstructed public receipts. The chain verifies inclusion, status, contract events and transparent token transfers. The research deliberately separates those facts from what only the owner’s wallet can observe.</p></div>
       <div class="proof-layout">
         <div class="proof-tabs panel"><div class="tab-list" role="tablist" aria-label="Select transaction"><button class="tab active" role="tab" aria-selected="true" data-proof="shield">01 Public shield</button><button class="tab" role="tab" aria-selected="false" data-proof="invite">02 Private invitation</button><button class="tab" role="tab" aria-selected="false" data-proof="claim">03 Private claim</button><button class="tab" role="tab" aria-selected="false" data-proof="register">04 Registration</button><button class="tab" role="tab" aria-selected="false" data-proof="spend">05 Invite-funded send</button><button class="tab" role="tab" aria-selected="false" data-proof="second">06 Public-funded send</button></div>
-          <div id="proof-meta" class="proof-meta"></div><div id="proof-graphic" class="proof-graphic" aria-label="Diagram of public events"><div class="diagram-node emitter">SOURCE</div><div class="beam"><i></i><i></i><i></i></div><div class="diagram-node receiver">VAULT</div></div>
+          <div id="proof-meta" class="proof-meta"></div><div id="proof-graphic" class="proof-graphic" aria-label="Diagram of public events"><div class="diagram-node emitter">SOURCE</div><div class="beam"><i></i><i></i><i></i><b class="beam-particle p1"></b><b class="beam-particle p2"></b><b class="beam-particle p3"></b></div><div class="diagram-node receiver">VAULT</div></div>
           <div class="proof-event-legend"><span><i class="dot lime"></i> PUBLIC EVENT</span><span><i class="dot violet"></i> ENCRYPTED OUTPUT</span></div>
         </div>
         <div class="proof-sidebar panel"><p class="sidebar-eyebrow">VERIFICATION LOG</p><div id="proof-readout"></div><div class="proof-bottom"><div class="proof-check"><span class="checkicon">✓</span> RECEIPT / BLOCK / LOGS RECONCILED</div><a id="proof-tx-link" href="#" target="_blank" rel="noopener noreferrer" class="pill-button dark">Open public receipt ↗</a></div></div>
       </div>
+    </section>
+    <section class="kinetic-break" aria-label="Funding-route contrast">
+      <div class="kinetic-inner"><div class="kinetic-row" data-kinetic="a">PUBLIC <span>ENTRY.</span></div><div class="kinetic-row" data-kinetic="b">PRIVATE <span>EXIT.</span></div><div class="kinetic-caption"><span>THE FOOTPRINT CHANGES. THE EVIDENCE STANDARD DOESN'T.</span><span>CASE 02 / 2026</span></div></div>
     </section>
     <section id="comparison" class="chapter container">
       <div class="section-label"><span>THE SECOND CONTROLLED LIFECYCLE</span><span>DIFFERENT FUNDING · SAME PRIVATE RECEIVER</span></div>
@@ -88,6 +181,27 @@
         <strong>RECEIVER CONTROL · 3 → 6 RLS SHIELDED</strong>
         <p>The first private send left the separate recipient wallet showing 3 shielded RLS. After the second, a fresh read-only account check showed 6. These are owner-wallet observations, not private note amounts decoded from public chain events.</p>
       </div>
+      <div class="visibility-lens" id="visibility-lens" aria-label="Interactive comparison of public-chain and owner-wallet evidence">
+  <div class="lens-header"><div><span class="lens-overline">THE EVIDENCE LENS / MOVE THE DIVIDER</span><h3>What can the <em>observer</em> actually see?</h3></div><div class="lens-legend"><span><i class="lens-disc purple"></i> PUBLIC CHAIN</span><span><i class="lens-disc green"></i> WALLET-ONLY</span></div></div>
+  <div class="lens-window" style="--lens:50%">
+    <div class="lens-side lens-public">
+      <span class="lens-kicker">01 / PUBLIC RPC</span>
+      <strong>Amounts<br/>at <i>entry.</i></strong>
+      <p>250 public RLS funding and a 20 RLS Shield are visible for @rq3faucet26. The @devil account remained publicly unfunded. The two private sends leave encrypted-note events, not plaintext payment amounts or payees.</p>
+      <span class="lens-chip">TRANSPARENT FUNDING & ENCRYPTED RECEIPTS</span>
+    </div>
+    <div class="lens-side lens-wallet">
+      <span class="lens-kicker">02 / CONTROLLED OWNER WALLETS</span>
+      <strong>Amounts<br/><i>sent privately.</i></strong>
+      <p>Two controlled wallets each sent 3 shielded RLS. The independently connected recipient's shielded balance read 3 RLS after the first and 6 RLS after the second.</p>
+      <span class="lens-chip">OWNER-WALLET OBSERVATION</span>
+    </div>
+    <div class="lens-divider" aria-hidden="true"><span>⇆</span></div>
+  </div>
+  <label class="lens-range-label" for="lens-range"><span>CHAIN VIEW</span><span>MOVE TO EXPLORE SOURCE DIFFERENCES</span><span>WALLET VIEW</span></label>
+  <input id="lens-range" type="range" min="16" max="84" step="1" value="50" aria-label="Adjust the visual evidence lens"/>
+  <p class="lens-caveat">This is an illustrative comparison interface, not a decryption tool. Public vault logs alone do not reveal private payment principals or recipients.</p>
+</div>
     </section>
     <section id="fees" class="chapter fee-section">
       <div class="container"><div class="section-label"><span>04 / THE FEE TRAIL</span><span>A SECONDARY EXPLORATORY STUDY</span></div>
@@ -97,6 +211,26 @@
         <div class="fee-chart-panel panel"><div class="chart-head"><div><p class="sidebar-eyebrow">CONTROL SAMPLE</p><h3>Payment to payout</h3></div><span>3–9 BLOCKS</span></div><div id="payout-chart" class="payout-chart" role="img" aria-label="Histogram of delays from relayer fee event to reported-treasury payout"></div><div class="chart-footer"><span>18 PAID CASES · 2 ZERO-FEE CONTROLS</span><span>SELECTED SAMPLE · NOT A NETWORK ESTIMATE</span></div></div>
       </div>
       <div class="private-metadata panel"><div class="private-metadata-header"><span>CONTROLLED PRIVATE OPERATIONS</span><strong>Fee metadata is not private principal</strong></div><div id="private-fee-notes"></div><div class="private-metadata-source"><a href="https://testnet-explorer.rayls.com/tx/0x3650f335ce12fe0c2ad4616aa7d595503e44e18b141e35121fc7cc7f077377f1" target="_blank" rel="noopener noreferrer">Invite treasury receipt ↗</a><a href="https://testnet-explorer.rayls.com/tx/0xc9e3b527d27b152bde59a9529679dcbf2d4237dda1c7f7c2564ad9cff18ab116" target="_blank" rel="noopener noreferrer">Claim treasury receipt ↗</a><a href="https://testnet-explorer.rayls.com/tx/0x1e98495ef31b41a8dab93f1a2b284f81991987000a3c69c958287e82f6e9fa8f" target="_blank" rel="noopener noreferrer">Second send treasury receipt ↗</a></div></div>
+      <div class="fee-laboratory" id="fee-laboratory">
+  <div class="lab-left">
+    <span class="lab-eyebrow">READ THE FEE RECEIPT / TWO VERIFIED CASES</span>
+    <h3>The maths is<br/><em>out in the open.</em></h3>
+    <p>Switch between two independently reconstructed payments. The reported Foundation share is 15% of the base fee, meaning <strong>15/115 of gross</strong>, not 15% of the gross quote.</p>
+    <div class="fee-switch" role="group" aria-label="Choose a verified fee case">
+      <button class="active" data-fee-case="shield" aria-pressed="true">20 RLS PUBLIC SHIELD</button>
+      <button data-fee-case="private" aria-pressed="false">3 RLS PRIVATE SEND</button>
+    </div>
+    <a id="fee-case-link" href="https://testnet-explorer.rayls.com/tx/0x412a30dfaf94a75b25efbc02edf0f63a6de4846d89392c945e6f9b5b7be5c6b7" target="_blank" rel="noopener noreferrer">OPEN THE ACTUAL PUBLIC RECEIPT ↗</a>
+  </div>
+  <div class="lab-viz">
+    <div class="fee-orb"><div class="fee-orb-core"><span>GROSS RELAYER FEE</span><strong id="lab-gross">3.52580064</strong><small>RLS</small></div></div>
+    <div class="lab-numbers">
+      <div><span><i></i> BASE SERVICE FEE</span><strong id="lab-base">3.06591360 RLS</strong></div>
+      <div><span><i></i> REPORTED FOUNDATION SHARE</span><strong id="lab-foundation">0.45988704 RLS</strong></div>
+    </div>
+    <span class="lab-method" id="lab-method">PUBLIC SHIELD · TRANSPARENT ERC-20 RECEIPT</span>
+  </div>
+</div>
       <p class="scientific-note">In the four selected private operations, 4/4 produced a nearby reported-treasury payout. This is not a network-wide rate. The treasury address is reported by the relayer configuration; its legal ownership is not independently authenticated. Matching transfers and timing support the fee-routing observation, not an audited institution-wide payout guarantee.</p></div>
     </section>
     <section id="boundaries" class="chapter container boundaries">
@@ -131,9 +265,30 @@ python3 qa/verify_private_fee_shifted_nulls.py</code></pre><div class="terminal-
       </div><div class="archive-downloads"><a href="./evidence/rayls-wq3-two-cohort-evidence.zip" target="_blank" rel="noopener noreferrer">Download reproducible research archive ↗</a><span>SHA-256 provenance available in archive manifest</span></div></div>
     </section>
     <section class="closing chapter container">
-      <span class="close-pip">✳</span><h2>Privacy is a claim.<br/><em>Evidence is a method.</em></h2><p>Two separate researcher-controlled payment lifecycles are verified on Rayls Public Testnet. The invitation-funded @devil wallet claimed, registered and sent privately without public funds. The publicly funded @rq3faucet26 wallet registered, shielded 20 RLS transparently, then made the same 3 RLS private send. The recipient's shielded balance increased from 3 to 6 RLS. This is one complete test per different onboarding method, not a mainnet privacy guarantee.</p><div class="closing-links"><a href="#proof" class="pill-button primary">Explore verified transactions ↗</a><a href="#reproduce" class="pill-button secondary">Reproduce the checks ↗</a></div>
+      <div class="closing-orbit" aria-hidden="true"><span class="orbit-core"></span><span class="orbit-track track1"></span><span class="orbit-track track2"></span><span class="orbit-track track3"></span></div><span class="close-pip">✳</span><h2>Privacy is a claim.<br/><em>Evidence is a method.</em></h2><p>Two separate researcher-controlled payment lifecycles are verified on Rayls Public Testnet. The invitation-funded @devil wallet claimed, registered and sent privately without public funds. The publicly funded @rq3faucet26 wallet registered, shielded 20 RLS transparently, then made the same 3 RLS private send. The recipient's shielded balance increased from 3 to 6 RLS. This is one complete test per different onboarding method, not a mainnet privacy guarantee.</p><div class="closing-links"><a href="#proof" class="pill-button primary">Explore verified transactions ↗</a><a href="#reproduce" class="pill-button secondary">Reproduce the checks ↗</a></div>
     </section>
   </main>
+  <div class="guide" id="research-guide" data-open="false">
+  <div class="guide-panel" id="guide-panel" role="region" aria-label="Research navigation guide" hidden>
+    <div class="guide-panel-top"><div><span class="guide-mini-pip"></span><strong>ORBIT / YOUR RESEARCH GUIDE</strong></div><button id="guide-close" aria-label="Close research guide">×</button></div>
+    <div class="guide-panel-main">
+      <span class="guide-timestamp" id="guide-chapter">NOW VIEWING · THE FIRST QUESTION</span>
+      <p id="guide-message">Follow two real testnet payment paths. Compare what public chain data proves with what the separate wallet owners observed.</p>
+      <div class="guide-actions"><button data-guide-target="journey">Follow the story <span>↗</span></button><button data-guide-target="proof">See actual proof <span>↗</span></button><button data-guide-target="reproduce">Check the sources <span>↗</span></button></div>
+    </div>
+    <p class="guide-disclaimer">An illustrated research companion, not a Rayls assistant or live AI.</p>
+  </div>
+  <button id="guide-toggle" class="guide-trigger" aria-label="Open research navigation guide" aria-expanded="false" aria-controls="guide-panel">
+    <span class="guide-robot" aria-hidden="true">
+      <span class="guide-antenna"></span>
+      <span class="guide-head"><i class="eye eye-l"></i><i class="eye eye-r"></i><i class="robot-mouth"></i></span>
+      <span class="guide-body"><i></i></span>
+      <span class="guide-spark s1"></span><span class="guide-spark s2"></span>
+    </span>
+    <span class="guide-trigger-label"><strong>MEET ORBIT</strong><small>YOUR EVIDENCE GUIDE</small></span>
+    <span class="guide-trigger-arrow">↗</span>
+  </button>
+</div>
   <footer class="footer container"><div><img src="./assets/rayls-symbol-gradient.png" alt="" width="31" height="31"/><strong>THE FIRST-GAS QUESTION</strong></div><p>INDEPENDENT RESEARCH · NOT AFFILIATED WITH RAYLS LABS</p><div><a href="https://docs.rayls.com/docs/enygma-public" target="_blank" rel="noopener noreferrer">DOCS ↗</a><a href="https://testnet-explorer.rayls.com/" target="_blank" rel="noopener noreferrer">EXPLORER ↗</a><a href="#top">TOP ↑</a></div></footer>
 </div>
 <script type="module" src="./src/main.js"></script>

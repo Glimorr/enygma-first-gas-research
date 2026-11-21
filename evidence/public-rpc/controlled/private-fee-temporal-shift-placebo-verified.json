@@ -1,0 +1,455 @@
+{
+  "evidence_class": "CONTROLLED_PRIVATE_FEE_TRACES_VS_30_FIXED_TEMPORAL_SHIFT_PLACEBO_WINDOWS",
+  "generatedUtc": "2026-11-21T00:24:56.827325+00:00",
+  "chainId": 7295799,
+  "method": {
+    "selection": "Three already-mined researcher-controlled private cases",
+    "anchorBlocks": [
+      24744028,
+      24747924,
+      24760126
+    ],
+    "fixedOffsets": [
+      -1024,
+      -768,
+      -512,
+      -256,
+      -128,
+      128,
+      256,
+      512,
+      768,
+      1024
+    ],
+    "windowRelativeStart": -12,
+    "windowRelativeEnd": 25,
+    "windowWidthBlocks": 38,
+    "nullifierContract": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+    "reportedRelayer": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+    "reportedTreasury": "0x71AF09966CBED4434ccA97c40Fa38B8083548B95",
+    "erc20Token": "0x07e17E17e17E17e17e17e17E17E17E17E17e17EA",
+    "controlsPreregisteredInThisScriptBeforeLiveLogQueries": true,
+    "uniqueTransactionsDeduplicatedByHash": true,
+    "timeShiftedNotRandomizedOrTrafficMatched": true
+  },
+  "positiveCases": 3,
+  "positiveMatched": 3,
+  "shiftedWindowCount": 30,
+  "shiftedWindowsWithAnyTreasuryPayout": 0,
+  "shiftedWindowsWithExactlyOneTreasuryPayout": 0,
+  "shiftedWindowsWithAnyNullifierTx": 0,
+  "shiftedWindowsWithCloseVaultPayoutPair": 0,
+  "shiftedWindowsWithExactOriginalFeeShare": 0,
+  "windowsByCase": [
+    {
+      "stage": "invite",
+      "anchorBlock": 24744028,
+      "expectedTreasuryWei": "576000000000000000",
+      "positive": {
+        "offset": 0,
+        "windowStart": 24744016,
+        "windowEnd": 24744053,
+        "vaultNullifierTxCount": 1,
+        "treasuryTransferTxCount": 1,
+        "closeVaultToTreasuryPairs": [
+          {
+            "vaultTx": "0x6bedfee2032c1e1001c3dd5563df84d662cf965e0c7e3f301751a9b458d3c0ab",
+            "vaultHeight": 24744028,
+            "payoutTx": "0x3650f335ce12fe0c2ad4616aa7d595503e44e18b141e35121fc7cc7f077377f1",
+            "payoutHeight": 24744032,
+            "lag": 4,
+            "payoutWei": "576000000000000000"
+          }
+        ],
+        "expectedFeePayoutPresent": true,
+        "treasuryAmountsWei": [
+          "576000000000000000"
+        ]
+      },
+      "shiftedControls": [
+        {
+          "offset": -1024,
+          "windowStart": 24742992,
+          "windowEnd": 24743029,
+          "vaultNullifierTxCount": 0,
+          "treasuryTransferTxCount": 0,
+          "closeVaultToTreasuryPairs": [],
+          "expectedFeePayoutPresent": false,
+          "treasuryAmountsWei": []
+        },
+        {
+          "offset": -768,
+          "windowStart": 24743248,
+          "windowEnd": 24743285,
+          "vaultNullifierTxCount": 0,
+          "treasuryTransferTxCount": 0,
+          "closeVaultToTreasuryPairs": [],
+          "expectedFeePayoutPresent": false,
+          "treasuryAmountsWei": []
+        },
+        {
+          "offset": -512,
+          "windowStart": 24743504,
+          "windowEnd": 24743541,
+          "vaultNullifierTxCount": 0,
+          "treasuryTransferTxCount": 0,
+          "closeVaultToTreasuryPairs": [],
+          "expectedFeePayoutPresent": false,
+          "treasuryAmountsWei": []
+        },
+        {
+          "offset": -256,
+          "windowStart": 24743760,
+          "windowEnd": 24743797,
+          "vaultNullifierTxCount": 0,
+          "treasuryTransferTxCount": 0,
+          "closeVaultToTreasuryPairs": [],
+          "expectedFeePayoutPresent": false,
+          "treasuryAmountsWei": []
+        },
+        {
+          "offset": -128,
+          "windowStart": 24743888,
+          "windowEnd": 24743925,
+          "vaultNullifierTxCount": 0,
+          "treasuryTransferTxCount": 0,
+          "closeVaultToTreasuryPairs": [],
+          "expectedFeePayoutPresent": false,
+          "treasuryAmountsWei": []
+        },
+        {
+          "offset": 128,
+          "windowStart": 24744144,
+          "windowEnd": 24744181,
+          "vaultNullifierTxCount": 0,
+          "treasuryTransferTxCount": 0,
+          "closeVaultToTreasuryPairs": [],
+          "expectedFeePayoutPresent": false,
+          "treasuryAmountsWei": []
+        },
+        {
+          "offset": 256,
+          "windowStart": 24744272,
+          "windowEnd": 24744309,
+          "vaultNullifierTxCount": 0,
+          "treasuryTransferTxCount": 0,
+          "closeVaultToTreasuryPairs": [],
+          "expectedFeePayoutPresent": false,
+          "treasuryAmountsWei": []
+        },
+        {
+          "offset": 512,
+          "windowStart": 24744528,
+          "windowEnd": 24744565,
+          "vaultNullifierTxCount": 0,
+          "treasuryTransferTxCount": 0,
+          "closeVaultToTreasuryPairs": [],
+          "expectedFeePayoutPresent": false,
+          "treasuryAmountsWei": []
+        },
+        {
+          "offset": 768,
+          "windowStart": 24744784,
+          "windowEnd": 24744821,
+          "vaultNullifierTxCount": 0,
+          "treasuryTransferTxCount": 0,
+          "closeVaultToTreasuryPairs": [],
+          "expectedFeePayoutPresent": false,
+          "treasuryAmountsWei": []
+        },
+        {
+          "offset": 1024,
+          "windowStart": 24745040,
+          "windowEnd": 24745077,
+          "vaultNullifierTxCount": 0,
+          "treasuryTransferTxCount": 0,
+          "closeVaultToTreasuryPairs": [],
+          "expectedFeePayoutPresent": false,
+          "treasuryAmountsWei": []
+        }
+      ],
+      "wholeSpan": {
+        "start": 24742992,
+        "end": 24745077,
+        "vaultNullifierLogs": 1,
+        "treasuryPayoutLogs": 1
+      }
+    },
+    {
+      "stage": "claim",
+      "anchorBlock": 24747924,
+      "expectedTreasuryWei": "1656000000000000000",
+      "positive": {
+        "offset": 0,
+        "windowStart": 24747912,
+        "windowEnd": 24747949,
+        "vaultNullifierTxCount": 1,
+        "treasuryTransferTxCount": 1,
+        "closeVaultToTreasuryPairs": [
+          {
+            "vaultTx": "0x1c53886772c267e25f0d5c45d7dcc9ecc54246c4bfbf5e9202926f3f70959dec",
+            "vaultHeight": 24747924,
+            "payoutTx": "0xc9e3b527d27b152bde59a9529679dcbf2d4237dda1c7f7c2564ad9cff18ab116",
+            "payoutHeight": 24747926,
+            "lag": 2,
+            "payoutWei": "1656000000000000000"
+          }
+        ],
+        "expectedFeePayoutPresent": true,
+        "treasuryAmountsWei": [
+          "1656000000000000000"
+        ]
+      },
+      "shiftedControls": [
+        {
+          "offset": -1024,
+          "windowStart": 24746888,
+          "windowEnd": 24746925,
+          "vaultNullifierTxCount": 0,
+          "treasuryTransferTxCount": 0,
+          "closeVaultToTreasuryPairs": [],
+          "expectedFeePayoutPresent": false,
+          "treasuryAmountsWei": []
+        },
+        {
+          "offset": -768,
+          "windowStart": 24747144,
+          "windowEnd": 24747181,
+          "vaultNullifierTxCount": 0,
+          "treasuryTransferTxCount": 0,
+          "closeVaultToTreasuryPairs": [],
+          "expectedFeePayoutPresent": false,
+          "treasuryAmountsWei": []
+        },
+        {
+          "offset": -512,
+          "windowStart": 24747400,
+          "windowEnd": 24747437,
+          "vaultNullifierTxCount": 0,
+          "treasuryTransferTxCount": 0,
+          "closeVaultToTreasuryPairs": [],
+          "expectedFeePayoutPresent": false,
+          "treasuryAmountsWei": []
+        },
+        {
+          "offset": -256,
+          "windowStart": 24747656,
+          "windowEnd": 24747693,
+          "vaultNullifierTxCount": 0,
+          "treasuryTransferTxCount": 0,
+          "closeVaultToTreasuryPairs": [],
+          "expectedFeePayoutPresent": false,
+          "treasuryAmountsWei": []
+        },
+        {
+          "offset": -128,
+          "windowStart": 24747784,
+          "windowEnd": 24747821,
+          "vaultNullifierTxCount": 0,
+          "treasuryTransferTxCount": 0,
+          "closeVaultToTreasuryPairs": [],
+          "expectedFeePayoutPresent": false,
+          "treasuryAmountsWei": []
+        },
+        {
+          "offset": 128,
+          "windowStart": 24748040,
+          "windowEnd": 24748077,
+          "vaultNullifierTxCount": 0,
+          "treasuryTransferTxCount": 0,
+          "closeVaultToTreasuryPairs": [],
+          "expectedFeePayoutPresent": false,
+          "treasuryAmountsWei": []
+        },
+        {
+          "offset": 256,
+          "windowStart": 24748168,
+          "windowEnd": 24748205,
+          "vaultNullifierTxCount": 0,
+          "treasuryTransferTxCount": 0,
+          "closeVaultToTreasuryPairs": [],
+          "expectedFeePayoutPresent": false,
+          "treasuryAmountsWei": []
+        },
+        {
+          "offset": 512,
+          "windowStart": 24748424,
+          "windowEnd": 24748461,
+          "vaultNullifierTxCount": 0,
+          "treasuryTransferTxCount": 0,
+          "closeVaultToTreasuryPairs": [],
+          "expectedFeePayoutPresent": false,
+          "treasuryAmountsWei": []
+        },
+        {
+          "offset": 768,
+          "windowStart": 24748680,
+          "windowEnd": 24748717,
+          "vaultNullifierTxCount": 0,
+          "treasuryTransferTxCount": 0,
+          "closeVaultToTreasuryPairs": [],
+          "expectedFeePayoutPresent": false,
+          "treasuryAmountsWei": []
+        },
+        {
+          "offset": 1024,
+          "windowStart": 24748936,
+          "windowEnd": 24748973,
+          "vaultNullifierTxCount": 0,
+          "treasuryTransferTxCount": 0,
+          "closeVaultToTreasuryPairs": [],
+          "expectedFeePayoutPresent": false,
+          "treasuryAmountsWei": []
+        }
+      ],
+      "wholeSpan": {
+        "start": 24746888,
+        "end": 24748973,
+        "vaultNullifierLogs": 1,
+        "treasuryPayoutLogs": 1
+      }
+    },
+    {
+      "stage": "first_send",
+      "anchorBlock": 24760126,
+      "expectedTreasuryWei": "576000000000000000",
+      "positive": {
+        "offset": 0,
+        "windowStart": 24760114,
+        "windowEnd": 24760151,
+        "vaultNullifierTxCount": 1,
+        "treasuryTransferTxCount": 1,
+        "closeVaultToTreasuryPairs": [
+          {
+            "vaultTx": "0x5423d2b13c575c8e26c73e42906f4eefb7a6a257defcebad81a1415c857253e8",
+            "vaultHeight": 24760126,
+            "payoutTx": "0xd639df4cd7d62ea031a313ec5b3b9f6b46241aebe599b29867bf7a3e7302bb32",
+            "payoutHeight": 24760130,
+            "lag": 4,
+            "payoutWei": "576000000000000000"
+          }
+        ],
+        "expectedFeePayoutPresent": true,
+        "treasuryAmountsWei": [
+          "576000000000000000"
+        ]
+      },
+      "shiftedControls": [
+        {
+          "offset": -1024,
+          "windowStart": 24759090,
+          "windowEnd": 24759127,
+          "vaultNullifierTxCount": 0,
+          "treasuryTransferTxCount": 0,
+          "closeVaultToTreasuryPairs": [],
+          "expectedFeePayoutPresent": false,
+          "treasuryAmountsWei": []
+        },
+        {
+          "offset": -768,
+          "windowStart": 24759346,
+          "windowEnd": 24759383,
+          "vaultNullifierTxCount": 0,
+          "treasuryTransferTxCount": 0,
+          "closeVaultToTreasuryPairs": [],
+          "expectedFeePayoutPresent": false,
+          "treasuryAmountsWei": []
+        },
+        {
+          "offset": -512,
+          "windowStart": 24759602,
+          "windowEnd": 24759639,
+          "vaultNullifierTxCount": 0,
+          "treasuryTransferTxCount": 0,
+          "closeVaultToTreasuryPairs": [],
+          "expectedFeePayoutPresent": false,
+          "treasuryAmountsWei": []
+        },
+        {
+          "offset": -256,
+          "windowStart": 24759858,
+          "windowEnd": 24759895,
+          "vaultNullifierTxCount": 0,
+          "treasuryTransferTxCount": 0,
+          "closeVaultToTreasuryPairs": [],
+          "expectedFeePayoutPresent": false,
+          "treasuryAmountsWei": []
+        },
+        {
+          "offset": -128,
+          "windowStart": 24759986,
+          "windowEnd": 24760023,
+          "vaultNullifierTxCount": 0,
+          "treasuryTransferTxCount": 0,
+          "closeVaultToTreasuryPairs": [],
+          "expectedFeePayoutPresent": false,
+          "treasuryAmountsWei": []
+        },
+        {
+          "offset": 128,
+          "windowStart": 24760242,
+          "windowEnd": 24760279,
+          "vaultNullifierTxCount": 0,
+          "treasuryTransferTxCount": 0,
+          "closeVaultToTreasuryPairs": [],
+          "expectedFeePayoutPresent": false,
+          "treasuryAmountsWei": []
+        },
+        {
+          "offset": 256,
+          "windowStart": 24760370,
+          "windowEnd": 24760407,
+          "vaultNullifierTxCount": 0,
+          "treasuryTransferTxCount": 0,
+          "closeVaultToTreasuryPairs": [],
+          "expectedFeePayoutPresent": false,
+          "treasuryAmountsWei": []
+        },
+        {
+          "offset": 512,
+          "windowStart": 24760626,
+          "windowEnd": 24760663,
+          "vaultNullifierTxCount": 0,
+          "treasuryTransferTxCount": 0,
+          "closeVaultToTreasuryPairs": [],
+          "expectedFeePayoutPresent": false,
+          "treasuryAmountsWei": []
+        },
+        {
+          "offset": 768,
+          "windowStart": 24760882,
+          "windowEnd": 24760919,
+          "vaultNullifierTxCount": 0,
+          "treasuryTransferTxCount": 0,
+          "closeVaultToTreasuryPairs": [],
+          "expectedFeePayoutPresent": false,
+          "treasuryAmountsWei": []
+        },
+        {
+          "offset": 1024,
+          "windowStart": 24761138,
+          "windowEnd": 24761175,
+          "vaultNullifierTxCount": 0,
+          "treasuryTransferTxCount": 0,
+          "closeVaultToTreasuryPairs": [],
+          "expectedFeePayoutPresent": false,
+          "treasuryAmountsWei": []
+        }
+      ],
+      "wholeSpan": {
+        "start": 24759090,
+        "end": 24761175,
+        "vaultNullifierLogs": 1,
+        "treasuryPayoutLogs": 1
+      }
+    }
+  ],
+  "interpretationBoundaries": [
+    "Fixed shifted windows are a diagnostic for ambient fee transfer frequency, not a random comparison group or causal proof.",
+    "The original controlled owner-wallet context provides observed fee quotes; RPC alone does not decrypt private principal, payer or recipient.",
+    "The official docs already describe a per-transaction Foundation share: this control quantifies public traceability on the chosen testnet, not a protocol exploit.",
+    "Selection is conditional on three successful controlled operations; n=3 is too small for population statistics.",
+    "Public reported treasury configuration is not independent proof of legal ownership.",
+    "No signing, posting, or gas was used."
+  ]
+}

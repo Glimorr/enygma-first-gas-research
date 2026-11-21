@@ -1,0 +1,320 @@
+{
+  "status": "PASS",
+  "evidence_class": "IN_MEMORY_PUBLIC_FUNDED_SECOND_COHORT_PRIVATE_SPEND_FEE_REPLAY_AND_BALANCE_MUTATION_CONTROLS",
+  "testedAtUtc": "2026-11-21T00:57:13.629Z",
+  "mutations": 38,
+  "rejected": 38,
+  "untouchedOriginalSourceFiles": true,
+  "failed": [],
+  "results": [
+    {
+      "test": "wrong_chain",
+      "expected": "chain",
+      "detected": true,
+      "errors": [
+        "chain"
+      ]
+    },
+    {
+      "test": "wrong_fee_chain",
+      "expected": "chain",
+      "detected": true,
+      "errors": [
+        "chain"
+      ]
+    },
+    {
+      "test": "wrong_owner",
+      "expected": "spend.senderOwner",
+      "detected": true,
+      "errors": [
+        "spend.senderOwner"
+      ]
+    },
+    {
+      "test": "wrong_recipient_control",
+      "expected": "spend.expectedRecipient",
+      "detected": true,
+      "errors": [
+        "spend.expectedRecipient"
+      ]
+    },
+    {
+      "test": "wrong_hash",
+      "expected": "spend.hash",
+      "detected": true,
+      "errors": [
+        "spend.hash"
+      ]
+    },
+    {
+      "test": "wrong_receipt_hash",
+      "expected": "spend.rawTxHash",
+      "detected": true,
+      "errors": [
+        "spend.rawTxHash"
+      ]
+    },
+    {
+      "test": "wrong_block_hash",
+      "expected": "spend.blockHash",
+      "detected": true,
+      "errors": [
+        "spend.blockHash"
+      ]
+    },
+    {
+      "test": "missing_block_inclusion",
+      "expected": "spend.blockInclusion",
+      "detected": true,
+      "errors": [
+        "spend.blockInclusion"
+      ]
+    },
+    {
+      "test": "wrong_height",
+      "expected": "spend.blockHeight",
+      "detected": true,
+      "errors": [
+        "spend.blockHeight"
+      ]
+    },
+    {
+      "test": "reverted_spend",
+      "expected": "spend.receiptStatus",
+      "detected": true,
+      "errors": [
+        "spend.receiptStatus"
+      ]
+    },
+    {
+      "test": "wrong_vault",
+      "expected": "spend.vaultTarget",
+      "detected": true,
+      "errors": [
+        "spend.vaultTarget"
+      ]
+    },
+    {
+      "test": "wrong_relayer",
+      "expected": "spend.relayer",
+      "detected": true,
+      "errors": [
+        "spend.relayer"
+      ]
+    },
+    {
+      "test": "wrong_method",
+      "expected": "spend.method",
+      "detected": true,
+      "errors": [
+        "spend.method"
+      ]
+    },
+    {
+      "test": "deleted_note_log",
+      "expected": "spend.logTopology",
+      "detected": true,
+      "errors": [
+        "spend.logTopology",
+        "spend.secondLogCount"
+      ]
+    },
+    {
+      "test": "wrong_nullifier",
+      "expected": "spend.savedNullifiers",
+      "detected": true,
+      "errors": [
+        "spend.savedNullifiers"
+      ]
+    },
+    {
+      "test": "wrong_commitment",
+      "expected": "spend.savedCommitments",
+      "detected": true,
+      "errors": [
+        "spend.savedCommitments"
+      ]
+    },
+    {
+      "test": "wrong_note_bytes",
+      "expected": "spend.savedNotes",
+      "detected": true,
+      "errors": [
+        "spend.savedNotes"
+      ]
+    },
+    {
+      "test": "wrong_separate_log",
+      "expected": "spend.secondLogBytes",
+      "detected": true,
+      "errors": [
+        "spend.secondLogBytes"
+      ]
+    },
+    {
+      "test": "changed_sender_balance",
+      "expected": "spend.publicFundingContinuity",
+      "detected": true,
+      "errors": [
+        "spend.publicFundingContinuity"
+      ]
+    },
+    {
+      "test": "sender_nonce_changed",
+      "expected": "spend.publicFundingContinuity",
+      "detected": true,
+      "errors": [
+        "spend.publicFundingContinuity"
+      ]
+    },
+    {
+      "test": "false_zero_public_funding_claim",
+      "expected": "spend.preSourceFundingTruth",
+      "detected": true,
+      "errors": [
+        "spend.preSourceFundingTruth"
+      ]
+    },
+    {
+      "test": "fake_transparent_transfer",
+      "expected": "spend.publicTransfers",
+      "detected": true,
+      "errors": [
+        "spend.publicTransfers"
+      ]
+    },
+    {
+      "test": "fake_public_amount",
+      "expected": "spend.privateVisibility",
+      "detected": true,
+      "errors": [
+        "spend.privateVisibility"
+      ]
+    },
+    {
+      "test": "payout_wrong_hash",
+      "expected": "fee.txHash",
+      "detected": true,
+      "errors": [
+        "fee.txHash"
+      ]
+    },
+    {
+      "test": "payout_reverted",
+      "expected": "fee.receiptBlock",
+      "detected": true,
+      "errors": [
+        "fee.receiptBlock"
+      ]
+    },
+    {
+      "test": "wrong_payout_block",
+      "expected": "fee.payoutBlock",
+      "detected": true,
+      "errors": [
+        "fee.payoutBlock"
+      ]
+    },
+    {
+      "test": "wrong_token_contract",
+      "expected": "fee.tokenTransfer",
+      "detected": true,
+      "errors": [
+        "fee.tokenTransfer"
+      ]
+    },
+    {
+      "test": "wrong_relayer_topic",
+      "expected": "fee.fromRelayer",
+      "detected": true,
+      "errors": [
+        "fee.fromRelayer",
+        "fee.receiptLogInclusion"
+      ]
+    },
+    {
+      "test": "wrong_treasury_topic",
+      "expected": "fee.toTreasury",
+      "detected": true,
+      "errors": [
+        "fee.toTreasury",
+        "fee.receiptLogInclusion"
+      ]
+    },
+    {
+      "test": "wrong_receipt_transfer_data",
+      "expected": "fee.receiptLogInclusion",
+      "detected": true,
+      "errors": [
+        "fee.receiptLogInclusion",
+        "fee.amount",
+        "fee.exactFormula"
+      ]
+    },
+    {
+      "test": "wrong_reported_share",
+      "expected": "fee.amount",
+      "detected": true,
+      "errors": [
+        "fee.amount"
+      ]
+    },
+    {
+      "test": "wrong_gross_fee",
+      "expected": "fee.exactFormula",
+      "detected": true,
+      "errors": [
+        "fee.exactFormula"
+      ]
+    },
+    {
+      "test": "wrong_window",
+      "expected": "fee.window",
+      "detected": true,
+      "errors": [
+        "fee.window"
+      ]
+    },
+    {
+      "test": "fake_second_payout",
+      "expected": "fee.uniqueCandidates",
+      "detected": true,
+      "errors": [
+        "fee.uniqueCandidates"
+      ]
+    },
+    {
+      "test": "bad_private_ui",
+      "expected": "fee.walletUi",
+      "detected": true,
+      "errors": [
+        "fee.walletUi"
+      ]
+    },
+    {
+      "test": "bad_replay_before",
+      "expected": "replay.beforeAfter",
+      "detected": true,
+      "errors": [
+        "replay.beforeAfter"
+      ]
+    },
+    {
+      "test": "bad_replay_after",
+      "expected": "replay.beforeAfter",
+      "detected": true,
+      "errors": [
+        "replay.beforeAfter"
+      ]
+    },
+    {
+      "test": "signed_replay_claim",
+      "expected": "replay.counts",
+      "detected": true,
+      "errors": [
+        "replay.counts"
+      ]
+    }
+  ]
+}

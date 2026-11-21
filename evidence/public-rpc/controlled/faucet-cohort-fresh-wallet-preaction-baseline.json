@@ -1,0 +1,26 @@
+{
+  "evidence_class": "INDEPENDENT_FRESH_PASSKEY_BEFORE_FIRST_FAUCET_BASELINE",
+  "capturedUtc": "2026-11-21T00:34:06.839015+00:00",
+  "chainId": 7295799,
+  "fixedBlock": 24765718,
+  "address": "0xe1136dCF839c4aD2704094241928Fa2896A118c5",
+  "nativeWei": "0",
+  "publicRlsWei": "0",
+  "publicUsdrWei": "0",
+  "evmNonce": 0,
+  "explorer_transactions": {
+    "httpStatus": 200,
+    "visibleRows": 0,
+    "hasNextPage": false
+  },
+  "explorer_token_transfers": {
+    "httpStatus": 200,
+    "visibleRows": 0,
+    "hasNextPage": false
+  },
+  "explorer_internal_transactions": {
+    "httpStatus": 200,
+    "visibleRows": 0,
+    "hasNextPage": false
+  }
+}

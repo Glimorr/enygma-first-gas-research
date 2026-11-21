@@ -1,0 +1,26 @@
+{
+  "evidence_class": "POST_REGISTRATION_ALL_FAUCET_ACTIONS_DISABLED_UI_OBSERVED_AND_RPC_STATE_SAMPLED",
+  "captured_utc": "2026-11-21T00:43:17.711367+00:00",
+  "address": "0xe1136dCF839c4aD2704094241928Fa2896A118c5",
+  "block": 24766730,
+  "chain_id": 7295799,
+  "public_native_wei": "10000000000000000000",
+  "evm_nonce": 0,
+  "screen_captured_by_user": true,
+  "ui_offered": {
+    "Shielded RLS": "250 RLS into shielded balance",
+    "Shielded USDr": "10 USDr into shielded balance",
+    "Public RLS": "250 RLS to address",
+    "Public USDr": "10 USDr to address"
+  },
+  "ui_cooldown_observed": "2 h 55 min (all four Get controls disabled)",
+  "transaction_claimed_by_assistant": false,
+  "shielded_faucet_action_submitted": false,
+  "limitations": [
+    "Disabled controls with identical displayed countdown support an apparently shared app cooldown; they do not prove server-side rate-limit implementation.",
+    "The account is publicly funded from onboarding; even a later shielded faucet deposit cannot demonstrate fully zero-public-funding signup.",
+    "Private balance cannot be inferred from public ERC20 balanceOf results."
+  ],
+  "public_rls_wei": "242803043320000000000",
+  "public_usdr_wei": "10000000000000000000"
+}

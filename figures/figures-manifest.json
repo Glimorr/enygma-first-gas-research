@@ -1,7 +1,7 @@
 {
   "status": "PASS",
-  "generatedUtc": "2026-11-20T23:51:53.153Z",
-  "count": 6,
+  "generatedUtc": "2026-11-21T01:01:10.861Z",
+  "count": 7,
   "images": [
     {
       "id": "01",
@@ -24,7 +24,7 @@
     {
       "id": "04",
       "filename": "/mnt/e/Rayls-Nov-Week3/figures/F04-private-fee-trail.png",
-      "bytes": 430984,
+      "bytes": 432400,
       "verifiedSource": "site/public/data/evidence.json"
     },
     {
@@ -36,7 +36,13 @@
     {
       "id": "06",
       "filename": "/mnt/e/Rayls-Nov-Week3/figures/F06-evidence-taxonomy.png",
-      "bytes": 450374,
+      "bytes": 473182,
+      "verifiedSource": "site/public/data/evidence.json"
+    },
+    {
+      "id": "07",
+      "filename": "/mnt/e/Rayls-Nov-Week3/figures/F07-two-routes-one-private-endpoint.png",
+      "bytes": 534239,
       "verifiedSource": "site/public/data/evidence.json"
     }
   ],

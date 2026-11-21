@@ -1,3 +1,5 @@
+> **Original first-edition provenance register (Cohort A).** This document deliberately preserves the first completed invitation-funded lifecycle with three selected private fee cases and the 3 RLS recipient balance observed at that time. The **authoritative two-cohort extension and final comparison** is [FINAL_TWO_COHORT_COMPARISON_20261121.md](FINAL_TWO_COHORT_COMPARISON_20261121.md); it includes the second publicly funded 3 RLS send and receiver balance increasing to 6 RLS. Do not mistake this original source-dated record for an unfinished second cohort.
+
 # Rayls Quest 3 — FINAL controlled first-gas lifecycle verification register
 
 **Last updated:** 21 November 2026 IST. **Network:** Rayls Public Chain Testnet, chain ID 7295799.

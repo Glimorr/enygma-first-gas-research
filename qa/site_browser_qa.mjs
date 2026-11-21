@@ -17,9 +17,9 @@ const cases=[
  {name:"tablet",width:900,height:1050},
  {name:"mobile",width:390,height:844}
 ];
-const report={evidence_class:"LOCAL_WEBSITE_CHECKPOINT_BROWSER_QA_NOT_FINAL_RELEASE",
+const report={evidence_class:"WEBSITE_BOTH_CONTROLLED_LIFECYCLES_PUBLIC_OR_LOCAL_BROWSER_QA",
  runUtc:new Date().toISOString(),passed:true,tests:[],screenshots:[],
- pendingContentIntentional:true};
+ pendingContentIntentional:false};
 const record=(name,ok,details="")=>{
  report.tests.push({name,pass:Boolean(ok),details:String(details).slice(0,350)});
  if(!ok)report.passed=false;
@@ -45,9 +45,9 @@ try{
    record(device.name+".title",title.includes("First-Gas"),title);
    const status=await page.locator(".status-line p").innerText();
    record(device.name+".statusAccurate",
-    status.toLowerCase().includes("first private spend")&&status.toLowerCase().includes("verified"),
+    status.toLowerCase().includes("two controlled")&&status.toLowerCase().includes("verified"),
     status.slice(0,160));
-   record(device.name+".proofTabs",await page.locator(".tab[data-proof]").count()===5);
+   record(device.name+".proofTabs",await page.locator(".tab[data-proof]").count()===6);
    await page.locator(".tab[data-proof=claim]").click();
    record(device.name+".claimTabContent",(
      await page.locator("#proof-readout").innerText()).includes("17.304"));
@@ -58,15 +58,24 @@ try{
    record(device.name+".firstPrivateSendTabContent",(
      await page.locator("#proof-readout").innerText()).includes("@rq3dev26") &&
      (await page.locator("#proof-readout").innerText()).includes("3 RLS"));
+   await page.locator(".tab[data-proof=second]").click();
+   record(device.name+".secondCohortProofTab",(
+     await page.locator("#proof-readout").innerText()).includes("@rq3dev26") &&
+     (await page.locator("#proof-readout").innerText()).includes("250 RLS") &&
+     (await page.locator("#proof-readout").innerText()).includes("6 RLS"));
+   record(device.name+".twoCohortCompareSection",
+     await page.locator("#cohort-compare .cohort-card").count()===2 &&
+     (await page.locator("#cohort-compare").innerText()).includes("0 public RLS") &&
+     (await page.locator("#cohort-compare").innerText()).includes("250 public RLS"));
    await page.locator(".tab[data-proof=invite]").click();
    record(device.name+".inviteTabContent",(
      await page.locator("#proof-readout").innerText()).includes("30 RLS"));
    const bars=await page.locator("#payout-chart .bar-wrap").count();
    record(device.name+".feeChartBars",bars===7,"bars="+bars);
-   record(device.name+".privateFeeRows",await page.locator("#private-fee-notes .private-fee-row").count()===3);
-   record(device.name+".replayRows",await page.locator("#replay-cases .replay-row").count()===3);
+   record(device.name+".privateFeeRows",await page.locator("#private-fee-notes .private-fee-row").count()===4);
+   record(device.name+".replayRows",await page.locator("#replay-cases .replay-row").count()===4);
    const rows=await page.locator("#verification-register .verification-row").count();
-   record(device.name+".evidenceRows",rows>=16,"rows="+rows);
+   record(device.name+".evidenceRows",rows>=22,"rows="+rows);
    await page.locator(".route-card[data-route=shielded]").click();
    record(device.name+".routeControl",(
      await page.locator("#route-detail").innerText()).includes("ZERO") ||

@@ -1,0 +1,22 @@
+{
+  "evidence_class": "SEPARATE_CONTROLLED_RECIPIENT_OWNER_WALLET_BALEXACT_READONLY",
+  "capturedUtc": "2026-11-21T00:54:37.915Z",
+  "recipientUsername": "@rq3dev26",
+  "recipientEvm": "0x1AcC448116C00A16bBfCE8f9d280aaA4D3Ad4FF6",
+  "chainId": 7295799,
+  "beforeSecondCohortShieldedBalanceUiRls": "3",
+  "afterSecondCohortShieldedBalanceUiRls": "6",
+  "increaseUiRls": "3",
+  "recipientPublicRlsAfterUi": "242.8069",
+  "recipientUiBalanceSource": "Authorized read-only official testnet Enygma application connected to independent pre-existing Dev control research wallet",
+  "connectedUsernameSeen": true,
+  "scanCompleted": true,
+  "noTransactionSignedOrSubmitted": true,
+  "noSecretStoredInRelease": true,
+  "secondSourceUserWalletObservedTx": "0x77ff894ed5be5694a806d0b7c17666be0bbe5dbf64a4340eb10374fa04f11bdb",
+  "limitations": [
+    "A recipient wallet balance observation corroborates receipt of 3 shielded RLS but is not independently decryptable from the public vault event.",
+    "Both private sends were real controlled operations to the same Dev recipient; the +3 inference assumes no other wallet activity between read-only observations.",
+    "The sender @rq3faucet26 had transparent public faucet funding and public shield deposit; unlike @devil, its public balance was never zero-funded after onboarding."
+  ]
+}

@@ -50,9 +50,9 @@ function renderRoutes(){
    href:explorer(evidence.receiverLifecycle.registrationTx),text:"Open publicly verified recipient registration ↗"
   },
   faucet:{
-   title:"03 / DIRECT SHIELDED FAUCET CONTROL",
-   description:"This comparison has not been executed. We will not use faucet documentation or a synthetic example as proof of a completed zero-public-funding transaction.",
-   href:"#boundaries",text:"Read the experimental boundary ↗"
+   title:"03 / PUBLIC FAUCET + PUBLIC SHIELD COMPARISON",
+   description:"A second fresh passkey @rq3faucet26 received public RLS/USDr, paid a public registration fee, shielded 20 RLS publicly, then sent 3 RLS privately. The receiving wallet independently displayed 3 → 6 shielded RLS. The direct shielded faucet was disabled during a shared-looking cooldown.",
+   href:explorer(evidence.secondCohort.privateSendTx),text:"Open the second verified private send ↗"
   }
  };
  const container=$("#route-detail"),heading=container.querySelector(".detail-number"),description=container.querySelector(".detail-body"),link=container.querySelector("a");
@@ -121,6 +121,21 @@ function proofData(){
     ["Commitments / encrypted notes",rc.spendCommitments+" / "+rc.spendEncryptedNotes],
     ["Inferred gross relayer fee",rc.spendFeeGrossRls+" RLS"]],
    from:"PRIVATE NOTE",to:"PRIVATE RECIPIENT"
+  },
+  second:{
+    block:e.secondCohort.privateSendBlock,hash:e.secondCohort.privateSendTx,
+    title:"Second 3 RLS private send after public faucet and Shield",method:"transferV2",
+    principal:"3 RLS · separate sender and receiver wallets",
+    events:e.secondCohort.privateSendNullifierCount+e.secondCohort.privateSendCommitmentCount+e.secondCohort.privateSendNoteCount,
+    features:[["Sender's source onboarding","250 RLS + 10 USDr PUBLIC faucet"],
+      ["Public Shield before send","20 RLS visibly transferred"],
+      ["Sender @rq3faucet26 publicly held after send",e.secondCohort.privateSendPublicBalanceAfterRls+" RLS"],
+      ["Owner-wallet private send","3 RLS to @rq3dev26"],
+      ["Recipient shielded wallet balance","3 → "+e.secondCohort.recipientShieldedBalanceAfterRls+" RLS"],
+      ["Vault nullifiers",String(e.secondCohort.privateSendNullifierCount)],
+      ["New encrypted notes",String(e.secondCohort.privateSendNoteCount)],
+      ["Implied gross private fee",e.secondCohort.privateSendFeeGrossRls+" RLS"]],
+    from:"SHIELDED NOTE",to:"SHIELDED RECIPIENT"
   }
  };
 }
@@ -176,16 +191,53 @@ function renderFees(){
  const info=$("#private-fee-notes");
  if(info){
   info.replaceChildren();
-  const intro=text("p","meta-explainer","TWO CONTROLLED PRIVATE OPERATIONS · EXPLORATORY CORRELATION");
+  const intro=text("p","meta-explainer","FOUR SELECTED PRIVATE OPERATIONS · TWO DIFFERENT FUNDING ROUTES · EXPLORATORY CORRELATION");
   info.append(intro);
   for(const caseData of evidence.privateFeePilot.cases){
    const row=text("div","private-fee-row","");
-   row.append(text("span","kind",caseData.kind==="controlled_owner_shielded_invitation"?"Invite creation":caseData.kind==="controlled_receiver_private_claim"?"Invitation claim":"First private send"),
+   row.append(text("span","kind",caseData.kind==="controlled_owner_shielded_invitation"?"Invite creation":caseData.kind==="controlled_receiver_private_claim"?"Invitation claim":caseData.kind==="controlled_public_faucet_cohort_private_send"?"Public-funded second send":"Invitation-funded first send"),
     text("strong","amount",caseData.grossFeeImpliedRls+" RLS"),
     text("span","delay",caseData.payoutDelayBlocks+" BLOCKS TO TREASURY"));
    info.append(row);
   }
   info.append(text("p","private-fee-foot","The private principal remains hidden. These gross fees are inferred from distinct public treasury transfers under the relayer-reported 15% policy, not from private vault calldata."));
+ }
+}
+function renderComparison(){
+ const host=$("#cohort-compare");
+ if(!host)return;
+ const rc=evidence.receiverLifecycle,sc=evidence.secondCohort;
+ const rows=[
+  {name:"PRIVATE INVITATION",tag:"NO PUBLIC FUNDING",handle:"@devil",publicFunding:"0 public RLS",
+   setup:"30 RLS shielded invitation → private claim → fee-sponsored registration",
+   publicShield:"No public RLS deposit from receiving account",
+   privateTx:rc.spendTx,block:rc.spendBlock,
+   receiverNote:"3 RLS shielded after first send",fee:rc.spendFeeGrossRls+" RLS",
+   note:"Claiming wallet stayed publicly unfunded throughout. Invitation bearer link exposure is disclosed."},
+  {name:"PUBLIC FAUCET & SHIELD",tag:"PUBLIC ENTRY VISIBLE",handle:"@rq3faucet26",
+   publicFunding:"250 public RLS + 10 public USDr",
+   setup:"Public faucet → public-fee registration → visible 20 RLS shield",
+   publicShield:"Source RLS after Shield and private send: "+sc.privateSendPublicBalanceAfterRls,
+   privateTx:sc.privateSendTx,block:sc.privateSendBlock,
+   receiverNote:"6 RLS shielded after second send",fee:sc.privateSendFeeGrossRls+" RLS",
+   note:"A private send does not erase the transparent deposit history. Direct shielded faucet was on cooldown."}
+ ];
+ host.replaceChildren();
+ for(const item of rows){
+  const card=text("article","cohort-card","");
+  const eyebrow=text("div","cohort-eyebrow",item.name+" · "+item.tag);
+  const title=text("h3","cohort-title",item.handle);
+  const steps=text("p","cohort-setup",item.setup);
+  const publicLine=text("div","cohort-funding","PUBLIC FUNDING · "+item.publicFunding);
+  const shield=text("div","cohort-funding",item.publicShield);
+  const privateLine=text("div","cohort-private","PRIVATE SEND · 3 RLS · BLOCK "+item.block.toLocaleString("en-US"));
+  const balance=text("div","cohort-owner","SEPARATE RECIPIENT WALLET · "+item.receiverNote);
+  const fee=text("div","cohort-small","Publicly inferred fee: "+item.fee);
+  const limitation=text("p","cohort-caveat",item.note);
+  const link=text("a","cohort-link","View authenticated vault receipt ↗");
+  link.href=explorer(item.privateTx);link.target="_blank";link.rel="noopener noreferrer";
+  card.append(eyebrow,title,steps,publicLine,shield,privateLine,balance,fee,limitation,link);
+  host.append(card);
  }
 }
 function renderRegister(){
@@ -201,7 +253,7 @@ function renderReplay(){
  const destination=$("#replay-cases");if(!destination)return;
  destination.replaceChildren(...evidence.replayControls.cases.map(c=>{
   const row=text("div","replay-row","");
-  row.append(text("div","replay-title",c.kind==="private_invite_creation"?"Invitation":"Claim"));
+  row.append(text("div","replay-title",c.kind==="private_invite_creation"?"Invitation":c.kind==="private_invite_claim"?"Claim":c.kind==="receiver_first_private_send"?"First send · invite":"Second send · public"));
   c.stages.forEach(stage=>{
    row.append(text("span",stage.result==="SUCCESS"?"simulate-ok":"simulate-revert",
      (stage.result==="SUCCESS"?"✓ ":"✕ ")+stage.block.toLocaleString("en-US")));
@@ -299,15 +351,15 @@ async function main(){
   const response=await fetch(root+"data/evidence.json",{cache:"no-store"});
   if(!response.ok)throw Error("Evidence JSON not found");
   evidence=validData(await response.json());
-  renderRoutes();renderProof();renderFees();renderRegister();renderReplay();copyCommands();animateReveals();heroVisual();
+  renderRoutes();renderProof();renderFees();renderComparison();renderRegister();renderReplay();copyCommands();animateReveals();heroVisual();
   const message=$(".status-line p");
-  if(message)message.innerHTML="The public shield, <strong>private invitation, claim, registration and first private spend are independently verified</strong>, with separate owner-wallet observations.";
+  if(message)message.innerHTML="Two controlled testnet lifecycles verified: <strong>invitation-funded zero-public-funding onboarding</strong> and <strong>public-faucet onboarding followed by a private 3 RLS send</strong>. Both reached the same independently checked recipient.";
   const boundaries=$("#boundary-list");
   if(boundaries){
    const last=boundaries.querySelector("article:last-child");
    if(last){
     last.querySelector("h3").textContent="Zero-public-funded claim, registration and first private spend";
-    last.querySelector("p").textContent="The passkey receiver @devil claimed 17.304 RLS privately, registered, and sent 3 private RLS to @rq3dev26 while retaining zero public RLS/USDr and an EVM nonce of zero. The independent recipient wallet confirmed 3 shielded RLS.";
+    last.querySelector("p").textContent="The passkey receiver @devil claimed 17.304 RLS privately, registered, and sent 3 private RLS to @rq3dev26 while retaining zero public RLS/USDr and an EVM nonce of zero. The independent recipient wallet confirmed 3 shielded RLS after that send, then 6 RLS after the separate publicly funded cohort's private payment.";
     last.querySelector(".boundary-mark").textContent="✓";
     last.querySelector(".boundary-mark").classList.remove("pending");
     last.querySelector(".boundary-tag").textContent="LIFECYCLE VERIFIED";

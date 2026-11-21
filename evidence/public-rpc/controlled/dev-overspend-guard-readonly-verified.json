@@ -1,0 +1,15 @@
+{
+  "evidence_class": "CONTROLLED_UI_ONLY_SHIELDED_OVERSPEND_NEGATIVE_PREVIEW",
+  "capturedUtc": "2026-11-21T00:29:34.114Z",
+  "network": "Rayls Public Chain Testnet",
+  "testAccount": "@rq3dev26",
+  "privateBalanceWalletUiRls": "3",
+  "destination": "@devil",
+  "attemptedInputRls": "15",
+  "sendActionDisabled": true,
+  "uiText": "ENYGMA\nRayls Public Chain Testnet\n@rq3dev26\nSend $RLS\nShielded\nPublic\n\nToken\n\n$RLS\nTo\n0x665E…e76C\n\n@devil\n0x665E…e76C\ncan receive shielded payments\n\n@devil\n0x665E08A2867Cb53d05C1381D565e19Da0bC3e76C\nRegistered\n\nAmount\nShielded: 3\n$RLS\n≈ $0.01\n25%\n50%\nMAX\n\nThat's more than your shielded balance.\n\nPublic\nThat a payment happened\nHidden\nWho paid whom, and how much\nAuditor\n@rq3dev26 paid @devil 15 $RLS\nFees\n≈ $0.01\nGas, from your shielded $RLS\n8.28 $RLS\n\n7.20 gas + 1.08 Rayls Foundation (15%)\n\nSend 15 $RLS\nScroll to learn more\nQuantum-private payments.\nSafe and compliant.\n@maya pays @leo 2 $USDr, quantum-private: the public can't see it, the auditor can\n@maya\nQuantum-private\nAuditor sees\n@leo\n\nRAYLS ENYGMA\n\nHow it works\nAt a glance\n\nQuantum-private payments in stablecoins, tokens and NFTs, one deployment per country. Hidden from the public, never from that country's auditor, which can read but not freeze or move anyone's funds.\n\nYou, in this tab\n\nYour passkey unlocks your keys. They stay in this tab. Or your custody wallet approves each step.\n\na proof, or a signed request\n\nThe relayer\n\nSubmits it and pays the gas, an approval's too, which you pay back in $RLS, shielded or public. Sends and $RLS unshields never show your address as the sender. Swaps run through Rayls' own notes. Its cu",
+  "noSendButtonClicked": true,
+  "noTransactionSignedOrBroadcast": true,
+  "scientificLimitation": "UI-only insufficiency guard. Does not prove circuit-level or contract-level malicious overspend rejection.",
+  "screenshot": "/mnt/e/Rayls-Nov-Week3/evidence/ui-feasibility/dev-overspend-ui-disabled-20261121.png"
+}

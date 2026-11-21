@@ -1,0 +1,43 @@
+{
+  "evidence_class": "FAUCET_FIRST_COHORT_AFTER_DEFAULT_FAUCET_BEFORE_REGISTRATION",
+  "capturedAtUtc": "2026-11-21T00:38:36.423878+00:00",
+  "chainId": 7295799,
+  "address": "0xe1136dCF839c4aD2704094241928Fa2896A118c5",
+  "block": 24766213,
+  "nativeWei": "10000000000000000000",
+  "nonce": 0,
+  "RLSPublicWei": "250000000000000000000",
+  "USDrPublicWei": "10000000000000000000",
+  "token-transfers": {
+    "status": 200,
+    "count": 2,
+    "hasMore": false,
+    "transactions": [
+      {
+        "hash": "0x952208d50a5711e69589e75e0af619f1e94ff47a8f9372a2c2a26155e1025e5c",
+        "block": 24766137,
+        "token": "RLS",
+        "total": "250000000000000000000"
+      },
+      {
+        "hash": "0x66ddb33fb227849c301ff08f197e16844376de3f37130ebbacf1bfc9dd471604",
+        "block": 24766137,
+        "token": "USDr",
+        "total": "10000000000000000000"
+      }
+    ]
+  },
+  "transactions": {
+    "status": 200,
+    "count": 1,
+    "hasMore": false,
+    "transactions": [
+      {
+        "hash": "0x66ddb33fb227849c301ff08f197e16844376de3f37130ebbacf1bfc9dd471604",
+        "block": 24766137,
+        "token": null,
+        "total": null
+      }
+    ]
+  }
+}

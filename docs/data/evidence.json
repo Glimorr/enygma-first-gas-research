@@ -1,9 +1,9 @@
 {
-  "edition": "FINAL RESEARCH — CONTROLLED FIRST-GAS LIFECYCLE VERIFIED",
-  "version": "21 November 2026 · final evidence",
+  "edition": "FINAL RESEARCH — TWO CONTROLLED ENYGMA PUBLIC ONBOARDING PATHS VERIFIED",
+  "version": "21 November 2026 · two-cohort second edition",
   "chainId": 7295799,
-  "checksum_sha256_of_archive": "49e897c712e7d452700be2dca369f3988ca46c5316f0bad306fef292f335f97a",
-  "archiveFiles": 140,
+  "checksum_sha256_of_archive": "310daaee8867db412fdbc9ad1bd10553e4d02671b9f9db10f23258cefc2ed0a9",
+  "archiveFiles": 172,
   "claims": {
     "publicShield": {
       "amount": "40",
@@ -176,6 +176,76 @@
     ],
     "transcriptionCorrection": "Original screenshot transcription was wrong; corrected using UserRegistered event"
   },
+  "secondCohort": {
+    "firstUseRoute": "PUBLIC_FAUCET_THEN_PUBLIC_SHIELD_THEN_PRIVATE_SEND",
+    "wallet": "0xe1136dCF839c4aD2704094241928Fa2896A118c5",
+    "username": "@rq3faucet26",
+    "freshBaselineBlock": 24765718,
+    "freshBaselinePublicRlsWei": "0",
+    "publicRlsFaucetTx": "0x952208d50a5711e69589e75e0af619f1e94ff47a8f9372a2c2a26155e1025e5c",
+    "publicRlsFaucetAmount": "250",
+    "publicUsdrFaucetAmount": "10",
+    "publicNativeFaucetAmount": "10",
+    "publicFundingBlock": 24766137,
+    "registrationTx": "0x0c7419d5d3d334dae29f5e87bdde78481ed61b6ae2907429044b4e56903beb0a",
+    "registrationBlock": 24766266,
+    "registrationPublicFeeRls": "7.19695668",
+    "publicShieldTx": "0x412a30dfaf94a75b25efbc02edf0f63a6de4846d89392c945e6f9b5b7be5c6b7",
+    "publicShieldBlock": 24767225,
+    "publicShieldPrincipalRls": "20",
+    "publicShieldFeeRls": "3.52580064",
+    "publicRlsBeforeShield": "242.80304332",
+    "publicRlsAfterShield": "219.27724268",
+    "privateSendTx": "0x77ff894ed5be5694a806d0b7c17666be0bbe5dbf64a4340eb10374fa04f11bdb",
+    "privateSendBlock": 24767795,
+    "privateSendNullifierCount": 1,
+    "privateSendCommitmentCount": 3,
+    "privateSendNoteCount": 3,
+    "privateSendFeeGrossRls": "4.416",
+    "privateSendFeeTreasuryRls": "0.576",
+    "privateSendFeeTreasuryTx": "0x1e98495ef31b41a8dab93f1a2b284f81991987000a3c69c958287e82f6e9fa8f",
+    "privateSendPayoutLag": 4,
+    "privateSendPublicBalanceAfterRls": "219.27724268",
+    "privateSendPublicUsdrAfterRls": "10",
+    "privateSendPublicNonceAfter": 0,
+    "recipientShieldedBalanceBeforeRls": "3",
+    "recipientShieldedBalanceAfterRls": "6",
+    "recipientShieldedBalanceIncreaseRls": "3",
+    "walletObservedPrivatePrincipalRls": "3",
+    "replayStates": [
+      {
+        "block": 24767794,
+        "result": "SUCCESS"
+      },
+      {
+        "block": 24767795,
+        "result": "REVERT"
+      },
+      {
+        "block": 24767796,
+        "result": "REVERT"
+      }
+    ],
+    "publiclyUnfunded": false,
+    "directShieldedFaucetUsed": false,
+    "faucetCooldownAllButtonsDisabled": true,
+    "receiverWalletReadOnlyWitness": true,
+    "privacyBoundary": "Public faucet + 20 RLS Shield disclosed account and deposit principal; later 3 RLS send did not disclose private principal/recipient in vault logs"
+  },
+  "shiftedPlaceboControl": {
+    "cases": 3,
+    "windows": 30,
+    "withTreasuryPayout": 0,
+    "withNullifier": 0,
+    "controlType": "Fixed time-offset windows around original 3 private operations, NOT traffic matched or randomized"
+  },
+  "uiNegativeControl": {
+    "account": "@rq3dev26",
+    "balanceShieldedRls": "3",
+    "inputRls": "15",
+    "disabled": true,
+    "noTransactionSubmitted": true
+  },
   "privateFeePilot": {
     "cases": [
       {
@@ -205,6 +275,17 @@
         "tx": "0x5423d2b13c575c8e26c73e42906f4eefb7a6a257defcebad81a1415c857253e8",
         "block": 24760126,
         "treasuryTx": "0xd639df4cd7d62ea031a313ec5b3b9f6b46241aebe599b29867bf7a3e7302bb32",
+        "treasuryShareRls": "0.576",
+        "grossFeeImpliedRls": "4.416",
+        "baseFeeImpliedRls": "3.84",
+        "payoutDelayBlocks": 4,
+        "uniqueWindow": true
+      },
+      {
+        "kind": "controlled_public_faucet_cohort_private_send",
+        "tx": "0x77ff894ed5be5694a806d0b7c17666be0bbe5dbf64a4340eb10374fa04f11bdb",
+        "block": 24767795,
+        "treasuryTx": "0x1e98495ef31b41a8dab93f1a2b284f81991987000a3c69c958287e82f6e9fa8f",
         "treasuryShareRls": "0.576",
         "grossFeeImpliedRls": "4.416",
         "baseFeeImpliedRls": "3.84",
@@ -270,10 +351,28 @@
             "result": "REVERT"
           }
         ]
+      },
+      {
+        "kind": "public_faucet_first_private_send",
+        "tx": "0x77ff894ed5be5694a806d0b7c17666be0bbe5dbf64a4340eb10374fa04f11bdb",
+        "stages": [
+          {
+            "block": 24767794,
+            "result": "SUCCESS"
+          },
+          {
+            "block": 24767795,
+            "result": "REVERT"
+          },
+          {
+            "block": 24767796,
+            "result": "REVERT"
+          }
+        ]
       }
     ],
-    "positiveCount": 3,
-    "negativeCount": 6,
+    "positiveCount": 4,
+    "negativeCount": 8,
     "provenance": "Non-committing eth_call at historical states; not a mined failure"
   },
   "feeAnalysis": {
@@ -532,9 +631,49 @@
       "count": "37 / 37"
     },
     {
-      "name": "Three private fee metadata controls",
+      "name": "Four selected private fee metadata correlations",
       "type": "Exploratory",
-      "count": "3 / 3"
+      "count": "4 / 4"
+    },
+    {
+      "name": "Second cohort public faucet and registration",
+      "type": "On-chain",
+      "count": "PASS"
+    },
+    {
+      "name": "Second cohort 20 RLS public shield",
+      "type": "On-chain",
+      "count": "PASS"
+    },
+    {
+      "name": "Second cohort 3 RLS private send",
+      "type": "On-chain",
+      "count": "PASS"
+    },
+    {
+      "name": "Separate receiving wallet cumulative 6 RLS",
+      "type": "Wallet",
+      "count": "PASS"
+    },
+    {
+      "name": "Second private send tamper tests",
+      "type": "Offline",
+      "count": "38 / 38"
+    },
+    {
+      "name": "Fixed time-shifted fee placebo windows",
+      "type": "Exploratory",
+      "count": "30 / 30 checked"
+    },
+    {
+      "name": "UI-only overspend amount rejected",
+      "type": "UI",
+      "count": "PASS"
+    },
+    {
+      "name": "Read-only historical replay controls",
+      "type": "Simulation",
+      "count": "4 success · 8 revert"
     }
   ],
   "provenance": [
@@ -569,9 +708,17 @@
       "verdict": "3 RLS private payment completed; public recipient and amount not decrypted from chain",
       "tx": "0x5423d2b13c575c8e26c73e42906f4eefb7a6a257defcebad81a1415c857253e8",
       "block": 24760126
+    },
+    {
+      "id": "second",
+      "label": "Public-faucet private send comparison",
+      "source": "public funding / shield receipt, private note transfer, separate receiving-wallet observation",
+      "verdict": "Different funding method: visible 20 RLS deposit, then private 3 RLS send; Dev shielded RLS 3 → 6",
+      "tx": "0x77ff894ed5be5694a806d0b7c17666be0bbe5dbf64a4340eb10374fa04f11bdb",
+      "block": 24767795
     }
   ],
-  "publicationState": "CONTROLLED SHIELDED ONBOARDING-TO-SPEND LIFECYCLE VERIFIED; DATASET SCOPED TO RAYLS TESTNET",
+  "publicationState": "TWO REAL TESTNET PRIVATE PAYMENT LIFECYCLES VERIFIED; ONLY INVITATION RECEIVER NEVER HELD PUBLIC FUNDS",
   "securityNotice": "The private bearer invite link was exposed in chat and must not be treated as a confidentiality-controlled invitation. It is not in this dataset.",
   "docs": [
     {

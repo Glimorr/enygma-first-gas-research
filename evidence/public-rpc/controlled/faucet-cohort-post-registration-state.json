@@ -1,0 +1,63 @@
+{
+  "evidenceClass": "LIVE_RPC_POST_REGISTRATION_PUBLIC_FUNDS",
+  "capturedUtc": "2026-11-21T00:39:47.783343+00:00",
+  "chainId": 7295799,
+  "address": "0xe1136dCF839c4aD2704094241928Fa2896A118c5",
+  "latestBlock": 24766345,
+  "publicNativeWei": "10000000000000000000",
+  "evmNonce": 0,
+  "RLSPublicWei": "242803043320000000000",
+  "USDrPublicWei": "10000000000000000000",
+  "explorer_transactions": {
+    "http": 200,
+    "count": 1,
+    "nextPage": null,
+    "items": [
+      {
+        "hash": "0x66ddb33fb227849c301ff08f197e16844376de3f37130ebbacf1bfc9dd471604",
+        "block": 24766137,
+        "method": null,
+        "status": "ok",
+        "value": null,
+        "token": null
+      }
+    ]
+  },
+  "explorer_token_transfers": {
+    "http": 200,
+    "count": 3,
+    "nextPage": null,
+    "items": [
+      {
+        "hash": "0x0c7419d5d3d334dae29f5e87bdde78481ed61b6ae2907429044b4e56903beb0a",
+        "block": 24766266,
+        "method": "execute",
+        "status": null,
+        "value": "7196956680000000000",
+        "token": "RLS"
+      },
+      {
+        "hash": "0x952208d50a5711e69589e75e0af619f1e94ff47a8f9372a2c2a26155e1025e5c",
+        "block": 24766137,
+        "method": "transfer",
+        "status": null,
+        "value": "250000000000000000000",
+        "token": "RLS"
+      },
+      {
+        "hash": "0x66ddb33fb227849c301ff08f197e16844376de3f37130ebbacf1bfc9dd471604",
+        "block": 24766137,
+        "method": null,
+        "status": null,
+        "value": "10000000000000000000",
+        "token": "USDr"
+      }
+    ]
+  },
+  "explorer_internal_transactions": {
+    "http": 200,
+    "count": 0,
+    "nextPage": null,
+    "items": []
+  }
+}

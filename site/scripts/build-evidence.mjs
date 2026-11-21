@@ -20,9 +20,17 @@ const replay=load("evidence/public-rpc/controlled/claim-invite-historical-replay
 const spend=load("evidence/public-rpc/controlled/receiver-private-spend-5423d2b13c.json");
 const spendFee=load("evidence/public-rpc/controlled/receiver-private-spend-fee-replay-verified.json");
 const recipientOwner=load("evidence/public-rpc/controlled/receiver-dev-owner-ui-3rls-verified.json");
-const reportPath=path.join(project,"release/final-release-report.json");
+const secondRegistration=load("evidence/public-rpc/controlled/faucet-cohort-funding-and-registration-verified.json");
+const secondShield=load("evidence/public-rpc/controlled/faucet-cohort-public-shield-20-verified.json");
+const secondSpend=load("evidence/public-rpc/controlled/faucet-cohort-private-spend-77ff894ed5.json");
+const secondFee=load("evidence/public-rpc/controlled/faucet-cohort-private-spend-fee-replay-verified.json");
+const secondOwner=load("evidence/public-rpc/controlled/faucet-cohort-recipient-owner-witness-6rls.json");
+const shiftedNulls=load("evidence/public-rpc/controlled/private-fee-temporal-shift-placebo-verified.json");
+const overspend=load("evidence/public-rpc/controlled/dev-overspend-guard-readonly-verified.json");
+
+const reportPath=path.join(project,"release/two-cohort-release-report.json");
 const manifestPath=path.join(project,"MANIFEST.sha256");
-const archive=fs.existsSync(reportPath)?load("release/final-release-report.json"):
+const archive=fs.existsSync(reportPath)?load("release/two-cohort-release-report.json"):
   fs.existsSync(manifestPath)?{
     archive_sha256:crypto.createHash("sha256").update(fs.readFileSync(manifestPath)).digest("hex"),
     source_files:fs.readFileSync(manifestPath,"utf8").trim().split("\n").length,
@@ -37,8 +45,8 @@ const fmt=val=>Number(val).toFixed(8).replace(/0+$/,"").replace(/\.$/,"");
 const myInv=fees.cases.find(c=>c.case==="controlled_god_shield");
 const feeRow=myInv?.matching_treasury_transfers?.[0];
 const data=noSecret({
-  edition:"FINAL RESEARCH — CONTROLLED FIRST-GAS LIFECYCLE VERIFIED",
-  version:"21 November 2026 · final evidence",
+  edition:"FINAL RESEARCH — TWO CONTROLLED ENYGMA PUBLIC ONBOARDING PATHS VERIFIED",
+  version:"21 November 2026 · two-cohort second edition",
   chainId:7295799,
   checksum_sha256_of_archive:archive.archive_sha256,
   archiveFiles:archive.source_files,
@@ -108,6 +116,61 @@ const data=noSecret({
     spendReplayStates:spendFee.historicalReplayControls.calls.map(v=>({block:v.block,result:v.outcome})),
     transcriptionCorrection:"Original screenshot transcription was wrong; corrected using UserRegistered event"
   },
+  secondCohort:{
+    firstUseRoute:"PUBLIC_FAUCET_THEN_PUBLIC_SHIELD_THEN_PRIVATE_SEND",
+    wallet:secondRegistration.owner,
+    username:"@rq3faucet26",
+    freshBaselineBlock:secondRegistration.baselineBeforeFunding.fixedBlock,
+    freshBaselinePublicRlsWei:secondRegistration.baselineBeforeFunding.publicRlsWei,
+    publicRlsFaucetTx:"0x952208d50a5711e69589e75e0af619f1e94ff47a8f9372a2c2a26155e1025e5c",
+    publicRlsFaucetAmount:"250",
+    publicUsdrFaucetAmount:"10",
+    publicNativeFaucetAmount:"10",
+    publicFundingBlock:24766137,
+    registrationTx:secondRegistration.registered.hash,
+    registrationBlock:secondRegistration.registered.block,
+    registrationPublicFeeRls:secondRegistration.registered.feeRls,
+    publicShieldTx:secondShield.txHash,
+    publicShieldBlock:secondShield.block,
+    publicShieldPrincipalRls:secondShield.vaultDepositRls,
+    publicShieldFeeRls:secondShield.publicGasAndRelayerFeeRls,
+    publicRlsBeforeShield:secondShield.publicRlsBeforeShield,
+    publicRlsAfterShield:secondShield.publicRlsAfterShield,
+    privateSendTx:secondSpend.txHash,
+    privateSendBlock:secondSpend.blockNumber,
+    privateSendNullifierCount:secondSpend.nullifiers.length,
+    privateSendCommitmentCount:secondSpend.commitments.length,
+    privateSendNoteCount:secondSpend.encryptedNotes.length,
+    privateSendFeeGrossRls:secondFee.derivedGrossFeeRls,
+    privateSendFeeTreasuryRls:secondFee.treasuryTransferRls,
+    privateSendFeeTreasuryTx:secondFee.payoutTx,
+    privateSendPayoutLag:secondFee.payoutBlockDelta,
+    privateSendPublicBalanceAfterRls:fmt(Number(secondSpend.senderStateAtLatestHead.rlsWei)/1e18),
+    privateSendPublicUsdrAfterRls:fmt(Number(secondSpend.senderStateAtLatestHead.usdrTokenWei)/1e18),
+    privateSendPublicNonceAfter:secondSpend.senderStateAtLatestHead.nonce,
+    recipientShieldedBalanceBeforeRls:secondOwner.beforeSecondCohortShieldedBalanceUiRls,
+    recipientShieldedBalanceAfterRls:secondOwner.afterSecondCohortShieldedBalanceUiRls,
+    recipientShieldedBalanceIncreaseRls:secondOwner.increaseUiRls,
+    walletObservedPrivatePrincipalRls:secondFee.sourceWalletObservedPrincipalRls,
+    replayStates:secondFee.historicalReplayControls.calls.map(v=>({block:v.block,result:v.outcome})),
+    publiclyUnfunded:false,
+    directShieldedFaucetUsed:false,
+    faucetCooldownAllButtonsDisabled:true,
+    receiverWalletReadOnlyWitness:true,
+    privacyBoundary:"Public faucet + 20 RLS Shield disclosed account and deposit principal; later 3 RLS send did not disclose private principal/recipient in vault logs"
+  },
+  shiftedPlaceboControl:{
+    cases:shiftedNulls.positiveCases,
+    windows:shiftedNulls.shiftedWindowCount,
+    withTreasuryPayout:shiftedNulls.shiftedWindowsWithAnyTreasuryPayout,
+    withNullifier:shiftedNulls.shiftedWindowsWithAnyNullifierTx,
+    controlType:"Fixed time-offset windows around original 3 private operations, NOT traffic matched or randomized"
+  },
+  uiNegativeControl:{
+    account:"@rq3dev26",balanceShieldedRls:"3",inputRls:"15",
+    disabled:overspend.sendActionDisabled,
+    noTransactionSubmitted:overspend.noTransactionSignedOrBroadcast
+  },
   privateFeePilot:{
     cases:[...receiverFee.controlledPrivateCases.map(c=>({
       kind:c.name,tx:c.tx,block:c.block,
@@ -125,6 +188,14 @@ const data=noSecret({
       baseFeeImpliedRls:spendFee.derivedBaseFeeRls,
       payoutDelayBlocks:spendFee.payoutBlockDelta,
       uniqueWindow:spendFee.uniquePrivateSpendInFixedWindow&&spendFee.uniqueTreasuryTransferInFixedWindow
+    },{
+      kind:"controlled_public_faucet_cohort_private_send",tx:secondFee.sourceTransaction,
+      block:secondFee.sourceBlock,treasuryTx:secondFee.payoutTx,
+      treasuryShareRls:secondFee.treasuryTransferRls,
+      grossFeeImpliedRls:secondFee.derivedGrossFeeRls,
+      baseFeeImpliedRls:secondFee.derivedBaseFeeRls,
+      payoutDelayBlocks:secondFee.payoutBlockDelta,
+      uniqueWindow:secondFee.uniquePrivateSpendInFixedWindow&&secondFee.uniqueTreasuryTransferInFixedWindow
     }],
     publicRegistrationControlWithoutPayout:receiverFee.negativeControl.treasuryPaymentsNext35Blocks===0,
     causalAttributionCryptographicallyProven:false
@@ -133,9 +204,11 @@ const data=noSecret({
     cases:[...replay.cases.map(c=>({kind:c.case,tx:c.originalTxHash,
       stages:c.readOnlyHistoricalSimulations.map(s=>({block:s.queriedBlock,result:s.rpcResultClass}))})),
       {kind:"receiver_first_private_send",tx:spend.txHash,
-       stages:spendFee.historicalReplayControls.calls.map(s=>({block:s.block,result:s.outcome}))}],
-    positiveCount:replay.preStatePositiveControls+spendFee.historicalReplayControls.positiveBefore,
-    negativeCount:replay.postStateNegativeControls+spendFee.historicalReplayControls.negativeAfter,
+       stages:spendFee.historicalReplayControls.calls.map(s=>({block:s.block,result:s.outcome}))},
+      {kind:"public_faucet_first_private_send",tx:secondSpend.txHash,
+       stages:secondFee.historicalReplayControls.calls.map(s=>({block:s.block,result:s.outcome}))}],
+    positiveCount:replay.preStatePositiveControls+spendFee.historicalReplayControls.positiveBefore+secondFee.historicalReplayControls.positiveBefore,
+    negativeCount:replay.postStateNegativeControls+spendFee.historicalReplayControls.negativeAfter+secondFee.historicalReplayControls.negativeAfter,
     provenance:"Non-committing eth_call at historical states; not a mined failure"
   },
   feeAnalysis:{
@@ -169,7 +242,16 @@ const data=noSecret({
     {name:"Recipient 3 RLS private spend — mined receipt",type:"On-chain",count:"PASS"},
     {name:"Separate receiving-wallet 3 RLS shielded balance",type:"Wallet",count:"PASS"},
     {name:"Private spend + fee/replay tamper tests",type:"Offline",count:"37 / 37"},
-    {name:"Three private fee metadata controls",type:"Exploratory",count:"3 / 3"}
+    {name:"Four selected private fee metadata correlations",type:"Exploratory",count:"4 / 4"},
+    {name:"Second cohort public faucet and registration",type:"On-chain",count:"PASS"},
+    {name:"Second cohort 20 RLS public shield",type:"On-chain",count:"PASS"},
+    {name:"Second cohort 3 RLS private send",type:"On-chain",count:"PASS"},
+    {name:"Separate receiving wallet cumulative 6 RLS",type:"Wallet",count:"PASS"},
+    {name:"Second private send tamper tests",type:"Offline",count:"38 / 38"},
+    {name:"Fixed time-shifted fee placebo windows",type:"Exploratory",count:"30 / 30 checked"},
+    {name:"UI-only overspend amount rejected",type:"UI",count:"PASS"},
+    {name:"Read-only historical replay controls",type:"Simulation",count:"4 success · 8 revert"}
+
   ],
   provenance:[
     {id:"shield",label:"Controlled shield",source:"public RPC transaction receipt + second eth_getLogs query",
@@ -183,9 +265,12 @@ const data=noSecret({
       tx:invite.hash,block:invite.block_height},
     {id:"receiver",label:"Controlled @devil first spend",source:"public SharedVault receipt, zero-funding audit and independent @rq3dev26 owner-wallet view",
       verdict:"3 RLS private payment completed; public recipient and amount not decrypted from chain",
-      tx:spend.txHash,block:spend.blockNumber}
+      tx:spend.txHash,block:spend.blockNumber},
+    {id:"second",label:"Public-faucet private send comparison",source:"public funding / shield receipt, private note transfer, separate receiving-wallet observation",
+      verdict:"Different funding method: visible 20 RLS deposit, then private 3 RLS send; Dev shielded RLS 3 → 6",
+      tx:secondSpend.txHash,block:secondSpend.blockNumber}
   ],
-  publicationState:"CONTROLLED SHIELDED ONBOARDING-TO-SPEND LIFECYCLE VERIFIED; DATASET SCOPED TO RAYLS TESTNET",
+  publicationState:"TWO REAL TESTNET PRIVATE PAYMENT LIFECYCLES VERIFIED; ONLY INVITATION RECEIVER NEVER HELD PUBLIC FUNDS",
   securityNotice:"The private bearer invite link was exposed in chat and must not be treated as a confidentiality-controlled invitation. It is not in this dataset.",
   docs:[
     {name:"How Enygma Public works",url:"https://docs.rayls.com/docs/how-enygma-public-works"},

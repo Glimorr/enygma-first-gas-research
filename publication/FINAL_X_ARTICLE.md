@@ -4,13 +4,15 @@ Rayls Enygma Public is designed to let a new user receive shielded funds without
 
 I built two different starting conditions on Rayls Public Chain Testnet. One wallet followed the familiar path of public funding and registration. A second wallet was created with a new passkey and opened an invitation sent privately from a separate funded account.
 
-The first comparison was straightforward. The second produced a result worth examining more closely: **the new account claimed an invitation, registered a public username and then made a private 3 RLS payment while its public RLS, USDr, native balance and EVM transaction nonce stayed at zero.**
+The first comparison was straightforward. The invitation-funded experiment produced a result worth examining more closely: **the new account claimed an invitation, registered a public username and then made a private 3 RLS payment while its public RLS, USDr, native balance and EVM transaction nonce stayed at zero.**
 
 There was another detail I had not expected to be this clean. Although the private invitation, claim and outgoing send did not reveal their principals through public token transfer events, the relayer's separate treasury transactions were consistent with the fees shown in the wallets.
 
 I preserved the raw evidence, the commands that reproduce it and the failures I encountered along the way.
 
-The [interactive research website](https://glimorr.github.io/enygma-first-gas-research/) traces the full lifecycle. The [public GitHub repository](https://github.com/Glimorr/enygma-first-gas-research) contains original receipts, independent verification code, six evidence figures, and a downloadable, SHA-256 verified archive.
+I also ran a second complete payment path using a **fresh passkey, a public faucet and an ordinary public shield**. That gave me a direct practical comparison, without pretending the two onboarding methods were identical.
+
+The [interactive research website](https://glimorr.github.io/enygma-first-gas-research/) traces the full lifecycle. The [public GitHub repository](https://github.com/Glimorr/enygma-first-gas-research) contains original receipts, independent verification code, seven evidence figures and a versioned, SHA-256 verified evidence archive.
 
 ## The control: an ordinary funded wallet
 
@@ -93,6 +95,34 @@ For this one controlled lifecycle, I verified the full sequence: **new passkey �
 
 
 
+## A second wallet took the opposite route
+
+There was still an obvious control missing. We had shown one newcomer using an invitation to become a private sender with zero public RLS. That did not establish what happens to a newcomer who takes the testnet's ordinary public-faucet path.
+
+I created a second passkey wallet, **@rq3faucet26**, and saved its public baseline before requesting anything: zero RLS, zero USDr, zero native balance and nonce zero, independently checked at **block 24,765,718**.
+
+I initially tried opening the dedicated faucet page before completing setup. The application returned to the first-use onboarding screen. Its funding step clearly warned that the faucet would make a public link to the address. I followed that route rather than treating a private faucet button as proof that zero-funded first-use onboarding would work.
+
+The account then received **250 public RLS and 10 public USDr**, registered as @rq3faucet26, and paid **7.19695668 public RLS** for registration. After onboarding, the four faucet options—including a separately labeled shielded RLS faucet—were all disabled with about **2 hours 55 minutes** of cooldown shown. That is an observed frontend state, not proof of the server's precise rate-limit implementation. **I did not claim a direct shielded-faucet payment.**
+
+Instead, I carried out a separate, preregistered public shield. From the new wallet, I **shielded 20 RLS**. The public receipt exposed two precise token movements: **20 RLS into SharedVault** and **3.52580064 RLS** in relayer fees. Public RLS fell from **242.80304332 to 219.27724268**. The account's public source address and principal were observable here, unlike the invitation-funded new receiver's zero-public-funding entry.
+
+Then I sent **3 shielded RLS to @rq3dev26** from @rq3faucet26. It succeeded in block **24,767,795**. The mined `transferV2` receipt contained **one nullifier, three commitments and three encrypted notes**, with no public ERC-20 transfer for the 3 RLS principal.
+
+The separate receiving-wallet test made the comparison much stronger. I reconnected the controlled @rq3dev26 wallet in a read-only session and found **6 shielded RLS**, up from **3 RLS** after the invitation-funded payment. Its public RLS display remained **242.8069**. The two separate wallet observations corroborated two actual 3 RLS private incoming payments. They did not require decrypting either public vault receipt.
+
+The second sender's public RLS remained **219.27724268**, USDr **10**, native balance **10**, with EVM nonce **zero** after the private payment. Its public funding and shielding history, however, remained clearly visible on the blockchain.
+
+[Public faucet-funded registration](https://testnet-explorer.rayls.com/tx/0x0c7419d5d3d334dae29f5e87bdde78481ed61b6ae2907429044b4e56903beb0a)
+
+[20 RLS public shield transaction](https://testnet-explorer.rayls.com/tx/0x412a30dfaf94a75b25efbc02edf0f63a6de4846d89392c945e6f9b5b7be5c6b7)
+
+[Second 3 RLS private send](https://testnet-explorer.rayls.com/tx/0x77ff894ed5be5694a806d0b7c17666be0bbe5dbf64a4340eb10374fa04f11bdb)
+
+**Insert Figure 7 — Two onboarding paths, two private payments:** `figures/F07-two-routes-one-private-endpoint.png`
+
+This is **one completed lifecycle for each of two different onboarding methods**, not an independent repeat of the same zero-public-funding treatment. The meaningful distinction is the visible funding trail that existed *before* both wallets sent privately.
+
 ## The surprising part was the fee trail
 
 The Enygma vault's private transfer receipt does not reveal the payment principal. But the relayer also creates separate public transactions to settle some fees.
@@ -105,7 +135,7 @@ The amounts reconcile exactly when the 15% share is applied to the base fee, not
 
 I checked an activity-selected collection of public-forwarder transactions. The sample contained **18 paid operations**, each followed by one distinct matching reported-treasury transfer. There were also **two zero-fee controls** without positive matching payout. This is a selected testnet sample, not an estimate of how all relayers behave.
 
-Then I checked **three actual private operations** from the same controlled invitation lifecycle.
+Then I checked **three actual private operations** from the invitation lifecycle, and later added one more selected private payment from the public-faucet cohort.
 
 The invitation transaction was followed four blocks later by a reported-treasury RLS transfer of **0.576 RLS**. Applying the publicly reported fee-share formula implies a gross fee of **4.416 RLS**. The official wallet had shown approximately **4.42 RLS**.
 
@@ -117,9 +147,13 @@ The first outgoing 3 RLS private payment gave me a third independent comparison.
 
 For each of the three private operations, I searched a fixed 38-block window, from 12 blocks before the operation to 25 blocks after it. Each window contained just one relevant vault-nullifier transaction and one relayer-to-treasury RLS transfer. A separate registration receipt with zero public fee had no matching payout in the subsequent 35-block window.
 
+The second cohort added a fourth controlled private payment window. A separate reported-treasury transfer of **0.576 RLS** occurred four blocks after the second 3 RLS send, again implying a **4.416 RLS** gross fee and matching the app's rounded **4.42 RLS**. The public 20 RLS shield had its own distinct treasury transfer of **0.45988704 RLS** three blocks afterward, exactly reconciled to the **3.52580064 RLS** public fee.
+
+As an additional sanity check, I examined **30 preselected time-shifted placebo windows** around the original three private operations. None contained a relevant treasury payout or vault-nullifier transaction. Those are sparse nearby periods, not a matched or randomized sample, and I do not interpret 0/30 as a general false-positive rate.
+
 The result is evidence of **fee-level metadata correlation**, not a decryption of private payments.
 
-The on-chain treasury transfer carries no cryptographic pointer tying it uniquely to a particular shielded note. The reported treasury address is drawn from relayer configuration and its legal ownership was not independently authenticated. Three controlled private cases from one lifecycle are still too few to support a general network-wide inference rate.
+The on-chain treasury transfer carries no cryptographic pointer tying it uniquely to a particular shielded note. The reported treasury address is drawn from relayer configuration and its legal ownership was not independently authenticated. Four selected private operations across two related controlled lifecycles are still too few to support a network-wide inference rate.
 
 Still, the result suggests a useful design consideration for private payment infrastructure: hiding the principal and recipient does not automatically hide the economic metadata of a fee settlement.
 
@@ -133,7 +167,7 @@ Using read-only `eth_call`, I executed the same call data against the block imme
 
 The same call data reverted when simulated against the state at the mined block and one block later. The original RPC responses and calldata hashes are retained because the live testnet RPC later pruned some of those historical block states; I no longer describe those old simulations as freshly rerunnable against the current endpoint.
 
-That gave me **three positive** and **six negative** read-only results without submitting any additional transactions.
+The second cohort added a fourth positive pre-settlement simulation and two more subsequent reverts. Across all four private operations, that gave me **four positive and eight negative** read-only observations without submitting any additional transactions.
 
 The observed behavior is consistent with nullifier state being consumed by a successful shielded operation. I cannot isolate the exact reason for each revert from these simulations alone, and this is not a complete cryptographic replay-security proof.
 
@@ -141,17 +175,17 @@ The observed behavior is consistent with nullifier state being consumed by a suc
 
 ## What verified
 
-The public funding and registration control completed on Rayls testnet. The 40 RLS shield deposit and its exact public fee reconciled. The 30 RLS invitation and the new passkey receiver's private claim each had independently authenticated encrypted-note receipts. The new account registered as @devil and then sent a 3 RLS shielded payment to @rq3dev26, confirmed by both user-controlled wallet views and the mined vault receipt, while its tested public RLS, USDr, native balance and EVM nonce stayed zero.
+The public funding and registration control completed on Rayls testnet. The 40 RLS shield deposit and its exact public fee reconciled. The 30 RLS invitation and the new passkey receiver's private claim each had independently authenticated encrypted-note receipts. The invitation-funded @devil account registered and sent 3 shielded RLS to @rq3dev26 with all tested public balances and nonce at zero. Separately, the publicly funded @rq3faucet26 account shielded 20 RLS and sent another private 3 RLS to the same receiver. The receiving wallet displayed 3 shielded RLS after the first send and 6 after the second. Each sending action was authorized by its account operator, while the public receipts independently authenticated the encrypted-note transactions.
 
-The fee analysis also reproduced selected public-forwarder treasury transfers and identified three correlated fee settlements around actual invitation, claim and first-spend operations. These public traces do not reveal the shielded payment principal.
+The fee analysis reproduced selected public-forwarder treasury transfers and identified four correlated fee settlements around actual private invitation, claim and send operations across both cohorts. These public traces do not reveal the shielded payment principal.
 
-**The study contains one researcher-controlled private onboarding-to-spend lifecycle.** The direct shielded-faucet comparator was not performed, the invitation link was exposed in the research conversation, and an auditor-side decrypted view was not independently tested. These constraints define the conclusion, rather than being silently generalized to the whole network.
+**The study contains two researcher-controlled private payment lifecycles with distinct entry mechanisms, only one of which began without public wallet funding.** The direct shielded-faucet comparator was blocked by the observed onboarding step and subsequent faucet cooldown and was not performed, the invitation link was exposed in the research conversation, and an auditor-side decrypted view was not independently tested. These constraints define the conclusion, rather than being silently generalized to the whole network.
 
 **Insert Figure 6 — Evidence classification:** `figures/F06-evidence-taxonomy.png`
 
 ## How to reproduce
 
-The evidence register contains raw public receipts, fixed-block state checks, independently decoded events, selected transaction hashes, contract ABI snapshots and an integrity manifest. The frozen [public-only evidence archive](https://glimorr.github.io/enygma-first-gas-research/evidence/rayls-wq3-final-evidence.zip) can be downloaded directly; the linked GitHub repository provides the readable source tree. These exact published files passed 23/23 clean-extraction checks and 66/66 browser checks on the public website.
+The evidence register contains raw public receipts, fixed-block state checks, independently decoded events, selected transaction hashes, contract ABI snapshots and an integrity manifest. The [second-edition two-cohort public evidence archive](https://glimorr.github.io/enygma-first-gas-research/evidence/rayls-wq3-two-cohort-evidence.zip) contains both funding-route experiments, all seven figures and their verification scripts. The first-edition archive remains independently downloadable and unchanged for provenance. The clean-extraction test report and deployed browser QA results are published alongside the source repository.
 
 The project can be reproduced using Node 22+, Python 3 and the stored public RPC endpoints:
 
@@ -165,6 +199,15 @@ node qa/tamper_receiver_onboarding.mjs
 node qa/verify_devils_first_private_spend.mjs --tx 0x5423d2b13c575c8e26c73e42906f4eefb7a6a257defcebad81a1415c857253e8
 node qa/verify_private_spend_offline.mjs
 node qa/tamper_private_spend.mjs
+node qa/verify_faucet_cohort_registration.mjs
+python3 qa/verify_faucet_cohort_public_shield20.py
+node qa/verify_faucet_cohort_private_spend_envelope.mjs
+node qa/verify_faucet_cohort_private_spend_offline.mjs
+node qa/tamper_faucet_cohort_private_spend.mjs
+python3 qa/verify_faucet_cohort_private_spend_public_payout.py
+python3 qa/verify_faucet_cohort_private_spend_replay_frozen.py
+python3 qa/verify_private_fee_shifted_nulls.py
+python3 qa/check_two_cohort_release.py
 python3 qa/verify_private_spend_public_payout.py
 python3 qa/verify_private_fee_sidechannel.py
 python3 qa/verify_private_fee_sidechannel_offline.py --tamper-tests
@@ -172,7 +215,7 @@ python3 qa/verify_private_replay_frozen.py
 python3 qa/verify_god_shield_postprune.py
 ```
 
-The final archive is separately extracted and checked before publication. The evidence-tampering suites rejected **144 of 144** deliberate changes across the initial shield, fee sample, invitation, new receiver, private fee study and first private spend. Those tests show that the reconstruction is sensitive to corrupted data. They are not proofs that the entire privacy protocol is secure.
+The final archive is separately extracted and checked before publication. The evidence-tampering suites rejected **182 of 182** deliberate changes across the original six evidence categories and the second-cohort private spend. Those tests show that the reconstruction is sensitive to corrupted data. They are not proofs that the entire privacy protocol is secure.
 
 ## Issues fixed
 
@@ -195,8 +238,8 @@ An early testnet faucet request also hit a rate limit and was preserved as a fai
 
 The research is independent and was conducted with testnet wallets and researcher-controlled transactions. It does not represent an official Rayls security audit or a mainnet result.
 
-**Video 1:** Public funding control, private invitation and the new wallet’s first private spend — [insert actual video link after recording]
+**Video 1:** Two onboarding routes — invitation without public funds versus public faucet plus public shield — [insert actual video link after recording]
 
-**Video 2:** Public treasury fee metadata behind three private operations — [insert actual video link after recording]
+**Video 2:** Both 3 RLS private sends, independent recipient confirmation and four private fee correlations — [insert actual video link after recording]
 
-**Video 3:** Independent recipient confirmation, replay checks and evidence corruption controls — [insert actual video link after recording]
+**Video 3:** Four positive / eight negative historical replay observations, 182 evidence corruption controls and live release verification — [insert actual video link after recording]

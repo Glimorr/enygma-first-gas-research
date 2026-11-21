@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "evidence_class": "CONTROLLED_SECOND_COHORT_FROZEN_HISTORICAL_REPLAY_AND_SOURCE_BYTE_CONSISTENCY",
+  "verifiedUtc": "2026-11-21T01:06:13.820927+00:00",
+  "sourceTx": "0x77ff894ed5be5694a806d0b7c17666be0bbe5dbf64a4340eb10374fa04f11bdb",
+  "block": 24767795,
+  "calldataSha256": "0e7de6a8a7655abd5a320ca95b70365018c21c3485740d2dd3717f9a3096a3ae",
+  "frozenPreStateReadOnlyPositive": 1,
+  "frozenPostStateReadOnlyReverts": 2,
+  "readOnlyEthCallBroadcastTransactions": 0,
+  "freshHistoricalStateQueried": false,
+  "scientificLimit": "Archived public RPC may prune old block state. Saved pre/at/post responses agree with source-dated original experiment; this is frozen evidence, not newly repeated live simulation or a cryptographic security proof."
+}

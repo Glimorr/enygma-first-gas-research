@@ -16,3 +16,22 @@
 .private-metadata{padding:26px 31px;margin-top:18px}.private-metadata-header{display:flex;justify-content:space-between;gap:16px;align-items:center;border-bottom:1px solid var(--line);padding-bottom:19px}.private-metadata-header span{font-size:10px;font-weight:700;letter-spacing:.13em;color:var(--lime)}.private-metadata-header strong{font:600 18px 'Space Grotesk'}.meta-explainer{font-size:10px;letter-spacing:.12em;color:var(--violet);margin:23px 0 15px}.private-fee-row{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 0;border-top:1px solid var(--line)}.private-fee-row .kind{font-size:13px;color:#d4cce3}.private-fee-row .amount{font:600 26px 'Space Grotesk';color:var(--lime)}.private-fee-row .delay{font-size:10px;color:#aca0c4}.private-fee-foot{font-size:12px;margin:21px 0;max-width:800px}.private-metadata-source{display:flex;gap:20px;justify-content:flex-end;border-top:1px solid var(--line);padding-top:18px}.private-metadata-source a,.archive-downloads a{font-size:12px;color:var(--violet)}.private-metadata-source a:hover,.archive-downloads a:hover{color:var(--lime)}.replay-row{display:grid;grid-template-columns:1fr repeat(3,130px);gap:10px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)}.replay-row .replay-title{font:600 14px 'Space Grotesk'}.replay-row span{padding:10px 8px;font:600 11px/1.1 'Space Grotesk';text-align:center;border-radius:8px}.simulate-ok{background:rgba(149,235,206,.15);color:var(--mint)}.simulate-revert{background:rgba(174,145,237,.17);color:var(--violet)}.archive-downloads{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:15px;margin-top:36px;padding:18px 21px;border:1px solid var(--line);border-radius:14px}.archive-downloads span{font-size:10px;color:#b1a8c2}
 @media(max-width:720px){.replay-row{grid-template-columns:1fr repeat(3,minmax(0,1fr))}.replay-row span{font-size:9px}.private-metadata-header{align-items:start;flex-direction:column}.private-fee-row{display:grid;grid-template-columns:1fr auto}.private-fee-row .delay{grid-column:2;grid-row:2}.private-metadata-source{justify-content:flex-start;flex-wrap:wrap}}
 @media(max-width:390px){.replay-row{grid-template-columns:1fr 1fr}.replay-row .replay-title{grid-column:1/-1}.replay-row span{font-size:10px}}
+
+
+/* Two separate controlled onboarding pathways: evidence-based comparison. */
+.cohort-compare-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:35px}
+.cohort-card{border:1px solid rgba(186,159,242,.36);border-radius:22px;background:linear-gradient(135deg,rgba(32,25,50,.95),rgba(14,12,24,.96));padding:31px;min-width:0;display:flex;flex-direction:column;gap:14px}
+.cohort-card:first-child{border-color:rgba(225,248,90,.44)}
+.cohort-eyebrow{font-size:11px;letter-spacing:.14em;font-weight:800;color:#e7fd4c}
+.cohort-title{font-size:clamp(26px,3.5vw,43px);font-weight:750;letter-spacing:-.045em;margin:0;color:#fff}
+.cohort-setup{color:#c6bdd5;line-height:1.55;font-size:17px;min-height:54px;margin:0}
+.cohort-funding{padding:13px 15px;border:1px solid rgba(171,152,190,.24);border-radius:9px;background:rgba(255,255,255,.025);font-size:13px;line-height:1.5;color:#bbb3c9}
+.cohort-private{font-size:17px;color:#e7fd4c;font-weight:700;letter-spacing:.015em}
+.cohort-owner{padding:15px;border-radius:10px;background:rgba(153,245,206,.09);color:#b9ecd8;font-weight:700;line-height:1.45}
+.cohort-small{font-size:13px;color:#b6a7c9}
+.cohort-caveat{font-size:13px;line-height:1.56;color:#aa9cb7;margin:0;flex:1}
+.cohort-link{display:inline-flex;width:max-content;max-width:100%;font-size:14px;font-weight:700;text-decoration:none;color:#e7fd4c;border-bottom:1px solid rgba(231,253,76,.4);padding-bottom:6px}
+.cohort-foot{margin-top:21px;border:1px solid rgba(157,233,208,.26);border-radius:17px;padding:22px 26px;background:rgba(16,42,38,.34)}
+.cohort-foot strong{color:#a5eacb;font-size:15px;letter-spacing:.06em}
+.cohort-foot p{color:#c2bbc8;line-height:1.52;margin:9px 0 0;font-size:15px}
+@media(max-width:770px){.cohort-compare-grid{grid-template-columns:1fr}.cohort-card{padding:24px}.cohort-setup{min-height:0}.cohort-owner{font-size:14px}}

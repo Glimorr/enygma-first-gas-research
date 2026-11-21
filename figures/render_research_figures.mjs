@@ -1,5 +1,5 @@
 /**
- * Six original evidence-grounded 1600×900 article PNGs.
+ * Seven original evidence-grounded 1600×900 article PNGs.
  * Rebuild after final private spend is independently verified.
  * All data comes from archived public receipts / wallet-observation labels.
  * No private invitation URL or wallet credentials used.
@@ -48,21 +48,52 @@ docs.push(["03","Recipient before and after",frame("03","A wallet with <span>not
 `<div class="grid" style="grid-template-columns:repeat(4,1fr);margin-top:26px">${[
  ["BEFORE CLAIM","24,747,863","0","0","0"],["AFTER CLAIM","24,747,924","0","0","0"],["AFTER REGISTRATION","24,748,136","0","0","0"],["AFTER FIRST SEND","24,760,126","0","0","0"]].map(a=>`<div class="card" style="height:250px"><div class="top">${a[0]} · BLOCK ${a[1]}</div><div class="big">${a[2]} <span style="font-size:17px;color:#fff">PUBLIC RLS</span></div><div class="line"></div><p>Public USDr: <strong style="color:#fff">0</strong></p><p>EVM account nonce: <strong style="color:#fff">0</strong></p></div>`).join("")}</div>
 <div class="card" style="margin-top:25px;display:flex;align-items:center;gap:35px;padding:25px"><div style="font-size:52px;font-weight:800;color:#b39bf4">17.304 RLS</div><div><div class="top">OWNER-WALLET OBSERVATION</div><p>Shielded balance after the claim. The first private send was 3 RLS; @rq3dev26 independently confirmed 3 shielded RLS. Neither amount is public plaintext.</p></div></div>`,"FIXED-BLOCK STATE, SCOPED RLS/USDR LOGS AND REGISTERED EVENTS")]);
-const privateFees=e.privateFeePilot.cases;
-docs.push(["04","Private fee trail",frame("04","A private transfer can leave <span>a public fee trail.</span>","Three controlled private transactions had exactly one corresponding nearby treasury payout in fixed search windows, under the relayer-reported 15% surcharge policy.",
+const privateFees=e.privateFeePilot.cases.slice(0,3);
+docs.push(["04","Private fee trail",frame("04","A private transfer can leave <span>a public fee trail.</span>","The first cohort had three controlled private operations, each with exactly one nearby reported-treasury payout in its fixed window. A fourth case from the public-funded cohort appears in Figure 7.",
 `<div class="grid" style="grid-template-columns:repeat(3,1fr);margin-top:25px">${privateFees.map((v,i)=>`<div class="card" style="height:320px"><div class="top">CONTROLLED PRIVATE ${i===0?"INVITATION":i===1?"CLAIM":"FIRST SEND"}</div><div class="big">${v.treasuryShareRls} <span style="font-size:16px;color:#fff;margin-left:14px">RLS TO TREASURY</span></div><div class="line"></div><h3>= ${v.grossFeeImpliedRls} RLS implied gross</h3><p>Fee formula: treasury share × 115 / 15</p><div style="margin-top:28px"><span class="pill mint">PAYOUT ${v.payoutDelayBlocks} BLOCKS LATER</span></div></div>`).join("")}</div>
 <div style="margin-top:20px;font-size:19px;color:#e7fd4c">All three private payment principals remain hidden in public RPC. Fee correlation does not establish the shielded sender or recipient.</div>`,"EXPLORATORY N=3; TREASURY ADDRESS REPORTED BY RELAYER")]);
-const replay=e.replayControls.cases;
+const replay=e.replayControls.cases.slice(0,3);
 docs.push(["05","Historical state replay controls",frame("05","Same public calldata. <span>Different chain state.</span>","Read-only eth_call simulations of the invitation, claim and first private send. No new transactions or gas charges were created.",
 `<div class="grid" style="grid-template-columns:repeat(3,1fr);margin-top:23px">${replay.map(v=>`<div class="card" style="height:340px"><div class="top">${v.kind==="private_invite_creation"?"INVITATION CREATION":v.kind==="private_invite_claim"?"INVITATION CLAIM":"FIRST PRIVATE SEND"}</div>${v.stages.map((a,i)=>`<div style="display:flex;justify-content:space-between;align-items:center;border-top:1px solid #45364f;padding:18px 0"><span class="sublabel">${i===0?"STATE BEFORE":i===1?"MINED STATE":"NEXT BLOCK"} · ${a.block.toLocaleString()}</span><span class="pill ${a.result==="SUCCESS"?"mint":"danger"}">${a.result==="SUCCESS"?"✓ SUCCESS":"✕ REVERT"}</span></div>`).join("")}</div>`).join("")}</div>
 <div style="margin-top:27px;color:#bcb2cf;font-size:17px">Supports state-dependent replay rejection; does not identify every possible revert cause or prove protection against all adversarial variants.</div>`,"3 POSITIVE AND 6 NEGATIVE READ-ONLY HISTORICAL SIMULATIONS")]);
-docs.push(["06","Evidence taxonomy",frame("06","A privacy claim needs <span>a precise evidence class.</span>","The evaluator must be able to tell mined events, wallet observations, secondary correlations and unperformed tests apart.",
+docs.push(["06","Evidence taxonomy",frame("06","A privacy claim needs <span>a precise evidence class.</span>","The evaluator must distinguish two different funding routes, mined receipts, separate owner-wallet observations, secondary correlations and unperformed tests.",
 `<div class="grid" style="grid-template-columns:repeat(2,1fr);margin-top:20px;gap:22px">${[
- ["ON-CHAIN VERIFIED","Shield, invitation, claim, @devil registration, first private send, zero public RLS state.","mint"],
- ["WALLET OBSERVED","30 RLS invite principal and 17.304 RLS shielded recipient balance.","mint"],
- ["EXPLORATORY","3 private fee-to-treasury correlations; 18 public paid cases.","mint"],
- ["LIMITS","Direct shielded-faucet comparator not performed; exposed invitation link; single controlled lifecycle.","danger"]
- ].map(([a,b,color])=>`<div class="card" style="height:176px"><div class="top"><span class="pill ${color}">${a}</span></div><p style="font-size:19px;color:#fff">${b}</p></div>`).join("")}</div>`,"CONTROLLED LIFECYCLE VERIFIED · NO GENERALIZED MAINNET PRIVACY GUARANTEE")]);
+ ["ON-CHAIN VERIFIED","Two completed testnet lifecycles: one zero-public-funding invitation, one public faucet and Shield.","mint"],
+ ["WALLET OBSERVED","Both 3 RLS private sends were observed in owner wallets; receiving wallet balance 3 → 6 RLS.","mint"],
+ ["EXPLORATORY","4 selected private fee correlations; 18 public paid cases, 30 shifted placebo windows.","mint"],
+ ["LIMITS","Direct shielded faucet unavailable during cooldown; exposed invitation; one case per distinct route.","danger"]
+ ].map(([a,b,color])=>`<div class="card" style="height:176px"><div class="top"><span class="pill ${color}">${a}</span></div><p style="font-size:19px;color:#fff">${b}</p></div>`).join("")}</div>`,"TWO CONTROLLED LIFECYCLES VERIFIED · NO MAINNET PRIVACY GUARANTEE")]);
+const B=e.secondCohort;
+if(!B?.privateSendTx||B.recipientShieldedBalanceAfterRls!=="6"||e.privateFeePilot.cases.length!==4)throw Error("Second cohort evidence incomplete");
+docs.push(["07","two routes one private endpoint",frame("07","Two ways in. <span>One private endpoint.</span>",
+  "Two completed private 3 RLS sends, using distinct funding methods. All private payment amounts are from owner-wallet views; the public vault only authenticates encrypted-note execution.",
+`<div class="grid" style="grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:19px">
+ <div class="card" style="height:400px;border-color:#accb73">
+  <div class="top">COHORT A · FRESH PASSKEY @DEVIL</div>
+  <h3 style="color:#e7fd4c">INVITATION FUNDED</h3>
+  <div class="big" style="font-size:42px;margin-top:14px">0 PUBLIC RLS</div>
+  <div class="line"></div>
+  <p>30 RLS invitation → private claim → public fee-free registration → 3 RLS private send.</p>
+  <div style="margin-top:24px;display:flex;gap:11px;align-items:center"><span class="pill lime">NO PUBLIC FUNDING</span><span class="pill mint">1 NULLIFIER · 3 NOTES</span></div>
+  <div class="sub">PRIVATE SEND BLOCK ${Number(R.spendBlock).toLocaleString()}</div>
+ </div>
+ <div class="card" style="height:400px;border-color:#9e80d6">
+  <div class="top">COHORT B · FRESH PASSKEY @RQ3FAUCET26</div>
+  <h3 style="color:#b39bf4">PUBLIC FAUCET + SHIELD</h3>
+  <div class="big" style="font-size:42px;margin-top:14px">${B.publicRlsFaucetAmount} PUBLIC RLS</div>
+  <div class="line"></div>
+  <p>250 RLS public faucet → 7.19695668 RLS public registration → visible 20 RLS shield → private 3 RLS send.</p>
+  <div style="margin-top:24px;display:flex;gap:11px;align-items:center"><span class="pill">PUBLIC FUNDING VISIBLE</span><span class="pill mint">1 NULLIFIER · 3 NOTES</span></div>
+  <div class="sub">PRIVATE SEND BLOCK ${Number(B.privateSendBlock).toLocaleString()}</div>
+ </div>
+ </div>
+ <div class="card" style="margin-top:20px;padding:18px 26px;display:flex;align-items:center;justify-content:space-between;gap:28px">
+  <div><div class="top" style="margin:0 0 7px">SAME INDEPENDENT RECIPIENT @RQ3DEV26</div>
+   <div style="font-size:24px;font-weight:800;color:#fff">Shielded wallet observed 3 → <span style="color:#e7fd4c">6 RLS</span></div>
+  </div>
+  <div style="font-size:15px;color:#c8b8e5;max-width:410px">Each separate 3 RLS private send left 1 nullifier, 3 commitments and 3 encrypted notes. Principal and payee are NOT decoded from public chain data.</div>
+ </div>`,
+ "LIVE RECEIPTS · ONE CONTROLLED LIFE CYCLE PER DIFFERENT FUNDING METHOD · WALLET VALUES NOT PUBLICLY DECRYPTABLE")]);
 const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
 const context=await browser.newContext({viewport:{width:1600,height:900},deviceScaleFactor:1,reducedMotion:"reduce"});
 const page=await context.newPage();

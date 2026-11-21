@@ -54,7 +54,7 @@
     "900\u00d71050",
     "390\u00d7844"
   ],
-  "published_github_pages_verified_after_current_push": false,
+  "published_github_pages_verified_after_current_push": true,
   "not_performed": [
     "Direct shielded faucet credit during cooldown",
     "Privileged live auditor decryption",
@@ -72,5 +72,17 @@
     "Record and edit three original demonstration videos from prepared guides.",
     "Insert seven figures and working video links into final X Article.",
     "Publish X Article and submit quest; optional separate legitimate technical team question."
-  ]
+  ],
+  "final_live_site_validation_utc": "2026-11-21T01:15:54.377284+00:00",
+  "published_website_url": "https://glimorr.github.io/enygma-first-gas-research/",
+  "published_version2_archive_url": "https://glimorr.github.io/enygma-first-gas-research/evidence/rayls-wq3-two-cohort-evidence.zip",
+  "published_version1_original_archive_url": "https://glimorr.github.io/enygma-first-gas-research/evidence/rayls-wq3-final-evidence.zip",
+  "public_new_archive_sha256_exactly_matched_verified_build": true,
+  "public_old_first_edition_archive_sha256_unchanged_verified": true,
+  "public_github_sources_http_200_checked": 4,
+  "public_website_mobile_tablet_desktop_browser_checks": 72,
+  "public_website_mobile_tablet_desktop_browser_checks_passed": 72,
+  "live_site_browser_qa_errors": [],
+  "local_browser_qa_status": "PASS",
+  "final_public_url_verified_after_two_cohort_commit": "08b31afb8c4d"
 }

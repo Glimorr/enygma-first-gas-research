@@ -1,0 +1,259 @@
+{
+  "evidence_class": "PREREGISTRATION_PUBLIC_FUNDING_TRANSFERS_LIVE_RPC_LOGS_AND_RECEIPTS",
+  "generatedAtUtc": "2026-11-20T19:31:01.331Z",
+  "chainId": 7295799,
+  "sampling": "Six third-party registration transactions in an activity-selected observation window, NOT controlled treatment.",
+  "accountCount": 6,
+  "accountsWithRlsBeforeRegistration": 6,
+  "accountsWithUsdrBeforeRegistration": 6,
+  "rpcErrors": [],
+  "rows": [
+    {
+      "account": "0xF63483B1dd7f091200aD7C5f03EF92a80b644E65",
+      "registrationBlock": 24672921,
+      "registrationTx": "0x67fd9a5a217d12bf7e6043c45963e214a7240b60ca8b2e7031f22efa8e9d4d83",
+      "scanFrom": 24672671,
+      "scanTo": 24672920,
+      "deposits": [
+        {
+          "token": "RLS",
+          "tokenAddress": "0x07e17E17e17E17e17e17e17E17E17E17E17e17EA",
+          "from": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+          "to": "0xF63483B1dd7f091200aD7C5f03EF92a80b644E65",
+          "amountWei": "50000000000000000000",
+          "amount": "50.0",
+          "blockNumber": 24672873,
+          "blockHash": "0x7c234d69f804d05de2b70aecd2303c7f9fa9b28a37480dd19b6865fcd5a41a94",
+          "txHash": "0x85fb99122cec139bb528f423e5959ff2a1091cd83e9913e1bc647ba7f004ff8a",
+          "logIndex": 1,
+          "status": 1,
+          "receiptVerifiedFromLiveRpc": true
+        },
+        {
+          "token": "USDr",
+          "tokenAddress": "0x0000000000000000000000000000000000000400",
+          "from": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+          "to": "0xF63483B1dd7f091200aD7C5f03EF92a80b644E65",
+          "amountWei": "5000000000000000000",
+          "amount": "5.0",
+          "blockNumber": 24672873,
+          "blockHash": "0x7c234d69f804d05de2b70aecd2303c7f9fa9b28a37480dd19b6865fcd5a41a94",
+          "txHash": "0xe6b969f590d23a459d084a30ffa382af561c56544ddc73ca8217922c51a4cc31",
+          "logIndex": 0,
+          "status": 1,
+          "receiptVerifiedFromLiveRpc": true
+        }
+      ],
+      "hasPublicRlsBeforeRegistration": true,
+      "hasPublicUsdrBeforeRegistration": true,
+      "earliestDeposit": 24672873
+    },
+    {
+      "account": "0xEf12d5bf995C614fFF1362Cf8376D2C3A1ba544A",
+      "registrationBlock": 24676085,
+      "registrationTx": "0x4d49be90bd7c33604f1b43e34dbc3875701fd6fd0282e1f4c7dc21888c800d3d",
+      "scanFrom": 24675835,
+      "scanTo": 24676084,
+      "deposits": [
+        {
+          "token": "RLS",
+          "tokenAddress": "0x07e17E17e17E17e17e17e17E17E17E17E17e17EA",
+          "from": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+          "to": "0xEf12d5bf995C614fFF1362Cf8376D2C3A1ba544A",
+          "amountWei": "50000000000000000000",
+          "amount": "50.0",
+          "blockNumber": 24676067,
+          "blockHash": "0xc9b341d9681e13af4481b8dcd2066c7c18441a79fb2571aaf349bec6df50dc10",
+          "txHash": "0xa6c77f09eeb84cbf6946a8d6187aaa636249e9d0af6f0934f6b592076a249608",
+          "logIndex": 1,
+          "status": 1,
+          "receiptVerifiedFromLiveRpc": true
+        },
+        {
+          "token": "USDr",
+          "tokenAddress": "0x0000000000000000000000000000000000000400",
+          "from": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+          "to": "0xEf12d5bf995C614fFF1362Cf8376D2C3A1ba544A",
+          "amountWei": "5000000000000000000",
+          "amount": "5.0",
+          "blockNumber": 24676067,
+          "blockHash": "0xc9b341d9681e13af4481b8dcd2066c7c18441a79fb2571aaf349bec6df50dc10",
+          "txHash": "0x0a817fa8cc08c125eabe2079bbe13762a9760ad24e175066a9a3c621c2507089",
+          "logIndex": 0,
+          "status": 1,
+          "receiptVerifiedFromLiveRpc": true
+        }
+      ],
+      "hasPublicRlsBeforeRegistration": true,
+      "hasPublicUsdrBeforeRegistration": true,
+      "earliestDeposit": 24676067
+    },
+    {
+      "account": "0x0Afa86d50AF225fd784B6975c3aE012AaAA8A9cc",
+      "registrationBlock": 24679165,
+      "registrationTx": "0x11e0fe4bf399197327f6e5a075267785dcd6307550c174ddaca1aa18492a1a08",
+      "scanFrom": 24678915,
+      "scanTo": 24679164,
+      "deposits": [
+        {
+          "token": "RLS",
+          "tokenAddress": "0x07e17E17e17E17e17e17e17E17E17E17E17e17EA",
+          "from": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+          "to": "0x0Afa86d50AF225fd784B6975c3aE012AaAA8A9cc",
+          "amountWei": "250000000000000000000",
+          "amount": "250.0",
+          "blockNumber": 24679094,
+          "blockHash": "0xd48404bb814f1c0fc54adfd8682f2a67efb0fff9145a26b4ef588e4fcaf87380",
+          "txHash": "0xb1cbf408bd7ce83e1013baa7e0ca8c8c7d7d4688b150233ef65f06776dd1e501",
+          "logIndex": 1,
+          "status": 1,
+          "receiptVerifiedFromLiveRpc": true
+        },
+        {
+          "token": "USDr",
+          "tokenAddress": "0x0000000000000000000000000000000000000400",
+          "from": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+          "to": "0x0Afa86d50AF225fd784B6975c3aE012AaAA8A9cc",
+          "amountWei": "10000000000000000000",
+          "amount": "10.0",
+          "blockNumber": 24679094,
+          "blockHash": "0xd48404bb814f1c0fc54adfd8682f2a67efb0fff9145a26b4ef588e4fcaf87380",
+          "txHash": "0x662b9774be6340fd9b404964594020e91b72779b161f14dc350164cb858957ca",
+          "logIndex": 0,
+          "status": 1,
+          "receiptVerifiedFromLiveRpc": true
+        }
+      ],
+      "hasPublicRlsBeforeRegistration": true,
+      "hasPublicUsdrBeforeRegistration": true,
+      "earliestDeposit": 24679094
+    },
+    {
+      "account": "0x279280638Ff791e524779bEA29550969b0B2aaa3",
+      "registrationBlock": 24686871,
+      "registrationTx": "0x5936f0383868fac0d2ef331384173eb82f23c7125cc29ea7421b735ab4fb118e",
+      "scanFrom": 24686621,
+      "scanTo": 24686870,
+      "deposits": [
+        {
+          "token": "RLS",
+          "tokenAddress": "0x07e17E17e17E17e17e17e17E17E17E17E17e17EA",
+          "from": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+          "to": "0x279280638Ff791e524779bEA29550969b0B2aaa3",
+          "amountWei": "250000000000000000000",
+          "amount": "250.0",
+          "blockNumber": 24686745,
+          "blockHash": "0xc99d3da83d04cecb2b80175596b63165332abdf0931e7855b1e6949a952fb328",
+          "txHash": "0xcd1a1329dc764bd5fe9b0fd64ad0e8f114bf74dfa7ac50728325ffca10a3b9fb",
+          "logIndex": 1,
+          "status": 1,
+          "receiptVerifiedFromLiveRpc": true
+        },
+        {
+          "token": "USDr",
+          "tokenAddress": "0x0000000000000000000000000000000000000400",
+          "from": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+          "to": "0x279280638Ff791e524779bEA29550969b0B2aaa3",
+          "amountWei": "10000000000000000000",
+          "amount": "10.0",
+          "blockNumber": 24686745,
+          "blockHash": "0xc99d3da83d04cecb2b80175596b63165332abdf0931e7855b1e6949a952fb328",
+          "txHash": "0xd4a0b44100fd20fecc7d9d9083642f3251e923e0c73d523e92fa9e296c442bde",
+          "logIndex": 0,
+          "status": 1,
+          "receiptVerifiedFromLiveRpc": true
+        }
+      ],
+      "hasPublicRlsBeforeRegistration": true,
+      "hasPublicUsdrBeforeRegistration": true,
+      "earliestDeposit": 24686745
+    },
+    {
+      "account": "0xfa38280bf13845F404732c764b33793fc24B3deE",
+      "registrationBlock": 24687026,
+      "registrationTx": "0x5d7e7d399124aaf07b8043dfd6876de8276b8533ca3f0b7ee07329e810cd6f7b",
+      "scanFrom": 24686776,
+      "scanTo": 24687025,
+      "deposits": [
+        {
+          "token": "RLS",
+          "tokenAddress": "0x07e17E17e17E17e17e17e17E17E17E17E17e17EA",
+          "from": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+          "to": "0xfa38280bf13845F404732c764b33793fc24B3deE",
+          "amountWei": "250000000000000000000",
+          "amount": "250.0",
+          "blockNumber": 24687004,
+          "blockHash": "0xde03c59c56b7c494db0037f0262f9380113f17ac7b47ee12e301c1c6d8ee5ad1",
+          "txHash": "0x99d9fd00cdd0d4dd4d0b27341ddd23b82bac49f5b426eccae9927dd664424f45",
+          "logIndex": 1,
+          "status": 1,
+          "receiptVerifiedFromLiveRpc": true
+        },
+        {
+          "token": "USDr",
+          "tokenAddress": "0x0000000000000000000000000000000000000400",
+          "from": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+          "to": "0xfa38280bf13845F404732c764b33793fc24B3deE",
+          "amountWei": "10000000000000000000",
+          "amount": "10.0",
+          "blockNumber": 24687004,
+          "blockHash": "0xde03c59c56b7c494db0037f0262f9380113f17ac7b47ee12e301c1c6d8ee5ad1",
+          "txHash": "0xecbecde72414d6fd2343b2c2560800c10773a3d2d6cf8cca4001bcc5e1f1fe41",
+          "logIndex": 0,
+          "status": 1,
+          "receiptVerifiedFromLiveRpc": true
+        }
+      ],
+      "hasPublicRlsBeforeRegistration": true,
+      "hasPublicUsdrBeforeRegistration": true,
+      "earliestDeposit": 24687004
+    },
+    {
+      "account": "0x2535c76dEd15bAF58EFE726E0A24196b44e50310",
+      "registrationBlock": 24688762,
+      "registrationTx": "0xd9f22f07b5c6a7968b118f11795a83d5232462e98ea595907c4f6b7db4e91524",
+      "scanFrom": 24688512,
+      "scanTo": 24688761,
+      "deposits": [
+        {
+          "token": "RLS",
+          "tokenAddress": "0x07e17E17e17E17e17e17e17E17E17E17E17e17EA",
+          "from": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+          "to": "0x2535c76dEd15bAF58EFE726E0A24196b44e50310",
+          "amountWei": "250000000000000000000",
+          "amount": "250.0",
+          "blockNumber": 24688721,
+          "blockHash": "0x9dd1afd767fd1b3098afd7911b15dcd21f34b565406e22940837c9e45efacfce",
+          "txHash": "0x260aa1090a68099a59996a67df0398f2e4ce6e9425a2546e697d4d1b3365359e",
+          "logIndex": 1,
+          "status": 1,
+          "receiptVerifiedFromLiveRpc": true
+        },
+        {
+          "token": "USDr",
+          "tokenAddress": "0x0000000000000000000000000000000000000400",
+          "from": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+          "to": "0x2535c76dEd15bAF58EFE726E0A24196b44e50310",
+          "amountWei": "10000000000000000000",
+          "amount": "10.0",
+          "blockNumber": 24688721,
+          "blockHash": "0x9dd1afd767fd1b3098afd7911b15dcd21f34b565406e22940837c9e45efacfce",
+          "txHash": "0x5d3ed86a532df0b65570f52be05249b9b0bb7e64c11c5dcd1eda4ec0f55d4061",
+          "logIndex": 0,
+          "status": 1,
+          "receiptVerifiedFromLiveRpc": true
+        }
+      ],
+      "hasPublicRlsBeforeRegistration": true,
+      "hasPublicUsdrBeforeRegistration": true,
+      "earliestDeposit": 24688721
+    }
+  ],
+  "conclusionsLimit": [
+    "Positive public inbound token transfers prove prior public funding events within the sampled range.",
+    "Neither absence of transfer logs nor an unfunded state can be established outside the scoped blocks.",
+    "Historical account-balance eth_call is pruned; do not assert precise pre-registration balances.",
+    "These registrations are ordinary public funding observations, not confirmed private invitation claims.",
+    "No wallet signing or source mutation took place."
+  ]
+}

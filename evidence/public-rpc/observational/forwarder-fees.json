@@ -1,0 +1,593 @@
+{
+  "evidence_class": "PUBLIC_CHAIN_OBSERVATIONAL_RELAYER_FEE_EVENTS",
+  "capturedAtUtc": "2026-11-20T13:41:27.132Z",
+  "rpc": "https://testnet-rpc.rayls.com/",
+  "sourceWindow": {
+    "from": 24670000,
+    "to": 24690000
+  },
+  "tokenAddress": "0x07e17E17e17E17e17e17e17E17E17E17E17e17EA",
+  "forwarder": "0x12B6640048DEB2e8fFDa4Bc10Bb2a640B70eCA6d",
+  "treasury": "0x71AF09966CBED4434ccA97c40Fa38B8083548B95",
+  "contemporaneousRelayerFeePolicy": {
+    "rlsPerGasWei": "2400000000000",
+    "gasSharePercent": "15",
+    "caveat": "Policy was read at a later time than historical transactions; do not assume historical quotes equal this value."
+  },
+  "rows": [
+    {
+      "txHash": "0x814a8bfbc00dab9c79fafb47af3aaa2b092ebf0d6a985b4cbc3f558990377bad",
+      "blockNumber": 24671191,
+      "blockHash": "0x84add652473ab6f9c9385ab4ebf631a092df42c4904d6b894560e35eec618412",
+      "txStatus": 1,
+      "txFrom": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+      "txTo": "0xca11bde05977b3631167028862be2a173976ca11",
+      "reportedForwarderFromEvent": "0x13ff4ac018d9F14d9bd4A292d5AC249E280526e1",
+      "eventRelayer": "0xcA11bde05977b3631167028862bE2a173976CA11",
+      "forwardedTarget": "0xE92813f397B5d99FC31732A11D6C5F82Bd7926a0",
+      "feeEventWei": "0",
+      "feeEventRls": "0.0",
+      "gasUsed": "1292090",
+      "effectiveGasPrice": "48000000000",
+      "grossNativeGasWei": "62020320000000000",
+      "rlsTransferLogs": [
+        {
+          "from": "0x13ff4ac018d9F14d9bd4A292d5AC249E280526e1",
+          "to": "0xe207B28E31e6782Bd6b99cea08c85EEe5be4C17c",
+          "amountWei": "100000000000000000000",
+          "amountRls": "100.0"
+        }
+      ],
+      "treasuryTransferWei": "0",
+      "treasuryRls": "0.0",
+      "treasuryAsPercentOfFee": null,
+      "countOfReceiptLogs": 10,
+      "blockHeaderMatchesReceipt": true,
+      "feeEventIsPositive": false,
+      "unexpectedRelayer": true,
+      "toActiveForwarder": false
+    },
+    {
+      "txHash": "0x67fd9a5a217d12bf7e6043c45963e214a7240b60ca8b2e7031f22efa8e9d4d83",
+      "blockNumber": 24672921,
+      "blockHash": "0xa26b6e44f42e19a6efbd6c3d2e79528472a376fefed833a47d76418c353b830d",
+      "txStatus": 1,
+      "txFrom": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+      "txTo": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d",
+      "reportedForwarderFromEvent": "0xF63483B1dd7f091200aD7C5f03EF92a80b644E65",
+      "eventRelayer": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+      "forwardedTarget": "0xA473291FFb33e2276F364fAE169f03c4406719e9",
+      "feeEventWei": "7193131320000000000",
+      "feeEventRls": "7.19313132",
+      "gasUsed": "2064796",
+      "effectiveGasPrice": "48000000000",
+      "grossNativeGasWei": "99110208000000000",
+      "rlsTransferLogs": [
+        {
+          "from": "0xF63483B1dd7f091200aD7C5f03EF92a80b644E65",
+          "to": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+          "amountWei": "7193131320000000000",
+          "amountRls": "7.19313132"
+        }
+      ],
+      "treasuryTransferWei": "0",
+      "treasuryRls": "0.0",
+      "treasuryAsPercentOfFee": 0,
+      "countOfReceiptLogs": 5,
+      "blockHeaderMatchesReceipt": true,
+      "feeEventIsPositive": true,
+      "unexpectedRelayer": false,
+      "toActiveForwarder": true
+    },
+    {
+      "txHash": "0x31d04a532d9e198e8b267f4ec63e5c6aa9578129905629ccc6d3b6818d4f2aea",
+      "blockNumber": 24674150,
+      "blockHash": "0x7966edef3d169c76059028a034c6c265c15cc73905be3221f219c502eb5f8da5",
+      "txStatus": 1,
+      "txFrom": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+      "txTo": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d",
+      "reportedForwarderFromEvent": "0xF63483B1dd7f091200aD7C5f03EF92a80b644E65",
+      "eventRelayer": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+      "forwardedTarget": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+      "feeEventWei": "3525723360000000000",
+      "feeEventRls": "3.52572336",
+      "gasUsed": "904099",
+      "effectiveGasPrice": "48000000000",
+      "grossNativeGasWei": "43396752000000000",
+      "rlsTransferLogs": [
+        {
+          "from": "0xF63483B1dd7f091200aD7C5f03EF92a80b644E65",
+          "to": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+          "amountWei": "3525723360000000000",
+          "amountRls": "3.52572336"
+        },
+        {
+          "from": "0xF63483B1dd7f091200aD7C5f03EF92a80b644E65",
+          "to": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+          "amountWei": "9666700000000000000",
+          "amountRls": "9.6667"
+        }
+      ],
+      "treasuryTransferWei": "0",
+      "treasuryRls": "0.0",
+      "treasuryAsPercentOfFee": 0,
+      "countOfReceiptLogs": 7,
+      "blockHeaderMatchesReceipt": true,
+      "feeEventIsPositive": true,
+      "unexpectedRelayer": false,
+      "toActiveForwarder": true
+    },
+    {
+      "txHash": "0x4d49be90bd7c33604f1b43e34dbc3875701fd6fd0282e1f4c7dc21888c800d3d",
+      "blockNumber": 24676085,
+      "blockHash": "0x1c8600953cf3195e7342d9f270e8a3abc417c27c4e6bc0deee9910c1cf23455d",
+      "txStatus": 1,
+      "txFrom": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+      "txTo": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d",
+      "reportedForwarderFromEvent": "0xEf12d5bf995C614fFF1362Cf8376D2C3A1ba544A",
+      "eventRelayer": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+      "forwardedTarget": "0xA473291FFb33e2276F364fAE169f03c4406719e9",
+      "feeEventWei": "7189855200000000000",
+      "feeEventRls": "7.1898552",
+      "gasUsed": "2063834",
+      "effectiveGasPrice": "48000000000",
+      "grossNativeGasWei": "99064032000000000",
+      "rlsTransferLogs": [
+        {
+          "from": "0xEf12d5bf995C614fFF1362Cf8376D2C3A1ba544A",
+          "to": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+          "amountWei": "7189855200000000000",
+          "amountRls": "7.1898552"
+        }
+      ],
+      "treasuryTransferWei": "0",
+      "treasuryRls": "0.0",
+      "treasuryAsPercentOfFee": 0,
+      "countOfReceiptLogs": 5,
+      "blockHeaderMatchesReceipt": true,
+      "feeEventIsPositive": true,
+      "unexpectedRelayer": false,
+      "toActiveForwarder": true
+    },
+    {
+      "txHash": "0x8bbd8f1d9c53c68d2763555baa1da1dcb4967284e9df798512817840d3ac8676",
+      "blockNumber": 24676127,
+      "blockHash": "0x4db87a4b3a816b52deb779230419a318af9fd9f55061988a687ebb30e94dd807",
+      "txStatus": 1,
+      "txFrom": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+      "txTo": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d",
+      "reportedForwarderFromEvent": "0xEf12d5bf995C614fFF1362Cf8376D2C3A1ba544A",
+      "eventRelayer": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+      "forwardedTarget": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+      "feeEventWei": "3544408560000000000",
+      "feeEventRls": "3.54440856",
+      "gasUsed": "909665",
+      "effectiveGasPrice": "48000000000",
+      "grossNativeGasWei": "43663920000000000",
+      "rlsTransferLogs": [
+        {
+          "from": "0xEf12d5bf995C614fFF1362Cf8376D2C3A1ba544A",
+          "to": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+          "amountWei": "3544408560000000000",
+          "amountRls": "3.54440856"
+        },
+        {
+          "from": "0xEf12d5bf995C614fFF1362Cf8376D2C3A1ba544A",
+          "to": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+          "amountWei": "21400000000000000000",
+          "amountRls": "21.4"
+        }
+      ],
+      "treasuryTransferWei": "0",
+      "treasuryRls": "0.0",
+      "treasuryAsPercentOfFee": 0,
+      "countOfReceiptLogs": 7,
+      "blockHeaderMatchesReceipt": true,
+      "feeEventIsPositive": true,
+      "unexpectedRelayer": false,
+      "toActiveForwarder": true
+    },
+    {
+      "txHash": "0xc70c83229f495a868c24055467e4413afae6ed6ffecc23f14f3ca5e8d54e8dc7",
+      "blockNumber": 24676538,
+      "blockHash": "0xc2d1268920c1589ef21bb02ddc4d08b65cf2213a2c12f25c1d7622ff9f9c08fb",
+      "txStatus": 1,
+      "txFrom": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+      "txTo": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d",
+      "reportedForwarderFromEvent": "0xEf12d5bf995C614fFF1362Cf8376D2C3A1ba544A",
+      "eventRelayer": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+      "forwardedTarget": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+      "feeEventWei": "3814273080000000000",
+      "feeEventRls": "3.81427308",
+      "gasUsed": "953932",
+      "effectiveGasPrice": "48000000000",
+      "grossNativeGasWei": "45788736000000000",
+      "rlsTransferLogs": [
+        {
+          "from": "0xEf12d5bf995C614fFF1362Cf8376D2C3A1ba544A",
+          "to": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+          "amountWei": "3814273080000000000",
+          "amountRls": "3.81427308"
+        }
+      ],
+      "treasuryTransferWei": "0",
+      "treasuryRls": "0.0",
+      "treasuryAsPercentOfFee": 0,
+      "countOfReceiptLogs": 8,
+      "blockHeaderMatchesReceipt": true,
+      "feeEventIsPositive": true,
+      "unexpectedRelayer": false,
+      "toActiveForwarder": true
+    },
+    {
+      "txHash": "0x51fd09dfbd2906f448ea9a76e1692110957ab540975050362aba7276b93dcca7",
+      "blockNumber": 24676646,
+      "blockHash": "0xce2f1bc52e08d32fac34113ee04a2b6391b0d7324be8a30519753b544fb214cc",
+      "txStatus": 1,
+      "txFrom": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+      "txTo": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d",
+      "reportedForwarderFromEvent": "0xEf12d5bf995C614fFF1362Cf8376D2C3A1ba544A",
+      "eventRelayer": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+      "forwardedTarget": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+      "feeEventWei": "3562773600000000000",
+      "feeEventRls": "3.5627736",
+      "gasUsed": "915099",
+      "effectiveGasPrice": "48000000000",
+      "grossNativeGasWei": "43924752000000000",
+      "rlsTransferLogs": [
+        {
+          "from": "0xEf12d5bf995C614fFF1362Cf8376D2C3A1ba544A",
+          "to": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+          "amountWei": "3562773600000000000",
+          "amountRls": "3.5627736"
+        },
+        {
+          "from": "0xEf12d5bf995C614fFF1362Cf8376D2C3A1ba544A",
+          "to": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+          "amountWei": "9911400000000000000",
+          "amountRls": "9.9114"
+        }
+      ],
+      "treasuryTransferWei": "0",
+      "treasuryRls": "0.0",
+      "treasuryAsPercentOfFee": 0,
+      "countOfReceiptLogs": 7,
+      "blockHeaderMatchesReceipt": true,
+      "feeEventIsPositive": true,
+      "unexpectedRelayer": false,
+      "toActiveForwarder": true
+    },
+    {
+      "txHash": "0x732f75d1fc8cccc6fb0fcc2d79632f40d4d13935eb85bfabf66733eafda9e8c6",
+      "blockNumber": 24677929,
+      "blockHash": "0xe87888dab29bba67e23359d1442cbaa9abe7f6333865618292510f2214ac3dc4",
+      "txStatus": 1,
+      "txFrom": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+      "txTo": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d",
+      "reportedForwarderFromEvent": "0x4f1aa6CB2C8932583F2844a855fB057C589F23E9",
+      "eventRelayer": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+      "forwardedTarget": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+      "feeEventWei": "3832963800000000000",
+      "feeEventRls": "3.8329638",
+      "gasUsed": "959486",
+      "effectiveGasPrice": "48000000000",
+      "grossNativeGasWei": "46055328000000000",
+      "rlsTransferLogs": [
+        {
+          "from": "0x4f1aa6CB2C8932583F2844a855fB057C589F23E9",
+          "to": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+          "amountWei": "3832963800000000000",
+          "amountRls": "3.8329638"
+        }
+      ],
+      "treasuryTransferWei": "0",
+      "treasuryRls": "0.0",
+      "treasuryAsPercentOfFee": 0,
+      "countOfReceiptLogs": 8,
+      "blockHeaderMatchesReceipt": true,
+      "feeEventIsPositive": true,
+      "unexpectedRelayer": false,
+      "toActiveForwarder": true
+    },
+    {
+      "txHash": "0xfdaa7706b311a027e937003d49d89a041c086bf1bd5256de66da12c87141e202",
+      "blockNumber": 24678513,
+      "blockHash": "0x9d5add3a0b33b1660fb46c95e547e564015163e38d8bb09572f4ec08b8b8b6e1",
+      "txStatus": 1,
+      "txFrom": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+      "txTo": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d",
+      "reportedForwarderFromEvent": "0x4f1aa6CB2C8932583F2844a855fB057C589F23E9",
+      "eventRelayer": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+      "forwardedTarget": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+      "feeEventWei": "4757765280000000000",
+      "feeEventRls": "4.75776528",
+      "gasUsed": "1243519",
+      "effectiveGasPrice": "48000000000",
+      "grossNativeGasWei": "59688912000000000",
+      "rlsTransferLogs": [
+        {
+          "from": "0x4f1aa6CB2C8932583F2844a855fB057C589F23E9",
+          "to": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+          "amountWei": "4757765280000000000",
+          "amountRls": "4.75776528"
+        }
+      ],
+      "treasuryTransferWei": "0",
+      "treasuryRls": "0.0",
+      "treasuryAsPercentOfFee": 0,
+      "countOfReceiptLogs": 8,
+      "blockHeaderMatchesReceipt": true,
+      "feeEventIsPositive": true,
+      "unexpectedRelayer": false,
+      "toActiveForwarder": true
+    },
+    {
+      "txHash": "0x11e0fe4bf399197327f6e5a075267785dcd6307550c174ddaca1aa18492a1a08",
+      "blockNumber": 24679165,
+      "blockHash": "0x543c74b2c43a55517363bebf911d11b7260d53778c8fa1de3a6fe50a0fa31fce",
+      "txStatus": 1,
+      "txFrom": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+      "txTo": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d",
+      "reportedForwarderFromEvent": "0x0Afa86d50AF225fd784B6975c3aE012AaAA8A9cc",
+      "eventRelayer": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+      "forwardedTarget": "0xA473291FFb33e2276F364fAE169f03c4406719e9",
+      "feeEventWei": "7194679680000000000",
+      "feeEventRls": "7.19467968",
+      "gasUsed": "2065244",
+      "effectiveGasPrice": "48000000000",
+      "grossNativeGasWei": "99131712000000000",
+      "rlsTransferLogs": [
+        {
+          "from": "0x0Afa86d50AF225fd784B6975c3aE012AaAA8A9cc",
+          "to": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+          "amountWei": "7194679680000000000",
+          "amountRls": "7.19467968"
+        }
+      ],
+      "treasuryTransferWei": "0",
+      "treasuryRls": "0.0",
+      "treasuryAsPercentOfFee": 0,
+      "countOfReceiptLogs": 5,
+      "blockHeaderMatchesReceipt": true,
+      "feeEventIsPositive": true,
+      "unexpectedRelayer": false,
+      "toActiveForwarder": true
+    },
+    {
+      "txHash": "0x5936f0383868fac0d2ef331384173eb82f23c7125cc29ea7421b735ab4fb118e",
+      "blockNumber": 24686871,
+      "blockHash": "0x020d06688170f75baf3615b4f8b8a6dbab4d9ac423cad0450680a4058bb49a4a",
+      "txStatus": 1,
+      "txFrom": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+      "txTo": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d",
+      "reportedForwarderFromEvent": "0x279280638Ff791e524779bEA29550969b0B2aaa3",
+      "eventRelayer": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+      "forwardedTarget": "0xA473291FFb33e2276F364fAE169f03c4406719e9",
+      "feeEventWei": "7194679680000000000",
+      "feeEventRls": "7.19467968",
+      "gasUsed": "2065244",
+      "effectiveGasPrice": "48000000000",
+      "grossNativeGasWei": "99131712000000000",
+      "rlsTransferLogs": [
+        {
+          "from": "0x279280638Ff791e524779bEA29550969b0B2aaa3",
+          "to": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+          "amountWei": "7194679680000000000",
+          "amountRls": "7.19467968"
+        }
+      ],
+      "treasuryTransferWei": "0",
+      "treasuryRls": "0.0",
+      "treasuryAsPercentOfFee": 0,
+      "countOfReceiptLogs": 5,
+      "blockHeaderMatchesReceipt": true,
+      "feeEventIsPositive": true,
+      "unexpectedRelayer": false,
+      "toActiveForwarder": true
+    },
+    {
+      "txHash": "0x5d7e7d399124aaf07b8043dfd6876de8276b8533ca3f0b7ee07329e810cd6f7b",
+      "blockNumber": 24687026,
+      "blockHash": "0x02f268de5be8b43beff6f7197a4c59724cbe3953ede6bfac0dd69c6809cab23c",
+      "txStatus": 1,
+      "txFrom": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+      "txTo": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d",
+      "reportedForwarderFromEvent": "0xfa38280bf13845F404732c764b33793fc24B3deE",
+      "eventRelayer": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+      "forwardedTarget": "0xA473291FFb33e2276F364fAE169f03c4406719e9",
+      "feeEventWei": "7201916400000000000",
+      "feeEventRls": "7.2019164",
+      "gasUsed": "2067419",
+      "effectiveGasPrice": "48000000000",
+      "grossNativeGasWei": "99236112000000000",
+      "rlsTransferLogs": [
+        {
+          "from": "0xfa38280bf13845F404732c764b33793fc24B3deE",
+          "to": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+          "amountWei": "7201916400000000000",
+          "amountRls": "7.2019164"
+        }
+      ],
+      "treasuryTransferWei": "0",
+      "treasuryRls": "0.0",
+      "treasuryAsPercentOfFee": 0,
+      "countOfReceiptLogs": 5,
+      "blockHeaderMatchesReceipt": true,
+      "feeEventIsPositive": true,
+      "unexpectedRelayer": false,
+      "toActiveForwarder": true
+    },
+    {
+      "txHash": "0x8bdecd3a5c7fca5d08703780a5d6630570d6a6dafc2149f2366035bdcc2a4414",
+      "blockNumber": 24687078,
+      "blockHash": "0x6e2981498ad24dfafa34144e4bca2822927cdffb734c5ccc327b2c233e47de54",
+      "txStatus": 1,
+      "txFrom": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+      "txTo": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d",
+      "reportedForwarderFromEvent": "0xfa38280bf13845F404732c764b33793fc24B3deE",
+      "eventRelayer": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+      "forwardedTarget": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+      "feeEventWei": "3525963480000000000",
+      "feeEventRls": "3.52596348",
+      "gasUsed": "904171",
+      "effectiveGasPrice": "48000000000",
+      "grossNativeGasWei": "43400208000000000",
+      "rlsTransferLogs": [
+        {
+          "from": "0xfa38280bf13845F404732c764b33793fc24B3deE",
+          "to": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+          "amountWei": "3525963480000000000",
+          "amountRls": "3.52596348"
+        },
+        {
+          "from": "0xfa38280bf13845F404732c764b33793fc24B3deE",
+          "to": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+          "amountWei": "121390000000000000000",
+          "amountRls": "121.39"
+        }
+      ],
+      "treasuryTransferWei": "0",
+      "treasuryRls": "0.0",
+      "treasuryAsPercentOfFee": 0,
+      "countOfReceiptLogs": 7,
+      "blockHeaderMatchesReceipt": true,
+      "feeEventIsPositive": true,
+      "unexpectedRelayer": false,
+      "toActiveForwarder": true
+    },
+    {
+      "txHash": "0xf899bb8bd583e3f31eb8d35ad1861190f242740d1ae9c083656c89cb3654e17a",
+      "blockNumber": 24687318,
+      "blockHash": "0x17ffa52a60a65849d11f5a8c38d179cecce406a8e22ddd87907cbe3e5f581406",
+      "txStatus": 1,
+      "txFrom": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+      "txTo": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d",
+      "reportedForwarderFromEvent": "0x279280638Ff791e524779bEA29550969b0B2aaa3",
+      "eventRelayer": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+      "forwardedTarget": "0xE92813f397B5d99FC31732A11D6C5F82Bd7926a0",
+      "feeEventWei": "724265400000000000",
+      "feeEventRls": "0.7242654",
+      "gasUsed": "140282",
+      "effectiveGasPrice": "48000000000",
+      "grossNativeGasWei": "6733536000000000",
+      "rlsTransferLogs": [
+        {
+          "from": "0x279280638Ff791e524779bEA29550969b0B2aaa3",
+          "to": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+          "amountWei": "724265400000000000",
+          "amountRls": "0.7242654"
+        }
+      ],
+      "treasuryTransferWei": "0",
+      "treasuryRls": "0.0",
+      "treasuryAsPercentOfFee": 0,
+      "countOfReceiptLogs": 6,
+      "blockHeaderMatchesReceipt": true,
+      "feeEventIsPositive": true,
+      "unexpectedRelayer": false,
+      "toActiveForwarder": true
+    },
+    {
+      "txHash": "0x2e1572094bc6b1023465399d7a7d903f8022405ac5fdaaa08e729e4bc6b1cadc",
+      "blockNumber": 24687811,
+      "blockHash": "0x0e8bc7148740d2dabbab5d712052cb347ce6b22c39bab349c6046f5ed6e4a4da",
+      "txStatus": 1,
+      "txFrom": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+      "txTo": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d",
+      "reportedForwarderFromEvent": "0x279280638Ff791e524779bEA29550969b0B2aaa3",
+      "eventRelayer": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+      "forwardedTarget": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+      "feeEventWei": "3507441120000000000",
+      "feeEventRls": "3.50744112",
+      "gasUsed": "898677",
+      "effectiveGasPrice": "48000000000",
+      "grossNativeGasWei": "43136496000000000",
+      "rlsTransferLogs": [
+        {
+          "from": "0x279280638Ff791e524779bEA29550969b0B2aaa3",
+          "to": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+          "amountWei": "3507441120000000000",
+          "amountRls": "3.50744112"
+        },
+        {
+          "from": "0x279280638Ff791e524779bEA29550969b0B2aaa3",
+          "to": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+          "amountWei": "20000000000000000000",
+          "amountRls": "20.0"
+        }
+      ],
+      "treasuryTransferWei": "0",
+      "treasuryRls": "0.0",
+      "treasuryAsPercentOfFee": 0,
+      "countOfReceiptLogs": 7,
+      "blockHeaderMatchesReceipt": true,
+      "feeEventIsPositive": true,
+      "unexpectedRelayer": false,
+      "toActiveForwarder": true
+    },
+    {
+      "txHash": "0x399762a5eda19ba31e8c2a5d5cb5280ab4fc781b4dd5a571dac94dbefcda06aa",
+      "blockNumber": 24688175,
+      "blockHash": "0xf5f6467689260aeab6d1b61c7ab14c970e4c15bb419120716079d68e932a300f",
+      "txStatus": 1,
+      "txFrom": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+      "txTo": "0xca11bde05977b3631167028862be2a173976ca11",
+      "reportedForwarderFromEvent": "0x279280638Ff791e524779bEA29550969b0B2aaa3",
+      "eventRelayer": "0xcA11bde05977b3631167028862bE2a173976CA11",
+      "forwardedTarget": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+      "feeEventWei": "0",
+      "feeEventRls": "0.0",
+      "gasUsed": "1957806",
+      "effectiveGasPrice": "48000000000",
+      "grossNativeGasWei": "93974688000000000",
+      "rlsTransferLogs": [],
+      "treasuryTransferWei": "0",
+      "treasuryRls": "0.0",
+      "treasuryAsPercentOfFee": null,
+      "countOfReceiptLogs": 11,
+      "blockHeaderMatchesReceipt": true,
+      "feeEventIsPositive": false,
+      "unexpectedRelayer": true,
+      "toActiveForwarder": false
+    },
+    {
+      "txHash": "0xd9f22f07b5c6a7968b118f11795a83d5232462e98ea595907c4f6b7db4e91524",
+      "blockNumber": 24688762,
+      "blockHash": "0xe3873aa03f1b5291c71575deb7df87abbd166dab074dd9ea1aeb464ad172b1ce",
+      "txStatus": 1,
+      "txFrom": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+      "txTo": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d",
+      "reportedForwarderFromEvent": "0x2535c76dEd15bAF58EFE726E0A24196b44e50310",
+      "eventRelayer": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+      "forwardedTarget": "0xA473291FFb33e2276F364fAE169f03c4406719e9",
+      "feeEventWei": "7195913400000000000",
+      "feeEventRls": "7.1959134",
+      "gasUsed": "2065623",
+      "effectiveGasPrice": "48000000000",
+      "grossNativeGasWei": "99149904000000000",
+      "rlsTransferLogs": [
+        {
+          "from": "0x2535c76dEd15bAF58EFE726E0A24196b44e50310",
+          "to": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+          "amountWei": "7195913400000000000",
+          "amountRls": "7.1959134"
+        }
+      ],
+      "treasuryTransferWei": "0",
+      "treasuryRls": "0.0",
+      "treasuryAsPercentOfFee": 0,
+      "countOfReceiptLogs": 5,
+      "blockHeaderMatchesReceipt": true,
+      "feeEventIsPositive": true,
+      "unexpectedRelayer": false,
+      "toActiveForwarder": true
+    }
+  ],
+  "errors": [],
+  "limitations": [
+    "Only public forwarder Relayed events were sampled; shielded private-send fees are not fully public.",
+    "Fee events, token transfers and treasury receipts are independently verifiable; fee policy depends on relayer pricing and time.",
+    "No account keys, private note values or invitation claims are present.",
+    "One relayer event may be from an unrelated permitted relayer; flagged rather than silently dropped."
+  ]
+}

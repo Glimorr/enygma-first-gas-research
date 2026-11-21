@@ -1,0 +1,144 @@
+{
+  "class": "OFFLINE_TREASURY_EVIDENCE_TAMPER_TESTS",
+  "test_count": 15,
+  "detected_count": 15,
+  "status": "PASS",
+  "run_at_utc": "2026-11-20T20:43:56.534878+00:00",
+  "original_source_unchanged": true,
+  "results": [
+    {
+      "test": "wrong_chain",
+      "detected": true,
+      "expected": "chain.id",
+      "errors": [
+        "chain.id"
+      ]
+    },
+    {
+      "test": "wrong_fee_rate",
+      "detected": true,
+      "expected": "fees.shareRate",
+      "errors": [
+        "fees.shareRate"
+      ]
+    },
+    {
+      "test": "case_removed",
+      "detected": true,
+      "expected": "cases.count",
+      "errors": [
+        "cases.count",
+        "cases.sampleMinimum",
+        "summary.paidCases",
+        "summary.exactMatches",
+        "summary.exactAll"
+      ]
+    },
+    {
+      "test": "wrong_fee",
+      "detected": true,
+      "expected": "case.1.expectedShare",
+      "errors": [
+        "case.1.expectedShare",
+        "case.1.divisionRemainder",
+        "case.1.exactShareWei"
+      ]
+    },
+    {
+      "test": "wrong_expected_payout",
+      "detected": true,
+      "expected": "case.1.expectedShare",
+      "errors": [
+        "case.1.expectedShare"
+      ]
+    },
+    {
+      "test": "wrong_payout_amount",
+      "detected": true,
+      "expected": "case.1.exactShareWei",
+      "errors": [
+        "case.1.exactShareWei",
+        "case.1.payoutRls",
+        "case.1.transferRawAmount"
+      ]
+    },
+    {
+      "test": "tampered_raw_amount",
+      "detected": true,
+      "expected": "case.1.transferRawAmount",
+      "errors": [
+        "case.1.transferRawAmount",
+        "case.1.logReceiptInclusion"
+      ]
+    },
+    {
+      "test": "tampered_raw_receipt",
+      "detected": true,
+      "expected": "case.1.receiptStatus",
+      "errors": [
+        "case.1.receiptStatus"
+      ]
+    },
+    {
+      "test": "wrong_treasury_address",
+      "detected": true,
+      "expected": "case.1.transferToTreasury",
+      "errors": [
+        "case.1.transferToTreasury",
+        "case.2.transferToTreasury",
+        "case.3.transferToTreasury",
+        "case.4.transferToTreasury",
+        "case.5.transferToTreasury"
+      ]
+    },
+    {
+      "test": "wrong_sender_address",
+      "detected": true,
+      "expected": "case.1.transferFromRelayer",
+      "errors": [
+        "case.1.transferFromRelayer"
+      ]
+    },
+    {
+      "test": "wrong_raw_tx_hash",
+      "detected": true,
+      "expected": "case.1.receiptHash",
+      "errors": [
+        "case.1.receiptHash"
+      ]
+    },
+    {
+      "test": "wrong_block_hash",
+      "detected": true,
+      "expected": "case.1.receiptBlockHash",
+      "errors": [
+        "case.1.receiptBlockHash"
+      ]
+    },
+    {
+      "test": "wrong_log_topic",
+      "detected": true,
+      "expected": "case.1.transferTopic",
+      "errors": [
+        "case.1.transferTopic"
+      ]
+    },
+    {
+      "test": "incorrect_lag",
+      "detected": true,
+      "expected": "case.1.payoutLag",
+      "errors": [
+        "case.1.payoutLag"
+      ]
+    },
+    {
+      "test": "reused_payout",
+      "detected": true,
+      "expected": "case.2.receiptHash",
+      "errors": [
+        "case.2.receiptHash",
+        "case.2.logTxHash"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "evidence_class": "OFFLINE_CONSISTENCY_NOT_FRESH_RPC",
+  "status": "PASS",
+  "checks": "FROZEN_BLOCK_RECEIPT_TOKEN_EVENTS_NOTE_FEE_BALANCES",
+  "errors": [],
+  "validated_at_utc": "2026-11-20T20:38:27.331Z",
+  "crucial_caveat": "An internally consistent saved receipt is not proof it still matches live public chain; run verify_god_shield.mjs."
+}

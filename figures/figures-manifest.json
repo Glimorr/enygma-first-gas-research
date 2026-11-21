@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "generatedUtc": "2026-11-20T23:51:53.153Z",
+  "count": 6,
+  "images": [
+    {
+      "id": "01",
+      "filename": "/mnt/e/Rayls-Nov-Week3/figures/F01-07-actual-chain-milestones.png",
+      "bytes": 490734,
+      "verifiedSource": "site/public/data/evidence.json"
+    },
+    {
+      "id": "02",
+      "filename": "/mnt/e/Rayls-Nov-Week3/figures/F02-public-vs-shielded-footprints.png",
+      "bytes": 433259,
+      "verifiedSource": "site/public/data/evidence.json"
+    },
+    {
+      "id": "03",
+      "filename": "/mnt/e/Rayls-Nov-Week3/figures/F03-recipient-before-and-after.png",
+      "bytes": 468569,
+      "verifiedSource": "site/public/data/evidence.json"
+    },
+    {
+      "id": "04",
+      "filename": "/mnt/e/Rayls-Nov-Week3/figures/F04-private-fee-trail.png",
+      "bytes": 430984,
+      "verifiedSource": "site/public/data/evidence.json"
+    },
+    {
+      "id": "05",
+      "filename": "/mnt/e/Rayls-Nov-Week3/figures/F05-historical-state-replay-controls.png",
+      "bytes": 403572,
+      "verifiedSource": "site/public/data/evidence.json"
+    },
+    {
+      "id": "06",
+      "filename": "/mnt/e/Rayls-Nov-Week3/figures/F06-evidence-taxonomy.png",
+      "bytes": 450374,
+      "verifiedSource": "site/public/data/evidence.json"
+    }
+  ],
+  "controlledFirstPrivateSpendVerified": true
+}

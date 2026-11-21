@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "evidence_class": "LIVE_PUBLIC_REGISTRATION_CLAIM_RECEIPTS_PLUS_CURRENT_ZERO_PUBLIC_FUNDS_AND_COMPLETE_EVENT_SCAN",
+  "completedUtc": "2026-11-20T23:58:49.282Z",
+  "correctReceiver": "0x665E08A2867Cb53d05C1381D565e19Da0bC3e76C",
+  "claimTx": "0x1c53886772c267e25f0d5c45d7dcc9ecc54246c4bfbf5e9202926f3f70959dec",
+  "claimBlock": 24747924,
+  "registryTx": "0xd7f6197e642f7d0bd48b19ab41cb742f07ce05e89442eb59f2513a4ff2eff71b",
+  "registryBlock": 24748136,
+  "claimNoteTopology": {
+    "Nullifier": 1,
+    "Commitment": 3,
+    "EncryptedNote": 3
+  },
+  "currentHead": 24761819,
+  "currentPublicRlsWei": "0",
+  "currentPublicUsdrWei": "0",
+  "currentNativeWei": "0",
+  "currentAccountNonce": 0,
+  "currentRegistryRegistered": true,
+  "publicRlsUsdrTransfersSinceOriginalPreclaim": 0,
+  "scopedScanWindows": 30,
+  "independentPublicExplorerHistoryEmpty": true,
+  "historicalFixedBlockStateFreshlyQueried": false,
+  "historicalFixedBlockStateSource": "Original-time authenticated snapshots in receiver-private-claim-and-registration-verified.json; historical eth_call may now be pruned."
+}

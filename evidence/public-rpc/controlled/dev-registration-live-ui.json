@@ -1,0 +1,35 @@
+{
+  "capturedAtUtc": "2026-11-20T19:56:49.996Z",
+  "evidenceClass": "CONTROLLED_DAPP_UI_OBSERVATION_NOT_INDEPENDENT_CHAIN_PROOF",
+  "requests": [
+    "eth_accounts",
+    "eth_accounts",
+    "eth_chainId",
+    "eth_chainId",
+    "personal_sign",
+    "eth_chainId",
+    "eth_signTypedData_v4",
+    "eth_chainId",
+    "eth_signTypedData_v4"
+  ],
+  "usernameValidation": [
+    {
+      "attempt": 0,
+      "immediate": "rq3dev26",
+      "later": "rq3dev26",
+      "enabled": true
+    }
+  ],
+  "textExcerpt": "ENYGMA\nRayls Public Chain Testnet\n0x1AcC…4FF6\nFinish setting up\nWallet connected\n0x1AcC448116C00A16bBfCE8f9d280aaA4D3Ad4FF6\nGet test $USDr and $RLS\n0 $USDr and 250 $RLS\nRegister your keys\n(failed)\n\nRegister your keys as @rq3dev26\n\nGas fee up to 8.00 $RLS≈ $0.01\n\nThe gas fee couldn't be taken: the $RLS approval for the gas forwarder didn't go through. Start again.\nBack\n$USDr\n0x0000…0400\n(opens in a new tab)\nAdd to MetaMask\n$RLS\n0x07e1…17EA\n(opens in a new tab)\nAdd to MetaMask\nScroll to learn more\nQuantum-private payments.\nSafe and compliant.\n@maya pays @leo 2 $USDr, quantum-private: the public can't see it, the auditor can\n@maya\nQuantum-private\nAuditor sees\n@leo\n\nRAYLS ENYGMA\n\nHow it works\nAt a glance\n\nQuantum-private payments in stablecoins, tokens and NFTs, one deployment per country. Hidden from the public, never from that country's auditor, which can read but not freeze or move anyone's funds.\n\nYou, in this tab\n\nYour passkey unlocks your keys. They stay in this tab. Or your custody wallet approves each step.\n\na proof, or a signed request\n\nThe relayer\n\nSubmits it and pays the gas, an approval's too, which you pay back in $RLS, shielded or public. Sends and $RLS unshields never show your address as the sender. Swaps run through Rayls' own notes. Its custody signer proves what a custody wallet approved.\n\nthe transaction\n\nThe chain\n\nHolds every note, encrypted.\n\nview keys, in escrow\n\nThe auditor\n\nOne per country. Reads everything there. The public sees nothing.\n\nHow shielding works\nSeven steps, from deposit to withdrawal\nWho it's for\n\nPeople and businesses who'd rather their payments weren't public, and the exchanges, banks and payment apps that must stay compliant while t",
+  "publicTransactionHash": null,
+  "relayerHttpStatus": 422,
+  "relayRequests": [
+    {
+      "path": "/rayls/relay",
+      "allowed": true,
+      "bodyFields": "permit,request,signature",
+      "feeWei": "7193040240000000000"
+    }
+  ],
+  "pageErrorCount": 0
+}

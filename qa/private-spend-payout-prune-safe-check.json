@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "class": "LIVE_PUBLIC_FIRST_SPEND_ENVELOPE_AND_EXACT_FEE_PAYOUT__NO_HISTORICAL_STATE_REQUIRED",
+  "checkedUtc": "2026-11-21T00:00:12.847617+00:00",
+  "sourceTx": "0x5423d2b13c575c8e26c73e42906f4eefb7a6a257defcebad81a1415c857253e8",
+  "sourceBlock": 24760126,
+  "privateNotePrincipalPublic": false,
+  "sourceReceiptStatus": 1,
+  "sourceEventCount": 7,
+  "payoutTx": "0xd639df4cd7d62ea031a313ec5b3b9f6b46241aebe599b29867bf7a3e7302bb32",
+  "payoutBlock": 24760130,
+  "payoutDelayBlocks": 4,
+  "treasuryRls": "0.576",
+  "impliedGrossRls": "4.416",
+  "impliedBaseRls": "3.84",
+  "oneVaultSpendAndOneTreasuryPayoutInPredeclaredWindow": true,
+  "historicalStateQueried": false,
+  "publicPrincipalVisibility": "The 3 RLS principal and @rq3dev26 recipient come from two controlled owner-wallet observations, not public calldata.",
+  "causalLimit": "Relayer treasury payout is associated by timing/uniqueness and arithmetic under reported fee policy, not by onchain cryptographic source ID."
+}

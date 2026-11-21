@@ -1,0 +1,36 @@
+{
+  "evidence_class": "RAYLS_PUBLIC_TESTNET_FRESH_ADDRESS_BASELINE",
+  "captured_at_utc": "2026-11-20T19:33:04.394366+00:00",
+  "chain_id": 7295799,
+  "rpc": "https://testnet-rpc.rayls.com/",
+  "explorer": "https://testnet-explorer.rayls.com/api/v2",
+  "fixed_block": {
+    "number": 24732563,
+    "hash": "0x2a4f08339c916ec6ab47ab32dcb5796e77a29408a4bec34988e08f9cb80ebd88",
+    "timestamp_utc": "2026-11-20T19:33:02+00:00"
+  },
+  "accounts": {
+    "local_dev_new_public_control": {
+      "address": "0x1AcC448116C00A16bBfCE8f9d280aaA4D3Ad4FF6",
+      "native_usdr_wei": "0",
+      "public_rls_wei": "0",
+      "public_usdr_precompile_balance_wei": "0",
+      "transaction_nonce": 0,
+      "explorer_transactions_count": 0,
+      "explorer_token_transfers_count": 0,
+      "explorer_history_single_page_complete": true
+    },
+    "local_hub_unfunded_public_receiver": {
+      "address": "0xa7EB60a22240FCa3D684f1B96dFE3f68a8cfC38A",
+      "native_usdr_wei": "0",
+      "public_rls_wei": "0",
+      "public_usdr_precompile_balance_wei": "0",
+      "transaction_nonce": 0,
+      "explorer_transactions_count": 0,
+      "explorer_token_transfers_count": 0,
+      "explorer_history_single_page_complete": true
+    }
+  },
+  "qualification": "Wallets had previously been used on local research chains. Freshness refers only to observed history and state on Rayls Public testnet; explorer completeness is not a global proof of absence.",
+  "no_wallet_signatures_or_transactions_submitted": true
+}

@@ -1,0 +1,9 @@
+{
+  "class": "OFFLINE_TREASURY_EVIDENCE_CONSISTENCY",
+  "status": "PASS",
+  "paid_cases": 18,
+  "exact_matches": 18,
+  "zero_fee_cases": 2,
+  "checked_at_utc": "2026-11-20T20:43:43.023962+00:00",
+  "caveat": "Live public RPC authentication requires rerunning source collection; this check only evaluates the frozen data."
+}

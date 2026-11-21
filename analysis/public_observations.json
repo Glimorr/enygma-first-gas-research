@@ -1,0 +1,45 @@
+{
+  "evidence_class": "DERIVED_PUBLIC_CHAIN_OBSERVATIONS_NOT_CONTROLLED",
+  "captured_at_utc": "2026-11-20T13:49:20.230725+00:00",
+  "chain_id": 7295799,
+  "window": {
+    "from": {
+      "height": 24670000,
+      "hash": "0xe15798cfac83df46f174df2fc6f95929fa70eb84024c8faa1bed9b257de086c3",
+      "timestamp_utc": "2026-11-20T10:03:21+00:00"
+    },
+    "to": {
+      "height": 24690000,
+      "hash": "0x9b39e49fb6d99f0e713145dadd3fc31f82634ef9c1dadec40ca230b43b864818",
+      "timestamp_utc": "2026-11-20T13:06:35+00:00"
+    },
+    "block_heights_inclusive": 20001
+  },
+  "counts": {
+    "contract_logs": 211,
+    "distinct_transactions": 67,
+    "registered_accounts": 6,
+    "registrations_with_forwarder_event": 6,
+    "forwarder_receipts": 17,
+    "paid_forwarder_receipts": 15,
+    "zero_fee_forwarder_receipts": 2,
+    "exact_fee_transfer_matches": 15
+  },
+  "paid_fee_wei": {
+    "total": "73965753360000000000",
+    "minimum": "724265400000000000",
+    "maximum": "7201916400000000000",
+    "median": "3832963800000000000"
+  },
+  "paid_fee_RLS": {
+    "total": "73.96575336",
+    "minimum": "0.7242654",
+    "maximum": "7.2019164"
+  },
+  "constraints": [
+    "Observational window selected after viewing public explorer activity, not random.",
+    "Two zero-fee events were not directly submitted to the active forwarder.",
+    "No foundation treasury transfer occurred within checked receipts; later aggregate payments are not evaluated.",
+    "Private shielded notes or invitation ownership cannot be inferred from these public receipts."
+  ]
+}

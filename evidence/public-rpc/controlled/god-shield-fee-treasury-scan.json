@@ -1,0 +1,30 @@
+{
+  "evidence_class": "SCOPED_PUBLIC_TREASURY_TRANSFER_SCAN_NOT_PER_PAYMENT_ATTRIBUTION",
+  "captured_at_utc": "2026-11-20T20:39:39.567376+00:00",
+  "chain_id": 7295799,
+  "rpc": "https://testnet-rpc.rayls.com/",
+  "parent_shield_tx": "0x98bcb6f47b12400cb89284c215cc52373d38f8af30f855b9a0394c2923fa653a",
+  "starting_block": 24738801,
+  "ending_block": 24739893,
+  "blocks_inclusive": 1093,
+  "token_address": "0x07e17E17e17E17e17e17e17E17E17E17E17e17EA",
+  "sender_address": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+  "treasury_address": "0x71AF09966CBED4434ccA97c40Fa38B8083548B95",
+  "transfers": [
+    {
+      "tx_hash": "0x0f541a2275c4fcce2e43ba3219d37503fd38032932e0b94f9973f4cbce62233c",
+      "block_number": 24738804,
+      "timestamp_utc": "2026-11-20T20:29:45+00:00",
+      "amount_wei": "457471080000000000",
+      "log_index": 0,
+      "receipt_status": 1
+    }
+  ],
+  "error_windows": [],
+  "scope_notes": [
+    "Matches ERC20 RLS transfers from this relayer to the reported treasury only, within a bounded post-shield window.",
+    "No matching transfer is NOT proof that a Foundation payout never happened: another sender, token, contract, batching or later window is possible.",
+    "Even a matching amount does not prove unique one-to-one attribution to the studied shield transaction.",
+    "Relayer-config treasury is server-reported and not an independently authenticated Foundation identity."
+  ]
+}

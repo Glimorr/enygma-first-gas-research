@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "evidence_class": "FROZEN_PRIVATE_SPEND_ENVELOPE_AND_FEE_CONSISTENCY_NOT_LIVE_RPC",
+  "checkedUtc": "2026-11-20T23:47:21.923Z",
+  "errors": []
+}

@@ -1,0 +1,3013 @@
+{
+  "evidence_class": "OBSERVATIONAL_PUBLIC_ONCHAIN_ONLY_NOT_USER_CONTROLLED",
+  "capturedAtUtc": "2026-11-20T13:38:24.966Z",
+  "rpc": "https://testnet-rpc.rayls.com/",
+  "chainId": 7295799,
+  "fromBlock": 24670000,
+  "toBlock": 24690000,
+  "contractFilters": [
+    {
+      "name": "UserRegistry",
+      "address": "0xa473291ffb33e2276f364fae169f03c4406719e9"
+    },
+    {
+      "name": "SharedVault",
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "RlsVault",
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "UsdrVault",
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "next",
+      "address": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d"
+    }
+  ],
+  "totalLogs": 211,
+  "distinctTxs": 67,
+  "decodedEventCounts": {
+    "next.Relayed": 17,
+    "SharedVault.Nullifier": 10,
+    "SharedVault.Commitment": 26,
+    "SharedVault.EncryptedNote": 25,
+    "RlsVault.Commitment": 33,
+    "RlsVault.EncryptedNote": 33,
+    "UsdrVault.Commitment": 23,
+    "UsdrVault.EncryptedNote": 23,
+    "UserRegistry.UserRegistered": 6,
+    "UserRegistry.UsernameSet": 6,
+    "UsdrVault.Nullifier": 2,
+    "RlsVault.Nullifier": 5,
+    "SharedVault.PartialWithdrawal": 1,
+    "SharedVault.PaidOut": 1
+  },
+  "events": [
+    {
+      "name": "next",
+      "event": "Relayed",
+      "fields": {
+        "from": "0x13ff4ac018d9F14d9bd4A292d5AC249E280526e1",
+        "to": "0xE92813f397B5d99FC31732A11D6C5F82Bd7926a0",
+        "nonce": "4",
+        "relayer": "0xcA11bde05977b3631167028862bE2a173976CA11",
+        "fee": "0"
+      },
+      "txHash": "0x814a8bfbc00dab9c79fafb47af3aaa2b092ebf0d6a985b4cbc3f558990377bad",
+      "blockNumber": 24671191,
+      "logIndex": 4,
+      "address": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d"
+    },
+    {
+      "name": "SharedVault",
+      "event": "Nullifier",
+      "fields": {
+        "vaultId": "2",
+        "treeNumber": "0",
+        "nullifier": "15562017859400760771572268976330323618394485565531898546070141408744281546262"
+      },
+      "txHash": "0x814a8bfbc00dab9c79fafb47af3aaa2b092ebf0d6a985b4cbc3f558990377bad",
+      "blockNumber": 24671191,
+      "logIndex": 5,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "14250730065896222588894357241826166830216971564061031853025760820139648976883"
+      },
+      "txHash": "0x814a8bfbc00dab9c79fafb47af3aaa2b092ebf0d6a985b4cbc3f558990377bad",
+      "blockNumber": 24671191,
+      "logIndex": 6,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "938290521846552920453137799707768863188408396993185366193667657172362209824"
+      },
+      "txHash": "0x814a8bfbc00dab9c79fafb47af3aaa2b092ebf0d6a985b4cbc3f558990377bad",
+      "blockNumber": 24671191,
+      "logIndex": 7,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "14250730065896222588894357241826166830216971564061031853025760820139648976883",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x814a8bfbc00dab9c79fafb47af3aaa2b092ebf0d6a985b4cbc3f558990377bad",
+      "blockNumber": 24671191,
+      "logIndex": 8,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "938290521846552920453137799707768863188408396993185366193667657172362209824",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x814a8bfbc00dab9c79fafb47af3aaa2b092ebf0d6a985b4cbc3f558990377bad",
+      "blockNumber": 24671191,
+      "logIndex": 9,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "RlsVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "14193085387168166868662465216334066198912598318784079229254379979428848121664"
+      },
+      "txHash": "0xef504af59a0b6fed27e7e492144e687d571b863d1531630098fb6cb372096f88",
+      "blockNumber": 24671219,
+      "logIndex": 1,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "14193085387168166868662465216334066198912598318784079229254379979428848121664",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0xef504af59a0b6fed27e7e492144e687d571b863d1531630098fb6cb372096f88",
+      "blockNumber": 24671219,
+      "logIndex": 2,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "17665776565143914594791588544885108104772369915941862204111387260727515197457"
+      },
+      "txHash": "0x77507e27ef35d7f5105dac1e114525f463d736d8099ef179f3ae8e0aabb2305d",
+      "blockNumber": 24671220,
+      "logIndex": 2,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "17665776565143914594791588544885108104772369915941862204111387260727515197457",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x77507e27ef35d7f5105dac1e114525f463d736d8099ef179f3ae8e0aabb2305d",
+      "blockNumber": 24671220,
+      "logIndex": 3,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "UserRegistry",
+      "event": "UserRegistered",
+      "fields": {
+        "user": "0xF63483B1dd7f091200aD7C5f03EF92a80b644E65",
+        "pkSpend": "2676751909433475738698393194081597636853809259076310385659408063831715988663",
+        "pkViewBytes": 1184,
+        "mlKemAuditCtBytes": 1088,
+        "aesAuditCtBytes": 92
+      },
+      "txHash": "0x67fd9a5a217d12bf7e6043c45963e214a7240b60ca8b2e7031f22efa8e9d4d83",
+      "blockNumber": 24672921,
+      "logIndex": 2,
+      "address": "0xa473291ffb33e2276f364fae169f03c4406719e9"
+    },
+    {
+      "name": "UserRegistry",
+      "event": "UsernameSet",
+      "fields": {
+        "user": "0xF63483B1dd7f091200aD7C5f03EF92a80b644E65",
+        "username": "immortal"
+      },
+      "txHash": "0x67fd9a5a217d12bf7e6043c45963e214a7240b60ca8b2e7031f22efa8e9d4d83",
+      "blockNumber": 24672921,
+      "logIndex": 3,
+      "address": "0xa473291ffb33e2276f364fae169f03c4406719e9"
+    },
+    {
+      "name": "next",
+      "event": "Relayed",
+      "fields": {
+        "from": "0xF63483B1dd7f091200aD7C5f03EF92a80b644E65",
+        "to": "0xA473291FFb33e2276F364fAE169f03c4406719e9",
+        "nonce": "0",
+        "relayer": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+        "fee": "7193131320000000000"
+      },
+      "txHash": "0x67fd9a5a217d12bf7e6043c45963e214a7240b60ca8b2e7031f22efa8e9d4d83",
+      "blockNumber": 24672921,
+      "logIndex": 4,
+      "address": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d"
+    },
+    {
+      "name": "SharedVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "18078426358028214408345352054137889644137174107754674033293624093325111316884"
+      },
+      "txHash": "0x31d04a532d9e198e8b267f4ec63e5c6aa9578129905629ccc6d3b6818d4f2aea",
+      "blockNumber": 24674150,
+      "logIndex": 4,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "18078426358028214408345352054137889644137174107754674033293624093325111316884",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x31d04a532d9e198e8b267f4ec63e5c6aa9578129905629ccc6d3b6818d4f2aea",
+      "blockNumber": 24674150,
+      "logIndex": 5,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "next",
+      "event": "Relayed",
+      "fields": {
+        "from": "0xF63483B1dd7f091200aD7C5f03EF92a80b644E65",
+        "to": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+        "nonce": "1",
+        "relayer": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+        "fee": "3525723360000000000"
+      },
+      "txHash": "0x31d04a532d9e198e8b267f4ec63e5c6aa9578129905629ccc6d3b6818d4f2aea",
+      "blockNumber": 24674150,
+      "logIndex": 6,
+      "address": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d"
+    },
+    {
+      "name": "UserRegistry",
+      "event": "UserRegistered",
+      "fields": {
+        "user": "0xEf12d5bf995C614fFF1362Cf8376D2C3A1ba544A",
+        "pkSpend": "4117838805295445107849907226076134449380526068902681445651857626532752812793",
+        "pkViewBytes": 1184,
+        "mlKemAuditCtBytes": 1088,
+        "aesAuditCtBytes": 92
+      },
+      "txHash": "0x4d49be90bd7c33604f1b43e34dbc3875701fd6fd0282e1f4c7dc21888c800d3d",
+      "blockNumber": 24676085,
+      "logIndex": 2,
+      "address": "0xa473291ffb33e2276f364fae169f03c4406719e9"
+    },
+    {
+      "name": "UserRegistry",
+      "event": "UsernameSet",
+      "fields": {
+        "user": "0xEf12d5bf995C614fFF1362Cf8376D2C3A1ba544A",
+        "username": "798879"
+      },
+      "txHash": "0x4d49be90bd7c33604f1b43e34dbc3875701fd6fd0282e1f4c7dc21888c800d3d",
+      "blockNumber": 24676085,
+      "logIndex": 3,
+      "address": "0xa473291ffb33e2276f364fae169f03c4406719e9"
+    },
+    {
+      "name": "next",
+      "event": "Relayed",
+      "fields": {
+        "from": "0xEf12d5bf995C614fFF1362Cf8376D2C3A1ba544A",
+        "to": "0xA473291FFb33e2276F364fAE169f03c4406719e9",
+        "nonce": "0",
+        "relayer": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+        "fee": "7189855200000000000"
+      },
+      "txHash": "0x4d49be90bd7c33604f1b43e34dbc3875701fd6fd0282e1f4c7dc21888c800d3d",
+      "blockNumber": 24676085,
+      "logIndex": 4,
+      "address": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d"
+    },
+    {
+      "name": "SharedVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "19551318154265223535135944026266144951441369377011432088705686212829853473529"
+      },
+      "txHash": "0x8bbd8f1d9c53c68d2763555baa1da1dcb4967284e9df798512817840d3ac8676",
+      "blockNumber": 24676127,
+      "logIndex": 4,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "19551318154265223535135944026266144951441369377011432088705686212829853473529",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x8bbd8f1d9c53c68d2763555baa1da1dcb4967284e9df798512817840d3ac8676",
+      "blockNumber": 24676127,
+      "logIndex": 5,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "next",
+      "event": "Relayed",
+      "fields": {
+        "from": "0xEf12d5bf995C614fFF1362Cf8376D2C3A1ba544A",
+        "to": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+        "nonce": "1",
+        "relayer": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+        "fee": "3544408560000000000"
+      },
+      "txHash": "0x8bbd8f1d9c53c68d2763555baa1da1dcb4967284e9df798512817840d3ac8676",
+      "blockNumber": 24676127,
+      "logIndex": 6,
+      "address": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d"
+    },
+    {
+      "name": "SharedVault",
+      "event": "Nullifier",
+      "fields": {
+        "vaultId": "2",
+        "treeNumber": "0",
+        "nullifier": "17628831140901830694653276321685658655907084693420000998334333380084425138564"
+      },
+      "txHash": "0x742143af6fa8624fe2bf78495b322ffca03ab50ce24e98f4eb55e0a86414bda1",
+      "blockNumber": 24676341,
+      "logIndex": 0,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "5204624899142024307571296335845295583929318600449456449575219828963703269313"
+      },
+      "txHash": "0x742143af6fa8624fe2bf78495b322ffca03ab50ce24e98f4eb55e0a86414bda1",
+      "blockNumber": 24676341,
+      "logIndex": 1,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "13397039987759887798946631269653125525793756313870088453461563619788814345493"
+      },
+      "txHash": "0x742143af6fa8624fe2bf78495b322ffca03ab50ce24e98f4eb55e0a86414bda1",
+      "blockNumber": 24676341,
+      "logIndex": 2,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "5204624899142024307571296335845295583929318600449456449575219828963703269313",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x742143af6fa8624fe2bf78495b322ffca03ab50ce24e98f4eb55e0a86414bda1",
+      "blockNumber": 24676341,
+      "logIndex": 3,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "13397039987759887798946631269653125525793756313870088453461563619788814345493",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x742143af6fa8624fe2bf78495b322ffca03ab50ce24e98f4eb55e0a86414bda1",
+      "blockNumber": 24676341,
+      "logIndex": 4,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "Nullifier",
+      "fields": {
+        "vaultId": "0",
+        "treeNumber": "0",
+        "nullifier": "17763129507248899314114032627207663426291754151754128849614230238301242041075"
+      },
+      "txHash": "0x742143af6fa8624fe2bf78495b322ffca03ab50ce24e98f4eb55e0a86414bda1",
+      "blockNumber": 24676341,
+      "logIndex": 5,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "Nullifier",
+      "fields": {
+        "vaultId": "0",
+        "treeNumber": "0",
+        "nullifier": "17473116394040099662682792308454876860368976029142480505189245575608748470855"
+      },
+      "txHash": "0x742143af6fa8624fe2bf78495b322ffca03ab50ce24e98f4eb55e0a86414bda1",
+      "blockNumber": 24676341,
+      "logIndex": 6,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "9541590123696403817161397500816611345895070496581588458896823165738551237026"
+      },
+      "txHash": "0x742143af6fa8624fe2bf78495b322ffca03ab50ce24e98f4eb55e0a86414bda1",
+      "blockNumber": 24676341,
+      "logIndex": 7,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "3990321183894459154520489146351918556444773521407376089036897653257855163271"
+      },
+      "txHash": "0x742143af6fa8624fe2bf78495b322ffca03ab50ce24e98f4eb55e0a86414bda1",
+      "blockNumber": 24676341,
+      "logIndex": 8,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "9541590123696403817161397500816611345895070496581588458896823165738551237026",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x742143af6fa8624fe2bf78495b322ffca03ab50ce24e98f4eb55e0a86414bda1",
+      "blockNumber": 24676341,
+      "logIndex": 9,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "3990321183894459154520489146351918556444773521407376089036897653257855163271",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x742143af6fa8624fe2bf78495b322ffca03ab50ce24e98f4eb55e0a86414bda1",
+      "blockNumber": 24676341,
+      "logIndex": 10,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "SharedVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "15323048764876434345088702158623732975029344840896851367186792731257220998147"
+      },
+      "txHash": "0xc70c83229f495a868c24055467e4413afae6ed6ffecc23f14f3ca5e8d54e8dc7",
+      "blockNumber": 24676538,
+      "logIndex": 5,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "15323048764876434345088702158623732975029344840896851367186792731257220998147",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0xc70c83229f495a868c24055467e4413afae6ed6ffecc23f14f3ca5e8d54e8dc7",
+      "blockNumber": 24676538,
+      "logIndex": 6,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "next",
+      "event": "Relayed",
+      "fields": {
+        "from": "0xEf12d5bf995C614fFF1362Cf8376D2C3A1ba544A",
+        "to": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+        "nonce": "2",
+        "relayer": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+        "fee": "3814273080000000000"
+      },
+      "txHash": "0xc70c83229f495a868c24055467e4413afae6ed6ffecc23f14f3ca5e8d54e8dc7",
+      "blockNumber": 24676538,
+      "logIndex": 7,
+      "address": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d"
+    },
+    {
+      "name": "SharedVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "7833943994578856644712797225696118909016997737103451214774252248878214150444"
+      },
+      "txHash": "0x51fd09dfbd2906f448ea9a76e1692110957ab540975050362aba7276b93dcca7",
+      "blockNumber": 24676646,
+      "logIndex": 4,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "7833943994578856644712797225696118909016997737103451214774252248878214150444",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x51fd09dfbd2906f448ea9a76e1692110957ab540975050362aba7276b93dcca7",
+      "blockNumber": 24676646,
+      "logIndex": 5,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "next",
+      "event": "Relayed",
+      "fields": {
+        "from": "0xEf12d5bf995C614fFF1362Cf8376D2C3A1ba544A",
+        "to": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+        "nonce": "3",
+        "relayer": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+        "fee": "3562773600000000000"
+      },
+      "txHash": "0x51fd09dfbd2906f448ea9a76e1692110957ab540975050362aba7276b93dcca7",
+      "blockNumber": 24676646,
+      "logIndex": 6,
+      "address": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d"
+    },
+    {
+      "name": "SharedVault",
+      "event": "Nullifier",
+      "fields": {
+        "vaultId": "2",
+        "treeNumber": "0",
+        "nullifier": "14179004313578285586939395118271748713658766784112065127828585154732863622822"
+      },
+      "txHash": "0x223af8236cec9d81f9c041e41c928d1f5926066f3fcf7b0a1e946645bc356e05",
+      "blockNumber": 24676738,
+      "logIndex": 0,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "12576776126239513659771028552424550570779287889550983917291942367795086516070"
+      },
+      "txHash": "0x223af8236cec9d81f9c041e41c928d1f5926066f3fcf7b0a1e946645bc356e05",
+      "blockNumber": 24676738,
+      "logIndex": 1,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "14851669461124156282527934300529305917520387606324049229489805794888886702675"
+      },
+      "txHash": "0x223af8236cec9d81f9c041e41c928d1f5926066f3fcf7b0a1e946645bc356e05",
+      "blockNumber": 24676738,
+      "logIndex": 2,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "12576776126239513659771028552424550570779287889550983917291942367795086516070",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x223af8236cec9d81f9c041e41c928d1f5926066f3fcf7b0a1e946645bc356e05",
+      "blockNumber": 24676738,
+      "logIndex": 3,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "14851669461124156282527934300529305917520387606324049229489805794888886702675",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x223af8236cec9d81f9c041e41c928d1f5926066f3fcf7b0a1e946645bc356e05",
+      "blockNumber": 24676738,
+      "logIndex": 4,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "RlsVault",
+      "event": "Nullifier",
+      "fields": {
+        "vaultId": "1",
+        "treeNumber": "0",
+        "nullifier": "3613404635656354328446677989519399431136879809192694640119137926873292416558"
+      },
+      "txHash": "0x223af8236cec9d81f9c041e41c928d1f5926066f3fcf7b0a1e946645bc356e05",
+      "blockNumber": 24676738,
+      "logIndex": 5,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "Nullifier",
+      "fields": {
+        "vaultId": "1",
+        "treeNumber": "0",
+        "nullifier": "16254626166457878015146507344278983595741628465156630060180613896817186308177"
+      },
+      "txHash": "0x223af8236cec9d81f9c041e41c928d1f5926066f3fcf7b0a1e946645bc356e05",
+      "blockNumber": 24676738,
+      "logIndex": 6,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "14911791058976676691693193181459395048176503217962350841626886434237672925618"
+      },
+      "txHash": "0x223af8236cec9d81f9c041e41c928d1f5926066f3fcf7b0a1e946645bc356e05",
+      "blockNumber": 24676738,
+      "logIndex": 7,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "1845983288121957853025625114153866588568376804221265147804330767087670307151"
+      },
+      "txHash": "0x223af8236cec9d81f9c041e41c928d1f5926066f3fcf7b0a1e946645bc356e05",
+      "blockNumber": 24676738,
+      "logIndex": 8,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "14911791058976676691693193181459395048176503217962350841626886434237672925618",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x223af8236cec9d81f9c041e41c928d1f5926066f3fcf7b0a1e946645bc356e05",
+      "blockNumber": 24676738,
+      "logIndex": 9,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "1845983288121957853025625114153866588568376804221265147804330767087670307151",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x223af8236cec9d81f9c041e41c928d1f5926066f3fcf7b0a1e946645bc356e05",
+      "blockNumber": 24676738,
+      "logIndex": 10,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "SharedVault",
+      "event": "Nullifier",
+      "fields": {
+        "vaultId": "2",
+        "treeNumber": "0",
+        "nullifier": "7166302968877059606808720774351518351437463712217084822323240799236202870644"
+      },
+      "txHash": "0x223af8236cec9d81f9c041e41c928d1f5926066f3fcf7b0a1e946645bc356e05",
+      "blockNumber": 24676738,
+      "logIndex": 11,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "Nullifier",
+      "fields": {
+        "vaultId": "2",
+        "treeNumber": "0",
+        "nullifier": "19344420028902591978808220450716002531328854447043375244402626002029142439893"
+      },
+      "txHash": "0x223af8236cec9d81f9c041e41c928d1f5926066f3fcf7b0a1e946645bc356e05",
+      "blockNumber": 24676738,
+      "logIndex": 12,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "2312228122235596917326367175125838416763602352012202472845694654565744687341"
+      },
+      "txHash": "0x223af8236cec9d81f9c041e41c928d1f5926066f3fcf7b0a1e946645bc356e05",
+      "blockNumber": 24676738,
+      "logIndex": 13,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "5005344743004236388423197175368769538839247619724910497065126561127161823762"
+      },
+      "txHash": "0x223af8236cec9d81f9c041e41c928d1f5926066f3fcf7b0a1e946645bc356e05",
+      "blockNumber": 24676738,
+      "logIndex": 14,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "2312228122235596917326367175125838416763602352012202472845694654565744687341",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x223af8236cec9d81f9c041e41c928d1f5926066f3fcf7b0a1e946645bc356e05",
+      "blockNumber": 24676738,
+      "logIndex": 15,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "5005344743004236388423197175368769538839247619724910497065126561127161823762",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x223af8236cec9d81f9c041e41c928d1f5926066f3fcf7b0a1e946645bc356e05",
+      "blockNumber": 24676738,
+      "logIndex": 16,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "RlsVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "6313608786509987652130939867552236106128052893432217781246261143613418327381"
+      },
+      "txHash": "0x8a3387e2c07e86b049c4426b36d4ea6f54fb3eeaa76eec26bbb643f2e68b3919",
+      "blockNumber": 24677728,
+      "logIndex": 1,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "6313608786509987652130939867552236106128052893432217781246261143613418327381",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x8a3387e2c07e86b049c4426b36d4ea6f54fb3eeaa76eec26bbb643f2e68b3919",
+      "blockNumber": 24677728,
+      "logIndex": 2,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "SharedVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "2719541615228537631161198593549359858597048883842103090434493181671015797020"
+      },
+      "txHash": "0x732f75d1fc8cccc6fb0fcc2d79632f40d4d13935eb85bfabf66733eafda9e8c6",
+      "blockNumber": 24677929,
+      "logIndex": 5,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "2719541615228537631161198593549359858597048883842103090434493181671015797020",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x732f75d1fc8cccc6fb0fcc2d79632f40d4d13935eb85bfabf66733eafda9e8c6",
+      "blockNumber": 24677929,
+      "logIndex": 6,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "next",
+      "event": "Relayed",
+      "fields": {
+        "from": "0x4f1aa6CB2C8932583F2844a855fB057C589F23E9",
+        "to": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+        "nonce": "3",
+        "relayer": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+        "fee": "3832963800000000000"
+      },
+      "txHash": "0x732f75d1fc8cccc6fb0fcc2d79632f40d4d13935eb85bfabf66733eafda9e8c6",
+      "blockNumber": 24677929,
+      "logIndex": 7,
+      "address": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d"
+    },
+    {
+      "name": "SharedVault",
+      "event": "Nullifier",
+      "fields": {
+        "vaultId": "2",
+        "treeNumber": "0",
+        "nullifier": "18160451652635103687521178972909228626264833152102975377712982804001154826992"
+      },
+      "txHash": "0xfdaa7706b311a027e937003d49d89a041c086bf1bd5256de66da12c87141e202",
+      "blockNumber": 24678513,
+      "logIndex": 2,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "11721319499957586181310811631514005242899400147234301155830849855980587006183"
+      },
+      "txHash": "0xfdaa7706b311a027e937003d49d89a041c086bf1bd5256de66da12c87141e202",
+      "blockNumber": 24678513,
+      "logIndex": 3,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "PartialWithdrawal",
+      "fields": {
+        "vaultId": "2",
+        "recipient": "0x4f1aa6CB2C8932583F2844a855fB057C589F23E9",
+        "amount": "2000000000000000000",
+        "changeCommitment": "11721319499957586181310811631514005242899400147234301155830849855980587006183"
+      },
+      "txHash": "0xfdaa7706b311a027e937003d49d89a041c086bf1bd5256de66da12c87141e202",
+      "blockNumber": 24678513,
+      "logIndex": 4,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "PaidOut",
+      "fields": {
+        "vaultId": "2",
+        "token": "0x0000000000000000000000000000000000000400",
+        "recipient": "0x4f1aa6CB2C8932583F2844a855fB057C589F23E9",
+        "amount": "2000000000000000000"
+      },
+      "txHash": "0xfdaa7706b311a027e937003d49d89a041c086bf1bd5256de66da12c87141e202",
+      "blockNumber": 24678513,
+      "logIndex": 5,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "next",
+      "event": "Relayed",
+      "fields": {
+        "from": "0x4f1aa6CB2C8932583F2844a855fB057C589F23E9",
+        "to": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+        "nonce": "4",
+        "relayer": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+        "fee": "4757765280000000000"
+      },
+      "txHash": "0xfdaa7706b311a027e937003d49d89a041c086bf1bd5256de66da12c87141e202",
+      "blockNumber": 24678513,
+      "logIndex": 7,
+      "address": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d"
+    },
+    {
+      "name": "RlsVault",
+      "event": "Nullifier",
+      "fields": {
+        "vaultId": "1",
+        "treeNumber": "0",
+        "nullifier": "1655379480549159247513918875680789868208850712593762440616730211666137515927"
+      },
+      "txHash": "0x116ead0d6b4dd02fe7e74a8719ffd5bb8e04a26170d616a779379e06363db7d4",
+      "blockNumber": 24678699,
+      "logIndex": 0,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "5438628852703212529401145171728377452717068406879834470107379397284660508701"
+      },
+      "txHash": "0x116ead0d6b4dd02fe7e74a8719ffd5bb8e04a26170d616a779379e06363db7d4",
+      "blockNumber": 24678699,
+      "logIndex": 1,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "13432320847120574606596103409819423073624771409091441751383551149218105378145"
+      },
+      "txHash": "0x116ead0d6b4dd02fe7e74a8719ffd5bb8e04a26170d616a779379e06363db7d4",
+      "blockNumber": 24678699,
+      "logIndex": 2,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "17052963304112345837690595655868549701084663816007904812826174525873169609651"
+      },
+      "txHash": "0x116ead0d6b4dd02fe7e74a8719ffd5bb8e04a26170d616a779379e06363db7d4",
+      "blockNumber": 24678699,
+      "logIndex": 3,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "5438628852703212529401145171728377452717068406879834470107379397284660508701",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x116ead0d6b4dd02fe7e74a8719ffd5bb8e04a26170d616a779379e06363db7d4",
+      "blockNumber": 24678699,
+      "logIndex": 4,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "13432320847120574606596103409819423073624771409091441751383551149218105378145",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x116ead0d6b4dd02fe7e74a8719ffd5bb8e04a26170d616a779379e06363db7d4",
+      "blockNumber": 24678699,
+      "logIndex": 5,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "17052963304112345837690595655868549701084663816007904812826174525873169609651",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x116ead0d6b4dd02fe7e74a8719ffd5bb8e04a26170d616a779379e06363db7d4",
+      "blockNumber": 24678699,
+      "logIndex": 6,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "Nullifier",
+      "fields": {
+        "vaultId": "1",
+        "treeNumber": "0",
+        "nullifier": "20380381161782635483336486624572402556590791568337504854284768169834306250805"
+      },
+      "txHash": "0xbb2c67f40360a36dc6f2c3827e1d2ac63725578fea94208ef064739aefaf1a08",
+      "blockNumber": 24679119,
+      "logIndex": 0,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "3064991208063136748643348749614021051232625503925371489391211894681693767812"
+      },
+      "txHash": "0xbb2c67f40360a36dc6f2c3827e1d2ac63725578fea94208ef064739aefaf1a08",
+      "blockNumber": 24679119,
+      "logIndex": 1,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "18894507996914284263961354956470672966411681006866636111242861103815643292169"
+      },
+      "txHash": "0xbb2c67f40360a36dc6f2c3827e1d2ac63725578fea94208ef064739aefaf1a08",
+      "blockNumber": 24679119,
+      "logIndex": 2,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "12606523437851647075158070112906430633694578365388704938878700999437140993470"
+      },
+      "txHash": "0xbb2c67f40360a36dc6f2c3827e1d2ac63725578fea94208ef064739aefaf1a08",
+      "blockNumber": 24679119,
+      "logIndex": 3,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "3064991208063136748643348749614021051232625503925371489391211894681693767812",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0xbb2c67f40360a36dc6f2c3827e1d2ac63725578fea94208ef064739aefaf1a08",
+      "blockNumber": 24679119,
+      "logIndex": 4,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "18894507996914284263961354956470672966411681006866636111242861103815643292169",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0xbb2c67f40360a36dc6f2c3827e1d2ac63725578fea94208ef064739aefaf1a08",
+      "blockNumber": 24679119,
+      "logIndex": 5,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "12606523437851647075158070112906430633694578365388704938878700999437140993470",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0xbb2c67f40360a36dc6f2c3827e1d2ac63725578fea94208ef064739aefaf1a08",
+      "blockNumber": 24679119,
+      "logIndex": 6,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "UserRegistry",
+      "event": "UserRegistered",
+      "fields": {
+        "user": "0x0Afa86d50AF225fd784B6975c3aE012AaAA8A9cc",
+        "pkSpend": "12653770684162865988219687637090005949183287889032161382825662042897824205900",
+        "pkViewBytes": 1184,
+        "mlKemAuditCtBytes": 1088,
+        "aesAuditCtBytes": 92
+      },
+      "txHash": "0x11e0fe4bf399197327f6e5a075267785dcd6307550c174ddaca1aa18492a1a08",
+      "blockNumber": 24679165,
+      "logIndex": 2,
+      "address": "0xa473291ffb33e2276f364fae169f03c4406719e9"
+    },
+    {
+      "name": "UserRegistry",
+      "event": "UsernameSet",
+      "fields": {
+        "user": "0x0Afa86d50AF225fd784B6975c3aE012AaAA8A9cc",
+        "username": "bankiakun"
+      },
+      "txHash": "0x11e0fe4bf399197327f6e5a075267785dcd6307550c174ddaca1aa18492a1a08",
+      "blockNumber": 24679165,
+      "logIndex": 3,
+      "address": "0xa473291ffb33e2276f364fae169f03c4406719e9"
+    },
+    {
+      "name": "next",
+      "event": "Relayed",
+      "fields": {
+        "from": "0x0Afa86d50AF225fd784B6975c3aE012AaAA8A9cc",
+        "to": "0xA473291FFb33e2276F364fAE169f03c4406719e9",
+        "nonce": "0",
+        "relayer": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+        "fee": "7194679680000000000"
+      },
+      "txHash": "0x11e0fe4bf399197327f6e5a075267785dcd6307550c174ddaca1aa18492a1a08",
+      "blockNumber": 24679165,
+      "logIndex": 4,
+      "address": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d"
+    },
+    {
+      "name": "SharedVault",
+      "event": "Nullifier",
+      "fields": {
+        "vaultId": "2",
+        "treeNumber": "0",
+        "nullifier": "19555805460460726666832258263817458472551935901608885147999673248257548280290"
+      },
+      "txHash": "0x113280ff12155be5e047ff39af6e28179de2903bb94933f84338ab5a2f61ad82",
+      "blockNumber": 24679373,
+      "logIndex": 0,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "11422392324700312759435731230982480977180732872754663672306640115578221158545"
+      },
+      "txHash": "0x113280ff12155be5e047ff39af6e28179de2903bb94933f84338ab5a2f61ad82",
+      "blockNumber": 24679373,
+      "logIndex": 1,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "9836617748967474541704691483796503381121746372387468577261062432095361316529"
+      },
+      "txHash": "0x113280ff12155be5e047ff39af6e28179de2903bb94933f84338ab5a2f61ad82",
+      "blockNumber": 24679373,
+      "logIndex": 2,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "20941291700815137805824240466182056743372701208769195349227443298989512196481"
+      },
+      "txHash": "0x113280ff12155be5e047ff39af6e28179de2903bb94933f84338ab5a2f61ad82",
+      "blockNumber": 24679373,
+      "logIndex": 3,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "11422392324700312759435731230982480977180732872754663672306640115578221158545",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x113280ff12155be5e047ff39af6e28179de2903bb94933f84338ab5a2f61ad82",
+      "blockNumber": 24679373,
+      "logIndex": 4,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "9836617748967474541704691483796503381121746372387468577261062432095361316529",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x113280ff12155be5e047ff39af6e28179de2903bb94933f84338ab5a2f61ad82",
+      "blockNumber": 24679373,
+      "logIndex": 5,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "20941291700815137805824240466182056743372701208769195349227443298989512196481",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x113280ff12155be5e047ff39af6e28179de2903bb94933f84338ab5a2f61ad82",
+      "blockNumber": 24679373,
+      "logIndex": 6,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "RlsVault",
+      "event": "Nullifier",
+      "fields": {
+        "vaultId": "1",
+        "treeNumber": "0",
+        "nullifier": "19171992521863331306308152423743114967261810867423413829455560839592957215850"
+      },
+      "txHash": "0x39d9f8d70d908ae11fb8e6818e93b8bf052a1fff47afe49b992443d852d4da94",
+      "blockNumber": 24681221,
+      "logIndex": 0,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "13116068614638330712647062955099347969776123733584387658397683418033792854239"
+      },
+      "txHash": "0x39d9f8d70d908ae11fb8e6818e93b8bf052a1fff47afe49b992443d852d4da94",
+      "blockNumber": 24681221,
+      "logIndex": 1,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "14821316990711935570043115837783676518509801762548576967806389366763591085205"
+      },
+      "txHash": "0x39d9f8d70d908ae11fb8e6818e93b8bf052a1fff47afe49b992443d852d4da94",
+      "blockNumber": 24681221,
+      "logIndex": 2,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "12630816109568752469040866671283894688874563351665013333535565762384821548222"
+      },
+      "txHash": "0x39d9f8d70d908ae11fb8e6818e93b8bf052a1fff47afe49b992443d852d4da94",
+      "blockNumber": 24681221,
+      "logIndex": 3,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "13116068614638330712647062955099347969776123733584387658397683418033792854239",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x39d9f8d70d908ae11fb8e6818e93b8bf052a1fff47afe49b992443d852d4da94",
+      "blockNumber": 24681221,
+      "logIndex": 4,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "14821316990711935570043115837783676518509801762548576967806389366763591085205",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x39d9f8d70d908ae11fb8e6818e93b8bf052a1fff47afe49b992443d852d4da94",
+      "blockNumber": 24681221,
+      "logIndex": 5,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "12630816109568752469040866671283894688874563351665013333535565762384821548222",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x39d9f8d70d908ae11fb8e6818e93b8bf052a1fff47afe49b992443d852d4da94",
+      "blockNumber": 24681221,
+      "logIndex": 6,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "1333025857146939838800496854360252283612796603784502214839386086466849197389"
+      },
+      "txHash": "0xa89f6f842ff5a68eee39a242bae61c718e9f3c4e48db48d015d4e559f632a418",
+      "blockNumber": 24685391,
+      "logIndex": 2,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "1333025857146939838800496854360252283612796603784502214839386086466849197389",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0xa89f6f842ff5a68eee39a242bae61c718e9f3c4e48db48d015d4e559f632a418",
+      "blockNumber": 24685391,
+      "logIndex": 3,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "RlsVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "13061288090667976603103001856758786289254814852845052492383506718494106615828"
+      },
+      "txHash": "0x4509f58b40b9fef833edb78bcd8f807cbf1f14b158d769503e57e42447fdf495",
+      "blockNumber": 24685391,
+      "logIndex": 5,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "13061288090667976603103001856758786289254814852845052492383506718494106615828",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x4509f58b40b9fef833edb78bcd8f807cbf1f14b158d769503e57e42447fdf495",
+      "blockNumber": 24685391,
+      "logIndex": 6,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "14197756568567538769403377810900685845794173336765047053367004937812721086441"
+      },
+      "txHash": "0x3dfe7ec003c4c3a16963c3544f6656d0d7354975a128a8e5d1ddfcc61bb893f7",
+      "blockNumber": 24685506,
+      "logIndex": 2,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "14197756568567538769403377810900685845794173336765047053367004937812721086441",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x3dfe7ec003c4c3a16963c3544f6656d0d7354975a128a8e5d1ddfcc61bb893f7",
+      "blockNumber": 24685506,
+      "logIndex": 3,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "RlsVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "14450344345639541329498003120114840709371936058987625449092166039872368664209"
+      },
+      "txHash": "0x5b70282f111a60d5e7e8496a0ec5fd56a6dbe6a6d6a0d181e3c07196a9be3cf4",
+      "blockNumber": 24685506,
+      "logIndex": 5,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "14450344345639541329498003120114840709371936058987625449092166039872368664209",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x5b70282f111a60d5e7e8496a0ec5fd56a6dbe6a6d6a0d181e3c07196a9be3cf4",
+      "blockNumber": 24685506,
+      "logIndex": 6,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "21815939904518251168252274752404084108280371404094014787563578405545177188271"
+      },
+      "txHash": "0x7cc776644b04c3a89a7f1e2085e75b76a1f20a2702afcbdd51db1bd79a2e1a33",
+      "blockNumber": 24685600,
+      "logIndex": 2,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "21815939904518251168252274752404084108280371404094014787563578405545177188271",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x7cc776644b04c3a89a7f1e2085e75b76a1f20a2702afcbdd51db1bd79a2e1a33",
+      "blockNumber": 24685600,
+      "logIndex": 3,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "RlsVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "21819973615612924785572461945151438955557975358155679789326410023144093737807"
+      },
+      "txHash": "0x5074455369133f3271426d17651c5a8d3dbbf72247fff87fce9fbcffdb2385ec",
+      "blockNumber": 24685601,
+      "logIndex": 1,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "21819973615612924785572461945151438955557975358155679789326410023144093737807",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x5074455369133f3271426d17651c5a8d3dbbf72247fff87fce9fbcffdb2385ec",
+      "blockNumber": 24685601,
+      "logIndex": 2,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "16815667927061205773056122944162882891140345233423442288582406856140982471817"
+      },
+      "txHash": "0x03e1326bb3e77b137c64b93f21c9213f8831715ea009806164e111148fca999a",
+      "blockNumber": 24685705,
+      "logIndex": 2,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "16815667927061205773056122944162882891140345233423442288582406856140982471817",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x03e1326bb3e77b137c64b93f21c9213f8831715ea009806164e111148fca999a",
+      "blockNumber": 24685705,
+      "logIndex": 3,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "RlsVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "19508437797890120609938314154239170738337110290372633749349188770135539254289"
+      },
+      "txHash": "0xe86dec22bfa04e57ae36c3594a1d61df5edc7a8da013008083c0a49a9d72ea82",
+      "blockNumber": 24685706,
+      "logIndex": 1,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "19508437797890120609938314154239170738337110290372633749349188770135539254289",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0xe86dec22bfa04e57ae36c3594a1d61df5edc7a8da013008083c0a49a9d72ea82",
+      "blockNumber": 24685706,
+      "logIndex": 2,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "16169922919028505087393194227990882621403992033658381217295306975710536414786"
+      },
+      "txHash": "0x54968bd3f5c3c6188f7a280547ec8696fd9baea4bfdc13dc0db336c25a525b89",
+      "blockNumber": 24685879,
+      "logIndex": 2,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "16169922919028505087393194227990882621403992033658381217295306975710536414786",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x54968bd3f5c3c6188f7a280547ec8696fd9baea4bfdc13dc0db336c25a525b89",
+      "blockNumber": 24685879,
+      "logIndex": 3,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "RlsVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "5184611663051119012911389808364593329427516988424492047750576725006829988804"
+      },
+      "txHash": "0x9f441b1cc58f61e530990bd8c13b88a47c249c25529f4d5e4aaba6a1136ce4df",
+      "blockNumber": 24685879,
+      "logIndex": 5,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "5184611663051119012911389808364593329427516988424492047750576725006829988804",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x9f441b1cc58f61e530990bd8c13b88a47c249c25529f4d5e4aaba6a1136ce4df",
+      "blockNumber": 24685879,
+      "logIndex": 6,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "4982624100692314123171305073877834846961428228113505549243010546272529943015"
+      },
+      "txHash": "0x7b5c16aa76dc8faaa78a2d223a13c1be4c2fd1dc5f039fe930d42b71f7120a36",
+      "blockNumber": 24685973,
+      "logIndex": 2,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "4982624100692314123171305073877834846961428228113505549243010546272529943015",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x7b5c16aa76dc8faaa78a2d223a13c1be4c2fd1dc5f039fe930d42b71f7120a36",
+      "blockNumber": 24685973,
+      "logIndex": 3,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "RlsVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "18264305838116735969038723286714159926617695393591346967477402184922770548426"
+      },
+      "txHash": "0xee8e0db651856dc93fffb1d9ed84b73580b60aa0c4a2bb8680c17dd9c90a65d5",
+      "blockNumber": 24685975,
+      "logIndex": 1,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "18264305838116735969038723286714159926617695393591346967477402184922770548426",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0xee8e0db651856dc93fffb1d9ed84b73580b60aa0c4a2bb8680c17dd9c90a65d5",
+      "blockNumber": 24685975,
+      "logIndex": 2,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "4458290252682532614290277192838398969182892996534134579226176278283840002991"
+      },
+      "txHash": "0x45647a8a7374d9827418124bf48454f995004b43a0ae5d7aa5cc6f8766a008d8",
+      "blockNumber": 24686047,
+      "logIndex": 2,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "4458290252682532614290277192838398969182892996534134579226176278283840002991",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x45647a8a7374d9827418124bf48454f995004b43a0ae5d7aa5cc6f8766a008d8",
+      "blockNumber": 24686047,
+      "logIndex": 3,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "RlsVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "21860305541376314521416744130187459116789011904332602550378509960736735311261"
+      },
+      "txHash": "0xcf5a6c8354878d35705ab7f321d3c08f433a8295493833770cd60ab401bb0554",
+      "blockNumber": 24686051,
+      "logIndex": 1,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "21860305541376314521416744130187459116789011904332602550378509960736735311261",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0xcf5a6c8354878d35705ab7f321d3c08f433a8295493833770cd60ab401bb0554",
+      "blockNumber": 24686051,
+      "logIndex": 2,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "16541808230060918795954334420282580270526647189920644499054469158815200517767"
+      },
+      "txHash": "0xfcb3058e18cfc730963eb8e4bf988d4770b51e86db98f777a186bb5a222f78b2",
+      "blockNumber": 24686123,
+      "logIndex": 2,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "16541808230060918795954334420282580270526647189920644499054469158815200517767",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0xfcb3058e18cfc730963eb8e4bf988d4770b51e86db98f777a186bb5a222f78b2",
+      "blockNumber": 24686123,
+      "logIndex": 3,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "RlsVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "5471651918471146061216441986415219874378467490390521079383858108833192912383"
+      },
+      "txHash": "0x24c41188d1802c6f863bf2b8ebecb9b914cbcefcc385aaae576bbcce39cd16b1",
+      "blockNumber": 24686125,
+      "logIndex": 1,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "5471651918471146061216441986415219874378467490390521079383858108833192912383",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x24c41188d1802c6f863bf2b8ebecb9b914cbcefcc385aaae576bbcce39cd16b1",
+      "blockNumber": 24686125,
+      "logIndex": 2,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "13051271888221318233344292284035994111006137835106460678279558937780598761691"
+      },
+      "txHash": "0xb7bd8818031a1a0d82fe7d72892b0e80798162d231772a733d11592d6b5f16df",
+      "blockNumber": 24686235,
+      "logIndex": 2,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "13051271888221318233344292284035994111006137835106460678279558937780598761691",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0xb7bd8818031a1a0d82fe7d72892b0e80798162d231772a733d11592d6b5f16df",
+      "blockNumber": 24686235,
+      "logIndex": 3,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "RlsVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "14544962608022424577931544426406704872307576290738676971624562069023800117709"
+      },
+      "txHash": "0x08083fbf166fd04a9cd077c19fccd1a3cd1d6bde6ee7a14b938bf8af6c8388d9",
+      "blockNumber": 24686236,
+      "logIndex": 1,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "14544962608022424577931544426406704872307576290738676971624562069023800117709",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x08083fbf166fd04a9cd077c19fccd1a3cd1d6bde6ee7a14b938bf8af6c8388d9",
+      "blockNumber": 24686236,
+      "logIndex": 2,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "19901447101480428267951635871380882271533290954019660987292681002550418614932"
+      },
+      "txHash": "0x4c43c0903f129f43d226e78fb58b8780a5a8ccd54d62cfde4940db30edd81b5e",
+      "blockNumber": 24686298,
+      "logIndex": 1,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "19901447101480428267951635871380882271533290954019660987292681002550418614932",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x4c43c0903f129f43d226e78fb58b8780a5a8ccd54d62cfde4940db30edd81b5e",
+      "blockNumber": 24686298,
+      "logIndex": 2,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "17938826019200470959103585861002240084597834281343059241655425447847997857546"
+      },
+      "txHash": "0x19d26621c5c91fe17811f8d1eba65e58d918cca85d286fb4554a8e8378432ae3",
+      "blockNumber": 24686299,
+      "logIndex": 2,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "17938826019200470959103585861002240084597834281343059241655425447847997857546",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x19d26621c5c91fe17811f8d1eba65e58d918cca85d286fb4554a8e8378432ae3",
+      "blockNumber": 24686299,
+      "logIndex": 3,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "RlsVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "2353472025901816779452990808579923886315859060596534882083349983787436819671"
+      },
+      "txHash": "0xe94ad9e7964c52a9a7172cf8e0cdec2eb02e5bca5db5159d75d95ce3069efcd0",
+      "blockNumber": 24686371,
+      "logIndex": 1,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "2353472025901816779452990808579923886315859060596534882083349983787436819671",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0xe94ad9e7964c52a9a7172cf8e0cdec2eb02e5bca5db5159d75d95ce3069efcd0",
+      "blockNumber": 24686371,
+      "logIndex": 2,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "21122474002646421513496834827795692037892151395951834923244211119864613887347"
+      },
+      "txHash": "0x3772ef6fe06339e2b7354280d3654560ce1baea36e0f49e4a0457f0d243777cc",
+      "blockNumber": 24686372,
+      "logIndex": 2,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "21122474002646421513496834827795692037892151395951834923244211119864613887347",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x3772ef6fe06339e2b7354280d3654560ce1baea36e0f49e4a0457f0d243777cc",
+      "blockNumber": 24686372,
+      "logIndex": 3,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "RlsVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "10242556514906177581870269933498403123744057817391498971746202865770761710089"
+      },
+      "txHash": "0xf4ea5d507e9257b078cce1b73799740d773cf4bc16590d3189cef74c5cd518c1",
+      "blockNumber": 24686504,
+      "logIndex": 1,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "10242556514906177581870269933498403123744057817391498971746202865770761710089",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0xf4ea5d507e9257b078cce1b73799740d773cf4bc16590d3189cef74c5cd518c1",
+      "blockNumber": 24686504,
+      "logIndex": 2,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "9987974590203208228539271461697417875912931587736915213410678792233136027330"
+      },
+      "txHash": "0x4e9301db3c7efeee2adf503c6359f710c137eba176aa61eff450bbc69bda34bd",
+      "blockNumber": 24686505,
+      "logIndex": 2,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "9987974590203208228539271461697417875912931587736915213410678792233136027330",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x4e9301db3c7efeee2adf503c6359f710c137eba176aa61eff450bbc69bda34bd",
+      "blockNumber": 24686505,
+      "logIndex": 3,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "20478481812238744755091648626310977046898813566062889010785305861851099908433"
+      },
+      "txHash": "0xa1a5d9f76ed7690e4ac1f9886ad7e49a239876092ce0118a3d5e14d1a8c6fe65",
+      "blockNumber": 24686560,
+      "logIndex": 2,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "20478481812238744755091648626310977046898813566062889010785305861851099908433",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0xa1a5d9f76ed7690e4ac1f9886ad7e49a239876092ce0118a3d5e14d1a8c6fe65",
+      "blockNumber": 24686560,
+      "logIndex": 3,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "RlsVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "10129451214280810181420889811114238064357472647356842759205471595877055865025"
+      },
+      "txHash": "0xb209ca2d42640df8a61e1b429ef8afe24cd0340417a64df8dc304603107bf154",
+      "blockNumber": 24686561,
+      "logIndex": 1,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "10129451214280810181420889811114238064357472647356842759205471595877055865025",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0xb209ca2d42640df8a61e1b429ef8afe24cd0340417a64df8dc304603107bf154",
+      "blockNumber": 24686561,
+      "logIndex": 2,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "12461164011815862902053811884131092838433728961448400450875113414303577570604"
+      },
+      "txHash": "0xa5d6dfe66eb433f8ce07edf50c17499af37915a3f360cfc7c2535f04254dc976",
+      "blockNumber": 24686629,
+      "logIndex": 2,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "12461164011815862902053811884131092838433728961448400450875113414303577570604",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0xa5d6dfe66eb433f8ce07edf50c17499af37915a3f360cfc7c2535f04254dc976",
+      "blockNumber": 24686629,
+      "logIndex": 3,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "RlsVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "8500962000177166905923076567503075496352550112580411225397610005443576220271"
+      },
+      "txHash": "0x151ca608dc67c5bad87d052aaf8ab19b0793850862f078b665c126003d6016ff",
+      "blockNumber": 24686630,
+      "logIndex": 1,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "8500962000177166905923076567503075496352550112580411225397610005443576220271",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x151ca608dc67c5bad87d052aaf8ab19b0793850862f078b665c126003d6016ff",
+      "blockNumber": 24686630,
+      "logIndex": 2,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "13049710708141110098975080746962917318411927527625426110459569160946831834379"
+      },
+      "txHash": "0x1b4cbbeea25ffa58165644430889be603ea52f6139f3983a26b73f40d1524c44",
+      "blockNumber": 24686747,
+      "logIndex": 2,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "13049710708141110098975080746962917318411927527625426110459569160946831834379",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x1b4cbbeea25ffa58165644430889be603ea52f6139f3983a26b73f40d1524c44",
+      "blockNumber": 24686747,
+      "logIndex": 3,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "RlsVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "3890063045663360004796110817198569702979059299174197584097101870744141725750"
+      },
+      "txHash": "0xb864dc6fafef76fe0d60f727465bc3076308b9d71c66837c9a76887c7fa91ccf",
+      "blockNumber": 24686751,
+      "logIndex": 1,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "3890063045663360004796110817198569702979059299174197584097101870744141725750",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0xb864dc6fafef76fe0d60f727465bc3076308b9d71c66837c9a76887c7fa91ccf",
+      "blockNumber": 24686751,
+      "logIndex": 2,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "5366475897258253048116256125764044777157379426171047826689077218980080712559"
+      },
+      "txHash": "0xbb682cbc8904c95506e6c5ccc91a96a88edcbf869d67b0cc254c31616f349d84",
+      "blockNumber": 24686838,
+      "logIndex": 1,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "5366475897258253048116256125764044777157379426171047826689077218980080712559",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0xbb682cbc8904c95506e6c5ccc91a96a88edcbf869d67b0cc254c31616f349d84",
+      "blockNumber": 24686838,
+      "logIndex": 2,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "13116613959696681050705071472851075045797342227358717284249718756673902650955"
+      },
+      "txHash": "0x481456405af82d83ffb9baeaf959e858b5a01eeb618b182bbe47cf2fb5e46ad8",
+      "blockNumber": 24686839,
+      "logIndex": 2,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "13116613959696681050705071472851075045797342227358717284249718756673902650955",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x481456405af82d83ffb9baeaf959e858b5a01eeb618b182bbe47cf2fb5e46ad8",
+      "blockNumber": 24686839,
+      "logIndex": 3,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "UserRegistry",
+      "event": "UserRegistered",
+      "fields": {
+        "user": "0x279280638Ff791e524779bEA29550969b0B2aaa3",
+        "pkSpend": "2825450337257765124630593364819036839044880609112180639844271748715667428667",
+        "pkViewBytes": 1184,
+        "mlKemAuditCtBytes": 1088,
+        "aesAuditCtBytes": 92
+      },
+      "txHash": "0x5936f0383868fac0d2ef331384173eb82f23c7125cc29ea7421b735ab4fb118e",
+      "blockNumber": 24686871,
+      "logIndex": 2,
+      "address": "0xa473291ffb33e2276f364fae169f03c4406719e9"
+    },
+    {
+      "name": "UserRegistry",
+      "event": "UsernameSet",
+      "fields": {
+        "user": "0x279280638Ff791e524779bEA29550969b0B2aaa3",
+        "username": "fengzheng"
+      },
+      "txHash": "0x5936f0383868fac0d2ef331384173eb82f23c7125cc29ea7421b735ab4fb118e",
+      "blockNumber": 24686871,
+      "logIndex": 3,
+      "address": "0xa473291ffb33e2276f364fae169f03c4406719e9"
+    },
+    {
+      "name": "next",
+      "event": "Relayed",
+      "fields": {
+        "from": "0x279280638Ff791e524779bEA29550969b0B2aaa3",
+        "to": "0xA473291FFb33e2276F364fAE169f03c4406719e9",
+        "nonce": "0",
+        "relayer": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+        "fee": "7194679680000000000"
+      },
+      "txHash": "0x5936f0383868fac0d2ef331384173eb82f23c7125cc29ea7421b735ab4fb118e",
+      "blockNumber": 24686871,
+      "logIndex": 4,
+      "address": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "17297387703013197272474836831577794824626724138383511329429028244109925752313"
+      },
+      "txHash": "0xd3b7ed3a34615d1620cb708c41064a9d4be5cf8df6a62bd528e77f193cc4e65d",
+      "blockNumber": 24686909,
+      "logIndex": 2,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "17297387703013197272474836831577794824626724138383511329429028244109925752313",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0xd3b7ed3a34615d1620cb708c41064a9d4be5cf8df6a62bd528e77f193cc4e65d",
+      "blockNumber": 24686909,
+      "logIndex": 3,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "RlsVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "12299456336798410432743338703699463272242335658043686195750511800901853021174"
+      },
+      "txHash": "0xf5231c86f0e9f1c607b51612a8eb31049eab87857633996d8d5e4d5d6680bf6f",
+      "blockNumber": 24686911,
+      "logIndex": 1,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "12299456336798410432743338703699463272242335658043686195750511800901853021174",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0xf5231c86f0e9f1c607b51612a8eb31049eab87857633996d8d5e4d5d6680bf6f",
+      "blockNumber": 24686911,
+      "logIndex": 2,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "UserRegistry",
+      "event": "UserRegistered",
+      "fields": {
+        "user": "0xfa38280bf13845F404732c764b33793fc24B3deE",
+        "pkSpend": "13928072792560938601465562908215784437379283963547332177646780286049638933311",
+        "pkViewBytes": 1184,
+        "mlKemAuditCtBytes": 1088,
+        "aesAuditCtBytes": 92
+      },
+      "txHash": "0x5d7e7d399124aaf07b8043dfd6876de8276b8533ca3f0b7ee07329e810cd6f7b",
+      "blockNumber": 24687026,
+      "logIndex": 2,
+      "address": "0xa473291ffb33e2276f364fae169f03c4406719e9"
+    },
+    {
+      "name": "UserRegistry",
+      "event": "UsernameSet",
+      "fields": {
+        "user": "0xfa38280bf13845F404732c764b33793fc24B3deE",
+        "username": "tesgin123456789"
+      },
+      "txHash": "0x5d7e7d399124aaf07b8043dfd6876de8276b8533ca3f0b7ee07329e810cd6f7b",
+      "blockNumber": 24687026,
+      "logIndex": 3,
+      "address": "0xa473291ffb33e2276f364fae169f03c4406719e9"
+    },
+    {
+      "name": "next",
+      "event": "Relayed",
+      "fields": {
+        "from": "0xfa38280bf13845F404732c764b33793fc24B3deE",
+        "to": "0xA473291FFb33e2276F364fAE169f03c4406719e9",
+        "nonce": "0",
+        "relayer": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+        "fee": "7201916400000000000"
+      },
+      "txHash": "0x5d7e7d399124aaf07b8043dfd6876de8276b8533ca3f0b7ee07329e810cd6f7b",
+      "blockNumber": 24687026,
+      "logIndex": 4,
+      "address": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "17151344027590343235097996768334501151203727555150084726431134503358102730287"
+      },
+      "txHash": "0x98b5fdc2eeae0f311193c7c055a78fbe136592ebb821530558388e28d90798e8",
+      "blockNumber": 24687045,
+      "logIndex": 3,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "17151344027590343235097996768334501151203727555150084726431134503358102730287",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x98b5fdc2eeae0f311193c7c055a78fbe136592ebb821530558388e28d90798e8",
+      "blockNumber": 24687045,
+      "logIndex": 4,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "RlsVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "11546055672203387586048273237078240426683086133376746485672958002216301735735"
+      },
+      "txHash": "0x0858d7d7c86522fc3229cdbf7099ff0cc2c1e0b8d83b8560746e9fbe1c7b5d87",
+      "blockNumber": 24687046,
+      "logIndex": 1,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "11546055672203387586048273237078240426683086133376746485672958002216301735735",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x0858d7d7c86522fc3229cdbf7099ff0cc2c1e0b8d83b8560746e9fbe1c7b5d87",
+      "blockNumber": 24687046,
+      "logIndex": 2,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "SharedVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "3982565606296427721919464534405177127269701011517089191667888936478137752054"
+      },
+      "txHash": "0x8bdecd3a5c7fca5d08703780a5d6630570d6a6dafc2149f2366035bdcc2a4414",
+      "blockNumber": 24687078,
+      "logIndex": 4,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "3982565606296427721919464534405177127269701011517089191667888936478137752054",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x8bdecd3a5c7fca5d08703780a5d6630570d6a6dafc2149f2366035bdcc2a4414",
+      "blockNumber": 24687078,
+      "logIndex": 5,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "next",
+      "event": "Relayed",
+      "fields": {
+        "from": "0xfa38280bf13845F404732c764b33793fc24B3deE",
+        "to": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+        "nonce": "1",
+        "relayer": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+        "fee": "3525963480000000000"
+      },
+      "txHash": "0x8bdecd3a5c7fca5d08703780a5d6630570d6a6dafc2149f2366035bdcc2a4414",
+      "blockNumber": 24687078,
+      "logIndex": 6,
+      "address": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "9919551079453153711112425817280645250627333067332097473283307290151108863459"
+      },
+      "txHash": "0x0493efa83951446839ceb78781ad243be36a4cb616ea2c38955126c810144e2c",
+      "blockNumber": 24687147,
+      "logIndex": 2,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "9919551079453153711112425817280645250627333067332097473283307290151108863459",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x0493efa83951446839ceb78781ad243be36a4cb616ea2c38955126c810144e2c",
+      "blockNumber": 24687147,
+      "logIndex": 3,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "RlsVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "20375310463471125605347457690589604804963924034181278876659244048844926876235"
+      },
+      "txHash": "0xf72e8ad9f3132c46e0e4aaa380f6bb3df3df3bddd9e39d7df666d318b328adee",
+      "blockNumber": 24687148,
+      "logIndex": 1,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "20375310463471125605347457690589604804963924034181278876659244048844926876235",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0xf72e8ad9f3132c46e0e4aaa380f6bb3df3df3bddd9e39d7df666d318b328adee",
+      "blockNumber": 24687148,
+      "logIndex": 2,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "16516646657959129143058534643935833251818504834139342807993711091032136310834"
+      },
+      "txHash": "0x47f4af3ea62a2e7ed83f99e8e0d2c9bca1013bf54b7d973dc5a4568832968ddf",
+      "blockNumber": 24687213,
+      "logIndex": 2,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "UsdrVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "0",
+        "commitment": "16516646657959129143058534643935833251818504834139342807993711091032136310834",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x47f4af3ea62a2e7ed83f99e8e0d2c9bca1013bf54b7d973dc5a4568832968ddf",
+      "blockNumber": 24687213,
+      "logIndex": 3,
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "RlsVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "5481376699598938231606271874749555804982105651699715784081974858664153434349"
+      },
+      "txHash": "0xe27b0df5c5b40b38989693f344cf6972cd81d715f2404f3b85e6b5bceb6f338e",
+      "blockNumber": 24687218,
+      "logIndex": 1,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "RlsVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "1",
+        "commitment": "5481376699598938231606271874749555804982105651699715784081974858664153434349",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0xe27b0df5c5b40b38989693f344cf6972cd81d715f2404f3b85e6b5bceb6f338e",
+      "blockNumber": 24687218,
+      "logIndex": 2,
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "next",
+      "event": "Relayed",
+      "fields": {
+        "from": "0x279280638Ff791e524779bEA29550969b0B2aaa3",
+        "to": "0xE92813f397B5d99FC31732A11D6C5F82Bd7926a0",
+        "nonce": "1",
+        "relayer": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+        "fee": "724265400000000000"
+      },
+      "txHash": "0xf899bb8bd583e3f31eb8d35ad1861190f242740d1ae9c083656c89cb3654e17a",
+      "blockNumber": 24687318,
+      "logIndex": 5,
+      "address": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d"
+    },
+    {
+      "name": "SharedVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "19678804935778063761334668377343070924582625766789144891685202098907657209239"
+      },
+      "txHash": "0x2e1572094bc6b1023465399d7a7d903f8022405ac5fdaaa08e729e4bc6b1cadc",
+      "blockNumber": 24687811,
+      "logIndex": 4,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "19678804935778063761334668377343070924582625766789144891685202098907657209239",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x2e1572094bc6b1023465399d7a7d903f8022405ac5fdaaa08e729e4bc6b1cadc",
+      "blockNumber": 24687811,
+      "logIndex": 5,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "next",
+      "event": "Relayed",
+      "fields": {
+        "from": "0x279280638Ff791e524779bEA29550969b0B2aaa3",
+        "to": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+        "nonce": "2",
+        "relayer": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+        "fee": "3507441120000000000"
+      },
+      "txHash": "0x2e1572094bc6b1023465399d7a7d903f8022405ac5fdaaa08e729e4bc6b1cadc",
+      "blockNumber": 24687811,
+      "logIndex": 6,
+      "address": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d"
+    },
+    {
+      "name": "SharedVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "148214680177903467395919686950731079136489423456284571033392714172100743187"
+      },
+      "txHash": "0x399762a5eda19ba31e8c2a5d5cb5280ab4fc781b4dd5a571dac94dbefcda06aa",
+      "blockNumber": 24688175,
+      "logIndex": 3,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "148214680177903467395919686950731079136489423456284571033392714172100743187",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x399762a5eda19ba31e8c2a5d5cb5280ab4fc781b4dd5a571dac94dbefcda06aa",
+      "blockNumber": 24688175,
+      "logIndex": 4,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "next",
+      "event": "Relayed",
+      "fields": {
+        "from": "0x279280638Ff791e524779bEA29550969b0B2aaa3",
+        "to": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+        "nonce": "3",
+        "relayer": "0xcA11bde05977b3631167028862bE2a173976CA11",
+        "fee": "0"
+      },
+      "txHash": "0x399762a5eda19ba31e8c2a5d5cb5280ab4fc781b4dd5a571dac94dbefcda06aa",
+      "blockNumber": 24688175,
+      "logIndex": 5,
+      "address": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d"
+    },
+    {
+      "name": "SharedVault",
+      "event": "Nullifier",
+      "fields": {
+        "vaultId": "2",
+        "treeNumber": "0",
+        "nullifier": "8133016314588817125123953174143646481331186907549589580071008353255817662226"
+      },
+      "txHash": "0x399762a5eda19ba31e8c2a5d5cb5280ab4fc781b4dd5a571dac94dbefcda06aa",
+      "blockNumber": 24688175,
+      "logIndex": 6,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "9875117962654051298760023422967937902234373245079270431336195828507112998087"
+      },
+      "txHash": "0x399762a5eda19ba31e8c2a5d5cb5280ab4fc781b4dd5a571dac94dbefcda06aa",
+      "blockNumber": 24688175,
+      "logIndex": 7,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "2907286375464150362634209413869378415871029292909986391420603981873954071565"
+      },
+      "txHash": "0x399762a5eda19ba31e8c2a5d5cb5280ab4fc781b4dd5a571dac94dbefcda06aa",
+      "blockNumber": 24688175,
+      "logIndex": 8,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "9875117962654051298760023422967937902234373245079270431336195828507112998087",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x399762a5eda19ba31e8c2a5d5cb5280ab4fc781b4dd5a571dac94dbefcda06aa",
+      "blockNumber": 24688175,
+      "logIndex": 9,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "2907286375464150362634209413869378415871029292909986391420603981873954071565",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x399762a5eda19ba31e8c2a5d5cb5280ab4fc781b4dd5a571dac94dbefcda06aa",
+      "blockNumber": 24688175,
+      "logIndex": 10,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "UserRegistry",
+      "event": "UserRegistered",
+      "fields": {
+        "user": "0x2535c76dEd15bAF58EFE726E0A24196b44e50310",
+        "pkSpend": "14212105471762910027646763308362311761799011830196495671609376918480619063677",
+        "pkViewBytes": 1184,
+        "mlKemAuditCtBytes": 1088,
+        "aesAuditCtBytes": 92
+      },
+      "txHash": "0xd9f22f07b5c6a7968b118f11795a83d5232462e98ea595907c4f6b7db4e91524",
+      "blockNumber": 24688762,
+      "logIndex": 2,
+      "address": "0xa473291ffb33e2276f364fae169f03c4406719e9"
+    },
+    {
+      "name": "UserRegistry",
+      "event": "UsernameSet",
+      "fields": {
+        "user": "0x2535c76dEd15bAF58EFE726E0A24196b44e50310",
+        "username": "fengzheng2"
+      },
+      "txHash": "0xd9f22f07b5c6a7968b118f11795a83d5232462e98ea595907c4f6b7db4e91524",
+      "blockNumber": 24688762,
+      "logIndex": 3,
+      "address": "0xa473291ffb33e2276f364fae169f03c4406719e9"
+    },
+    {
+      "name": "next",
+      "event": "Relayed",
+      "fields": {
+        "from": "0x2535c76dEd15bAF58EFE726E0A24196b44e50310",
+        "to": "0xA473291FFb33e2276F364fAE169f03c4406719e9",
+        "nonce": "0",
+        "relayer": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+        "fee": "7195913400000000000"
+      },
+      "txHash": "0xd9f22f07b5c6a7968b118f11795a83d5232462e98ea595907c4f6b7db4e91524",
+      "blockNumber": 24688762,
+      "logIndex": 4,
+      "address": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d"
+    },
+    {
+      "name": "SharedVault",
+      "event": "Nullifier",
+      "fields": {
+        "vaultId": "2",
+        "treeNumber": "0",
+        "nullifier": "12717979219625839439625524511008859928635607295045988563505012854527115180100"
+      },
+      "txHash": "0x80dd80f487bec0a3a1b8f405ad8aea235d8ea2c2c1f243b5363e566257f3a253",
+      "blockNumber": 24689535,
+      "logIndex": 0,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "20477098910632302172240609827616024265035757055815993509206987358120637831926"
+      },
+      "txHash": "0x80dd80f487bec0a3a1b8f405ad8aea235d8ea2c2c1f243b5363e566257f3a253",
+      "blockNumber": 24689535,
+      "logIndex": 1,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "18283518807650122817642908899883878077042913026128791662418982373810888994747"
+      },
+      "txHash": "0x80dd80f487bec0a3a1b8f405ad8aea235d8ea2c2c1f243b5363e566257f3a253",
+      "blockNumber": 24689535,
+      "logIndex": 2,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "20477098910632302172240609827616024265035757055815993509206987358120637831926",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x80dd80f487bec0a3a1b8f405ad8aea235d8ea2c2c1f243b5363e566257f3a253",
+      "blockNumber": 24689535,
+      "logIndex": 3,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "18283518807650122817642908899883878077042913026128791662418982373810888994747",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x80dd80f487bec0a3a1b8f405ad8aea235d8ea2c2c1f243b5363e566257f3a253",
+      "blockNumber": 24689535,
+      "logIndex": 4,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "Nullifier",
+      "fields": {
+        "vaultId": "2",
+        "treeNumber": "0",
+        "nullifier": "6560656568045787641925622085263815216411596248704300791738427100336478158321"
+      },
+      "txHash": "0x80dd80f487bec0a3a1b8f405ad8aea235d8ea2c2c1f243b5363e566257f3a253",
+      "blockNumber": 24689535,
+      "logIndex": 5,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "4595765589059433933043414805643413650439141228152003292399093095547478315680"
+      },
+      "txHash": "0x80dd80f487bec0a3a1b8f405ad8aea235d8ea2c2c1f243b5363e566257f3a253",
+      "blockNumber": 24689535,
+      "logIndex": 6,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "Commitment",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "265351642839730417270287639276566035509613018627710620871456065736602567272"
+      },
+      "txHash": "0x80dd80f487bec0a3a1b8f405ad8aea235d8ea2c2c1f243b5363e566257f3a253",
+      "blockNumber": 24689535,
+      "logIndex": 7,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "4595765589059433933043414805643413650439141228152003292399093095547478315680",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x80dd80f487bec0a3a1b8f405ad8aea235d8ea2c2c1f243b5363e566257f3a253",
+      "blockNumber": 24689535,
+      "logIndex": 8,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "SharedVault",
+      "event": "EncryptedNote",
+      "fields": {
+        "vaultId": "2",
+        "commitment": "265351642839730417270287639276566035509613018627710620871456065736602567272",
+        "ciphertextIBytes": 1088,
+        "ciphertextIIBytes": 92
+      },
+      "txHash": "0x80dd80f487bec0a3a1b8f405ad8aea235d8ea2c2c1f243b5363e566257f3a253",
+      "blockNumber": 24689535,
+      "logIndex": 9,
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    }
+  ],
+  "receiptSamples": [
+    {
+      "txHash": "0x814a8bfbc00dab9c79fafb47af3aaa2b092ebf0d6a985b4cbc3f558990377bad",
+      "blockHash": "0x84add652473ab6f9c9385ab4ebf631a092df42c4904d6b894560e35eec618412",
+      "blockNumber": 24671191,
+      "status": 1,
+      "gasUsed": 1292090,
+      "from": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+      "to": "0xca11bde05977b3631167028862be2a173976ca11",
+      "logsCount": 10
+    },
+    {
+      "txHash": "0x67fd9a5a217d12bf7e6043c45963e214a7240b60ca8b2e7031f22efa8e9d4d83",
+      "blockHash": "0xa26b6e44f42e19a6efbd6c3d2e79528472a376fefed833a47d76418c353b830d",
+      "blockNumber": 24672921,
+      "status": 1,
+      "gasUsed": 2064796,
+      "from": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+      "to": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d",
+      "logsCount": 5
+    },
+    {
+      "txHash": "0x31d04a532d9e198e8b267f4ec63e5c6aa9578129905629ccc6d3b6818d4f2aea",
+      "blockHash": "0x7966edef3d169c76059028a034c6c265c15cc73905be3221f219c502eb5f8da5",
+      "blockNumber": 24674150,
+      "status": 1,
+      "gasUsed": 904099,
+      "from": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+      "to": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d",
+      "logsCount": 7
+    },
+    {
+      "txHash": "0x4d49be90bd7c33604f1b43e34dbc3875701fd6fd0282e1f4c7dc21888c800d3d",
+      "blockHash": "0x1c8600953cf3195e7342d9f270e8a3abc417c27c4e6bc0deee9910c1cf23455d",
+      "blockNumber": 24676085,
+      "status": 1,
+      "gasUsed": 2063834,
+      "from": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+      "to": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d",
+      "logsCount": 5
+    },
+    {
+      "txHash": "0x8bbd8f1d9c53c68d2763555baa1da1dcb4967284e9df798512817840d3ac8676",
+      "blockHash": "0x4db87a4b3a816b52deb779230419a318af9fd9f55061988a687ebb30e94dd807",
+      "blockNumber": 24676127,
+      "status": 1,
+      "gasUsed": 909665,
+      "from": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+      "to": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d",
+      "logsCount": 7
+    },
+    {
+      "txHash": "0xc70c83229f495a868c24055467e4413afae6ed6ffecc23f14f3ca5e8d54e8dc7",
+      "blockHash": "0xc2d1268920c1589ef21bb02ddc4d08b65cf2213a2c12f25c1d7622ff9f9c08fb",
+      "blockNumber": 24676538,
+      "status": 1,
+      "gasUsed": 953932,
+      "from": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+      "to": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d",
+      "logsCount": 8
+    },
+    {
+      "txHash": "0x51fd09dfbd2906f448ea9a76e1692110957ab540975050362aba7276b93dcca7",
+      "blockHash": "0xce2f1bc52e08d32fac34113ee04a2b6391b0d7324be8a30519753b544fb214cc",
+      "blockNumber": 24676646,
+      "status": 1,
+      "gasUsed": 915099,
+      "from": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+      "to": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d",
+      "logsCount": 7
+    },
+    {
+      "txHash": "0x732f75d1fc8cccc6fb0fcc2d79632f40d4d13935eb85bfabf66733eafda9e8c6",
+      "blockHash": "0xe87888dab29bba67e23359d1442cbaa9abe7f6333865618292510f2214ac3dc4",
+      "blockNumber": 24677929,
+      "status": 1,
+      "gasUsed": 959486,
+      "from": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+      "to": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d",
+      "logsCount": 8
+    },
+    {
+      "txHash": "0xfdaa7706b311a027e937003d49d89a041c086bf1bd5256de66da12c87141e202",
+      "blockHash": "0x9d5add3a0b33b1660fb46c95e547e564015163e38d8bb09572f4ec08b8b8b6e1",
+      "blockNumber": 24678513,
+      "status": 1,
+      "gasUsed": 1243519,
+      "from": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+      "to": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d",
+      "logsCount": 8
+    },
+    {
+      "txHash": "0x11e0fe4bf399197327f6e5a075267785dcd6307550c174ddaca1aa18492a1a08",
+      "blockHash": "0x543c74b2c43a55517363bebf911d11b7260d53778c8fa1de3a6fe50a0fa31fce",
+      "blockNumber": 24679165,
+      "status": 1,
+      "gasUsed": 2065244,
+      "from": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+      "to": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d",
+      "logsCount": 5
+    },
+    {
+      "txHash": "0x5936f0383868fac0d2ef331384173eb82f23c7125cc29ea7421b735ab4fb118e",
+      "blockHash": "0x020d06688170f75baf3615b4f8b8a6dbab4d9ac423cad0450680a4058bb49a4a",
+      "blockNumber": 24686871,
+      "status": 1,
+      "gasUsed": 2065244,
+      "from": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+      "to": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d",
+      "logsCount": 5
+    },
+    {
+      "txHash": "0x5d7e7d399124aaf07b8043dfd6876de8276b8533ca3f0b7ee07329e810cd6f7b",
+      "blockHash": "0x02f268de5be8b43beff6f7197a4c59724cbe3953ede6bfac0dd69c6809cab23c",
+      "blockNumber": 24687026,
+      "status": 1,
+      "gasUsed": 2067419,
+      "from": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+      "to": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d",
+      "logsCount": 5
+    },
+    {
+      "txHash": "0x8bdecd3a5c7fca5d08703780a5d6630570d6a6dafc2149f2366035bdcc2a4414",
+      "blockHash": "0x6e2981498ad24dfafa34144e4bca2822927cdffb734c5ccc327b2c233e47de54",
+      "blockNumber": 24687078,
+      "status": 1,
+      "gasUsed": 904171,
+      "from": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+      "to": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d",
+      "logsCount": 7
+    },
+    {
+      "txHash": "0xf899bb8bd583e3f31eb8d35ad1861190f242740d1ae9c083656c89cb3654e17a",
+      "blockHash": "0x17ffa52a60a65849d11f5a8c38d179cecce406a8e22ddd87907cbe3e5f581406",
+      "blockNumber": 24687318,
+      "status": 1,
+      "gasUsed": 140282,
+      "from": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+      "to": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d",
+      "logsCount": 6
+    },
+    {
+      "txHash": "0x2e1572094bc6b1023465399d7a7d903f8022405ac5fdaaa08e729e4bc6b1cadc",
+      "blockHash": "0x0e8bc7148740d2dabbab5d712052cb347ce6b22c39bab349c6046f5ed6e4a4da",
+      "blockNumber": 24687811,
+      "status": 1,
+      "gasUsed": 898677,
+      "from": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+      "to": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d",
+      "logsCount": 7
+    },
+    {
+      "txHash": "0x399762a5eda19ba31e8c2a5d5cb5280ab4fc781b4dd5a571dac94dbefcda06aa",
+      "blockHash": "0xf5f6467689260aeab6d1b61c7ab14c970e4c15bb419120716079d68e932a300f",
+      "blockNumber": 24688175,
+      "status": 1,
+      "gasUsed": 1957806,
+      "from": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+      "to": "0xca11bde05977b3631167028862be2a173976ca11",
+      "logsCount": 11
+    },
+    {
+      "txHash": "0xd9f22f07b5c6a7968b118f11795a83d5232462e98ea595907c4f6b7db4e91524",
+      "blockHash": "0xe3873aa03f1b5291c71575deb7df87abbd166dab074dd9ea1aeb464ad172b1ce",
+      "blockNumber": 24688762,
+      "status": 1,
+      "gasUsed": 2065623,
+      "from": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+      "to": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d",
+      "logsCount": 5
+    }
+  ],
+  "errors": [],
+  "limitations": [
+    "No user-controlled invite claim or account transaction in this dataset.",
+    "Event presence alone cannot identify private sender, recipient or amount.",
+    "The scoped block interval is observational, not a controlled trial.",
+    "Relayer-reported fee policy is not yet reconciled to every wallet's shielded balance."
+  ]
+}

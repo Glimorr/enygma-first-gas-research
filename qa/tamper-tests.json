@@ -1,0 +1,121 @@
+{
+  "executedAtUtc": "2026-11-20T13:50:50.401Z",
+  "testCount": 13,
+  "detectedCount": 13,
+  "results": [
+    {
+      "name": "wrong-chain-id",
+      "detected": true,
+      "expected": "baseline.chainId",
+      "actual": [
+        "baseline.chainId",
+        "baseline.snapshotHash"
+      ]
+    },
+    {
+      "name": "baseline-hash-mutation",
+      "detected": true,
+      "expected": "baseline.snapshotHash",
+      "actual": [
+        "baseline.snapshotHash",
+        "baseline.parentLink"
+      ]
+    },
+    {
+      "name": "broken-parent-link",
+      "detected": true,
+      "expected": "baseline.parentLink",
+      "actual": [
+        "baseline.snapshotHash",
+        "baseline.parentLink"
+      ]
+    },
+    {
+      "name": "log-count-mutation",
+      "detected": true,
+      "expected": "scan.totalLogs",
+      "actual": [
+        "scan.totalLogs"
+      ]
+    },
+    {
+      "name": "duplicate-log-index",
+      "detected": true,
+      "expected": "scan.duplicateLogIndex",
+      "actual": [
+        "scan.duplicateLogIndex"
+      ]
+    },
+    {
+      "name": "event-outside-window",
+      "detected": true,
+      "expected": "scan.eventOutsideWindow",
+      "actual": [
+        "scan.eventOutsideWindow",
+        "fees.blockMismatch.0x814a8bfbc0"
+      ]
+    },
+    {
+      "name": "event-summary-count-mutation",
+      "detected": true,
+      "expected": "scan.eventCountsMismatch",
+      "actual": [
+        "scan.eventCountsMismatch"
+      ]
+    },
+    {
+      "name": "fee-event-mutation",
+      "detected": true,
+      "expected": "fees.feeMismatch",
+      "actual": [
+        "fees.feeMismatch.0x67fd9a5a21",
+        "fees.transferMismatch.0x67fd9a5a21"
+      ]
+    },
+    {
+      "name": "fee-transfer-mutation",
+      "detected": true,
+      "expected": "fees.transferMismatch",
+      "actual": [
+        "fees.transferMismatch.0x67fd9a5a21"
+      ]
+    },
+    {
+      "name": "duplicated-fee-transaction",
+      "detected": true,
+      "expected": "fees.duplicateTransaction",
+      "actual": [
+        "fees.duplicateTransaction",
+        "fees.blockMismatch.0x67fd9a5a21",
+        "fees.feeMismatch.0x67fd9a5a21",
+        "fees.senderMismatch.0x67fd9a5a21",
+        "fees.relayerMismatch.0x67fd9a5a21"
+      ]
+    },
+    {
+      "name": "receipt-status-mutation",
+      "detected": true,
+      "expected": "fees.receiptStatus",
+      "actual": [
+        "fees.receiptStatus.0x67fd9a5a21"
+      ]
+    },
+    {
+      "name": "forwarder-source-mutation",
+      "detected": true,
+      "expected": "inventory.forwarderMapping",
+      "actual": [
+        "inventory.forwarderMapping"
+      ]
+    },
+    {
+      "name": "missing-rls-bytecode",
+      "detected": true,
+      "expected": "inventory.RLSCode",
+      "actual": [
+        "inventory.RLSCode"
+      ]
+    }
+  ],
+  "note": "All mutations are in memory; original evidence files were not changed."
+}

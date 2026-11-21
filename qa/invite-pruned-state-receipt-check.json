@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "evidence_class": "FRESH_PUBLIC_RPC_INVITATION_RECEIPT_AND_LOGS__NOT_ARCHIVED_BALANCES",
+  "validatedUtc": "2026-11-20T23:58:36.462Z",
+  "txHash": "0x6bedfee2032c1e1001c3dd5563df84d662cf965e0c7e3f301751a9b458d3c0ab",
+  "block": 24744028,
+  "receiptStatus": 1,
+  "nullifiers": 1,
+  "commitments": 3,
+  "encryptedNotes": 3,
+  "independentlyQueriedLogsVerified": true,
+  "note": "Historical account balance eth_call was NOT used: the endpoint has pruned old state. Use recorded original fixed-block captures and separate event-reconstruction scripts for state claims."
+}

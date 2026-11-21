@@ -1,0 +1,28 @@
+{
+  "evidence_class": "USER_CONTROLLED_ACCOUNT__POST_BASELINE_PUBLIC_TRANSACTION_RECONSTRUCTION",
+  "scanStartedAtUtc": "2026-11-20T19:19:19.559Z",
+  "chainId": 7295799,
+  "account": "0xfE64D1860ee4bF7986D165Ad105d2eD404E7a1F2",
+  "baselineBlock": 24730374,
+  "afterBlock": {
+    "number": 24731057,
+    "hash": "0x13f92e61b0caf4bb61cc7a014ff5007a6ca393c73734f2ab9e484f6728eb4c4b"
+  },
+  "balances": {
+    "publicRlsBeforeWei": "242813840440000000000",
+    "publicRlsAfterWei": "242813840440000000000",
+    "publicRlsDeltaWei": "0",
+    "nativeUsdrBeforeWei": "14997647232000000000",
+    "nativeUsdrAfterWei": "14997647232000000000",
+    "nativeUsdrDeltaWei": "0"
+  },
+  "outgoingRlsTransfers": [],
+  "txs": [],
+  "scanErrors": [],
+  "caveats": [
+    "A token transfer from the account to a vault is evidence of public transfer; classify the actual operation only by decoded receipt and test operator confirmation.",
+    "The wallet's shielded note value cannot be reconstructed solely from public receipts.",
+    "The capture interval begins after the preserved pre-shield baseline, not at wallet creation.",
+    "Do not infer all transfers are planned tests without operator timestamps and intent."
+  ]
+}

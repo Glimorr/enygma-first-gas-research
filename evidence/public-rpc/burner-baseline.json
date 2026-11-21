@@ -1,0 +1,63 @@
+{
+  "evidence_class": "RESEARCHER_PROVIDED_PREEXISTING_BURNER__PUBLIC_CHAIN_BASELINE",
+  "capturedAtUtc": "2026-11-20T19:13:12.920Z",
+  "account": "0xfE64D1860ee4bF7986D165Ad105d2eD404E7a1F2",
+  "chainId": 7295799,
+  "block": {
+    "number": 24730374,
+    "hash": "0xc247eafa067ee6ef7f1dcbea9e74f28fb1adbfa99778899e9ae68b65e4a9994c",
+    "timestampUtc": "2026-11-20T19:13:11.000Z"
+  },
+  "fixedBlockTag": "0x1795b06",
+  "nativeBalanceWei": "14997647232000000000",
+  "transactionCount": "2",
+  "tokenBalances": {
+    "RLS": {
+      "address": "0x07e17E17e17E17e17e17e17E17E17E17E17e17EA",
+      "amountWei": "242813840440000000000",
+      "formatted": "242.81384044",
+      "decimals": 18,
+      "source": "LIVE_RPC_ETH_CALL_AT_FIXED_BLOCK",
+      "success": true
+    },
+    "USDr": {
+      "address": "0x0000000000000000000000000000000000000400",
+      "amountWei": "14997647232000000000",
+      "formatted": "14.997647232",
+      "decimals": 18,
+      "source": "LIVE_RPC_ETH_CALL_AT_FIXED_BLOCK",
+      "success": true
+    }
+  },
+  "explorer": {
+    "indexedAccount": {
+      "hash": "0xfE64D1860ee4bF7986D165Ad105d2eD404E7a1F2",
+      "hasTokenTransfers": true,
+      "hasLogs": false,
+      "coinBalance": "14997647232000000000"
+    },
+    "indexedTokenBalances": [
+      {
+        "tokenAddress": "0x07e17E17e17E17e17e17e17E17E17E17E17e17EA",
+        "tokenSymbol": "RLS",
+        "value": "242813840440000000000",
+        "decimals": "18"
+      },
+      {
+        "tokenAddress": "0x0000000000000000000000000000000000000400",
+        "tokenSymbol": "USDr",
+        "value": "14997647232000000000",
+        "decimals": "18"
+      }
+    ],
+    "recentTransactions": {
+      "error": "Error: HTTP 422"
+    }
+  },
+  "conclusionsRestrictedTo": [
+    "Public blockchain and explorer data for a user-provided preexisting testnet account",
+    "This is not a new account and cannot be the zero-public-funding onboarding treatment",
+    "Screenshot UI shielded balances are user-observed and cannot be independently reconstructed from public balance calls",
+    "No wallet signing, token transfer, shielding, or invite creation occurred in this script"
+  ]
+}

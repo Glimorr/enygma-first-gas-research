@@ -1,0 +1,594 @@
+{
+  "edition": "FINAL RESEARCH — CONTROLLED FIRST-GAS LIFECYCLE VERIFIED",
+  "version": "21 November 2026 · final evidence",
+  "chainId": 7295799,
+  "checksum_sha256_of_archive": "2d21b41ea6758a8510f6fe081475173a8a707d14cbb7380d3e374eeac2680fd4",
+  "archiveFiles": 140,
+  "claims": {
+    "publicShield": {
+      "amount": "40",
+      "fee": "3.50727828",
+      "totalDebit": "43.50727828",
+      "balanceBefore": "242.81384044",
+      "balanceAfter": "199.30656216",
+      "block": 24738801,
+      "tx": "0x98bcb6f47b12400cb89284c215cc52373d38f8af30f855b9a0394c2923fa653a",
+      "gasUsed": 898629,
+      "from": "0xfE64D1860ee4bF7986D165Ad105d2eD404E7a1F2",
+      "vault": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+      "logs": 7,
+      "eventCounts": {
+        "public_transfer_logs": 2,
+        "approvals": 2,
+        "commitments": 1,
+        "encrypted_notes": 1,
+        "relayed_events": 1
+      },
+      "codeCheck": {
+        "RLS": true,
+        "SharedVault": true,
+        "RlsGasForwarder": true
+      },
+      "noteCipherLengths": [
+        [
+          1088,
+          92
+        ]
+      ]
+    },
+    "invitation": {
+      "amountWalletObserved": 30,
+      "feeWalletObservedApprox": 4.42,
+      "block": 24744028,
+      "tx": "0x6bedfee2032c1e1001c3dd5563df84d662cf965e0c7e3f301751a9b458d3c0ab",
+      "status": 1,
+      "gasUsed": 1239410,
+      "method": "transferV2",
+      "inputs": 1,
+      "outputs": 3,
+      "nullifierCount": 1,
+      "noteCount": 3,
+      "commitmentCount": 3,
+      "ownerPublicBalanceBefore": "199.30656216",
+      "ownerPublicBalanceAfter": "199.30656216"
+    },
+    "registration": {
+      "tx": "0x238c206b86889a2d98df03978028715c45a50a5232f363745abdd76bd2b59afa",
+      "block": 24735856,
+      "username": "rq3dev26",
+      "feeRls": "7.1930016",
+      "wallet": "0x1AcC448116C00A16bBfCE8f9d280aaA4D3Ad4FF6"
+    },
+    "publicFaucet": {
+      "tx": "0xe27f8d11983e2049186676827c3de9d46396cbfc0a626dfda2e35be36fb1ff83",
+      "block": 24732650,
+      "amountRls": "250"
+    },
+    "treasury": {
+      "tx": "0x0f541a2275c4fcce2e43ba3219d37503fd38032932e0b94f9973f4cbce62233c",
+      "block": 24738804,
+      "amount": "0.45747108",
+      "payoutBlocksAfter": 3,
+      "baseFeeRls": "3.0498072"
+    },
+    "receiverBaseline": {
+      "address": "0xa7EB60a22240FCa3D684f1B96dFE3f68a8cfC38A",
+      "block": 24740175,
+      "nativeUsdrWei": "0",
+      "rlsWei": "0",
+      "nonce": 0,
+      "registered": false
+    }
+  },
+  "receiverLifecycle": {
+    "exactAddress": "0x665E08A2867Cb53d05C1381D565e19Da0bC3e76C",
+    "username": "devil",
+    "privateBalanceWalletObserved": "17.304 RLS",
+    "claimTx": "0x1c53886772c267e25f0d5c45d7dcc9ecc54246c4bfbf5e9202926f3f70959dec",
+    "claimBlock": 24747924,
+    "claimMethod": "transferV2",
+    "claimNullifiers": 1,
+    "claimCommitments": 3,
+    "claimEncryptedNotes": 3,
+    "registrationTx": "0xd7f6197e642f7d0bd48b19ab41cb742f07ce05e89442eb59f2513a4ff2eff71b",
+    "registrationBlock": 24748136,
+    "registrationForwarderFeeRls": "0",
+    "correctReceiverState": {
+      "pre_claim": {
+        "block": 24747863,
+        "rlsWei": "0",
+        "usdrTokenWei": "0",
+        "nativeWei": "0",
+        "accountNonce": 0,
+        "registered": false
+      },
+      "claim_before": {
+        "block": 24747923,
+        "rlsWei": "0",
+        "usdrTokenWei": "0",
+        "nativeWei": "0",
+        "accountNonce": 0,
+        "registered": false
+      },
+      "claim_after": {
+        "block": 24747924,
+        "rlsWei": "0",
+        "usdrTokenWei": "0",
+        "nativeWei": "0",
+        "accountNonce": 0,
+        "registered": false
+      },
+      "registration_before": {
+        "block": 24748135,
+        "rlsWei": "0",
+        "usdrTokenWei": "0",
+        "nativeWei": "0",
+        "accountNonce": 0,
+        "registered": false
+      },
+      "registration_after": {
+        "block": 24748136,
+        "rlsWei": "0",
+        "usdrTokenWei": "0",
+        "nativeWei": "0",
+        "accountNonce": 0,
+        "registered": true
+      },
+      "latest": {
+        "block": 24748508,
+        "rlsWei": "0",
+        "usdrTokenWei": "0",
+        "nativeWei": "0",
+        "accountNonce": 0,
+        "registered": true
+      }
+    },
+    "publiclyUnfundedThroughout": true,
+    "noPublicAccountTransactions": true,
+    "noPublicTokenTransfers": true,
+    "actualSpendTestStatus": "MINED_RECEIPT_AND_WALLET_OBSERVATIONS_VERIFIED",
+    "spendTx": "0x5423d2b13c575c8e26c73e42906f4eefb7a6a257defcebad81a1415c857253e8",
+    "spendBlock": 24760126,
+    "spendMethod": "transferV2",
+    "spendNullifiers": 1,
+    "spendCommitments": 3,
+    "spendEncryptedNotes": 3,
+    "spendAmountSenderUiObservedRls": "3",
+    "spendAmountReceiverUiObservedRls": "3 RLS",
+    "spendPublicSenderBalanceAtHeadWei": "0",
+    "spendPublicSenderEvmNonceAtHead": 0,
+    "spendFeeGrossRls": "4.416",
+    "spendFeeTreasuryRls": "0.576",
+    "spendFeePayoutTx": "0xd639df4cd7d62ea031a313ec5b3b9f6b46241aebe599b29867bf7a3e7302bb32",
+    "spendReplayStates": [
+      {
+        "block": 24760125,
+        "result": "SUCCESS"
+      },
+      {
+        "block": 24760126,
+        "result": "REVERT"
+      },
+      {
+        "block": 24760127,
+        "result": "REVERT"
+      }
+    ],
+    "transcriptionCorrection": "Original screenshot transcription was wrong; corrected using UserRegistered event"
+  },
+  "privateFeePilot": {
+    "cases": [
+      {
+        "kind": "controlled_owner_shielded_invitation",
+        "tx": "0x6bedfee2032c1e1001c3dd5563df84d662cf965e0c7e3f301751a9b458d3c0ab",
+        "block": 24744028,
+        "treasuryTx": "0x3650f335ce12fe0c2ad4616aa7d595503e44e18b141e35121fc7cc7f077377f1",
+        "treasuryShareRls": "0.576",
+        "grossFeeImpliedRls": "4.416",
+        "baseFeeImpliedRls": "3.84",
+        "payoutDelayBlocks": 4,
+        "uniqueWindow": true
+      },
+      {
+        "kind": "controlled_receiver_private_claim",
+        "tx": "0x1c53886772c267e25f0d5c45d7dcc9ecc54246c4bfbf5e9202926f3f70959dec",
+        "block": 24747924,
+        "treasuryTx": "0xc9e3b527d27b152bde59a9529679dcbf2d4237dda1c7f7c2564ad9cff18ab116",
+        "treasuryShareRls": "1.656",
+        "grossFeeImpliedRls": "12.696",
+        "baseFeeImpliedRls": "11.04",
+        "payoutDelayBlocks": 2,
+        "uniqueWindow": true
+      },
+      {
+        "kind": "controlled_receiver_private_send",
+        "tx": "0x5423d2b13c575c8e26c73e42906f4eefb7a6a257defcebad81a1415c857253e8",
+        "block": 24760126,
+        "treasuryTx": "0xd639df4cd7d62ea031a313ec5b3b9f6b46241aebe599b29867bf7a3e7302bb32",
+        "treasuryShareRls": "0.576",
+        "grossFeeImpliedRls": "4.416",
+        "baseFeeImpliedRls": "3.84",
+        "payoutDelayBlocks": 4,
+        "uniqueWindow": true
+      }
+    ],
+    "publicRegistrationControlWithoutPayout": true,
+    "causalAttributionCryptographicallyProven": false
+  },
+  "replayControls": {
+    "cases": [
+      {
+        "kind": "private_invite_creation",
+        "tx": "0x6bedfee2032c1e1001c3dd5563df84d662cf965e0c7e3f301751a9b458d3c0ab",
+        "stages": [
+          {
+            "block": 24744027,
+            "result": "SUCCESS"
+          },
+          {
+            "block": 24744028,
+            "result": "REVERT"
+          },
+          {
+            "block": 24744029,
+            "result": "REVERT"
+          }
+        ]
+      },
+      {
+        "kind": "private_invite_claim",
+        "tx": "0x1c53886772c267e25f0d5c45d7dcc9ecc54246c4bfbf5e9202926f3f70959dec",
+        "stages": [
+          {
+            "block": 24747923,
+            "result": "SUCCESS"
+          },
+          {
+            "block": 24747924,
+            "result": "REVERT"
+          },
+          {
+            "block": 24747925,
+            "result": "REVERT"
+          }
+        ]
+      },
+      {
+        "kind": "receiver_first_private_send",
+        "tx": "0x5423d2b13c575c8e26c73e42906f4eefb7a6a257defcebad81a1415c857253e8",
+        "stages": [
+          {
+            "block": 24760125,
+            "result": "SUCCESS"
+          },
+          {
+            "block": 24760126,
+            "result": "REVERT"
+          },
+          {
+            "block": 24760127,
+            "result": "REVERT"
+          }
+        ]
+      }
+    ],
+    "positiveCount": 3,
+    "negativeCount": 6,
+    "provenance": "Non-committing eth_call at historical states; not a mined failure"
+  },
+  "feeAnalysis": {
+    "caseCount": 20,
+    "paidCases": 18,
+    "zeroFeeCases": 2,
+    "matchedCases": 18,
+    "sampleType": "Activity-selected public testnet observations",
+    "controls": [
+      {
+        "tx": "0x814a8bfbc00dab9c79fafb47af3aaa2b092ebf0d6a985b4cbc3f558990377bad",
+        "feeRls": "0",
+        "caseType": "observed_prior_sample",
+        "blocksToPayout": null,
+        "paid": false,
+        "exactMatch": false
+      },
+      {
+        "tx": "0x67fd9a5a217d12bf7e6043c45963e214a7240b60ca8b2e7031f22efa8e9d4d83",
+        "feeRls": "7.19313132",
+        "caseType": "observed_prior_sample",
+        "blocksToPayout": 7,
+        "paid": true,
+        "exactMatch": true
+      },
+      {
+        "tx": "0x31d04a532d9e198e8b267f4ec63e5c6aa9578129905629ccc6d3b6818d4f2aea",
+        "feeRls": "3.52572336",
+        "caseType": "observed_prior_sample",
+        "blocksToPayout": 8,
+        "paid": true,
+        "exactMatch": true
+      },
+      {
+        "tx": "0x4d49be90bd7c33604f1b43e34dbc3875701fd6fd0282e1f4c7dc21888c800d3d",
+        "feeRls": "7.1898552",
+        "caseType": "observed_prior_sample",
+        "blocksToPayout": 7,
+        "paid": true,
+        "exactMatch": true
+      },
+      {
+        "tx": "0x8bbd8f1d9c53c68d2763555baa1da1dcb4967284e9df798512817840d3ac8676",
+        "feeRls": "3.54440856",
+        "caseType": "observed_prior_sample",
+        "blocksToPayout": 8,
+        "paid": true,
+        "exactMatch": true
+      },
+      {
+        "tx": "0xc70c83229f495a868c24055467e4413afae6ed6ffecc23f14f3ca5e8d54e8dc7",
+        "feeRls": "3.81427308",
+        "caseType": "observed_prior_sample",
+        "blocksToPayout": 8,
+        "paid": true,
+        "exactMatch": true
+      },
+      {
+        "tx": "0x51fd09dfbd2906f448ea9a76e1692110957ab540975050362aba7276b93dcca7",
+        "feeRls": "3.5627736",
+        "caseType": "observed_prior_sample",
+        "blocksToPayout": 8,
+        "paid": true,
+        "exactMatch": true
+      },
+      {
+        "tx": "0x732f75d1fc8cccc6fb0fcc2d79632f40d4d13935eb85bfabf66733eafda9e8c6",
+        "feeRls": "3.8329638",
+        "caseType": "observed_prior_sample",
+        "blocksToPayout": 8,
+        "paid": true,
+        "exactMatch": true
+      },
+      {
+        "tx": "0xfdaa7706b311a027e937003d49d89a041c086bf1bd5256de66da12c87141e202",
+        "feeRls": "4.75776528",
+        "caseType": "observed_prior_sample",
+        "blocksToPayout": 8,
+        "paid": true,
+        "exactMatch": true
+      },
+      {
+        "tx": "0x11e0fe4bf399197327f6e5a075267785dcd6307550c174ddaca1aa18492a1a08",
+        "feeRls": "7.19467968",
+        "caseType": "observed_prior_sample",
+        "blocksToPayout": 8,
+        "paid": true,
+        "exactMatch": true
+      },
+      {
+        "tx": "0x5936f0383868fac0d2ef331384173eb82f23c7125cc29ea7421b735ab4fb118e",
+        "feeRls": "7.19467968",
+        "caseType": "observed_prior_sample",
+        "blocksToPayout": 8,
+        "paid": true,
+        "exactMatch": true
+      },
+      {
+        "tx": "0x5d7e7d399124aaf07b8043dfd6876de8276b8533ca3f0b7ee07329e810cd6f7b",
+        "feeRls": "7.2019164",
+        "caseType": "observed_prior_sample",
+        "blocksToPayout": 9,
+        "paid": true,
+        "exactMatch": true
+      },
+      {
+        "tx": "0x8bdecd3a5c7fca5d08703780a5d6630570d6a6dafc2149f2366035bdcc2a4414",
+        "feeRls": "3.52596348",
+        "caseType": "observed_prior_sample",
+        "blocksToPayout": 8,
+        "paid": true,
+        "exactMatch": true
+      },
+      {
+        "tx": "0xf899bb8bd583e3f31eb8d35ad1861190f242740d1ae9c083656c89cb3654e17a",
+        "feeRls": "0.7242654",
+        "caseType": "observed_prior_sample",
+        "blocksToPayout": 8,
+        "paid": true,
+        "exactMatch": true
+      },
+      {
+        "tx": "0x2e1572094bc6b1023465399d7a7d903f8022405ac5fdaaa08e729e4bc6b1cadc",
+        "feeRls": "3.50744112",
+        "caseType": "observed_prior_sample",
+        "blocksToPayout": 7,
+        "paid": true,
+        "exactMatch": true
+      },
+      {
+        "tx": "0x399762a5eda19ba31e8c2a5d5cb5280ab4fc781b4dd5a571dac94dbefcda06aa",
+        "feeRls": "0",
+        "caseType": "observed_prior_sample",
+        "blocksToPayout": null,
+        "paid": false,
+        "exactMatch": false
+      },
+      {
+        "tx": "0xd9f22f07b5c6a7968b118f11795a83d5232462e98ea595907c4f6b7db4e91524",
+        "feeRls": "7.1959134",
+        "caseType": "observed_prior_sample",
+        "blocksToPayout": 8,
+        "paid": true,
+        "exactMatch": true
+      },
+      {
+        "tx": "0x238c206b86889a2d98df03978028715c45a50a5232f363745abdd76bd2b59afa",
+        "feeRls": "7.1930016",
+        "caseType": "controlled_dev_registration",
+        "blocksToPayout": 3,
+        "paid": true,
+        "exactMatch": true
+      },
+      {
+        "tx": "0x98bcb6f47b12400cb89284c215cc52373d38f8af30f855b9a0394c2923fa653a",
+        "feeRls": "3.50727828",
+        "caseType": "controlled_god_shield",
+        "blocksToPayout": 3,
+        "paid": true,
+        "exactMatch": true
+      },
+      {
+        "tx": "0x46765dfe79fc4954fc8fb12bdcb4b4391dce3e28a01e42de96518b9a0536cfbc",
+        "feeRls": "7.18615956",
+        "caseType": "prior_god_registration_control",
+        "blocksToPayout": 3,
+        "paid": true,
+        "exactMatch": true
+      }
+    ]
+  },
+  "verification": [
+    {
+      "name": "Shield — live RPC",
+      "type": "On-chain",
+      "count": "PASS"
+    },
+    {
+      "name": "Shield — tamper cases",
+      "type": "Offline",
+      "count": "22 / 22"
+    },
+    {
+      "name": "Fee routing — paid receipts",
+      "type": "Observational",
+      "count": "18 / 18"
+    },
+    {
+      "name": "Fee routing — zero-fee controls",
+      "type": "Observational",
+      "count": "2"
+    },
+    {
+      "name": "Fee routing — tamper cases",
+      "type": "Offline",
+      "count": "15 / 15"
+    },
+    {
+      "name": "Invitation — live RPC",
+      "type": "On-chain",
+      "count": "PASS"
+    },
+    {
+      "name": "Invitation — tamper cases",
+      "type": "Offline",
+      "count": "19 / 19"
+    },
+    {
+      "name": "Receiver — zero balance baseline",
+      "type": "On-chain",
+      "count": "PASS"
+    },
+    {
+      "name": "Invitation claim — live RPC",
+      "type": "On-chain",
+      "count": "PASS"
+    },
+    {
+      "name": "Receiver registration — zero public funding",
+      "type": "On-chain",
+      "count": "PASS"
+    },
+    {
+      "name": "Receiver claim + registration — tamper tests",
+      "type": "Offline",
+      "count": "30 / 30"
+    },
+    {
+      "name": "Private fee metadata control",
+      "type": "Exploratory",
+      "count": "2 / 2"
+    },
+    {
+      "name": "Private fee metadata — tamper tests",
+      "type": "Offline",
+      "count": "21 / 21"
+    },
+    {
+      "name": "Historical-state read-only replay",
+      "type": "Simulation",
+      "count": "2 positive · 4 negative"
+    },
+    {
+      "name": "Recipient 3 RLS private spend — mined receipt",
+      "type": "On-chain",
+      "count": "PASS"
+    },
+    {
+      "name": "Separate receiving-wallet 3 RLS shielded balance",
+      "type": "Wallet",
+      "count": "PASS"
+    },
+    {
+      "name": "Private spend + fee/replay tamper tests",
+      "type": "Offline",
+      "count": "37 / 37"
+    },
+    {
+      "name": "Three private fee metadata controls",
+      "type": "Exploratory",
+      "count": "3 / 3"
+    }
+  ],
+  "provenance": [
+    {
+      "id": "shield",
+      "label": "Controlled shield",
+      "source": "public RPC transaction receipt + second eth_getLogs query",
+      "verdict": "Confirmed 40 RLS public deposit and exact fee; private note value not publicly decipherable",
+      "tx": "0x98bcb6f47b12400cb89284c215cc52373d38f8af30f855b9a0394c2923fa653a",
+      "block": 24738801
+    },
+    {
+      "id": "fee",
+      "label": "Reported-treasury distribution",
+      "source": "relayer config + public RLS transfer receipts",
+      "verdict": "18/18 exact amount matches in selected sample; recipient’s legal identity not authenticated",
+      "tx": "0x0f541a2275c4fcce2e43ba3219d37503fd38032932e0b94f9973f4cbce62233c",
+      "block": 24738804
+    },
+    {
+      "id": "invite",
+      "label": "Controlled invitation",
+      "source": "public RPC note envelope + account UI",
+      "verdict": "On-chain encrypted envelope confirmed; 30 RLS principal and 4.42 RLS quote from wallet UI only",
+      "tx": "0x6bedfee2032c1e1001c3dd5563df84d662cf965e0c7e3f301751a9b458d3c0ab",
+      "block": 24744028
+    },
+    {
+      "id": "receiver",
+      "label": "Controlled @devil first spend",
+      "source": "public SharedVault receipt, zero-funding audit and independent @rq3dev26 owner-wallet view",
+      "verdict": "3 RLS private payment completed; public recipient and amount not decrypted from chain",
+      "tx": "0x5423d2b13c575c8e26c73e42906f4eefb7a6a257defcebad81a1415c857253e8",
+      "block": 24760126
+    }
+  ],
+  "publicationState": "CONTROLLED SHIELDED ONBOARDING-TO-SPEND LIFECYCLE VERIFIED; DATASET SCOPED TO RAYLS TESTNET",
+  "securityNotice": "The private bearer invite link was exposed in chat and must not be treated as a confidentiality-controlled invitation. It is not in this dataset.",
+  "docs": [
+    {
+      "name": "How Enygma Public works",
+      "url": "https://docs.rayls.com/docs/how-enygma-public-works"
+    },
+    {
+      "name": "Who sees what",
+      "url": "https://docs.rayls.com/docs/enygma-public-who-sees-what"
+    },
+    {
+      "name": "Testnet app",
+      "url": "https://enygma-testnet.rayls.com/"
+    },
+    {
+      "name": "Testnet explorer",
+      "url": "https://testnet-explorer.rayls.com/"
+    }
+  ]
+}

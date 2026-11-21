@@ -1,0 +1,18 @@
+{
+  "evidenceClass": "CONTROLLED_WALLET_POST_DRYRUN_PUBLIC_CHAIN_SAFETY_CHECK",
+  "capturedAtUtc": "2026-11-20T20:19:53.966664+00:00",
+  "chainId": 7295799,
+  "devAddress": "0x1AcC448116C00A16bBfCE8f9d280aaA4D3Ad4FF6",
+  "hubAddress": "0xa7EB60a22240FCa3D684f1B96dFE3f68a8cfC38A",
+  "fromBlockExclusive": 24735856,
+  "toBlockInclusive": 24737719,
+  "endBlockHash": "0x75204dbd00b371d97ece118acdb4390d2d909613a5314f5810c7b06651b7dca0",
+  "devRlsAtRegistrationWei": "242806998400000000000",
+  "devRlsNowWei": "242806998400000000000",
+  "hubRlsNowWei": "0",
+  "hubNativeUsdrWei": "0",
+  "outgoingRlsTransfersAfterRegistration": [],
+  "outgoingRlsToSharedVault": [],
+  "scope": "Read-only public ERC-20 Transfer event scan and fixed-block balance checks; no private note state proven.",
+  "noShieldTransactionInCheckedWindow": true
+}

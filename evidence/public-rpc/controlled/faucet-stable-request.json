@@ -1,0 +1,22 @@
+{
+  "evidence_class": "CONTROLLED_PUBLIC_TESTNET_FAUCET_REQUEST",
+  "first_attempt_at_utc": "2026-11-20T19:37:17.800499+00:00",
+  "chain_id": 7295799,
+  "address": "0x1AcC448116C00A16bBfCE8f9d280aaA4D3Ad4FF6",
+  "kind": "stable",
+  "read_only_offer": {
+    "symbol": "USDr",
+    "amount": "10000000000000000000",
+    "available": true,
+    "nextAt": "1795214030"
+  },
+  "source": "https://enygma-testnet.rayls.com/assets/index-BRJsQdqQ.js",
+  "baseline_file": "evidence/public-rpc/controlled/clean-local-burners-baseline.json",
+  "request_http_status": 429,
+  "request_body": {
+    "error": "faucet-wait",
+    "message": "The faucet gives again in 177 min."
+  },
+  "response_at_utc": "2026-11-20T19:37:18.121074+00:00",
+  "request_success": false
+}

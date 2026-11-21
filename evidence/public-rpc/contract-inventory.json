@@ -1,0 +1,213 @@
+{
+  "bundle_forwarder_matches_relayers_live_forwarder": true,
+  "bundle_next_forwarder": "0x12B6640048DEB2e8fFDa4Bc10Bb2a640B70eCA6d",
+  "captured_at_utc": "2026-11-20T13:39:25.011174+00:00",
+  "caveats": [
+    "Deployed addresses originate in app bundle, not verified source metadata.",
+    "Code presence and EIP1967 slots do not authenticate matching source code.",
+    "Relayer fee fields are server-reported; no paid transactions or economic reconciliation executed.",
+    "USDr at 0x400 may be a chain precompile; eth_getCode cannot prove that it is an ERC20 contract."
+  ],
+  "chain_id": 7295799,
+  "contract_inventory": {
+    "AuctionHouse": {
+      "address": "0x7A79A9667B62A3F4020B828f4c9FEA1A982E922e",
+      "code_hex_bytes": 3182,
+      "code_sha256": "f3adc1051f7bb6d14b1293c00dffa29ba508f198ee7d477c4c5fb545b6fc203c",
+      "eip1967_implementation": null,
+      "eip1967_implementation_code_bytes": null
+    },
+    "DevItems": {
+      "address": "0x76593731708E816f9c3eB2EC66469B5836D55b19",
+      "code_hex_bytes": 7516,
+      "code_sha256": "05d55467df3a6fac247423cb3461caec6d6b0df9ddde09d30d298f55a3435926",
+      "eip1967_implementation": null,
+      "eip1967_implementation_code_bytes": null
+    },
+    "DevNft": {
+      "address": "0xd6c1060A39bA0FBa0D3Ff2BDbDf226C1f70d0dd8",
+      "code_hex_bytes": 6564,
+      "code_sha256": "3b72fd941c2be388a074adbe162549249c3fa2a1931f6b6dfe958e761191c26d",
+      "eip1967_implementation": null,
+      "eip1967_implementation_code_bytes": null
+    },
+    "EnygmaDvp": {
+      "address": "0x7ec57a8f97b636a4b54633df826b2a4311018996",
+      "code_hex_bytes": 23235,
+      "code_sha256": "2b445d89f83f18f7dbb7555f8ecac32cc82b915403ca52a1590a29c2773e42ad",
+      "eip1967_implementation": null,
+      "eip1967_implementation_code_bytes": null
+    },
+    "GenericGroth16Verifier": {
+      "address": "0xc12f06f883b757c91069f9d94065a4c673ef356a",
+      "code_hex_bytes": 2916,
+      "code_sha256": "4054b80ab03c8aef09875aab16d1da9577291852833edf1ca2f400b567c8446a",
+      "eip1967_implementation": null,
+      "eip1967_implementation_code_bytes": null
+    },
+    "NftCustody": {
+      "address": "0xF10de8503aB9E2AA1CF6Eb8A7425250fcb14B057",
+      "code_hex_bytes": 3388,
+      "code_sha256": "b0da5fe0b6b30b396fc3a528221698b0db367db94867adda2b6a97317b2db2fa",
+      "eip1967_implementation": null,
+      "eip1967_implementation_code_bytes": null
+    },
+    "OwnerMultisig": {
+      "address": "0xBf099175a241194C38E977735D59CCb22596d775",
+      "code_hex_bytes": 4373,
+      "code_sha256": "156a4c6ce0ba58a0cd26ff130024bcbc4ce75888f309e3dce82c59b55084ac48",
+      "eip1967_implementation": null,
+      "eip1967_implementation_code_bytes": null
+    },
+    "PoseidonT3": {
+      "address": "0xc29f02220d8aed5c731de4aee9d7d8d24c94ef15",
+      "code_hex_bytes": 9743,
+      "code_sha256": "59333b83353b1b17c2628cff10e2c75e0fc8124267ad8dd36d190716dac3abbf",
+      "eip1967_implementation": null,
+      "eip1967_implementation_code_bytes": null
+    },
+    "PoseidonT5": {
+      "address": "0x078c99bbbbf9dcf827ff085c9a4634213b18018b",
+      "code_hex_bytes": 16276,
+      "code_sha256": "cf70e7e735f347de0e697b9a658b6838647c2a4c21873f77dbf01c7687542bb4",
+      "eip1967_implementation": null,
+      "eip1967_implementation_code_bytes": null
+    },
+    "PoseidonWrapper": {
+      "address": "0x0bc72bf5dd894164f7cc8f8b92c78eb7d2156f3f",
+      "code_hex_bytes": 687,
+      "code_sha256": "d07aa9d91cab864d54b66ed90c7056848cc13c2abe998fead4dc64e9f751f608",
+      "eip1967_implementation": null,
+      "eip1967_implementation_code_bytes": null
+    },
+    "PrivateSwaps": {
+      "address": "0x20DF5ba54349a4B88A9ec036506aB962f8b93E0e",
+      "code_hex_bytes": 8709,
+      "code_sha256": "1e5daad64c4977f8ba1dd0d78e2d1df7a3612f06fa2a6caeb7c827d8d33f717a",
+      "eip1967_implementation": null,
+      "eip1967_implementation_code_bytes": null
+    },
+    "PublicSender": {
+      "address": "0xcbeF43Bf42092E366e92d34620bC111938Dc55C5",
+      "code_hex_bytes": 2251,
+      "code_sha256": "fc49e82148fc5fad04d6019bc76f81e7cdc46bb680bebbcd60e2c3dbf66bae41",
+      "eip1967_implementation": null,
+      "eip1967_implementation_code_bytes": null
+    },
+    "RLS": {
+      "address": "0x07e17E17e17E17e17e17e17E17E17E17E17e17EA",
+      "code_hex_bytes": 122,
+      "code_sha256": "652b77cecae7c3e3052fb7fefe299de36d004247b0ca58fcf797607083370760",
+      "eip1967_implementation": "0x07e17e17e17e17e17e17e17e17e17e17e17e17eb",
+      "eip1967_implementation_code_bytes": 9977
+    },
+    "RlsGasForwarder": {
+      "address": "0x753cc3Abe9A1c49536ee74F1f424fCF693AAB5DD",
+      "code_hex_bytes": 4394,
+      "code_sha256": "2ad5dfc30f42109b869e580f1af84a0b568739a200bdb45a13016b669ac4bb99",
+      "eip1967_implementation": null,
+      "eip1967_implementation_code_bytes": null
+    },
+    "RlsVault": {
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795",
+      "code_hex_bytes": 20224,
+      "code_sha256": "6c04acc6adeb794bbc0ddb0a3658fca5505d7be3925071daca6dd7179e62350e",
+      "eip1967_implementation": null,
+      "eip1967_implementation_code_bytes": null
+    },
+    "SharedVault": {
+      "address": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+      "code_hex_bytes": 170,
+      "code_sha256": "35586a5baa1bc3f3b51ababd9825a2096bc57b5e501b44803469dc1219ee6077",
+      "eip1967_implementation": "0xad9667049f14d1757d147f652c41dc241c57091c",
+      "eip1967_implementation_code_bytes": 23952
+    },
+    "SharedVaultImplementation": {
+      "address": "0xAd9667049f14D1757D147F652c41Dc241C57091C",
+      "code_hex_bytes": 23952,
+      "code_sha256": "7cc67ae8c77c7df155ecedc7a40d898a794447ea47a317df2375fd8562dbc876",
+      "eip1967_implementation": null,
+      "eip1967_implementation_code_bytes": null
+    },
+    "TokenFactory": {
+      "address": "0xD4472a6351A0e738afd16E40fEe7a3bfDea01fEd",
+      "code_hex_bytes": 7274,
+      "code_sha256": "9c2d79acbff7bb190f3a78206c7fe4e48a19f401754712c30837e8346dfe4ab5",
+      "eip1967_implementation": null,
+      "eip1967_implementation_code_bytes": null
+    },
+    "USDr": {
+      "address": "0x0000000000000000000000000000000000000400",
+      "code_hex_bytes": 1,
+      "code_sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "eip1967_implementation": null,
+      "eip1967_implementation_code_bytes": null
+    },
+    "UsdrVault": {
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584",
+      "code_hex_bytes": 20224,
+      "code_sha256": "6c04acc6adeb794bbc0ddb0a3658fca5505d7be3925071daca6dd7179e62350e",
+      "eip1967_implementation": null,
+      "eip1967_implementation_code_bytes": null
+    },
+    "UserRegistry": {
+      "address": "0xA473291FFb33e2276F364fAE169f03c4406719e9",
+      "code_hex_bytes": 170,
+      "code_sha256": "e827b69af8d452d9928fb04dfd803223d485cbe6cdae0a2c699c27d284d98f4f",
+      "eip1967_implementation": "0x9686a3d5a9fd2101d15888c6a09a64fafa7ee349",
+      "eip1967_implementation_code_bytes": 14492
+    },
+    "UserRegistryImplementation": {
+      "address": "0x9686a3d5a9Fd2101d15888c6a09a64faFA7EE349",
+      "code_hex_bytes": 14492,
+      "code_sha256": "1b9afbea256ff24cedef0d1441158374187d247ec3a89fa1f80f38c95af37b6b",
+      "eip1967_implementation": null,
+      "eip1967_implementation_code_bytes": null
+    },
+    "UserRegistryRetired": {
+      "address": "0xD1d92f1B183B84Ea528211302B1eCB881EeF2770",
+      "code_hex_bytes": 170,
+      "code_sha256": "e827b69af8d452d9928fb04dfd803223d485cbe6cdae0a2c699c27d284d98f4f",
+      "eip1967_implementation": "0x55f300dd7db5b5a1f6172966f08ba97be11f572a",
+      "eip1967_implementation_code_bytes": 14440
+    },
+    "UserRegistryV1": {
+      "address": "0x6Bd39b41f26b0A134869DEa79e3765Ce72363073",
+      "code_hex_bytes": 10044,
+      "code_sha256": "c7eb06eb7a2d1b5c0f93feff6f52b47593d2b980008a9308b7de8ee54e559fc4",
+      "eip1967_implementation": null,
+      "eip1967_implementation_code_bytes": null
+    },
+    "Verifier": {
+      "address": "0xfa3a53ec650bfd4ca3e8461abce243382a1037af",
+      "code_hex_bytes": 4652,
+      "code_sha256": "ad5c6518bace4499e336e63f83d48b68a109c12088f80fd65be6ffb22525bdd1",
+      "eip1967_implementation": null,
+      "eip1967_implementation_code_bytes": null
+    },
+    "next": {
+      "address": "0x12B6640048DEB2e8fFDa4Bc10Bb2a640B70eCA6d",
+      "code_hex_bytes": 5874,
+      "code_sha256": "84d862f80bff814c211add3c8aab78cb020e89b865b3f7b4bee7a084dfa48750",
+      "eip1967_implementation": null,
+      "eip1967_implementation_code_bytes": null
+    }
+  },
+  "evidence_class": "LIVE_PUBLIC_CONFIGURATION_AND_RPC_INVENTORY",
+  "relayer_report": {
+    "active_forwarder": "0x12B6640048DEB2e8fFDa4Bc10Bb2a640B70eCA6d",
+    "chain_id": 7295799,
+    "faucet_enabled": true,
+    "gas_share_percent": "15",
+    "relayer_address": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+    "rls_per_gas_wei": "2400000000000",
+    "token_fee_bps": "25",
+    "treasury": "0x71AF09966CBED4434ccA97c40Fa38B8083548B95"
+  },
+  "sources": {
+    "relayer_info_url": "https://enygma-relayer-aafjr.ondigitalocean.app/rayls/info",
+    "rpc_url": "https://testnet-rpc.rayls.com/",
+    "wallet_bundle_sha256": "05b6ebb65b9114ff75558b007eb42cd92924fe2daf23164e4f8e93245d8044f3",
+    "wallet_bundle_url": "https://enygma-testnet.rayls.com/assets/index-BRJsQdqQ.js"
+  }
+}

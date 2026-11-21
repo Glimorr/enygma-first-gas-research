@@ -1,0 +1,40 @@
+{
+  "evidenceClass": "RESEARCHER_CONTROLLED_DEV_ACCOUNT_REGISTRATION",
+  "state": "RELAY_POST_STARTED",
+  "startedAtUtc": "2026-11-20T19:56:26.980Z",
+  "chainId": 7295799,
+  "account": "0x1AcC448116C00A16bBfCE8f9d280aaA4D3Ad4FF6",
+  "username": "rq3dev26",
+  "authorizedContract": "0xA473291FFb33e2276F364fAE169f03c4406719e9",
+  "maxFeeWei": "8000000000000000000",
+  "initialHead": {
+    "number": 24735141,
+    "hash": "0x8c6d898f0fa2aab2dc18aefbd84b4eb671e28bceea1d553d18f20242d7a0275d"
+  },
+  "startingPublicRlsWei": "250000000000000000000",
+  "signedAuthorizationTypes": [
+    "Permit",
+    "ForwardRequest"
+  ],
+  "previewedRelayPath": "/rayls/relay",
+  "secretKeysOrSignaturesSaved": false,
+  "uiValidatedAtUtc": "2026-11-20T19:56:35.921Z",
+  "sentAtUtc": "2026-11-20T19:56:36.911Z",
+  "signedFeeWei": "7193040240000000000",
+  "requestGas": "2401902",
+  "registerMethod": "register",
+  "relayRequestPayloadBytes": 5956,
+  "relayerHttpStatus": 422,
+  "relayerResponseAtUtc": "2026-11-20T19:56:37.190Z",
+  "relayerErrorCode": "reverted",
+  "completedAtUtc": "2026-11-20T19:56:49.992Z",
+  "uiCompletionStage": "failure-string-present",
+  "relayRequests": [
+    {
+      "path": "/rayls/relay",
+      "allowed": true,
+      "bodyFields": "permit,request,signature",
+      "feeWei": "7193040240000000000"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "evidence_class": "PUBLIC_RPC_BASELINE_ONLY",
+  "captured_at_utc": "2026-11-20T13:10:04.559100+00:00",
+  "rpc": "https://testnet-rpc.rayls.com/",
+  "chain_id": 7295799,
+  "expected_chain_id": 7295799,
+  "identity_pass": true,
+  "head": 24690386,
+  "six_block_parent_linkage_pass": true,
+  "blocks": [
+    {
+      "number": 24690381,
+      "hash": "0x84d74b9530e2ff0c35db95a77a765227de9615a9d3c38c89f2a17a1de1bd67bd",
+      "parentHash": "0x21e5441dba396de28b18cbf1c412240aabb7fbd54f65509670f3e0d0db79e499",
+      "timestamp": 1795180203,
+      "tx_count": 0
+    },
+    {
+      "number": 24690382,
+      "hash": "0x510a923e569dbfa12a9250dacfdb8647e0aa5fb4ddfed7ae8185ca1917eebc86",
+      "parentHash": "0x84d74b9530e2ff0c35db95a77a765227de9615a9d3c38c89f2a17a1de1bd67bd",
+      "timestamp": 1795180203,
+      "tx_count": 0
+    },
+    {
+      "number": 24690383,
+      "hash": "0x3fc4043f2bb5cfc576900a89e5a9ab39c00cd366364468f0589e3b64caea35ee",
+      "parentHash": "0x510a923e569dbfa12a9250dacfdb8647e0aa5fb4ddfed7ae8185ca1917eebc86",
+      "timestamp": 1795180204,
+      "tx_count": 0
+    },
+    {
+      "number": 24690384,
+      "hash": "0x2e025ffe52329dbcb0b8a09e4b8d33342148eee9a89cfd25818df5af0e5397e1",
+      "parentHash": "0x3fc4043f2bb5cfc576900a89e5a9ab39c00cd366364468f0589e3b64caea35ee",
+      "timestamp": 1795180205,
+      "tx_count": 0
+    },
+    {
+      "number": 24690385,
+      "hash": "0x0d00f86cb515ee8a4d329dbe3c1919c3943ac228e7f9f9558936becf27be5490",
+      "parentHash": "0x2e025ffe52329dbcb0b8a09e4b8d33342148eee9a89cfd25818df5af0e5397e1",
+      "timestamp": 1795180205,
+      "tx_count": 0
+    },
+    {
+      "number": 24690386,
+      "hash": "0x2b7cacc96453690740ae799194449da59e9bfcd5c6cd6f2c10e2f1916d6955c7",
+      "parentHash": "0x0d00f86cb515ee8a4d329dbe3c1919c3943ac228e7f9f9558936becf27be5490",
+      "timestamp": 1795180206,
+      "tx_count": 0
+    }
+  ],
+  "disclaimer": "No Enygma wallet experiment or private payment was executed by this probe.",
+  "snapshot_sha256_without_this_field": "fd9ef188d4f812cefabb6c49c5765be611d08b48043abb0ec941be685fdc8edd"
+}

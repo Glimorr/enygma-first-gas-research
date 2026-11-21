@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "checked_at_utc": "2026-11-20T22:03:00.942193+00:00",
+  "scope": "FROZEN_RECEIPT_CONSISTENCY_ONLY_NOT_LIVE_CHAIN",
+  "cases": 2
+}

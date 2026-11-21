@@ -1,0 +1,171 @@
+{
+  "status": "PASS",
+  "evidence_class": "IN_MEMORY_SHIELDED_INVITATION_PUBLIC_RECEIPT_MUTATION_TESTS",
+  "tested_at_utc": "2026-11-20T21:26:18.118Z",
+  "tested_count": 19,
+  "detected_count": 19,
+  "source_files_modified": false,
+  "does_not_verify_invitation_secret_or_claim": true,
+  "results": [
+    {
+      "name": "wrong_chain",
+      "expected": "chainId",
+      "detected": true,
+      "errors": [
+        "chainId"
+      ]
+    },
+    {
+      "name": "wrong_provenance",
+      "expected": "provenance",
+      "detected": true,
+      "errors": [
+        "provenance"
+      ]
+    },
+    {
+      "name": "wrong_hash",
+      "expected": "hash",
+      "detected": true,
+      "errors": [
+        "hash",
+        "blockInclusion",
+        "eventTxHash",
+        "eventTxHash",
+        "eventTxHash",
+        "eventTxHash",
+        "eventTxHash",
+        "eventTxHash",
+        "eventTxHash"
+      ]
+    },
+    {
+      "name": "receipt_status",
+      "expected": "status",
+      "detected": true,
+      "errors": [
+        "status"
+      ]
+    },
+    {
+      "name": "block_header_hash",
+      "expected": "blockHash",
+      "detected": true,
+      "errors": [
+        "blockHash"
+      ]
+    },
+    {
+      "name": "tx_not_in_block",
+      "expected": "blockInclusion",
+      "detected": true,
+      "errors": [
+        "blockInclusion"
+      ]
+    },
+    {
+      "name": "wrong_vault",
+      "expected": "vaultTarget",
+      "detected": true,
+      "errors": [
+        "vaultTarget"
+      ]
+    },
+    {
+      "name": "wrong_method",
+      "expected": "method",
+      "detected": true,
+      "errors": [
+        "method"
+      ]
+    },
+    {
+      "name": "fake_more_inputs",
+      "expected": "inputCount",
+      "detected": true,
+      "errors": [
+        "inputCount"
+      ]
+    },
+    {
+      "name": "fake_more_outputs",
+      "expected": "outputCount",
+      "detected": true,
+      "errors": [
+        "outputCount"
+      ]
+    },
+    {
+      "name": "removed_encrypted_note",
+      "expected": "eventTopology",
+      "detected": true,
+      "errors": [
+        "eventTopology"
+      ]
+    },
+    {
+      "name": "missing_nullifier",
+      "expected": "derivedNullifier",
+      "detected": true,
+      "errors": [
+        "derivedNullifier"
+      ]
+    },
+    {
+      "name": "changed_commitment",
+      "expected": "derivedCommitments",
+      "detected": true,
+      "errors": [
+        "derivedCommitments"
+      ]
+    },
+    {
+      "name": "changed_ciphertext_length",
+      "expected": "derivedEncryptedNotes",
+      "detected": true,
+      "errors": [
+        "derivedEncryptedNotes"
+      ]
+    },
+    {
+      "name": "changed_secondary_log",
+      "expected": "independentEventBytes",
+      "detected": true,
+      "errors": [
+        "independentEventBytes"
+      ]
+    },
+    {
+      "name": "incorrect_public_balance",
+      "expected": "ownerPublicBalance",
+      "detected": true,
+      "errors": [
+        "ownerPublicBalance"
+      ]
+    },
+    {
+      "name": "fake_funded_receiver",
+      "expected": "receiverZeroPublicRls",
+      "detected": true,
+      "errors": [
+        "receiverZeroPublicRls"
+      ]
+    },
+    {
+      "name": "fake_nonce",
+      "expected": "ownerNonce",
+      "detected": true,
+      "errors": [
+        "ownerNonce"
+      ]
+    },
+    {
+      "name": "bad_privacy_claim",
+      "expected": "privacyClaim",
+      "detected": true,
+      "errors": [
+        "privacyClaim"
+      ]
+    }
+  ]
+}

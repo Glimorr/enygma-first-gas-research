@@ -1,0 +1,271 @@
+{
+  "evidence_class": "IN_MEMORY_RECEIVER_ONBOARDING_TAMPER_CONTROLS",
+  "runAtUtc": "2026-11-20T22:00:49.873Z",
+  "tests": 30,
+  "rejected": 30,
+  "status": "PASS",
+  "originalEvidenceModified": false,
+  "failures": [],
+  "results": [
+    {
+      "case": "wrong_chain",
+      "expectedError": "chainId",
+      "detected": true,
+      "errors": [
+        "chainId"
+      ]
+    },
+    {
+      "case": "wrong_receiver",
+      "expectedError": "receiver.address",
+      "detected": true,
+      "errors": [
+        "receiver.address"
+      ]
+    },
+    {
+      "case": "wrong_claim_hash",
+      "expectedError": "claim.originalHash",
+      "detected": true,
+      "errors": [
+        "claim.originalHash",
+        "tx.hash.claim",
+        "tx.inclusion.claim",
+        "events.txHash.claim",
+        "events.txHash.claim",
+        "events.txHash.claim",
+        "events.txHash.claim",
+        "events.txHash.claim",
+        "events.txHash.claim",
+        "events.txHash.claim"
+      ]
+    },
+    {
+      "case": "wrong_registration_hash",
+      "expectedError": "registration.originalHash",
+      "detected": true,
+      "errors": [
+        "registration.originalHash",
+        "tx.hash.registration",
+        "tx.inclusion.registration",
+        "events.txHash.registration",
+        "events.txHash.registration",
+        "events.txHash.registration"
+      ]
+    },
+    {
+      "case": "reverted_claim",
+      "expectedError": "tx.status.claim",
+      "detected": true,
+      "errors": [
+        "tx.status.claim"
+      ]
+    },
+    {
+      "case": "reverted_registration",
+      "expectedError": "tx.status.registration",
+      "detected": true,
+      "errors": [
+        "tx.status.registration"
+      ]
+    },
+    {
+      "case": "claim_block_hash",
+      "expectedError": "tx.blockHash.claim",
+      "detected": true,
+      "errors": [
+        "tx.blockHash.claim"
+      ]
+    },
+    {
+      "case": "registry_block_hash",
+      "expectedError": "tx.blockHash.registration",
+      "detected": true,
+      "errors": [
+        "tx.blockHash.registration"
+      ]
+    },
+    {
+      "case": "claim_block_inclusion",
+      "expectedError": "tx.inclusion.claim",
+      "detected": true,
+      "errors": [
+        "tx.inclusion.claim"
+      ]
+    },
+    {
+      "case": "registration_block_inclusion",
+      "expectedError": "tx.inclusion.registration",
+      "detected": true,
+      "errors": [
+        "tx.inclusion.registration"
+      ]
+    },
+    {
+      "case": "changed_vault_target",
+      "expectedError": "claim.vault",
+      "detected": true,
+      "errors": [
+        "claim.vault"
+      ]
+    },
+    {
+      "case": "changed_forwarder_target",
+      "expectedError": "registration.forwarder",
+      "detected": true,
+      "errors": [
+        "registration.forwarder"
+      ]
+    },
+    {
+      "case": "deleted_claim_note",
+      "expectedError": "tx.separateLogsCount.claim",
+      "detected": true,
+      "errors": [
+        "tx.separateLogsCount.claim",
+        "claim.logTopology",
+        "claim.derivedEncryptedNotes"
+      ]
+    },
+    {
+      "case": "deleted_registry_log",
+      "expectedError": "tx.separateLogsCount.registration",
+      "detected": true,
+      "errors": [
+        "tx.separateLogsCount.registration",
+        "registration.eventCount",
+        "registration.forwardFrom",
+        "registration.publicFeeZero",
+        "registration.relayerMatch"
+      ]
+    },
+    {
+      "case": "modified_secondary_claim_log",
+      "expectedError": "events.separateLogsMismatch.claim",
+      "detected": true,
+      "errors": [
+        "events.separateLogsMismatch.claim"
+      ]
+    },
+    {
+      "case": "modified_secondary_reg_log",
+      "expectedError": "events.separateLogsMismatch.registration",
+      "detected": true,
+      "errors": [
+        "events.separateLogsMismatch.registration"
+      ]
+    },
+    {
+      "case": "forged_nullifier_field",
+      "expectedError": "claim.derivedNullifier",
+      "detected": true,
+      "errors": [
+        "claim.derivedNullifier"
+      ]
+    },
+    {
+      "case": "forged_commitment_field",
+      "expectedError": "claim.derivedCommitment",
+      "detected": true,
+      "errors": [
+        "claim.derivedCommitment"
+      ]
+    },
+    {
+      "case": "bad_note_ciphertext_len",
+      "expectedError": "claim.derivedEncryptedNotes",
+      "detected": true,
+      "errors": [
+        "claim.derivedEncryptedNotes"
+      ]
+    },
+    {
+      "case": "wrong_registered_username",
+      "expectedError": "registration.derivedUsername",
+      "detected": true,
+      "errors": [
+        "registration.derivedUsername"
+      ]
+    },
+    {
+      "case": "falsified_registry_fee",
+      "expectedError": "registration.publicFeeZero",
+      "detected": true,
+      "errors": [
+        "registration.publicFeeZero"
+      ]
+    },
+    {
+      "case": "falsified_preclaim_public_rls",
+      "expectedError": "states.zeroPublicBalancesAndNonces",
+      "detected": true,
+      "errors": [
+        "states.zeroPublicBalancesAndNonces"
+      ]
+    },
+    {
+      "case": "falsified_postclaim_nonce",
+      "expectedError": "states.zeroPublicBalancesAndNonces",
+      "detected": true,
+      "errors": [
+        "states.zeroPublicBalancesAndNonces"
+      ]
+    },
+    {
+      "case": "falsified_preclaim_registration",
+      "expectedError": "states.registrationHistory",
+      "detected": true,
+      "errors": [
+        "states.registrationHistory"
+      ]
+    },
+    {
+      "case": "falsified_postreg_registration",
+      "expectedError": "states.registrationHistory",
+      "detected": true,
+      "errors": [
+        "states.registrationHistory"
+      ]
+    },
+    {
+      "case": "fake_public_token_transfer",
+      "expectedError": "states.publicTransfers",
+      "detected": true,
+      "errors": [
+        "states.publicTransfers"
+      ]
+    },
+    {
+      "case": "fake_explorer_history",
+      "expectedError": "states.explorerHistory",
+      "detected": true,
+      "errors": [
+        "states.explorerHistory"
+      ]
+    },
+    {
+      "case": "wrong_ui_balance",
+      "expectedError": "wallet.uiNotChain",
+      "detected": true,
+      "errors": [
+        "wallet.uiNotChain"
+      ]
+    },
+    {
+      "case": "wrong_privacy_boundary",
+      "expectedError": "claim.privacyBoundary",
+      "detected": true,
+      "errors": [
+        "claim.privacyBoundary"
+      ]
+    },
+    {
+      "case": "wrong_secret_handling",
+      "expectedError": "security.noInviteSecret",
+      "detected": true,
+      "errors": [
+        "security.noInviteSecret"
+      ]
+    }
+  ]
+}

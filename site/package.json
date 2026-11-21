@@ -1,0 +1,23 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "description": "Independent evidence-first Rayls Enygma Public research checkpoint, not an official product site",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node scripts/build-evidence.mjs && vite --host 127.0.0.1 --port 4173",
+    "build": "node scripts/build-evidence.mjs && vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4174",
+    "check": "node scripts/build-evidence.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gsap": "3.14.2",
+    "lucide": "0.553.0",
+    "three": "0.181.2",
+    "vite": "7.3.1"
+  },
+  "type": "module",
+  "private": true
+}

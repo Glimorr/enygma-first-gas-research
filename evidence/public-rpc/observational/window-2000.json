@@ -1,0 +1,42 @@
+{
+  "evidence_class": "OBSERVATIONAL_PUBLIC_ONCHAIN_ONLY_NOT_USER_CONTROLLED",
+  "capturedAtUtc": "2026-11-20T13:35:46.622Z",
+  "rpc": "https://testnet-rpc.rayls.com/",
+  "chainId": 7295799,
+  "fromBlock": 24691205,
+  "toBlock": 24693205,
+  "contractFilters": [
+    {
+      "name": "UserRegistry",
+      "address": "0xa473291ffb33e2276f364fae169f03c4406719e9"
+    },
+    {
+      "name": "SharedVault",
+      "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2"
+    },
+    {
+      "name": "RlsVault",
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795"
+    },
+    {
+      "name": "UsdrVault",
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584"
+    },
+    {
+      "name": "next",
+      "address": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d"
+    }
+  ],
+  "totalLogs": 0,
+  "distinctTxs": 0,
+  "decodedEventCounts": {},
+  "events": [],
+  "receiptSamples": [],
+  "errors": [],
+  "limitations": [
+    "No user-controlled invite claim or account transaction in this dataset.",
+    "Event presence alone cannot identify private sender, recipient or amount.",
+    "The 2000-block interval is an observational window, not a controlled trial.",
+    "Relayer-reported fee policy is not yet reconciled to every wallet's shielded balance."
+  ]
+}

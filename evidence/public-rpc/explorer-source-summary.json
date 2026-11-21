@@ -1,0 +1,163 @@
+{
+  "captured_at_utc": "2026-11-20T13:54:22.485179+00:00",
+  "caveat": "Explorer's verified flag is a service assertion. No locally rebuilt compiler output has been compared to chain bytecode.",
+  "evidence_class": "PUBLIC_RPC_CROSSCHECK_WITH_EXPLORER_METADATA",
+  "items": {
+    "RLS": {
+      "address": "0x07e17E17e17E17e17e17e17E17E17E17E17e17EA",
+      "eip1967_implementation": "0x07e17e17e17e17e17e17e17e17e17e17e17e17eb",
+      "explorer_contract_name": "ERC1967Proxy",
+      "explorer_creation_tx": null,
+      "explorer_is_contract": true,
+      "explorer_is_verified": true,
+      "explorer_proxy_type": "eip1967",
+      "explorer_source_metadata": {
+        "abi_sha256": "b403ea570534194197e0f2233addec54e60c43730d87cdb612370d3ce35fb761",
+        "compiler_version": "v0.8.26+commit.8a97fa7a",
+        "language": "solidity",
+        "name": "ERC1967Proxy",
+        "optimization_enabled": true,
+        "source_sha256": "a06fe97082355529c1da9076ea6c4518875ca9fdb1a4fa1e194c35cff21b29a1"
+      },
+      "rpc_code_sha256": "652b77cecae7c3e3052fb7fefe299de36d004247b0ca58fcf797607083370760",
+      "rpc_has_code": true
+    },
+    "RlsVault": {
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795",
+      "eip1967_implementation": null,
+      "explorer_contract_name": "Erc20CoinVault",
+      "explorer_creation_tx": "0x30d3cce599c158689a888e8876f22425e6a26e35e99420b827089cd6f1d75977",
+      "explorer_is_contract": true,
+      "explorer_is_verified": true,
+      "explorer_proxy_type": null,
+      "explorer_source_metadata": {
+        "abi_sha256": "0a0feadf81e0ebc3e25b870d5264231cbad9500989edd61f64096dcfbff59c51",
+        "compiler_version": "v0.8.28+commit.7893614a",
+        "language": "solidity",
+        "name": "Erc20CoinVault",
+        "optimization_enabled": true,
+        "source_sha256": "e225fb0967d8276175ca2963fb2b41175660724286c97c0cb873df191aed343f"
+      },
+      "rpc_code_sha256": "6c04acc6adeb794bbc0ddb0a3658fca5505d7be3925071daca6dd7179e62350e",
+      "rpc_has_code": true
+    },
+    "SharedVault": {
+      "address": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+      "eip1967_implementation": "0xad9667049f14d1757d147f652c41dc241c57091c",
+      "explorer_contract_name": "SharedVaultProxy",
+      "explorer_creation_tx": "0xa626fb912862868ebe94747d6d2256e18e3ed7cdd2cf4d2da0ccdf31c7f4c3a7",
+      "explorer_is_contract": true,
+      "explorer_is_verified": true,
+      "explorer_proxy_type": "eip1967",
+      "explorer_source_metadata": {
+        "abi_sha256": "856c314699d4a23e545b85590db108f57acdd51daf8172a3d97c5736b4500088",
+        "compiler_version": "v0.8.28+commit.7893614a",
+        "language": "solidity",
+        "name": "SharedVaultProxy",
+        "optimization_enabled": true,
+        "source_sha256": "7ba9dc110461e343759cdc82d0c9267f8e123cd8402eeb5ee04324ae9b303acc"
+      },
+      "rpc_code_sha256": "35586a5baa1bc3f3b51ababd9825a2096bc57b5e501b44803469dc1219ee6077",
+      "rpc_has_code": true
+    },
+    "SharedVaultImplementation": {
+      "address": "0xAd9667049f14D1757D147F652c41Dc241C57091C",
+      "eip1967_implementation": null,
+      "explorer_contract_name": "SharedVault",
+      "explorer_creation_tx": "0x9dc1052dd896ec80e31c286bf79cdd52b94b5e9629d6bf20b133c4a18cec8e67",
+      "explorer_is_contract": true,
+      "explorer_is_verified": true,
+      "explorer_proxy_type": null,
+      "explorer_source_metadata": {
+        "abi_sha256": "395a836c143243babb8593f4aefd7f1cbfbe3ae2569a845f6a59b24d3635ad1b",
+        "compiler_version": "v0.8.28+commit.7893614a",
+        "language": "solidity",
+        "name": "SharedVault",
+        "optimization_enabled": true,
+        "source_sha256": "189f0bc761f073c12b2f821996f0afa6d51832848e938bc8c2e29a7341d751a0"
+      },
+      "rpc_code_sha256": "7cc67ae8c77c7df155ecedc7a40d898a794447ea47a317df2375fd8562dbc876",
+      "rpc_has_code": true
+    },
+    "UsdrVault": {
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584",
+      "eip1967_implementation": null,
+      "explorer_contract_name": "Erc20CoinVault",
+      "explorer_creation_tx": "0x697f117806d4dbf785440ec7dfe5c0c8d620ebf988de43f94c427a5a6e09b863",
+      "explorer_is_contract": true,
+      "explorer_is_verified": true,
+      "explorer_proxy_type": null,
+      "explorer_source_metadata": {
+        "abi_sha256": "0a0feadf81e0ebc3e25b870d5264231cbad9500989edd61f64096dcfbff59c51",
+        "compiler_version": "v0.8.28+commit.7893614a",
+        "language": "solidity",
+        "name": "Erc20CoinVault",
+        "optimization_enabled": true,
+        "source_sha256": "e225fb0967d8276175ca2963fb2b41175660724286c97c0cb873df191aed343f"
+      },
+      "rpc_code_sha256": "6c04acc6adeb794bbc0ddb0a3658fca5505d7be3925071daca6dd7179e62350e",
+      "rpc_has_code": true
+    },
+    "UserRegistry": {
+      "address": "0xA473291FFb33e2276F364fAE169f03c4406719e9",
+      "eip1967_implementation": "0x9686a3d5a9fd2101d15888c6a09a64fafa7ee349",
+      "explorer_contract_name": "UserRegistryProxy",
+      "explorer_creation_tx": "0x472504db63c0a47fd71cdb3a1f22caf4510a61ce49d713e42bdadfea70d3f4a9",
+      "explorer_is_contract": true,
+      "explorer_is_verified": true,
+      "explorer_proxy_type": "eip1967",
+      "explorer_source_metadata": {
+        "abi_sha256": "856c314699d4a23e545b85590db108f57acdd51daf8172a3d97c5736b4500088",
+        "compiler_version": "v0.8.28+commit.7893614a",
+        "language": "solidity",
+        "name": "UserRegistryProxy",
+        "optimization_enabled": true,
+        "source_sha256": "04071983ff8c6a9efbf55371c2dc336f89f30fc71142014984ff60c33abd26d3"
+      },
+      "rpc_code_sha256": "e827b69af8d452d9928fb04dfd803223d485cbe6cdae0a2c699c27d284d98f4f",
+      "rpc_has_code": true
+    },
+    "UserRegistryImplementation": {
+      "address": "0x9686a3d5a9Fd2101d15888c6a09a64faFA7EE349",
+      "eip1967_implementation": null,
+      "explorer_contract_name": "UserRegistry",
+      "explorer_creation_tx": "0xe029bde6ddb3b96764bdf0b24e36afeb56fca691bb4ccefbc3797a1a0abf46c6",
+      "explorer_is_contract": true,
+      "explorer_is_verified": true,
+      "explorer_proxy_type": null,
+      "explorer_source_metadata": {
+        "abi_sha256": "dec2415e2036764581151cf282a928dd6f868122fa4781f5a47717871a858409",
+        "compiler_version": "v0.8.28+commit.7893614a",
+        "language": "solidity",
+        "name": "UserRegistry",
+        "optimization_enabled": true,
+        "source_sha256": "a932da6490cdd2ba61792ee58078037290ea947f0da3a0e0fd9e8386c280ceb3"
+      },
+      "rpc_code_sha256": "1b9afbea256ff24cedef0d1441158374187d247ec3a89fa1f80f38c95af37b6b",
+      "rpc_has_code": true
+    },
+    "next": {
+      "address": "0x12B6640048DEB2e8fFDa4Bc10Bb2a640B70eCA6d",
+      "eip1967_implementation": null,
+      "explorer_contract_name": "RlsGasForwarder",
+      "explorer_creation_tx": "0x32362816f70ce7e2ad2ed0742088d5de16a2514a631f0aad6527270f1ac9d7d1",
+      "explorer_is_contract": true,
+      "explorer_is_verified": true,
+      "explorer_proxy_type": null,
+      "explorer_source_metadata": {
+        "abi_sha256": "89e4665c88f7f327598d91c55349478b3081d7b4250e1a0d9b30fdfd16d905ba",
+        "compiler_version": "v0.8.28+commit.7893614a",
+        "language": "solidity",
+        "name": "RlsGasForwarder",
+        "optimization_enabled": true,
+        "source_sha256": "a8ec2b446e4e619d9c0d64590639828b6478bb772ef8766878651a69e69220f4"
+      },
+      "rpc_code_sha256": "84d862f80bff814c211add3c8aab78cb020e89b865b3f7b4bee7a084dfa48750",
+      "rpc_has_code": true
+    }
+  },
+  "sources": [
+    "https://testnet-rpc.rayls.com/",
+    "https://testnet-explorer.rayls.com/api/v2"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "capturedAtUtc": "2026-11-20T21:23:05.348233+00:00",
+  "chainId": 7295799,
+  "fromBlock": 24738801,
+  "toBlock": 24744671,
+  "scannedContracts": [
+    "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+    "0x12B6640048DEB2e8fFDa4Bc10Bb2a640B70eCA6d"
+  ],
+  "prefixSearch": "0x6beefec2",
+  "matched": [],
+  "distinctTxs": 3,
+  "recentCandidateTxs": [
+    {
+      "tx": "0x6bedfee2032c1e1001c3dd5563df84d662cf965e0c7e3f301751a9b458d3c0ab",
+      "block": 24744028,
+      "vault": true,
+      "count": 7
+    }
+  ],
+  "rpcErrors": [],
+  "publicDataOnly": true
+}

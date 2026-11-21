@@ -1,0 +1,185 @@
+{
+  "status": "PASS",
+  "tests": 21,
+  "detected": 21,
+  "missed": [],
+  "changed_original_file": false,
+  "results": [
+    {
+      "name": "wrong_chain",
+      "expected": "chain.id",
+      "detected": true,
+      "issues": [
+        "chain.id"
+      ]
+    },
+    {
+      "name": "wrong_treasury",
+      "expected": "config.treasury",
+      "detected": true,
+      "issues": [
+        "config.treasury"
+      ]
+    },
+    {
+      "name": "wrong_relayer",
+      "expected": "config.relayer",
+      "detected": true,
+      "issues": [
+        "config.relayer"
+      ]
+    },
+    {
+      "name": "wrong_case_count",
+      "expected": "sample.size",
+      "detected": true,
+      "issues": [
+        "sample.size"
+      ]
+    },
+    {
+      "name": "wrong_source_receipt_status",
+      "expected": "case.0.sourceReceipt",
+      "detected": true,
+      "issues": [
+        "case.0.sourceReceipt"
+      ]
+    },
+    {
+      "name": "wrong_payout_receipt_status",
+      "expected": "case.0.receiptStatus",
+      "detected": true,
+      "issues": [
+        "case.0.receiptStatus"
+      ]
+    },
+    {
+      "name": "wrong_payout_hash",
+      "expected": "case.0.payoutTxHash",
+      "detected": true,
+      "issues": [
+        "case.0.payoutTxHash",
+        "case.0.transferTxHash"
+      ]
+    },
+    {
+      "name": "wrong_block_hash",
+      "expected": "case.0.blockHash",
+      "detected": true,
+      "issues": [
+        "case.0.blockHash"
+      ]
+    },
+    {
+      "name": "wrong_transfer_topic",
+      "expected": "case.0.transferEventSignature",
+      "detected": true,
+      "issues": [
+        "case.0.transferEventSignature",
+        "case.0.transferReceiptInclusion"
+      ]
+    },
+    {
+      "name": "wrong_transfer_sender",
+      "expected": "case.0.transferRelayer",
+      "detected": true,
+      "issues": [
+        "case.0.transferRelayer",
+        "case.0.transferReceiptInclusion"
+      ]
+    },
+    {
+      "name": "wrong_transfer_target",
+      "expected": "case.0.transferTreasury",
+      "detected": true,
+      "issues": [
+        "case.0.transferTreasury",
+        "case.0.transferReceiptInclusion"
+      ]
+    },
+    {
+      "name": "wrong_transfer_amount",
+      "expected": "case.0.transferReceiptInclusion",
+      "detected": true,
+      "issues": [
+        "case.0.transferReceiptInclusion",
+        "case.0.shareWei",
+        "case.0.integerRatio",
+        "case.0.grossFee",
+        "case.0.baseFee"
+      ]
+    },
+    {
+      "name": "wrong_reported_payout",
+      "expected": "case.0.shareWei",
+      "detected": true,
+      "issues": [
+        "case.0.shareWei"
+      ]
+    },
+    {
+      "name": "wrong_gross_fee",
+      "expected": "case.0.grossFee",
+      "detected": true,
+      "issues": [
+        "case.0.grossFee"
+      ]
+    },
+    {
+      "name": "wrong_base_fee",
+      "expected": "case.0.baseFee",
+      "detected": true,
+      "issues": [
+        "case.0.baseFee"
+      ]
+    },
+    {
+      "name": "bad_ui_quote",
+      "expected": "case.0.walletQuoteReconciliation",
+      "detected": true,
+      "issues": [
+        "case.0.walletQuoteReconciliation"
+      ]
+    },
+    {
+      "name": "bad_claim_balance",
+      "expected": "case.1.walletBalanceReconciliation",
+      "detected": true,
+      "issues": [
+        "case.1.walletBalanceReconciliation"
+      ]
+    },
+    {
+      "name": "bad_window",
+      "expected": "case.0.windowBounds",
+      "detected": true,
+      "issues": [
+        "case.0.windowBounds"
+      ]
+    },
+    {
+      "name": "bad_payout_lag",
+      "expected": "case.0.payoutLag",
+      "detected": true,
+      "issues": [
+        "case.0.payoutLag"
+      ]
+    },
+    {
+      "name": "duplicate_vault_candidate",
+      "expected": "case.0.candidateVaultCount",
+      "detected": true,
+      "issues": [
+        "case.0.candidateVaultCount"
+      ]
+    },
+    {
+      "name": "bad_negative_control",
+      "expected": "control.zeroFeePayout",
+      "detected": true,
+      "issues": [
+        "control.zeroFeePayout"
+      ]
+    }
+  ]
+}

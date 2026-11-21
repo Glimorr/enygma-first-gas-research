@@ -1,0 +1,11 @@
+{
+  "verifiedAtUtc": "2026-11-20T13:46:19.707Z",
+  "evidence_class": "OBSERVATIONAL_PUBLIC_CHAIN_EVIDENCE",
+  "offlinePass": true,
+  "offlineErrors": [],
+  "liveCheckRequested": true,
+  "livePass": true,
+  "liveErrors": [],
+  "receiptsRechecked": 17,
+  "status": "PASS"
+}

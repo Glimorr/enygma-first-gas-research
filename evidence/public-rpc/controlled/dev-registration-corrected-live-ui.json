@@ -1,0 +1,40 @@
+{
+  "capturedAtUtc": "2026-11-20T20:03:07.673Z",
+  "evidenceClass": "CONTROLLED_DAPP_UI_OBSERVATION_NOT_INDEPENDENT_CHAIN_PROOF",
+  "requests": [
+    "eth_accounts",
+    "eth_accounts",
+    "eth_chainId",
+    "eth_chainId",
+    "personal_sign",
+    "eth_chainId",
+    "eth_signTypedData_v4",
+    "eth_chainId",
+    "eth_signTypedData_v4"
+  ],
+  "usernameValidation": [
+    {
+      "attempt": 0,
+      "immediate": "rq3dev26",
+      "later": "rq3dev26",
+      "enabled": true
+    }
+  ],
+  "textExcerpt": "ENYGMA\nRayls Public Chain Testnet\n@rq3dev26\n\n$0.31\n\nEVM\n0x1AcC…4FF6\n(opens in a new tab)\nEnygma Spend\n0x07b6ac95…61e25edc\nEnygma View\n0xa9ab31f9…7add9d45\nSend\nReceive\nSwap\nFaucet\nInvite\n\nShield some $RLS to send. Every send pays its gas from shielded $RLS.\n\nShield $RLS\nAssets\nInvites\nActivity\nPublic\nEveryone\nShielded\nyou + auditor\nTotal\n\n$USDr\n\nPublic\n0\n\nShield\n\nShielded\n0\n\nUnshield\n\nTotal\n0\n\n$0.00\n\n$RLS\n\nPays gas\n\nPublic\n242.8069\n\nShield\n\nShielded\n0\n\nUnshield\n\nTotal\n242.8069\n\n$0.31\n\nAdd tokens\nNFTs\n\nNone yet. NFTs you shield here move privately, like tokens.\n\nAdd NFTs\n$USDr\n0x0000…0400\n(opens in a new tab)\nAdd to MetaMask\n$RLS\n0x07e1…17EA\n(opens in a new tab)\nAdd to MetaMask\nWho can see what?\n\nRayls Testnet Explorer\n(opens in a new tab)\nEvery Enygma transaction\n(opens in a new tab)\n\nScroll to learn more\nQuantum-private payments.\nSafe and compliant.\n@maya pays @leo 2 $USDr, quantum-private: the public can't see it, the auditor can\n@maya\nQuantum-private\nAuditor sees\n@leo\n\nRAYLS ENYGMA\n\nHow it works\nAt a glance\n\nQuantum-private payments in stablecoins, tokens and NFTs, one deployment per country. Hidden from the public, never from that country's auditor, which can read but not freeze or move anyone's funds.\n\nYou, in this tab\n\nYour passkey unlocks your keys. They stay in this tab. Or your custody wallet approves each step.\n\na proof, or a signed request\n\nThe relayer\n\nSubmits it and pays the gas, an approval's too, which you pay back in $RLS, shielded or public. Sends and $RLS unshields never show your address as the sender. Swaps run through Rayls' own notes. Its custody signer proves what a custody wallet approved.\n\nthe transaction\n\nThe chain\n\nHolds every note, encrypted.\n\nv",
+  "publicTransactionHash": "0x238c206b86889a2d98df03978028715c45a50a5232f363745abdd76bd2b59afa",
+  "relayerHttpStatus": 200,
+  "relayRequests": [
+    {
+      "path": "/rayls/relay",
+      "allowed": true,
+      "bodyFields": "permit,request,signature",
+      "feeWei": "7193001600000000000"
+    },
+    {
+      "path": "/rayls/swap-quote",
+      "allowed": false,
+      "reason": "write-not-whitelisted"
+    }
+  ],
+  "pageErrorCount": 0
+}

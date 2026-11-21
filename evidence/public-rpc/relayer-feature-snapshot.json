@@ -1,0 +1,60 @@
+{
+  "captured_at_utc": "2026-11-20T13:54:52.485246+00:00",
+  "caveat": "This is a read-only relayer response. It does not prove any faucet funding, invite claiming, or shielded payment was executed.",
+  "checks": {
+    "all_four_faucet_kinds_advertised": true,
+    "chain_id_matches": true
+  },
+  "evidence_class": "RELAYER_REPORTED_PUBLIC_FEATURE_AND_FEE_POLICY",
+  "info": {
+    "auction": {
+      "house": "0x7A79A9667B62A3F4020B828f4c9FEA1A982E922e"
+    },
+    "chainId": 7295799,
+    "custody": true,
+    "faucet": true,
+    "forwarder": "0x12B6640048DEB2e8fFDa4Bc10Bb2a640B70eCA6d",
+    "gasSharePercent": "15",
+    "privateSwaps": "0x20DF5ba54349a4B88A9ec036506aB962f8b93E0e",
+    "relayer": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+    "rls": "0x07e17E17e17E17e17e17e17E17E17E17E17e17EA",
+    "rlsPerGas": "2400000000000",
+    "swap": {
+      "maker": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+      "tokens": [
+        "USDr",
+        "RLS"
+      ]
+    },
+    "tokenFeeBps": "25",
+    "treasury": "0x71AF09966CBED4434ccA97c40Fa38B8083548B95"
+  },
+  "offers": {
+    "cooldown": "10800",
+    "kinds": {
+      "rls": {
+        "amount": "250000000000000000000",
+        "available": true,
+        "symbol": "RLS"
+      },
+      "shielded-rls": {
+        "amount": "250000000000000000000",
+        "available": true,
+        "symbol": "RLS"
+      },
+      "shielded-stable": {
+        "amount": "10000000000000000000",
+        "available": true,
+        "symbol": "USDr"
+      },
+      "stable": {
+        "amount": "10000000000000000000",
+        "available": true,
+        "symbol": "USDr"
+      }
+    }
+  },
+  "read_only_faucet_status_endpoint": "https://enygma-relayer-aafjr.ondigitalocean.app/rayls/faucet-status",
+  "relayer_info_endpoint": "https://enygma-relayer-aafjr.ondigitalocean.app/rayls/info",
+  "research_pilot_public_account": "0x9047105CC586dE38dE36CEBdC0bbaCC9d25C51B8"
+}

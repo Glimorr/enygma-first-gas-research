@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "checkedAtUtc": "2026-11-20T21:25:39.843Z",
+  "evidence_class": "FROZEN_INVITE_PUBLIC_RECEIPT_CONSISTENCY_NOT_INDEPENDENT_LIVE_AUTHENTICATION",
+  "errors": [],
+  "invitationLinkUsed": false
+}

@@ -1,0 +1,492 @@
+{
+  "class": "OBSERVATIONAL_REGISTRATION_FUNDING_CHECK__NOT_RESEARCHER_CONTROLLED",
+  "capturedAtUtc": "2026-11-20T19:29:42.853Z",
+  "chainId": 7295799,
+  "sourceWindow": [
+    24670000,
+    24690000
+  ],
+  "registrationCount": 6,
+  "publicRlsPositiveBefore": 0,
+  "publicRlsZeroBefore": 0,
+  "publicUsdrPositiveBefore": 0,
+  "publicUsdrZeroBefore": 0,
+  "dataAvailabilityWarnings": 6,
+  "rows": [
+    {
+      "account": "0xF63483B1dd7f091200aD7C5f03EF92a80b644E65",
+      "registrationTxHash": "0x67fd9a5a217d12bf7e6043c45963e214a7240b60ca8b2e7031f22efa8e9d4d83",
+      "registrationBlock": 24672921,
+      "registrationReceiptStatus": 1,
+      "registrationReceiptHash": "0xa26b6e44f42e19a6efbd6c3d2e79528472a376fefed833a47d76418c353b830d",
+      "relayerForwarderEvent": {
+        "from": "0xF63483B1dd7f091200aD7C5f03EF92a80b644E65",
+        "to": "0xA473291FFb33e2276F364fAE169f03c4406719e9",
+        "relayer": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+        "feeWei": "7193131320000000000"
+      },
+      "beforeRegistration": {
+        "blockHeight": 24672920,
+        "publicUsdrWeiError": "Error: eth_getBalance: {\"code\":-32603,\"message\":\"state at block #24672921 is pruned\"}",
+        "txCountError": "Error: eth_getTransactionCount: {\"code\":-32603,\"message\":\"state at block #24672921 is pruned\"}",
+        "publicRlsWeiError": "Error: eth_call: {\"code\":-32603,\"message\":\"state at block #24672921 is pruned\"}"
+      },
+      "afterRegistration": {
+        "blockHeight": 24672921,
+        "publicUsdrWeiError": "TypeError: fetch failed",
+        "txCountError": "Error: eth_getTransactionCount: {\"code\":-32603,\"message\":\"state at block #24672922 is pruned\"}",
+        "publicRlsWeiError": "Error: eth_call: {\"code\":-32603,\"message\":\"state at block #24672922 is pruned\"}"
+      },
+      "publicFundingStateBefore": {
+        "rls": "unavailable",
+        "usdr": "unavailable"
+      },
+      "explorerIndex": {
+        "transactionsComplete": true,
+        "tokenTransfersComplete": true,
+        "transactionItems": 1,
+        "transferItems": 5,
+        "priorTransactions": [
+          {
+            "hash": "0xe6b969f590d23a459d084a30ffa382af561c56544ddc73ca8217922c51a4cc31",
+            "block_number": 24672873,
+            "from": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+            "to": "0xF63483B1dd7f091200aD7C5f03EF92a80b644E65",
+            "status": "ok"
+          }
+        ],
+        "priorTokenTransfers": [
+          {
+            "block_number": 24672873,
+            "from": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+            "to": "0xF63483B1dd7f091200aD7C5f03EF92a80b644E65",
+            "symbol": "RLS",
+            "token_address": "0x07e17E17e17E17e17e17e17E17E17E17E17e17EA",
+            "total": {
+              "decimals": "18",
+              "value": "50000000000000000000"
+            }
+          },
+          {
+            "block_number": 24672873,
+            "from": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+            "to": "0xF63483B1dd7f091200aD7C5f03EF92a80b644E65",
+            "symbol": "USDr",
+            "token_address": "0x0000000000000000000000000000000000000400",
+            "total": {
+              "decimals": "18",
+              "value": "5000000000000000000"
+            }
+          }
+        ],
+        "error": null
+      }
+    },
+    {
+      "account": "0xEf12d5bf995C614fFF1362Cf8376D2C3A1ba544A",
+      "registrationTxHash": "0x4d49be90bd7c33604f1b43e34dbc3875701fd6fd0282e1f4c7dc21888c800d3d",
+      "registrationBlock": 24676085,
+      "registrationReceiptStatus": 1,
+      "registrationReceiptHash": "0x1c8600953cf3195e7342d9f270e8a3abc417c27c4e6bc0deee9910c1cf23455d",
+      "relayerForwarderEvent": {
+        "from": "0xEf12d5bf995C614fFF1362Cf8376D2C3A1ba544A",
+        "to": "0xA473291FFb33e2276F364fAE169f03c4406719e9",
+        "relayer": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+        "feeWei": "7189855200000000000"
+      },
+      "beforeRegistration": {
+        "blockHeight": 24676084,
+        "publicUsdrWeiError": "Error: eth_getBalance: {\"code\":-32603,\"message\":\"state at block #24676085 is pruned\"}",
+        "txCountError": "Error: eth_getTransactionCount: {\"code\":-32603,\"message\":\"state at block #24676085 is pruned\"}",
+        "publicRlsWeiError": "Error: eth_call: {\"code\":-32603,\"message\":\"state at block #24676085 is pruned\"}"
+      },
+      "afterRegistration": {
+        "blockHeight": 24676085,
+        "publicUsdrWeiError": "Error: eth_getBalance: {\"code\":-32603,\"message\":\"state at block #24676086 is pruned\"}",
+        "txCountError": "Error: eth_getTransactionCount: {\"code\":-32603,\"message\":\"state at block #24676086 is pruned\"}",
+        "publicRlsWeiError": "Error: eth_call: {\"code\":-32603,\"message\":\"state at block #24676086 is pruned\"}"
+      },
+      "publicFundingStateBefore": {
+        "rls": "unavailable",
+        "usdr": "unavailable"
+      },
+      "explorerIndex": {
+        "transactionsComplete": true,
+        "tokenTransfersComplete": true,
+        "transactionItems": 1,
+        "transferItems": 10,
+        "priorTransactions": [
+          {
+            "hash": "0x0a817fa8cc08c125eabe2079bbe13762a9760ad24e175066a9a3c621c2507089",
+            "block_number": 24676067,
+            "from": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+            "to": "0xEf12d5bf995C614fFF1362Cf8376D2C3A1ba544A",
+            "status": "ok"
+          }
+        ],
+        "priorTokenTransfers": [
+          {
+            "block_number": 24676067,
+            "from": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+            "to": "0xEf12d5bf995C614fFF1362Cf8376D2C3A1ba544A",
+            "symbol": "RLS",
+            "token_address": "0x07e17E17e17E17e17e17e17E17E17E17E17e17EA",
+            "total": {
+              "decimals": "18",
+              "value": "50000000000000000000"
+            }
+          },
+          {
+            "block_number": 24676067,
+            "from": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+            "to": "0xEf12d5bf995C614fFF1362Cf8376D2C3A1ba544A",
+            "symbol": "USDr",
+            "token_address": "0x0000000000000000000000000000000000000400",
+            "total": {
+              "decimals": "18",
+              "value": "5000000000000000000"
+            }
+          }
+        ],
+        "error": null
+      }
+    },
+    {
+      "account": "0x0Afa86d50AF225fd784B6975c3aE012AaAA8A9cc",
+      "registrationTxHash": "0x11e0fe4bf399197327f6e5a075267785dcd6307550c174ddaca1aa18492a1a08",
+      "registrationBlock": 24679165,
+      "registrationReceiptStatus": 1,
+      "registrationReceiptHash": "0x543c74b2c43a55517363bebf911d11b7260d53778c8fa1de3a6fe50a0fa31fce",
+      "relayerForwarderEvent": {
+        "from": "0x0Afa86d50AF225fd784B6975c3aE012AaAA8A9cc",
+        "to": "0xA473291FFb33e2276F364fAE169f03c4406719e9",
+        "relayer": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+        "feeWei": "7194679680000000000"
+      },
+      "beforeRegistration": {
+        "blockHeight": 24679164,
+        "publicUsdrWeiError": "Error: eth_getBalance: {\"code\":-32603,\"message\":\"state at block #24679165 is pruned\"}",
+        "txCountError": "Error: eth_getTransactionCount: {\"code\":-32603,\"message\":\"state at block #24679165 is pruned\"}",
+        "publicRlsWeiError": "Error: eth_call: {\"code\":-32603,\"message\":\"state at block #24679165 is pruned\"}"
+      },
+      "afterRegistration": {
+        "blockHeight": 24679165,
+        "publicUsdrWeiError": "Error: eth_getBalance: {\"code\":-32603,\"message\":\"state at block #24679166 is pruned\"}",
+        "txCountError": "Error: eth_getTransactionCount: {\"code\":-32603,\"message\":\"state at block #24679166 is pruned\"}",
+        "publicRlsWeiError": "Error: eth_call: {\"code\":-32603,\"message\":\"state at block #24679166 is pruned\"}"
+      },
+      "publicFundingStateBefore": {
+        "rls": "unavailable",
+        "usdr": "unavailable"
+      },
+      "explorerIndex": {
+        "transactionsComplete": true,
+        "tokenTransfersComplete": true,
+        "transactionItems": 4,
+        "transferItems": 6,
+        "priorTransactions": [
+          {
+            "hash": "0x662b9774be6340fd9b404964594020e91b72779b161f14dc350164cb858957ca",
+            "block_number": 24679094,
+            "from": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+            "to": "0x0Afa86d50AF225fd784B6975c3aE012AaAA8A9cc",
+            "status": "ok"
+          },
+          {
+            "hash": "0x79fe86173dea9a7345bd7483418a75de65667fd57a82972722d982b89abdd054",
+            "block_number": 23974738,
+            "from": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+            "to": "0x0Afa86d50AF225fd784B6975c3aE012AaAA8A9cc",
+            "status": "ok"
+          },
+          {
+            "hash": "0x7c22f2f7aea881335abc04d79b482959297e92d1b756bcb4e61033e3d11c7a7c",
+            "block_number": 23974723,
+            "from": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+            "to": "0x0Afa86d50AF225fd784B6975c3aE012AaAA8A9cc",
+            "status": "ok"
+          },
+          {
+            "hash": "0xb06431dece595853a6421404b7d25e5ce50568c7ffdd0245d50bd514f64f813a",
+            "block_number": 23974690,
+            "from": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+            "to": "0x0Afa86d50AF225fd784B6975c3aE012AaAA8A9cc",
+            "status": "ok"
+          }
+        ],
+        "priorTokenTransfers": [
+          {
+            "block_number": 24679094,
+            "from": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+            "to": "0x0Afa86d50AF225fd784B6975c3aE012AaAA8A9cc",
+            "symbol": "RLS",
+            "token_address": "0x07e17E17e17E17e17e17e17E17E17E17E17e17EA",
+            "total": {
+              "decimals": "18",
+              "value": "250000000000000000000"
+            }
+          },
+          {
+            "block_number": 24679094,
+            "from": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+            "to": "0x0Afa86d50AF225fd784B6975c3aE012AaAA8A9cc",
+            "symbol": "USDr",
+            "token_address": "0x0000000000000000000000000000000000000400",
+            "total": {
+              "decimals": "18",
+              "value": "10000000000000000000"
+            }
+          },
+          {
+            "block_number": 23974738,
+            "from": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+            "to": "0x0Afa86d50AF225fd784B6975c3aE012AaAA8A9cc",
+            "symbol": "USDr",
+            "token_address": "0x0000000000000000000000000000000000000400",
+            "total": {
+              "decimals": "18",
+              "value": "5000000000000000000"
+            }
+          },
+          {
+            "block_number": 23974723,
+            "from": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+            "to": "0x0Afa86d50AF225fd784B6975c3aE012AaAA8A9cc",
+            "symbol": "USDr",
+            "token_address": "0x0000000000000000000000000000000000000400",
+            "total": {
+              "decimals": "18",
+              "value": "5000000000000000000"
+            }
+          },
+          {
+            "block_number": 23974690,
+            "from": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+            "to": "0x0Afa86d50AF225fd784B6975c3aE012AaAA8A9cc",
+            "symbol": "USDr",
+            "token_address": "0x0000000000000000000000000000000000000400",
+            "total": {
+              "decimals": "18",
+              "value": "5000000000000000000"
+            }
+          }
+        ],
+        "error": null
+      }
+    },
+    {
+      "account": "0x279280638Ff791e524779bEA29550969b0B2aaa3",
+      "registrationTxHash": "0x5936f0383868fac0d2ef331384173eb82f23c7125cc29ea7421b735ab4fb118e",
+      "registrationBlock": 24686871,
+      "registrationReceiptStatus": 1,
+      "registrationReceiptHash": "0x020d06688170f75baf3615b4f8b8a6dbab4d9ac423cad0450680a4058bb49a4a",
+      "relayerForwarderEvent": {
+        "from": "0x279280638Ff791e524779bEA29550969b0B2aaa3",
+        "to": "0xA473291FFb33e2276F364fAE169f03c4406719e9",
+        "relayer": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+        "feeWei": "7194679680000000000"
+      },
+      "beforeRegistration": {
+        "blockHeight": 24686870,
+        "publicUsdrWeiError": "Error: eth_getBalance: {\"code\":-32603,\"message\":\"state at block #24686871 is pruned\"}",
+        "txCountError": "Error: eth_getTransactionCount: {\"code\":-32603,\"message\":\"state at block #24686871 is pruned\"}",
+        "publicRlsWeiError": "Error: eth_call: {\"code\":-32603,\"message\":\"state at block #24686871 is pruned\"}"
+      },
+      "afterRegistration": {
+        "blockHeight": 24686871,
+        "publicUsdrWeiError": "Error: eth_getBalance: {\"code\":-32603,\"message\":\"state at block #24686872 is pruned\"}",
+        "txCountError": "Error: eth_getTransactionCount: {\"code\":-32603,\"message\":\"state at block #24686872 is pruned\"}",
+        "publicRlsWeiError": "Error: eth_call: {\"code\":-32603,\"message\":\"state at block #24686872 is pruned\"}"
+      },
+      "publicFundingStateBefore": {
+        "rls": "unavailable",
+        "usdr": "unavailable"
+      },
+      "explorerIndex": {
+        "transactionsComplete": true,
+        "tokenTransfersComplete": true,
+        "transactionItems": 1,
+        "transferItems": 9,
+        "priorTransactions": [
+          {
+            "hash": "0xd4a0b44100fd20fecc7d9d9083642f3251e923e0c73d523e92fa9e296c442bde",
+            "block_number": 24686745,
+            "from": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+            "to": "0x279280638Ff791e524779bEA29550969b0B2aaa3",
+            "status": "ok"
+          }
+        ],
+        "priorTokenTransfers": [
+          {
+            "block_number": 24686745,
+            "from": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+            "to": "0x279280638Ff791e524779bEA29550969b0B2aaa3",
+            "symbol": "RLS",
+            "token_address": "0x07e17E17e17E17e17e17e17E17E17E17E17e17EA",
+            "total": {
+              "decimals": "18",
+              "value": "250000000000000000000"
+            }
+          },
+          {
+            "block_number": 24686745,
+            "from": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+            "to": "0x279280638Ff791e524779bEA29550969b0B2aaa3",
+            "symbol": "USDr",
+            "token_address": "0x0000000000000000000000000000000000000400",
+            "total": {
+              "decimals": "18",
+              "value": "10000000000000000000"
+            }
+          }
+        ],
+        "error": null
+      }
+    },
+    {
+      "account": "0xfa38280bf13845F404732c764b33793fc24B3deE",
+      "registrationTxHash": "0x5d7e7d399124aaf07b8043dfd6876de8276b8533ca3f0b7ee07329e810cd6f7b",
+      "registrationBlock": 24687026,
+      "registrationReceiptStatus": 1,
+      "registrationReceiptHash": "0x02f268de5be8b43beff6f7197a4c59724cbe3953ede6bfac0dd69c6809cab23c",
+      "relayerForwarderEvent": {
+        "from": "0xfa38280bf13845F404732c764b33793fc24B3deE",
+        "to": "0xA473291FFb33e2276F364fAE169f03c4406719e9",
+        "relayer": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+        "feeWei": "7201916400000000000"
+      },
+      "beforeRegistration": {
+        "blockHeight": 24687025,
+        "publicUsdrWeiError": "Error: eth_getBalance: {\"code\":-32603,\"message\":\"state at block #24687026 is pruned\"}",
+        "txCountError": "Error: eth_getTransactionCount: {\"code\":-32603,\"message\":\"state at block #24687026 is pruned\"}",
+        "publicRlsWeiError": "Error: eth_call: {\"code\":-32603,\"message\":\"state at block #24687026 is pruned\"}"
+      },
+      "afterRegistration": {
+        "blockHeight": 24687026,
+        "publicUsdrWeiError": "Error: eth_getBalance: {\"code\":-32603,\"message\":\"state at block #24687027 is pruned\"}",
+        "txCountError": "Error: eth_getTransactionCount: {\"code\":-32603,\"message\":\"state at block #24687027 is pruned\"}",
+        "publicRlsWeiError": "Error: eth_call: {\"code\":-32603,\"message\":\"state at block #24687027 is pruned\"}"
+      },
+      "publicFundingStateBefore": {
+        "rls": "unavailable",
+        "usdr": "unavailable"
+      },
+      "explorerIndex": {
+        "transactionsComplete": true,
+        "tokenTransfersComplete": true,
+        "transactionItems": 1,
+        "transferItems": 5,
+        "priorTransactions": [
+          {
+            "hash": "0xecbecde72414d6fd2343b2c2560800c10773a3d2d6cf8cca4001bcc5e1f1fe41",
+            "block_number": 24687004,
+            "from": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+            "to": "0xfa38280bf13845F404732c764b33793fc24B3deE",
+            "status": "ok"
+          }
+        ],
+        "priorTokenTransfers": [
+          {
+            "block_number": 24687004,
+            "from": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+            "to": "0xfa38280bf13845F404732c764b33793fc24B3deE",
+            "symbol": "RLS",
+            "token_address": "0x07e17E17e17E17e17e17e17E17E17E17E17e17EA",
+            "total": {
+              "decimals": "18",
+              "value": "250000000000000000000"
+            }
+          },
+          {
+            "block_number": 24687004,
+            "from": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+            "to": "0xfa38280bf13845F404732c764b33793fc24B3deE",
+            "symbol": "USDr",
+            "token_address": "0x0000000000000000000000000000000000000400",
+            "total": {
+              "decimals": "18",
+              "value": "10000000000000000000"
+            }
+          }
+        ],
+        "error": null
+      }
+    },
+    {
+      "account": "0x2535c76dEd15bAF58EFE726E0A24196b44e50310",
+      "registrationTxHash": "0xd9f22f07b5c6a7968b118f11795a83d5232462e98ea595907c4f6b7db4e91524",
+      "registrationBlock": 24688762,
+      "registrationReceiptStatus": 1,
+      "registrationReceiptHash": "0xe3873aa03f1b5291c71575deb7df87abbd166dab074dd9ea1aeb464ad172b1ce",
+      "relayerForwarderEvent": {
+        "from": "0x2535c76dEd15bAF58EFE726E0A24196b44e50310",
+        "to": "0xA473291FFb33e2276F364fAE169f03c4406719e9",
+        "relayer": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+        "feeWei": "7195913400000000000"
+      },
+      "beforeRegistration": {
+        "blockHeight": 24688761,
+        "publicUsdrWeiError": "Error: eth_getBalance: {\"code\":-32603,\"message\":\"state at block #24688762 is pruned\"}",
+        "txCountError": "Error: eth_getTransactionCount: {\"code\":-32603,\"message\":\"state at block #24688762 is pruned\"}",
+        "publicRlsWeiError": "Error: eth_call: {\"code\":-32603,\"message\":\"state at block #24688762 is pruned\"}"
+      },
+      "afterRegistration": {
+        "blockHeight": 24688762,
+        "publicUsdrWeiError": "Error: eth_getBalance: {\"code\":-32603,\"message\":\"state at block #24688763 is pruned\"}",
+        "txCountError": "Error: eth_getTransactionCount: {\"code\":-32603,\"message\":\"state at block #24688763 is pruned\"}",
+        "publicRlsWeiError": "Error: eth_call: {\"code\":-32603,\"message\":\"state at block #24688763 is pruned\"}"
+      },
+      "publicFundingStateBefore": {
+        "rls": "unavailable",
+        "usdr": "unavailable"
+      },
+      "explorerIndex": {
+        "transactionsComplete": true,
+        "tokenTransfersComplete": true,
+        "transactionItems": 1,
+        "transferItems": 3,
+        "priorTransactions": [
+          {
+            "hash": "0x5d3ed86a532df0b65570f52be05249b9b0bb7e64c11c5dcd1eda4ec0f55d4061",
+            "block_number": 24688721,
+            "from": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+            "to": "0x2535c76dEd15bAF58EFE726E0A24196b44e50310",
+            "status": "ok"
+          }
+        ],
+        "priorTokenTransfers": [
+          {
+            "block_number": 24688721,
+            "from": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+            "to": "0x2535c76dEd15bAF58EFE726E0A24196b44e50310",
+            "symbol": "RLS",
+            "token_address": "0x07e17E17e17E17e17e17e17E17E17E17E17e17EA",
+            "total": {
+              "decimals": "18",
+              "value": "250000000000000000000"
+            }
+          },
+          {
+            "block_number": 24688721,
+            "from": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+            "to": "0x2535c76dEd15bAF58EFE726E0A24196b44e50310",
+            "symbol": "USDr",
+            "token_address": "0x0000000000000000000000000000000000000400",
+            "total": {
+              "decimals": "18",
+              "value": "10000000000000000000"
+            }
+          }
+        ],
+        "error": null
+      }
+    }
+  ],
+  "limitations": [
+    "Account state was checked at block immediately before UserRegistered, not at every prior block.",
+    "Explorer transaction/transfer history is indexed data and may omit offchain or shielded activity.",
+    "Zero public balance does not prove no prior funding or invitation link.",
+    "These registrations belong to other public testnet accounts, not controlled experiment subjects.",
+    "Historical eth_call support may differ across public RPC providers. Capture errors exactly."
+  ]
+}

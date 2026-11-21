@@ -1,0 +1,23 @@
+{
+  "evidence_class": "CONTROLLED_PUBLIC_TESTNET_FAUCET_REQUEST",
+  "first_attempt_at_utc": "2026-11-20T19:33:46.910616+00:00",
+  "chain_id": 7295799,
+  "address": "0x1AcC448116C00A16bBfCE8f9d280aaA4D3Ad4FF6",
+  "kind": "rls",
+  "read_only_offer": {
+    "symbol": "RLS",
+    "amount": "250000000000000000000",
+    "available": true
+  },
+  "source": "https://enygma-testnet.rayls.com/assets/index-BRJsQdqQ.js",
+  "baseline_file": "evidence/public-rpc/controlled/clean-local-burners-baseline.json",
+  "request_http_status": 200,
+  "request_body": {
+    "rls": {
+      "hash": "0xe27f8d11983e2049186676827c3de9d46396cbfc0a626dfda2e35be36fb1ff83",
+      "amount": "250000000000000000000"
+    }
+  },
+  "response_at_utc": "2026-11-20T19:33:48.571442+00:00",
+  "request_success": true
+}

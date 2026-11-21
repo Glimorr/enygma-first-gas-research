@@ -1,0 +1,33 @@
+{
+  "evidence_class": "LIVE_RPC_CURRENT_BALANCE_PLUS_COMPLETE_POST_EVENT_RECONSTRUCTION__HISTORICAL_STATE_MAY_BE_PRUNED",
+  "verifiedAtUtc": "2026-11-20T22:11:57.985987+00:00",
+  "chainId": 7295799,
+  "account": "0xfE64D1860ee4bF7986D165Ad105d2eD404E7a1F2",
+  "token": "0x07e17E17e17E17e17e17e17E17E17E17E17e17EA",
+  "originalTxHash": "0x98bcb6f47b12400cb89284c215cc52373d38f8af30f855b9a0394c2923fa653a",
+  "originalBlock": 24738801,
+  "latestBlock": 24750043,
+  "latestAccountRlsWei": "199306562160000000000",
+  "laterTransferEventCount": 0,
+  "laterAccountRlsTransferEvents": [],
+  "rpcTransferSearchRequests": 50,
+  "allDirectionalTransferWindowsQueried": true,
+  "explorerPaginationComplete": true,
+  "indexerTransferEventMatch": true,
+  "reconstructedAfterWei": "199306562160000000000",
+  "reconstructedBeforeWei": "242813840440000000000",
+  "principalWei": "40000000000000000000",
+  "feeWei": "3507278280000000000",
+  "directHistoricalStateQueryAvailable": false,
+  "historicalQueryErrorIfPruned": {
+    "code": -32603,
+    "message": "state at block #24738802 is pruned"
+  },
+  "result": "PASS_WITH_LIVE_EVENT_RECONSTRUCTION",
+  "limits": [
+    "This independently reconstructs prior balance from live current state and all intervening ERC20 Transfer logs, not from direct archived ERC20 state if pruned.",
+    "A provider's indexer completeness is corroborating evidence; event logs were also independently searched with two directional topic filters over the complete interval.",
+    "Other token mechanisms that alter balance without emitting Transfer could violate event-based accounting. No such mechanism is established for these inspected receipts.",
+    "Original fixed-block balance snapshots are preserved with the capture timestamps; these snapshots cannot automatically become freshly authenticated state once provider pruning occurs."
+  ]
+}

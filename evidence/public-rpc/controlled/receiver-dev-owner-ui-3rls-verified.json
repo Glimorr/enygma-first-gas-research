@@ -1,0 +1,21 @@
+{
+  "evidence_class": "SECOND_CONTROLLED_WALLET_OWNER_READONLY_UI_OBSERVATION",
+  "observedAtUtc": "2026-11-20T23:47:12.345Z",
+  "account": "0x1AcC448116C00A16bBfCE8f9d280aaA4D3Ad4FF6",
+  "username": "@rq3dev26",
+  "network": "Rayls Public Chain Testnet",
+  "asset": "RLS",
+  "privateIncomingBalanceWalletUi": "3 RLS",
+  "publicRlsBalanceWalletUi": "242.8069 RLS",
+  "totalRlsWalletUi": "245.8069 RLS",
+  "source": "Official Enygma Public testnet UI accessed via authorized preexisting controlled Dev research wallet, read-only browser session",
+  "signaturesRequiredToReadWallet": "one previously approved account-key personal_sign; no transaction-authorizing signature was made",
+  "transactionSignedOrBroadcastByProbe": false,
+  "credentialOrSignatureSaved": false,
+  "relatedPrivateTransferTx": "0x5423d2b13c575c8e26c73e42906f4eefb7a6a257defcebad81a1415c857253e8",
+  "scientificLimits": [
+    "The 3 RLS is an authenticated Dev owner-wallet balance read, not publicly decryptable from the SharedVault receipt.",
+    "This is a current wallet observation correlated in time with the sender\u2019s successful 3 RLS operation and mined receipt; it does not cryptographically link plaintext recipient or amount from public RPC.",
+    "The Dev EVM wallet was not freshly created on this chain, but its previous public funding/registration path is independently audited."
+  ]
+}

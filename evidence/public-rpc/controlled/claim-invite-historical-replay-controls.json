@@ -1,0 +1,96 @@
+{
+  "evidence_class": "RESEARCHER_CONTROLLED_READ_ONLY_HISTORICAL_STATE_REPLAY_POSITIVE_AND_NEGATIVE",
+  "createdUtc": "2026-11-20T22:04:08.991621+00:00",
+  "chainId": 7295799,
+  "publicRpc": "https://testnet-rpc.rayls.com/",
+  "liveTransactions": 0,
+  "originalSuccessfulTransactions": 2,
+  "historicalCounterfactualCalls": 6,
+  "preStatePositiveControls": 2,
+  "postStateNegativeControls": 4,
+  "cases": [
+    {
+      "case": "private_invite_creation",
+      "originalTxHash": "0x6bedfee2032c1e1001c3dd5563df84d662cf965e0c7e3f301751a9b458d3c0ab",
+      "originalBlockNumber": 24744028,
+      "originalStatus": 1,
+      "contract": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+      "txMethodSelector": "0xaacd552c",
+      "sameCalldataSha256": "0x8d0bdfe0c77078dc62f92a1f7d853a916f9ae14422a8348d33a5f52ccfdceeb2",
+      "sameOriginalSender": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+      "sameOriginalCallTarget": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "sameCallValueWei": "0",
+      "simulationGasCap": 10000000,
+      "readOnlyHistoricalSimulations": [
+        {
+          "stage": "original_state_immediately_before",
+          "queriedBlock": 24744027,
+          "rpcResultClass": "SUCCESS",
+          "returnData": "0x0000000000000000000000000000000000000000000000000000000000000001",
+          "returnedTrue": true
+        },
+        {
+          "stage": "original_state_immediately_after",
+          "queriedBlock": 24744028,
+          "rpcResultClass": "REVERT",
+          "rpcErrorCode": 3,
+          "rpcErrorMessage": "execution reverted",
+          "rpcErrorData": "0x5d904cb2"
+        },
+        {
+          "stage": "state_one_block_later",
+          "queriedBlock": 24744029,
+          "rpcResultClass": "REVERT",
+          "rpcErrorCode": 3,
+          "rpcErrorMessage": "execution reverted",
+          "rpcErrorData": "0x5d904cb2"
+        }
+      ]
+    },
+    {
+      "case": "private_invite_claim",
+      "originalTxHash": "0x1c53886772c267e25f0d5c45d7dcc9ecc54246c4bfbf5e9202926f3f70959dec",
+      "originalBlockNumber": 24747924,
+      "originalStatus": 1,
+      "contract": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+      "txMethodSelector": "0xaacd552c",
+      "sameCalldataSha256": "0xc0a0c8bb9e781794efc5aed420290d1bb8ab0b0d580df2c0149547157aa4f1ca",
+      "sameOriginalSender": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+      "sameOriginalCallTarget": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "sameCallValueWei": "0",
+      "simulationGasCap": 10000000,
+      "readOnlyHistoricalSimulations": [
+        {
+          "stage": "original_state_immediately_before",
+          "queriedBlock": 24747923,
+          "rpcResultClass": "SUCCESS",
+          "returnData": "0x0000000000000000000000000000000000000000000000000000000000000001",
+          "returnedTrue": true
+        },
+        {
+          "stage": "original_state_immediately_after",
+          "queriedBlock": 24747924,
+          "rpcResultClass": "REVERT",
+          "rpcErrorCode": 3,
+          "rpcErrorMessage": "execution reverted",
+          "rpcErrorData": "0x5d904cb2"
+        },
+        {
+          "stage": "state_one_block_later",
+          "queriedBlock": 24747925,
+          "rpcResultClass": "REVERT",
+          "rpcErrorCode": 3,
+          "rpcErrorMessage": "execution reverted",
+          "rpcErrorData": "0x5d904cb2"
+        }
+      ]
+    }
+  ],
+  "interpretation": "The same call data returns true immediately before mining but reverts at and after the mined block. This supports state-dependent replay prevention, consistent with nullifier consumption in the transaction receipt.",
+  "limits": [
+    "An eth_call is a noncommitting simulation; it creates no transaction or gas charge.",
+    "This comparison does not isolate the precise revert cause. Other changing chain state may affect the call.",
+    "It is not a security proof for all replay variants or adversarial cases.",
+    "The original proof and input calldata are already public chain data. No invitation bearer link, passkey or private note key is used."
+  ]
+}

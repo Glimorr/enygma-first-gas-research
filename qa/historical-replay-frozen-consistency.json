@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "class": "FROZEN_HISTORICAL_RPC_RESPONSES_PLUS_ORIGINAL_CHAIN_RECEIPT_CONSISTENCY",
+  "checkedUtc": "2026-11-21T00:00:10.892890+00:00",
+  "originalPrivateCases": 3,
+  "beforeSuccess": 3,
+  "afterReverts": 6,
+  "freshArchiveStateQueried": false,
+  "note": "The live public RPC now prunes these historical states. Archived source-dated responses are validated against original hashed calldata and authenticated receipts; independent fresh simulation no longer available."
+}

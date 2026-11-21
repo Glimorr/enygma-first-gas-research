@@ -1,0 +1,194 @@
+{
+  "evidence_class": "IN_MEMORY_TAMPER_DETECTION_ON_FROZEN_SHIELD_RECEIPT",
+  "run_utc": "2026-11-20T20:38:33.672Z",
+  "status": "PASS",
+  "test_count": 22,
+  "rejected_count": 22,
+  "read_only": true,
+  "original_files_modified": false,
+  "results": [
+    {
+      "name": "wrong_chain",
+      "detected": true,
+      "expected": "chain.id",
+      "issues": [
+        "chain.id"
+      ]
+    },
+    {
+      "name": "edited_receipt_status",
+      "detected": true,
+      "expected": "receipt.success",
+      "issues": [
+        "receipt.success"
+      ]
+    },
+    {
+      "name": "wrong_block_hash",
+      "detected": true,
+      "expected": "block.consistency",
+      "issues": [
+        "block.consistency"
+      ]
+    },
+    {
+      "name": "broken_tx_hash",
+      "detected": true,
+      "expected": "tx.hash",
+      "issues": [
+        "tx.hash"
+      ]
+    },
+    {
+      "name": "removed_block_inclusion",
+      "detected": true,
+      "expected": "block.inclusion",
+      "issues": [
+        "block.inclusion"
+      ]
+    },
+    {
+      "name": "wrong_forwarder_target",
+      "detected": true,
+      "expected": "contract.forwarder",
+      "issues": [
+        "contract.forwarder"
+      ]
+    },
+    {
+      "name": "zero_transfer_log",
+      "detected": true,
+      "expected": "receipt.logCount",
+      "issues": [
+        "receipt.logCount",
+        "events.transfersCount",
+        "logs.secondaryQueryLength"
+      ]
+    },
+    {
+      "name": "added_transfer_log",
+      "detected": true,
+      "expected": "receipt.logCount",
+      "issues": [
+        "receipt.logCount",
+        "events.transfersCount",
+        "logs.secondaryQueryLength"
+      ]
+    },
+    {
+      "name": "edited_principal_field",
+      "detected": true,
+      "expected": "derived.principalWei",
+      "issues": [
+        "derived.principalWei"
+      ]
+    },
+    {
+      "name": "edited_principal_RLS",
+      "detected": true,
+      "expected": "derived.principalRls",
+      "issues": [
+        "derived.principalRls"
+      ]
+    },
+    {
+      "name": "edited_fee_field",
+      "detected": true,
+      "expected": "derived.feeWei",
+      "issues": [
+        "derived.feeWei"
+      ]
+    },
+    {
+      "name": "edited_public_balance",
+      "detected": true,
+      "expected": "balances.depositPlusFee",
+      "issues": [
+        "balances.depositPlusFee",
+        "balances.delta"
+      ]
+    },
+    {
+      "name": "edited_baseline",
+      "detected": true,
+      "expected": "balances.depositPlusFee",
+      "issues": [
+        "balances.depositPlusFee",
+        "balances.originalBaseline",
+        "balances.delta"
+      ]
+    },
+    {
+      "name": "edited_public_native",
+      "detected": true,
+      "expected": "balances.nativeUnchanged",
+      "issues": [
+        "balances.nativeUnchanged"
+      ]
+    },
+    {
+      "name": "edited_commitment",
+      "detected": true,
+      "expected": "derived.commitment",
+      "issues": [
+        "derived.commitment"
+      ]
+    },
+    {
+      "name": "edited_ciphertext_len",
+      "detected": true,
+      "expected": "derived.encryptedNoteLengths",
+      "issues": [
+        "derived.encryptedNoteLengths"
+      ]
+    },
+    {
+      "name": "edited_indexed_logs",
+      "detected": true,
+      "expected": "logs.secondaryQueryMismatch",
+      "issues": [
+        "logs.secondaryQueryMismatch.0x0"
+      ]
+    },
+    {
+      "name": "reported_bad_explorer_status",
+      "detected": true,
+      "expected": "explorer.corroboration",
+      "issues": [
+        "explorer.corroboration"
+      ]
+    },
+    {
+      "name": "reported_unverified_deployment",
+      "detected": true,
+      "expected": "deployment.codeHashes",
+      "issues": [
+        "deployment.codeHashes"
+      ]
+    },
+    {
+      "name": "modified_deployment_code_hash",
+      "detected": true,
+      "expected": "deployment.RLSSha256",
+      "issues": [
+        "deployment.RLSSha256"
+      ]
+    },
+    {
+      "name": "tampered_derived_transfer",
+      "detected": true,
+      "expected": "derived.transferList",
+      "issues": [
+        "derived.transferList"
+      ]
+    },
+    {
+      "name": "false_positive_check_flags",
+      "detected": true,
+      "expected": "reported.checkFlags",
+      "issues": [
+        "reported.checkFlags"
+      ]
+    }
+  ]
+}

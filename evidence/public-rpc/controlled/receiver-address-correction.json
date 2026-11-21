@@ -1,0 +1,12 @@
+{
+  "observedAtUtc": "2026-11-20T21:58:00.530Z",
+  "incorrectAddress": "0x665E88A2867Cb53d05C1381D565e19Da0bC3e76C",
+  "correctAddress": "0x665E08A2867Cb53d05C1381D565e19Da0bC3e76C",
+  "source": "On-chain UserRegistered and UsernameSet event",
+  "originalFilesNotRewritten": [
+    "evidence/public-rpc/controlled/receiver-passkey-preclaim-baseline.json",
+    "evidence/public-rpc/controlled/receiver-postclaim-preregistration-observed.json"
+  ],
+  "status": "SUPERSEDED_WRONG_ADDRESS_NOT_VALID_RECEIVER_BASELINES",
+  "correctedEvidenceFile": "evidence/public-rpc/controlled/receiver-private-claim-and-registration-verified.json"
+}

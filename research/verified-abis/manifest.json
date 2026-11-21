@@ -1,0 +1,806 @@
+{
+  "captured_at_utc": "2026-11-20T13:33:45.762232+00:00",
+  "index": {
+    "UserRegistry": {
+      "address": "0xA473291FFb33e2276F364fAE169f03c4406719e9",
+      "abi_source_url": "https://testnet-explorer.rayls.com/api/v2/smart-contracts/0xA473291FFb33e2276F364fAE169f03c4406719e9",
+      "abi_sha256": "8cf3198d87d142d101a0bfd529ea082316d8984178f0b934087224d781aec1d4",
+      "functions": [],
+      "events": [
+        {
+          "name": "AdminChanged",
+          "inputs": [
+            "address",
+            "address"
+          ]
+        },
+        {
+          "name": "BeaconUpgraded",
+          "inputs": [
+            "address"
+          ]
+        },
+        {
+          "name": "Upgraded",
+          "inputs": [
+            "address"
+          ]
+        }
+      ]
+    },
+    "UserRegistryImplementation": {
+      "address": "0x9686a3d5a9Fd2101d15888c6a09a64faFA7EE349",
+      "abi_source_url": "https://testnet-explorer.rayls.com/api/v2/smart-contracts/0x9686a3d5a9Fd2101d15888c6a09a64faFA7EE349",
+      "abi_sha256": "7158e36d74e7cfd8d78c67b3d42bb3d0f86d7d7257e9312dc6350a6879dbe935",
+      "functions": [
+        "addAuditor",
+        "auditorPublicKey",
+        "closeImport",
+        "getAllUsers",
+        "getAuditCiphertexts",
+        "getAuditorAccounts",
+        "getAuditorEntry",
+        "getKeys",
+        "getUserAt",
+        "getUserCount",
+        "getUserIndex",
+        "getUsernames",
+        "giveAuditorKey",
+        "importAuditor",
+        "importOpen",
+        "importUser",
+        "initialize",
+        "isAuditor",
+        "isRegistered",
+        "isTrustedForwarder",
+        "owner",
+        "ownerOfUsername",
+        "proxiableUUID",
+        "register",
+        "registrationFee",
+        "setAuditorPublicKey",
+        "setPersonalKey",
+        "setRegistrationFee",
+        "setUsername",
+        "transferOwnership",
+        "unregister",
+        "upgradeTo",
+        "upgradeToAndCall",
+        "usernameOf",
+        "withdrawFees"
+      ],
+      "events": [
+        {
+          "name": "AdminChanged",
+          "inputs": [
+            "address",
+            "address"
+          ]
+        },
+        {
+          "name": "AuditorAdded",
+          "inputs": [
+            "address",
+            "address"
+          ]
+        },
+        {
+          "name": "AuditorKeyGiven",
+          "inputs": [
+            "address",
+            "address"
+          ]
+        },
+        {
+          "name": "AuditorPersonalKeySet",
+          "inputs": [
+            "address"
+          ]
+        },
+        {
+          "name": "AuditorPublicKeySet",
+          "inputs": [
+            "address",
+            "bytes"
+          ]
+        },
+        {
+          "name": "BeaconUpgraded",
+          "inputs": [
+            "address"
+          ]
+        },
+        {
+          "name": "FeesWithdrawn",
+          "inputs": [
+            "address",
+            "uint256"
+          ]
+        },
+        {
+          "name": "ImportClosed",
+          "inputs": []
+        },
+        {
+          "name": "Initialized",
+          "inputs": [
+            "uint8"
+          ]
+        },
+        {
+          "name": "OwnershipTransferred",
+          "inputs": [
+            "address",
+            "address"
+          ]
+        },
+        {
+          "name": "RegistrationFeeUpdated",
+          "inputs": [
+            "uint256",
+            "uint256"
+          ]
+        },
+        {
+          "name": "Upgraded",
+          "inputs": [
+            "address"
+          ]
+        },
+        {
+          "name": "UserRegistered",
+          "inputs": [
+            "address",
+            "uint256",
+            "bytes",
+            "bytes",
+            "bytes"
+          ]
+        },
+        {
+          "name": "UserUnregistered",
+          "inputs": [
+            "address"
+          ]
+        },
+        {
+          "name": "UsernameSet",
+          "inputs": [
+            "address",
+            "string"
+          ]
+        }
+      ]
+    },
+    "SharedVault": {
+      "address": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+      "abi_source_url": "https://testnet-explorer.rayls.com/api/v2/smart-contracts/0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+      "abi_sha256": "8cf3198d87d142d101a0bfd529ea082316d8984178f0b934087224d781aec1d4",
+      "functions": [],
+      "events": [
+        {
+          "name": "AdminChanged",
+          "inputs": [
+            "address",
+            "address"
+          ]
+        },
+        {
+          "name": "BeaconUpgraded",
+          "inputs": [
+            "address"
+          ]
+        },
+        {
+          "name": "Upgraded",
+          "inputs": [
+            "address"
+          ]
+        }
+      ]
+    },
+    "SharedVaultImplementation": {
+      "address": "0xAd9667049f14D1757D147F652c41Dc241C57091C",
+      "abi_source_url": "https://testnet-explorer.rayls.com/api/v2/smart-contracts/0xAd9667049f14D1757D147F652c41Dc241C57091C",
+      "abi_sha256": "df26f8c9c44c1aabbc96c3119ddd50762a300219aff29a7a22c80182742100b0",
+      "functions": [
+        "DEFAULT_ADMIN_ROLE",
+        "DEFAULT_DVP_ROLE",
+        "DEFAULT_OWNER_ROLE",
+        "MAX_FEE_AMOUNT",
+        "VK_ID_DVP_INITIATOR",
+        "VK_ID_ERC20_10INPUT",
+        "VK_ID_ERC20_JOINSPLIT",
+        "VK_ID_ERC20_JOINSPLIT_2INPUT",
+        "VK_ID_ERC20_JOINSPLIT_FEE",
+        "VK_ID_ERC20_JOINSPLIT_RELAYER",
+        "VK_ID_ERC20_USDR",
+        "ZERO_VALUE",
+        "addPendingProofReceipt",
+        "checkReceiptConditions",
+        "currentRoot",
+        "deposit",
+        "depositEscrow",
+        "depositNftV2",
+        "depositNonce",
+        "depositV2",
+        "depositWithAuthorization",
+        "depositWithPermit",
+        "depositWithReceiveAuthorization",
+        "generateUniqueId",
+        "getAssetContractAddress",
+        "getHashContractAddress",
+        "getNumberOfAssetIdentifiers",
+        "getPendingProofReceipt",
+        "getRoleAdmin",
+        "getRoot",
+        "getTreeId",
+        "getVaultId",
+        "getVerifierContractAddress",
+        "grantRole",
+        "hasRole",
+        "hashLeftRight",
+        "initialize",
+        "initializeNfts",
+        "initializeVault",
+        "insertCommitmentsFromReceipt",
+        "isLocked",
+        "isTrustedForwarder",
+        "isValidNullifier",
+        "isValidRoot",
+        "lockCoin",
+        "lockedNullifiers",
+        "merkleRoot",
+        "nftCustody",
+        "nullifiers",
+        "nullifyCoin",
+        "nullifyFromReceipt",
+        "partialWithdraw",
+        "partialWithdrawWithRelayerFee",
+        "poseidonWrapperAddress",
+        "proxiableUUID",
+        "registerCoins",
+        "renounceRole",
+        "revokeRole",
+        "rootHistory",
+        "supportsInterface",
+        "tokenOf",
+        "transfer",
+        "transferV2",
+        "treeNumber",
+        "unlockCoin",
+        "unlockFromReceipt",
+        "upgradeTo",
+        "upgradeToAndCall",
+        "verifyOwnership",
+        "verifyRoot",
+        "withdraw",
+        "withdrawV2",
+        "zeros",
+        "zkDvpAddress"
+      ],
+      "events": [
+        {
+          "name": "AdminChanged",
+          "inputs": [
+            "address",
+            "address"
+          ]
+        },
+        {
+          "name": "BeaconUpgraded",
+          "inputs": [
+            "address"
+          ]
+        },
+        {
+          "name": "CoinLocked",
+          "inputs": [
+            "uint256",
+            "uint256",
+            "uint256"
+          ]
+        },
+        {
+          "name": "CoinUnlocked",
+          "inputs": [
+            "uint256",
+            "uint256",
+            "uint256"
+          ]
+        },
+        {
+          "name": "Commitment",
+          "inputs": [
+            "uint256",
+            "uint256"
+          ]
+        },
+        {
+          "name": "EncryptedNote",
+          "inputs": [
+            "uint256",
+            "uint256",
+            "bytes",
+            "bytes"
+          ]
+        },
+        {
+          "name": "Initialized",
+          "inputs": [
+            "uint8"
+          ]
+        },
+        {
+          "name": "Nullifier",
+          "inputs": [
+            "uint256",
+            "uint256",
+            "uint256"
+          ]
+        },
+        {
+          "name": "OwnershipVerificationReceipt",
+          "inputs": [
+            "uint256",
+            "uint256",
+            "uint256",
+            "uint256"
+          ]
+        },
+        {
+          "name": "PaidOut",
+          "inputs": [
+            "uint256",
+            "address",
+            "address",
+            "uint256"
+          ]
+        },
+        {
+          "name": "PartialWithdrawal",
+          "inputs": [
+            "uint256",
+            "address",
+            "uint256",
+            "uint256"
+          ]
+        },
+        {
+          "name": "PendingProofAdded",
+          "inputs": [
+            "tuple"
+          ]
+        },
+        {
+          "name": "RoleAdminChanged",
+          "inputs": [
+            "bytes32",
+            "bytes32",
+            "bytes32"
+          ]
+        },
+        {
+          "name": "RoleGranted",
+          "inputs": [
+            "bytes32",
+            "address",
+            "address"
+          ]
+        },
+        {
+          "name": "RoleRevoked",
+          "inputs": [
+            "bytes32",
+            "address",
+            "address"
+          ]
+        },
+        {
+          "name": "Upgraded",
+          "inputs": [
+            "address"
+          ]
+        }
+      ]
+    },
+    "RlsGasForwarder": {
+      "address": "0x753cc3Abe9A1c49536ee74F1f424fCF693AAB5DD",
+      "abi_source_url": "https://testnet-explorer.rayls.com/api/v2/smart-contracts/0x753cc3Abe9A1c49536ee74F1f424fCF693AAB5DD",
+      "abi_sha256": "c61d7155bd6425dfa14e591e13f6f932e178eb74afb203a65d8469bd2e823b8a",
+      "functions": [
+        "DOMAIN_SEPARATOR",
+        "eip712Domain",
+        "execute",
+        "nonces",
+        "rls"
+      ],
+      "events": [
+        {
+          "name": "EIP712DomainChanged",
+          "inputs": []
+        },
+        {
+          "name": "Relayed",
+          "inputs": [
+            "address",
+            "address",
+            "uint256",
+            "address",
+            "uint256"
+          ]
+        }
+      ]
+    },
+    "next": {
+      "address": "0x12B6640048DEB2e8fFDa4Bc10Bb2a640B70eCA6d",
+      "abi_source_url": "https://testnet-explorer.rayls.com/api/v2/smart-contracts/0x12B6640048DEB2e8fFDa4Bc10Bb2a640B70eCA6d",
+      "abi_sha256": "c4f6e893f14b7e745da436b2e5d45e89e4f5f25f23e7682d05c568ce7431d2fa",
+      "functions": [
+        "DOMAIN_SEPARATOR",
+        "eip712Domain",
+        "execute",
+        "isTarget",
+        "nonces",
+        "owner",
+        "rls",
+        "setTargets",
+        "transferOwnership"
+      ],
+      "events": [
+        {
+          "name": "EIP712DomainChanged",
+          "inputs": []
+        },
+        {
+          "name": "OwnershipTransferred",
+          "inputs": [
+            "address",
+            "address"
+          ]
+        },
+        {
+          "name": "Relayed",
+          "inputs": [
+            "address",
+            "address",
+            "uint256",
+            "address",
+            "uint256"
+          ]
+        },
+        {
+          "name": "TargetSet",
+          "inputs": [
+            "address",
+            "bool"
+          ]
+        }
+      ]
+    },
+    "RlsVault": {
+      "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795",
+      "abi_source_url": "https://testnet-explorer.rayls.com/api/v2/smart-contracts/0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795",
+      "abi_sha256": "650a508818f09f1493c087ccd10b0712cbd5d7c485c9509f0491a208640a43af",
+      "functions": [
+        "DEFAULT_ADMIN_ROLE",
+        "DEFAULT_DVP_ROLE",
+        "DEFAULT_OWNER_ROLE",
+        "MAX_FEE_AMOUNT",
+        "VK_ID_DVP_INITIATOR",
+        "VK_ID_ERC20_10INPUT",
+        "VK_ID_ERC20_JOINSPLIT",
+        "VK_ID_ERC20_JOINSPLIT_2INPUT",
+        "VK_ID_ERC20_JOINSPLIT_FEE",
+        "VK_ID_ERC20_JOINSPLIT_RELAYER",
+        "VK_ID_ERC20_USDR",
+        "ZERO_VALUE",
+        "addPendingProofReceipt",
+        "checkReceiptConditions",
+        "currentRoot",
+        "deposit",
+        "depositNonce",
+        "depositV2",
+        "depositWithAuthorization",
+        "depositWithPermit",
+        "depositWithReceiveAuthorization",
+        "generateUniqueId",
+        "getAssetContractAddress",
+        "getHashContractAddress",
+        "getNumberOfAssetIdentifiers",
+        "getPendingProofReceipt",
+        "getRoleAdmin",
+        "getRoot",
+        "getTreeId",
+        "getVaultId",
+        "getVerifierContractAddress",
+        "grantRole",
+        "hasRole",
+        "hashLeftRight",
+        "initializeVault",
+        "insertCommitmentsFromReceipt",
+        "isLocked",
+        "isTrustedForwarder",
+        "isValidNullifier",
+        "isValidRoot",
+        "lockCoin",
+        "lockedNullifiers",
+        "merkleRoot",
+        "nullifiers",
+        "nullifyCoin",
+        "nullifyFromReceipt",
+        "partialWithdraw",
+        "partialWithdrawWithRelayerFee",
+        "poseidonWrapperAddress",
+        "registerCoins",
+        "renounceRole",
+        "revokeRole",
+        "rootHistory",
+        "supportsInterface",
+        "transfer",
+        "transferV2",
+        "treeNumber",
+        "unlockCoin",
+        "unlockFromReceipt",
+        "verifyOwnership",
+        "verifyRoot",
+        "withdraw",
+        "withdrawV2",
+        "zeros",
+        "zkDvpAddress"
+      ],
+      "events": [
+        {
+          "name": "CoinLocked",
+          "inputs": [
+            "uint256",
+            "uint256",
+            "uint256"
+          ]
+        },
+        {
+          "name": "CoinUnlocked",
+          "inputs": [
+            "uint256",
+            "uint256",
+            "uint256"
+          ]
+        },
+        {
+          "name": "Commitment",
+          "inputs": [
+            "uint256",
+            "uint256"
+          ]
+        },
+        {
+          "name": "EncryptedNote",
+          "inputs": [
+            "uint256",
+            "uint256",
+            "bytes",
+            "bytes"
+          ]
+        },
+        {
+          "name": "Nullifier",
+          "inputs": [
+            "uint256",
+            "uint256",
+            "uint256"
+          ]
+        },
+        {
+          "name": "OwnershipVerificationReceipt",
+          "inputs": [
+            "uint256",
+            "uint256",
+            "uint256",
+            "uint256"
+          ]
+        },
+        {
+          "name": "PartialWithdrawal",
+          "inputs": [
+            "uint256",
+            "address",
+            "uint256",
+            "uint256"
+          ]
+        },
+        {
+          "name": "PendingProofAdded",
+          "inputs": [
+            "tuple"
+          ]
+        },
+        {
+          "name": "RoleAdminChanged",
+          "inputs": [
+            "bytes32",
+            "bytes32",
+            "bytes32"
+          ]
+        },
+        {
+          "name": "RoleGranted",
+          "inputs": [
+            "bytes32",
+            "address",
+            "address"
+          ]
+        },
+        {
+          "name": "RoleRevoked",
+          "inputs": [
+            "bytes32",
+            "address",
+            "address"
+          ]
+        }
+      ]
+    },
+    "UsdrVault": {
+      "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584",
+      "abi_source_url": "https://testnet-explorer.rayls.com/api/v2/smart-contracts/0x1edb224cf8637f92efadaf47ef9e70c044d75584",
+      "abi_sha256": "650a508818f09f1493c087ccd10b0712cbd5d7c485c9509f0491a208640a43af",
+      "functions": [
+        "DEFAULT_ADMIN_ROLE",
+        "DEFAULT_DVP_ROLE",
+        "DEFAULT_OWNER_ROLE",
+        "MAX_FEE_AMOUNT",
+        "VK_ID_DVP_INITIATOR",
+        "VK_ID_ERC20_10INPUT",
+        "VK_ID_ERC20_JOINSPLIT",
+        "VK_ID_ERC20_JOINSPLIT_2INPUT",
+        "VK_ID_ERC20_JOINSPLIT_FEE",
+        "VK_ID_ERC20_JOINSPLIT_RELAYER",
+        "VK_ID_ERC20_USDR",
+        "ZERO_VALUE",
+        "addPendingProofReceipt",
+        "checkReceiptConditions",
+        "currentRoot",
+        "deposit",
+        "depositNonce",
+        "depositV2",
+        "depositWithAuthorization",
+        "depositWithPermit",
+        "depositWithReceiveAuthorization",
+        "generateUniqueId",
+        "getAssetContractAddress",
+        "getHashContractAddress",
+        "getNumberOfAssetIdentifiers",
+        "getPendingProofReceipt",
+        "getRoleAdmin",
+        "getRoot",
+        "getTreeId",
+        "getVaultId",
+        "getVerifierContractAddress",
+        "grantRole",
+        "hasRole",
+        "hashLeftRight",
+        "initializeVault",
+        "insertCommitmentsFromReceipt",
+        "isLocked",
+        "isTrustedForwarder",
+        "isValidNullifier",
+        "isValidRoot",
+        "lockCoin",
+        "lockedNullifiers",
+        "merkleRoot",
+        "nullifiers",
+        "nullifyCoin",
+        "nullifyFromReceipt",
+        "partialWithdraw",
+        "partialWithdrawWithRelayerFee",
+        "poseidonWrapperAddress",
+        "registerCoins",
+        "renounceRole",
+        "revokeRole",
+        "rootHistory",
+        "supportsInterface",
+        "transfer",
+        "transferV2",
+        "treeNumber",
+        "unlockCoin",
+        "unlockFromReceipt",
+        "verifyOwnership",
+        "verifyRoot",
+        "withdraw",
+        "withdrawV2",
+        "zeros",
+        "zkDvpAddress"
+      ],
+      "events": [
+        {
+          "name": "CoinLocked",
+          "inputs": [
+            "uint256",
+            "uint256",
+            "uint256"
+          ]
+        },
+        {
+          "name": "CoinUnlocked",
+          "inputs": [
+            "uint256",
+            "uint256",
+            "uint256"
+          ]
+        },
+        {
+          "name": "Commitment",
+          "inputs": [
+            "uint256",
+            "uint256"
+          ]
+        },
+        {
+          "name": "EncryptedNote",
+          "inputs": [
+            "uint256",
+            "uint256",
+            "bytes",
+            "bytes"
+          ]
+        },
+        {
+          "name": "Nullifier",
+          "inputs": [
+            "uint256",
+            "uint256",
+            "uint256"
+          ]
+        },
+        {
+          "name": "OwnershipVerificationReceipt",
+          "inputs": [
+            "uint256",
+            "uint256",
+            "uint256",
+            "uint256"
+          ]
+        },
+        {
+          "name": "PartialWithdrawal",
+          "inputs": [
+            "uint256",
+            "address",
+            "uint256",
+            "uint256"
+          ]
+        },
+        {
+          "name": "PendingProofAdded",
+          "inputs": [
+            "tuple"
+          ]
+        },
+        {
+          "name": "RoleAdminChanged",
+          "inputs": [
+            "bytes32",
+            "bytes32",
+            "bytes32"
+          ]
+        },
+        {
+          "name": "RoleGranted",
+          "inputs": [
+            "bytes32",
+            "address",
+            "address"
+          ]
+        },
+        {
+          "name": "RoleRevoked",
+          "inputs": [
+            "bytes32",
+            "address",
+            "address"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "evidence_class": "EXPLORER_DISCOVERED_PUBLIC_BURNER_HISTORY_FRESH_RPC_RECONSTRUCTED",
+  "captured_at_utc": "2026-11-20T19:16:53.069889+00:00",
+  "chain_id": 7295799,
+  "account": "0xfE64D1860ee4bF7986D165Ad105d2eD404E7a1F2",
+  "snapshot_block": {
+    "number": 24730781,
+    "hash": "0xd44877dec1306fe88563563dcf5187e5b33de9bc98b3f317369e9ea96fa99295"
+  },
+  "explorer_transactions": 3,
+  "explorer_transactions_pagination_complete": true,
+  "token_transfer_items": [
+    {
+      "token_symbol": "RLS",
+      "token_address": "0x07e17E17e17E17e17e17e17E17E17E17E17e17EA",
+      "transaction_hash": null,
+      "block_number": 24729873,
+      "from": "0xfE64D1860ee4bF7986D165Ad105d2eD404E7a1F2",
+      "to": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+      "total": {
+        "decimals": "18",
+        "value": "7186159560000000000"
+      },
+      "type": "token_transfer"
+    },
+    {
+      "token_symbol": "RLS",
+      "token_address": "0x07e17E17e17E17e17e17e17E17E17E17E17e17EA",
+      "transaction_hash": null,
+      "block_number": 24729794,
+      "from": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+      "to": "0xfE64D1860ee4bF7986D165Ad105d2eD404E7a1F2",
+      "total": {
+        "decimals": "18",
+        "value": "250000000000000000000"
+      },
+      "type": "token_transfer"
+    },
+    {
+      "token_symbol": "USDr",
+      "token_address": "0x0000000000000000000000000000000000000400",
+      "transaction_hash": null,
+      "block_number": 24729794,
+      "from": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+      "to": "0xfE64D1860ee4bF7986D165Ad105d2eD404E7a1F2",
+      "total": {
+        "decimals": "18",
+        "value": "10000000000000000000"
+      },
+      "type": "token_transfer"
+    },
+    {
+      "token_symbol": "USDr",
+      "token_address": "0x0000000000000000000000000000000000000400",
+      "transaction_hash": null,
+      "block_number": 22392647,
+      "from": "0xf10A827AC3e930873AcE860bdBa2f310d802Da24",
+      "to": "0xfE64D1860ee4bF7986D165Ad105d2eD404E7a1F2",
+      "total": {
+        "decimals": "18",
+        "value": "5000000000000000000"
+      },
+      "type": "token_transfer"
+    }
+  ],
+  "token_transfers_pagination_complete": true,
+  "verified_transactions": [
+    {
+      "explorer": {
+        "hash": "0x3b7e1294c1dbb97cf2e164626b7798c9abcc84d048c8ac2354916b1578e71a93",
+        "block_number": 24729794,
+        "timestamp": "2026-11-20T19:07:58.000000Z",
+        "from": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+        "to": "0xfE64D1860ee4bF7986D165Ad105d2eD404E7a1F2",
+        "status": "ok",
+        "gas_used": "21000",
+        "value": "10000000000000000000"
+      },
+      "rpc_transaction": {
+        "hash": "0x3b7e1294c1dbb97cf2e164626b7798c9abcc84d048c8ac2354916b1578e71a93",
+        "from": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+        "to": "0xfe64d1860ee4bf7986d165ad105d2ed404e7a1f2",
+        "nonce": 5267,
+        "value_wei": "10000000000000000000",
+        "input_method_selector": "0x",
+        "block_number": 24729794
+      },
+      "rpc_receipt": {
+        "status": 1,
+        "gas_used": "21000",
+        "effective_gas_price": "48000000000",
+        "block_number": 24729794,
+        "block_hash": "0xd245a9ba69535a8cf10571a26e172a71e23bf8b9bb53f8cdc5487443204d8067",
+        "logs_count": 1,
+        "event_addresses": [
+          "0x0000000000000000000000000000000000000400"
+        ]
+      },
+      "block_timestamp_utc": "2026-11-20T19:07:58+00:00",
+      "included_in_fresh_block": true
+    }
+  ],
+  "rpc_receipt_unavailable_transactions": [
+    {
+      "hash": "0x2a8a859bc6175cf4ac7ae076a61a321b9c356a8f3e7908c5a0f42d9de1825e63",
+      "explorer": {
+        "hash": "0x2a8a859bc6175cf4ac7ae076a61a321b9c356a8f3e7908c5a0f42d9de1825e63",
+        "block_number": 23355102,
+        "timestamp": "2026-11-11T13:59:13.000000Z",
+        "from": "0xfE64D1860ee4bF7986D165Ad105d2eD404E7a1F2",
+        "to": "0xfE64D1860ee4bF7986D165Ad105d2eD404E7a1F2",
+        "status": "ok",
+        "gas_used": "22280",
+        "value": "0"
+      },
+      "evidence_class": "EXPLORER_INDEXED_ONLY_RPC_RECEIPT_UNAVAILABLE"
+    },
+    {
+      "hash": "0x397f1979a00ad430f1b925c62d3b14ced83eb294ebc775269865a38d87e855db",
+      "explorer": {
+        "hash": "0x397f1979a00ad430f1b925c62d3b14ced83eb294ebc775269865a38d87e855db",
+        "block_number": 22398118,
+        "timestamp": "2026-11-04T19:57:39.000000Z",
+        "from": "0xfE64D1860ee4bF7986D165Ad105d2eD404E7a1F2",
+        "to": "0xfE64D1860ee4bF7986D165Ad105d2eD404E7a1F2",
+        "status": "ok",
+        "gas_used": "22280",
+        "value": "0"
+      },
+      "evidence_class": "EXPLORER_INDEXED_ONLY_RPC_RECEIPT_UNAVAILABLE"
+    }
+  ],
+  "limitations": [
+    "This account was funded before the Quest 3 controlled trials and cannot serve as an unfunded receiver.",
+    "The testnet explorer discovered tx hashes; full receipts and block inclusion were rechecked independently with live RPC.",
+    "No encrypted private balances are inferred from these transaction receipts."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "evidence_class": "PROSPECTIVE_HUB_CONTROL_ZERO_PUBLIC_BALANCE_BEFORE_INVITATION",
+  "captured_at_utc": "2026-11-20T20:42:16.791Z",
+  "chain_id": 7295799,
+  "address": "0xa7EB60a22240FCa3D684f1B96dFE3f68a8cfC38A",
+  "previous_baseline_block": 24732563,
+  "latest_block": 24740175,
+  "latest_block_hash": "0xb73c9413ad4e77f24d1b0a82c8b51202617a8b982943c4fafe02e6cfbb8d77de",
+  "native_usdr_wei": "0",
+  "erc20_rls_wei": "0",
+  "usdr_precompile_balance_wei": "0",
+  "account_nonce": 0,
+  "public_registry_registered": false,
+  "incoming_RLS_logs_since_previous_baseline": [],
+  "rpc_search_errors": [],
+  "explorer_transaction_count": 0,
+  "explorer_token_transfer_count": 0,
+  "explorer_single_page_complete": true,
+  "result": {
+    "zero_public_funds": true,
+    "no_public_transactions": true,
+    "no_incoming_public_rls": true,
+    "not_registered": true,
+    "scans_complete": true
+  },
+  "caveats": [
+    "Hub key was used on earlier local research chains, not generated for this experiment.",
+    "No public RLS/USDr funds or activity are verified only for Rayls Public testnet; not universally across networks.",
+    "Private Enygma notes cannot be excluded by public-address and ERC-20 balance queries.",
+    "This is a baseline before an invitation, not evidence that an invitation was claimed."
+  ]
+}

@@ -38,7 +38,7 @@
 - [x] Separate genuine design-tradeoff question prepared for optional attachment X post; never inserted inside the article.
 - [x] Three updated silent recording/voiceover guides, including both onboarding routes and the cumulative receiving wallet.
 - [x] Original first-edition evidence archive retained for audit provenance; second-edition release has its own filename and immutable checksum.
-- [ ] Post-final complete **clean-extracted source QA** plus exact live website browser QA after publishing the second-edition build. Complete this before claiming final publication is synchronized.
+- [x] Completed **31/31 clean-extracted QA** and **72/72 browser checks on the live published site**, plus exact 172-file release archive SHA-256 verification. See `qa/TWO_COHORT_RELEASE_QA_REPORT.json`.
 - [ ] User records and edits three actual videos, adds actual working links and figures to X Article, publishes article and submits to Rayls quest Discord.
 - [ ] Optional separate team question for meaningful engagement; only use the current verified official X account tag.
 

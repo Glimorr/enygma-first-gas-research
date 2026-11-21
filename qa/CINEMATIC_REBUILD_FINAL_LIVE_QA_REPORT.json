@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "scope": "FINAL_PUBLIC_CINEMATIC_REBUILD_LIVE_BROWSER_ACCESSIBILITY_INTERACTION_AND_IMMUTABLE_EVIDENCE_QA",
+  "verifiedUtc": "2026-11-21T02:09:10.246001+00:00",
+  "liveUrl": "https://glimorr.github.io/enygma-first-gas-research/",
+  "websiteSourceCommit": "d165466",
+  "externalPagesBuildStatus": "SUCCESS",
+  "liveResponsiveResearchAndInternalLinkChecks": 72,
+  "liveResponsiveResearchAndInternalLinkChecksPassed": 72,
+  "liveMotionInteractionAndReducedMotionChecks": 70,
+  "liveMotionInteractionAndReducedMotionChecksPassed": 70,
+  "visibleMobileHorizontalOverflow": false,
+  "responsiveViewports": [
+    "1440x900 motion",
+    "390x844 motion",
+    "900x1050 reduced",
+    "1440x900 reduced"
+  ],
+  "browserRuntimeErrors": [],
+  "factualDataControlledByFrozenEvidencedJSON": true,
+  "researchChainId": 7295799,
+  "sourceEvidenceFilesInFrozenRelease": 172,
+  "publishedEvidenceArchiveSHA256": "310daaee8867db412fdbc9ad1bd10553e4d02671b9f9db10f23258cefc2ed0a9",
+  "firstEditionArchiveSHA256": "49e897c712e7d452700be2dca369f3988ca46c5316f0bad306fef292f335f97a",
+  "frozenFirstAndSecondEditionsUnchanged": true,
+  "originalScientificResearchPriorQA": "31/31 clean extracted source checks, 182/182 mutated evidence copies rejected (from verified prior release)",
+  "supplementalRapidSwitchTest": {
+    "verifiedImmediateFeeSwitches": 6,
+    "passed": 6,
+    "noErrors": true
+  },
+  "noWebGLAndKeyboardFallback": {
+    "sourceLoaded": true,
+    "realReceiptTabs": true,
+    "guideKeyboardEscapeClose": true,
+    "noErrors": true
+  },
+  "remediationNotes": "A 68/70 initial live interaction QA detected delayed fee values while selected source and explorer link updated. Data+link now update atomically, animation is decorative. Original fail documented in research/SITE_LIVE_FEE_CONTROL_QA_CORRECTION_20261121.md. Final corrected live test 70/70.",
+  "scientificBoundaries": [
+    "Cinematic scene and guide are clearly illustrations, not official Rayls components, an AI agent or cryptographic decryption",
+    "Two completed different onboarding methods, n=1 per method; no independent identical invite replication",
+    "Private sender/payee/amount confirmed by controlled owner wallets, not decrypted from public vault logs",
+    "Original blockchain experimental receipts and source archive bytes were not modified by this website redesign"
+  ],
+  "publishedDesignPreviewImages": [
+    "design-previews/desktop-hero.png",
+    "design-previews/desktop-story.png",
+    "design-previews/desktop-fee-lab.png",
+    "design-previews/mobile-hero.png",
+    "design-previews/mobile-fee-lab.png"
+  ],
+  "upcomingUserOwnedWork": [
+    "Record and edit the three demo videos",
+    "Insert the seven finalized figures and actual video URLs into the X article",
+    "Publish article and submit quest"
+  ]
+}

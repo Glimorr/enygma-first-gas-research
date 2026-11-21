@@ -28,7 +28,7 @@ The [live cinematic research experience](https://glimorr.github.io/enygma-first-
 The experience keeps the user's preferred plum/lavender/lime palette and the authentic Rayls symbol. Key details are source-bound, keyboard usable and readable under reduced motion. The original research source/archive is **not changed by this visual redesign**.
 
 - [Interactive art direction & scientific boundaries](research/SITE_CREATIVE_REBUILD_20261121.md)
-- [Motion/accessibility/source-interaction QA](qa/CINEMATIC_REBUILD_INTERACTION_QA_REPORT.json) (70/70) and [source/responsiveness regression QA](qa/CINEMATIC_REBUILD_SOURCE_AND_RESPONSIVE_QA_REPORT.json) (72/72)
+- [Motion/accessibility/source-interaction QA](qa/CINEMATIC_REBUILD_INTERACTION_QA_REPORT.json) (70/70) and [source/responsiveness regression QA](qa/CINEMATIC_REBUILD_SOURCE_AND_RESPONSIVE_QA_REPORT.json) (72/72); [final live published URL audit](qa/CINEMATIC_REBUILD_FINAL_LIVE_QA_REPORT.json)
 - [Desktop visual preview](design-previews/desktop-hero.png) · [Four-act story](design-previews/desktop-story.png) · [Fee laboratory](design-previews/desktop-fee-lab.png) · [Mobile preview](design-previews/mobile-hero.png)
 
 ## Research artifacts

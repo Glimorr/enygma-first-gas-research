@@ -144,17 +144,20 @@ export function initResearchExperience({evidence,isMotionEnabled=()=>true}={}){
         share.textContent=item.share+" RLS";
         method.textContent=item.method;
       };
+      // Data is the primary UI state. Never defer verified fee values to an
+      // animation callback: a backgrounded/heavily loaded browser can delay
+      // GSAP completion and briefly mismatch the selected case with its data.
+      // This case and the explorer link must change atomically.
+      const targets=[gross,base,share,method];
+      gsap.killTweensOf(targets);
+      gsap.set(targets,{clearProps:"opacity,visibility,transform"});
+      set();
+      link.href="https://testnet-explorer.rayls.com/tx/"+item.tx;
       if(changed&&shouldMove()){
-        gsap.to([gross,base,share,method],{autoAlpha:0,y:-12,duration:.19,ease:"power2.in",
-          onComplete:()=>{
-            set();
-            gsap.fromTo([gross,base,share,method],{autoAlpha:0,y:12},
-              {autoAlpha:1,y:0,duration:.42,stagger:.065,ease:"power3.out"});
-          }});
+        gsap.fromTo(targets,{y:12},{y:0,duration:.43,stagger:.04,ease:"power3.out"});
         gsap.fromTo(".fee-orb",{rotation:-9,scale:.96},
           {rotation:0,scale:1,duration:.75,ease:"elastic.out(1,.6)"});
-      }else set();
-      link.href="https://testnet-explorer.rayls.com/tx/"+item.tx;
+      }
     }
     $$(".fee-switch button").forEach(b=>b.addEventListener("click",()=>select(b.dataset.feeCase)));
     select("shield");

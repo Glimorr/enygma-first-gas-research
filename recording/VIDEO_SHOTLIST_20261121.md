@@ -1,6 +1,6 @@
 # Rayls November Quest 3 — three silent recording guides
 
-**Production status:** researcher-controlled first private spend has mined and been independently verified. These are scripts for the user's actual footage; no video recordings have been created by the assistant.
+**Production status:** the complete controlled first private spend has mined and been independently verified; public evidence release and live website have passed QA. These are scripts for the user's actual footage; no video recordings have been created by the assistant.
 
 The user will record, edit, add voiceover if desired, and publish the video clips. This file is a recording brief, not a fake recording. Source workspace: `E:\Rayls-Nov-Week3`.
 
@@ -17,11 +17,11 @@ The user will record, edit, add voiceover if desired, and publish the video clip
 | 01:04–01:20 | @devil dashboard (crop URL), then receiver verifier | `17.304 shielded RLS; zero public RLS, USDr and account nonce` |
 | 01:20–01:35 | **Mined 3 RLS private send** `0x5423d2b13c575c8e26c73e42906f4eefb7a6a257defcebad81a1415c857253e8`, Dev receiving wallet with 3 shielded RLS | `First private payment confirmed on-chain and in both wallets` |
 
-Optional voice script: “I compared ordinary public funding with Enygma's invitation route. The first wallet received 250 public RLS and paid a visible registration fee. The second wallet claimed 30 RLS privately and registered without ever receiving public RLS. The exact claim and registration receipts, including the zero-funding checks, are reproducible in the evidence archive. Our last check is whether this new account can spend privately.”
+Optional voice script: “I compared ordinary public funding with Enygma's invitation route. The first wallet received 250 public RLS and paid a visible registration fee. The second wallet claimed 30 RLS privately and registered without ever receiving public RLS. The exact claim and registration receipts, including the zero-funding checks, are reproducible in the evidence archive. Finally, the new wallet sent 3 RLS privately, and I verified the mined receipt plus 3 shielded RLS arriving in a separate owner wallet.”
 
 **Must not:** show invite URL with the `/i#` fragment, passkey setup code, recovery phrase, claim credentials or browser security prompt contents. The original invite link has already been shared in chat; it is not a clean confidentiality test.
 
-## Video 2 — The public fee trail behind a private payment (75–95 seconds)
+## Video 2 — The public fee trail behind a private payment (90–110 seconds)
 **Goal:** Present our most original secondary observation with its scientific caveat.
 
 | Approx. time | Screen | Caption |
@@ -31,9 +31,10 @@ Optional voice script: “I compared ordinary public funding with Enygma's invit
 | 00:28–00:47 | Private invitation's vault `transferV2` receipt and 0.576 RLS payout 4 blocks later | `Implied fee 4.416 RLS; UI rounded to 4.42.` |
 | 00:47–01:06 | Private claim vault receipt and 1.656 RLS payout 2 blocks later | `Implied fee 12.696 RLS; 30−12.696=17.304.` |
 | 01:06–01:22 | Registration with public fee zero and no corresponding payout in a +35-block window | `Negative control: no distinct paid relayer fee at registration.` |
-| 01:22–01:30 | Site boundaries | `Fee metadata, not recovered shielded amount or recipient.` |
+| 01:22–01:37 | First private send vault receipt and 0.576 RLS treasury payout 4 blocks later | `Third private case; implied gross fee 4.416 RLS, UI rounded to 4.42.` |
+| 01:37–01:47 | Site boundaries | `Fee metadata, not recovered shielded amount or recipient.` |
 
-Optional voice script: “A shielded transfer hides the payment amount from public vault logs, but its relayer can leave a separate fee trail. In two controlled private operations, a public treasury transfer appeared two to four blocks later. Using the relayer's reported 15% policy, those amounts reconstructed the fees shown in the wallet. This is metadata correlation, not a decryption or a network-wide privacy break.”
+Optional voice script: “A shielded transfer hides the payment amount from public vault logs, but its relayer can leave a separate fee trail. In three controlled private operations, a public treasury transfer appeared two to four blocks later. Using the relayer's reported 15% policy, those amounts reconstructed the fees shown in the wallet. This is metadata correlation, not a decryption or a network-wide privacy break.”
 
 **Important:** The treasury recipient's legal Rayls Foundation ownership comes from relayer configuration; not independently established. An inferred fee must never be presented as the private **principal**.
 
@@ -42,10 +43,10 @@ Optional voice script: “A shielded transfer hides the payment amount from publ
 
 | Approx. time | Screen | Caption |
 |---|---|---|
-| 00:00–00:12 | Extracted checkpoint, `MANIFEST.sha256`, `RELEASE_STATUS.json` | `Frozen public-only evidence with the number of files listed in RELEASE_STATUS.json; final release later` |
-| 00:12–00:28 | `node qa/verify_receiver_onboarding_pruned_rpc.mjs` | `Before/after public balances, registry transition and exact on-chain addresses` |
+| 00:00–00:12 | Final extracted evidence release, `MANIFEST.sha256`, `RELEASE_STATUS.json` | `Frozen 140-source-file release; 23 of 23 clean-extraction checks pass` |
+| 00:12–00:28 | `node qa/verify_receiver_onboarding_pruned_rpc.mjs` | `Fresh claim and registry receipts, current zero public balances, and original fixed-block records` |
 | 00:28–00:40 | `node qa/tamper_receiver_onboarding.mjs` | `30 of 30 deliberate receipt and state corruptions rejected` |
-| 00:40–00:52 | `python3 qa/verify_private_replay_frozen.py` | `2 valid historical simulations before mining, 4 reverted after` |
+| 00:40–00:52 | `python3 qa/verify_private_replay_frozen.py` | `3 positive before / 6 reverts after, retained as hash-matched historical RPC observations` |
 | 00:52–01:05 | `python3 qa/verify_god_shield_postprune.py` | `Pruned historic state fixed by independent current-balance + transfer-log reconstruction` |
 | 01:05–01:20 | Website: proof tabs, fee study, boundaries, archive download | `Claims are labeled by evidence class and limitations` |
 
@@ -53,9 +54,9 @@ Optional short voice script: “This research is reproducible. The archive conta
 
 ## Terminal recording hygiene and framing
 - Record in full HD at 1920×1080 if feasible. Make terminal type at least 22 px and pause on each PASS screen long enough for a viewer to read exact hashes.
-- Prefer the **public-only extracted checkpoint** over the private working directory; no command should dump `~/.rayls-w2-private` or browser profiles.
+- Prefer the **public-only extracted final research release** over the private working directory; no command should dump `~/.rayls-w2-private` or browser profiles.
 - Do not replay or display confidential invitation link fragments. A claimed invite URL is not necessary for reproduction; use public tx hashes.
-- If the recipient outgoing shielded payment has not been verified, omit the final claim-to-spend scene and **do not publish the videos as the full Quest**.
+- Show the **already mined** 3 RLS outgoing payment; do not submit another transfer just to recreate footage.
 - Preserve actual failures, especially the provider's `state ... pruned` error, rather than editing them out.
 - Add YouTube/X links to article only after videos are actually recorded and the links are checked.
 

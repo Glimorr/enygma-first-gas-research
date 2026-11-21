@@ -19,4 +19,4 @@ Study highlights: 3 controlled private operations and 3 matching public reported
 
 **Scientific limits:** one complete controlled testnet lifecycle; the invitation bearer link was exposed during research; the direct shielded-faucet and privileged auditor-decryption comparators were not performed. Do not infer sender, recipient, or private principal from a public vault receipt. This is not a Rayls-sponsored audit or mainnet assessment.
 
-**Archive:** [Browse and download the frozen research evidence](docs/evidence/rayls-wq3-final-evidence.zip). Its SHA-256 is \`2d21b41ea6758a8510f6fe081475173a8a707d14cbb7380d3e374eeac2680fd4\`. The manifest covers 140 curated source files.
+**Archive:** [Browse and download the frozen research evidence](docs/evidence/rayls-wq3-final-evidence.zip). Its SHA-256 is \`49e897c712e7d452700be2dca369f3988ca46c5316f0bad306fef292f335f97a\`. The manifest covers 140 curated source files.

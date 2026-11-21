@@ -1,12 +1,12 @@
 {
   "class": "POST_RELEASE_INDEPENDENT_QA_SUMMARY",
-  "validatedUtc": "2026-11-21T00:06:34.521773+00:00",
+  "validatedUtc": "2026-11-21T00:19:48.635485+00:00",
   "network": "Rayls Public Chain Testnet",
   "chainId": 7295799,
   "publicGithubRepository": "https://github.com/Glimorr/enygma-first-gas-research",
   "publicGithubPages": "https://glimorr.github.io/enygma-first-gas-research/",
-  "immutableFrozenArchiveSha256": "2d21b41ea6758a8510f6fe081475173a8a707d14cbb7380d3e374eeac2680fd4",
-  "immutableFrozenArchiveBytes": 2976070,
+  "immutableFrozenArchiveSha256": "49e897c712e7d452700be2dca369f3988ca46c5316f0bad306fef292f335f97a",
+  "immutableFrozenArchiveBytes": 2976575,
   "curatedSourceFiles": 140,
   "cleanExtractedIndependentCheckStages": 23,
   "cleanExtractedIndependentCheckStagesPassed": 23,
@@ -51,5 +51,6 @@
     "Three selected private fee correlations; no public decryption of shielded sender/payee/principal",
     "Archived historical eth_call state has been pruned and is validated as frozen source-dated transcript",
     "User recordings/editing and X Article publication remain separate user actions"
-  ]
+  ],
+  "postPublicationEditorialCorrection": "Corrected @devil sender vs funded recipient public-balance wording, updated 3-operation video plans/checklist, added direct source links; live receipts, controls and 140-file manifest unchanged in scope."
 }

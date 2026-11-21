@@ -10,6 +10,8 @@ There was another detail I had not expected to be this clean. Although the priva
 
 I preserved the raw evidence, the commands that reproduce it and the failures I encountered along the way.
 
+The [interactive research website](https://glimorr.github.io/enygma-first-gas-research/) traces the full lifecycle. The [public GitHub repository](https://github.com/Glimorr/enygma-first-gas-research) contains original receipts, independent verification code, six evidence figures, and a downloadable, SHA-256 verified archive.
+
 ## The control: an ordinary funded wallet
 
 I started with a Dev research wallet and funded it with **250 public RLS** through the testnet faucet. That transfer mined in block **24,732,650**. The token transfer and its before-and-after balance were independently checked against the public RPC.
@@ -79,7 +81,7 @@ From the @devil passkey wallet, I selected **shielded RLS**, addressed the payme
 
 The transaction mined in block **24,760,126**, with receipt status 1. Independent public RPC reconstruction confirmed the relayer-to-SharedVault `transferV2` call, one nullifier, three new commitments, three encrypted notes, and matching data from a separate log query.
 
-The private spend did **not** create a public token transfer from @devil. I checked the actual recipient's public RLS and USDr balances, native balance, EVM nonce, and scoped token-transfer history again after the send. The publicly unfunded account still had **zero public RLS, zero public USDr and an account nonce of zero**.
+The private spend did **not** create a public token transfer from @devil. I checked the **sender @devil's** public RLS and USDr balances, native balance, EVM nonce, and scoped token-transfer history again after the send. The publicly unfunded sender still had **zero public RLS, zero public USDr and an account nonce of zero**.
 
 There was an independent positive check on the receiving side. I reconnected the controlled @rq3dev26 account to the official Enygma testnet in a **read-only browser session**, using its existing authorized research wallet. Its account dashboard showed **3 shielded RLS**, while retaining its original **242.8069 public RLS**. No new transaction was signed or sent from that receiving wallet in this check.
 
@@ -149,7 +151,7 @@ The fee analysis also reproduced selected public-forwarder treasury transfers an
 
 ## How to reproduce
 
-The evidence register contains raw public receipts, fixed-block state checks, independently decoded events, selected transaction hashes, contract ABI snapshots and an integrity manifest.
+The evidence register contains raw public receipts, fixed-block state checks, independently decoded events, selected transaction hashes, contract ABI snapshots and an integrity manifest. The frozen [public-only evidence archive](https://glimorr.github.io/enygma-first-gas-research/evidence/rayls-wq3-final-evidence.zip) can be downloaded directly; the linked GitHub repository provides the readable source tree. These exact published files passed 23/23 clean-extraction checks and 66/66 browser checks on the public website.
 
 The project can be reproduced using Node 22+, Python 3 and the stored public RPC endpoints:
 

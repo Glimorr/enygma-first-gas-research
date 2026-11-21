@@ -29,35 +29,41 @@
 - [x] Public registration zero fee / no payout within +35-block control
 - [x] Distinguish metadata correlation from recovery of private principal or payee
 - [x] Explicitly qualify treasury address as relayer-reported, not independently authenticated legal entity
-- [ ] Private outgoing spend comparison to extend controlled n=2 metadata findings to n=3
+- [x] Private outgoing spend: distinct 0.576 RLS treasury payout 4 blocks later; implied 4.416 RLS gross fee matching 4.42 UI; exploratory controlled n=3
 
 ## Robustness and evaluator reliability
 - [x] Raw receipts, transaction headers and separate logs, ABI/provenance snapshots, fixed-chain IDs
-- [x] Five corruption suites **107/107** PASS: shield22, public treasury15, invite19, receiver30, private fee21
-- [x] Historical `eth_call` replay positive/negative simulations **2 success before mining, 4 reverts after**, correctly labeled noncommitting
+- [x] Six corruption suites **144/144** PASS: shield22, public treasury15, invite19, receiver30, private fee21, first spend37
+- [x] Historical `eth_call` replay positive/negative simulations **3 success before mining, 6 reverts after**, correctly labeled noncommitting
 - [x] Technical failures preserved instead of edited out: rate-limit, signing barrier, wrong transcribed address, pruned historical state
 - [x] State pruning reproducibility repair: current ERC20 state + 50 full post-shield directional log-window queries; exact historical balance reconstruction
-- [x] Fresh extracted public-only archive **16/16** stages PASS at checkpoint
+- [x] Final extracted public-only archive **23/23** stages PASS (pruning-safe checks)
 - [x] Public security scan for passkeys, private keys, invitation bearer link; exclude intentionally superseded wrong-address snapshots
 - [x] Original note secrecy preserved: wallet UI values never presented as publicly decrypted chain data
-- [ ] Rerun full fresh live/extracted QA and SHA-256 manifest after final send
-- [ ] Publish immutable public evidence archive and **live check each public URL** before user posts article
+- [x] Rerun full fresh live/extracted QA and SHA-256 manifest after final send
+- [x] Publish public evidence archive and **live check website/archive checksum and public source URLs** before user posts article
 
 ## Visuals, videos and editorial
-- [x] Responsive Vite/Three.js/GSAP Rayls-themed research website built as an unpublished local preview
+- [x] Responsive Vite/Three.js/GSAP Rayls-themed research website publicly deployed on GitHub Pages
 - [x] Tabs for public shield, encrypted invite, recipient claim and registered identity, data-derived fee visuals and replay comparisons
-- [x] 63/63 local responsive browser QA + **63/63 nested production-path browser QA** across desktop/tablet/mobile
+- [x] **66/66 public deployed URL browser QA** across desktop/tablet/mobile, including real archive download
 - [x] Six original evidence PNGs at 1600×900, visually reviewed and fixed clipping
 - [x] Three silent, user-recordable video shot lists and short voiceover scripts, without fabricated completed footage
 - [x] Full article fact pack with sources/limits, reproducibility and issue log
-- [ ] Update site/figures/recording scripts with verified outgoing send and its exact public receipt
-- [ ] Publish the site to user-selected GitHub Pages (only once ready); fresh browser QA exact URL, no 404 and no UTM
-- [ ] Final humanized X Article, no rhetorical questions inside article, no fake citations, precise human-run signer attribution, include required sections: **What verified**, **How to reproduce**, **Issues fixed**, **Sources visited**, 3 real video placeholders
+- [x] Update site/figures/recording scripts with verified outgoing send and its exact public receipt
+- [x] Publish the site to GitHub Pages; fresh 66/66 browser QA at public URL, 200 downloads and matching SHA-256
+- [x] Final X Article **draft** prepared, no rhetorical questions inside article, precise signer attribution, include required sections: **What verified**, **How to reproduce**, **Issues fixed**, **Sources visited**, 3 real video placeholders
 - [ ] Actual user-recorded and edited videos; user publishes site links, X Article, X attachment question
 - [ ] Legitimate team question in separate X attachment post (only if it advances real technical research)
 
-## Honest constraints
-The core claim is now **two of three** stages complete: private invite was created, new zero-public-funded receiver claimed and registered, but the new receiver has **not yet sent** a private outgoing payment. This step cannot be represented as success from registration alone. The previous invitation was shared in chat and therefore does not prove confidential delivery; the test is an exposed-link onboarding pilot, not a security breach finding. Use the explicit one-time wallet consent route for the actual private send, never a bypass of protected passkey signing. Until that mined receipt exists, the complete quest remains a **research checkpoint only**.
+## Evaluator boundary: verified versus optional or unperformed
 
-## Single next execution gate
-Submit one official app shielded send of **3 RLS** from `@devil` to `@rq3dev26`, if the app's fee quote allows it. Copy only the public TX hash once mined. Run `node qa/verify_devils_first_private_spend.mjs --tx <hash>` then reconstruct recipient wallet observation and note fee-control and replay evidence. Only afterwards freeze the finished site and X Article.
+The complete controlled invitation → private claim → public registration → first 3 RLS private send **has been verified**, with separate receiving-wallet confirmation and the sender's public funding/nonce remaining zero. The work spans one lifecycle on Rayls Public Chain Testnet. The invitation bearer link was exposed in the research conversation; secret delivery was not tested. There is no direct shielded-faucet comparator, independent second full lifecycle or privileged auditor-side decryption. These are disclosed limitations, not missing pieces of the completed controlled lifecycle.
+
+**Publication remains the user's task:** record and edit three real videos, insert figures and working video links, publish the X Article and submit the quest; optionally post the separate legitimate question to Rayls. This checklist is an internal evaluator-aligned quality audit, **not** the Rayls team's official scoring rubric or guarantee of 10/10 RP.
+
+## Public provenance
+- Website: https://glimorr.github.io/enygma-first-gas-research/
+- Repository: https://github.com/Glimorr/enygma-first-gas-research
+- Controlled private send: https://testnet-explorer.rayls.com/tx/0x5423d2b13c575c8e26c73e42906f4eefb7a6a257defcebad81a1415c857253e8
+- QA: `qa/FINAL_RELEASE_QA_REPORT.json`, 23/23 clean-extraction checks, 66/66 public live website checks and 144/144 mutation detections.
